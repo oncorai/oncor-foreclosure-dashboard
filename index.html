@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>⚡ Oncor Foreclosure Dashboard</title>
+  <style>
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --surface2: #242736;
+      --border: #2e3245;
+      --text: #e4e6ed;
+      --text-dim: #8b8fa3;
+      --accent: #f59e0b;
+      --accent2: #3b82f6;
+      --green: #22c55e;
+      --red: #ef4444;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
+
+    /* Password Gate */
+    #password-gate {
+      display: flex; align-items: center; justify-content: center;
+      min-height: 100vh; padding: 20px;
+    }
+    .login-box {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 16px; padding: 48px; text-align: center;
+      max-width: 400px; width: 100%;
+    }
+    .login-box h1 { font-size: 2rem; margin-bottom: 8px; }
+    .login-box p { color: var(--text-dim); margin-bottom: 24px; }
+    .login-box input {
+      width: 100%; padding: 12px 16px; border-radius: 8px;
+      border: 1px solid var(--border); background: var(--surface2);
+      color: var(--text); font-size: 1rem; margin-bottom: 16px;
+      outline: none; transition: border-color 0.2s;
+    }
+    .login-box input:focus { border-color: var(--accent); }
+    .login-box button {
+      width: 100%; padding: 12px; border-radius: 8px; border: none;
+      background: var(--accent); color: #000; font-size: 1rem;
+      font-weight: 600; cursor: pointer; transition: opacity 0.2s;
+    }
+    .login-box button:hover { opacity: 0.9; }
+    .login-error { color: var(--red); font-size: 0.875rem; margin-top: 8px; display: none; }
+
+    /* Dashboard */
+    #dashboard { display: none; padding: 24px; max-width: 1400px; margin: 0 auto; }
+    .header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; flex-wrap: wrap; gap: 12px; }
+    .header h1 { font-size: 1.5rem; }
+    .header-actions { display: flex; gap: 8px; }
+    .btn {
+      padding: 8px 16px; border-radius: 8px; border: 1px solid var(--border);
+      background: var(--surface2); color: var(--text); font-size: 0.875rem;
+      cursor: pointer; transition: all 0.2s; white-space: nowrap;
+    }
+    .btn:hover { border-color: var(--accent); color: var(--accent); }
+    .btn-accent { background: var(--accent); color: #000; border-color: var(--accent); }
+    .btn-accent:hover { opacity: 0.9; color: #000; }
+
+    /* Stats */
+    .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-bottom: 24px; }
+    .stat-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 12px; padding: 20px;
+    }
+    .stat-label { color: var(--text-dim); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
+    .stat-value { font-size: 1.75rem; font-weight: 700; }
+    .stat-value.green { color: var(--green); }
+    .stat-value.amber { color: var(--accent); }
+    .stat-value.blue { color: var(--accent2); }
+
+    /* Filters */
+    .filters {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 12px; padding: 16px; margin-bottom: 24px;
+      display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-end;
+    }
+    .filter-group { display: flex; flex-direction: column; gap: 4px; }
+    .filter-group label { font-size: 0.75rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; }
+    .filter-group input, .filter-group select {
+      padding: 8px 12px; border-radius: 6px; border: 1px solid var(--border);
+      background: var(--surface2); color: var(--text); font-size: 0.875rem; outline: none;
+    }
+    .filter-group input:focus, .filter-group select:focus { border-color: var(--accent); }
+    .filter-group input[type="text"] { min-width: 200px; }
+
+    /* Table */
+    .table-wrap {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 12px; overflow: hidden;
+    }
+    .table-scroll { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+    thead { background: var(--surface2); }
+    th {
+      padding: 12px 16px; text-align: left; font-weight: 600;
+      color: var(--text-dim); cursor: pointer; user-select: none;
+      white-space: nowrap; position: relative;
+    }
+    th:hover { color: var(--accent); }
+    th .sort-icon { margin-left: 4px; opacity: 0.4; }
+    th.sorted .sort-icon { opacity: 1; color: var(--accent); }
+    td { padding: 10px 16px; border-top: 1px solid var(--border); white-space: nowrap; }
+    tr:hover td { background: var(--surface2); }
+    .badge {
+      display: inline-block; padding: 2px 8px; border-radius: 4px;
+      font-size: 0.75rem; font-weight: 600;
+    }
+    .badge-ce { background: rgba(59,130,246,0.15); color: var(--accent2); }
+    .badge-de { background: rgba(245,158,11,0.15); color: var(--accent); }
+    .badge-yes { background: rgba(239,68,68,0.15); color: var(--red); }
+    .badge-no { background: rgba(34,197,94,0.15); color: var(--green); }
+    .link-btn {
+      color: var(--accent2); text-decoration: none; font-weight: 500;
+    }
+    .link-btn:hover { text-decoration: underline; }
+    .names-cell { white-space: normal; max-width: 300px; line-height: 1.4; }
+
+    .table-footer {
+      padding: 12px 16px; border-top: 1px solid var(--border);
+      color: var(--text-dim); font-size: 0.875rem;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+
+    .loading { text-align: center; padding: 48px; color: var(--text-dim); }
+    .spinner { display: inline-block; width: 24px; height: 24px; border: 3px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; margin-right: 8px; vertical-align: middle; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    @media (max-width: 640px) {
+      #dashboard { padding: 12px; }
+      .stats { grid-template-columns: repeat(2, 1fr); }
+      .filters { flex-direction: column; }
+      .filter-group input[type="text"] { min-width: unset; width: 100%; }
+      .header h1 { font-size: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Password Gate -->
+<div id="password-gate">
+  <div class="login-box">
+    <h1>⚡ Oncor</h1>
+    <p>Maricopa County Foreclosure Dashboard</p>
+    <input type="password" id="password-input" placeholder="Enter password" autofocus>
+    <button onclick="checkPassword()">Enter</button>
+    <div class="login-error" id="login-error">Incorrect password</div>
+  </div>
+</div>
+
+<!-- Dashboard -->
+<div id="dashboard">
+  <div class="header">
+    <h1>⚡ Oncor Foreclosure Dashboard</h1>
+    <div class="header-actions">
+      <button class="btn" onclick="exportCSV()">📥 Export CSV</button>
+      <button class="btn" onclick="refreshData()">🔄 Refresh</button>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat-card">
+      <div class="stat-label">Total Documents</div>
+      <div class="stat-value blue" id="stat-total">—</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Foreclosures</div>
+      <div class="stat-value amber" id="stat-foreclosures">—</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Certificates (CE)</div>
+      <div class="stat-value" id="stat-ce">—</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Deeds (DE)</div>
+      <div class="stat-value" id="stat-de">—</div>
+    </div>
+  </div>
+
+  <div class="filters">
+    <div class="filter-group">
+      <label>Search Names</label>
+      <input type="text" id="filter-name" placeholder="Search by name..." oninput="applyFilters()">
+    </div>
+    <div class="filter-group">
+      <label>Code</label>
+      <select id="filter-code" onchange="applyFilters()">
+        <option value="">All</option>
+        <option value="CE">CE - Certificate</option>
+        <option value="DE">DE - Deed</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label>Foreclosure</label>
+      <select id="filter-foreclosure" onchange="applyFilters()">
+        <option value="">All</option>
+        <option value="true">Yes</option>
+        <option value="false">No</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label>Date From</label>
+      <input type="date" id="filter-date-from" onchange="applyFilters()">
+    </div>
+    <div class="filter-group">
+      <label>Date To</label>
+      <input type="date" id="filter-date-to" onchange="applyFilters()">
+    </div>
+    <div class="filter-group">
+      <label>&nbsp;</label>
+      <button class="btn" onclick="clearFilters()">Clear</button>
+    </div>
+  </div>
+
+  <div class="table-wrap">
+    <div id="loading" class="loading"><span class="spinner"></span> Loading documents...</div>
+    <div class="table-scroll">
+      <table id="data-table" style="display:none">
+        <thead>
+          <tr>
+            <th onclick="sortBy('doc_number')">Doc # <span class="sort-icon">↕</span></th>
+            <th onclick="sortBy('code')">Code <span class="sort-icon">↕</span></th>
+            <th onclick="sortBy('record_date')">Date <span class="sort-icon">↕</span></th>
+            <th onclick="sortBy('names')">Names <span class="sort-icon">↕</span></th>
+            <th onclick="sortBy('page_count')">Pages <span class="sort-icon">↕</span></th>
+            <th onclick="sortBy('is_foreclosure')">Foreclosure <span class="sort-icon">↕</span></th>
+            <th>View</th>
+          </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>
+    </div>
+    <div class="table-footer">
+      <span id="results-count"></span>
+      <span id="date-range"></span>
+    </div>
+  </div>
+</div>
+
+<script>
+const SUPABASE_URL = 'https://jiailsusjabqythgokcb.supabase.co';
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImppYWlsc3VzamFicXl0aGdva2NiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzI5OTI5ODgsImV4cCI6MjA4ODU2ODk4OH0.QdfPmDFO1mHful9uKJOAHocZRg4aYb80igQS5DZgdEQ';
+const PASSWORD = 'oncor2025';
+
+let allDocuments = [];
+let filteredDocuments = [];
+let sortColumn = 'record_date';
+let sortDir = 'desc';
+
+// Password check
+function checkPassword() {
+  const input = document.getElementById('password-input').value;
+  if (input === PASSWORD) {
+    document.getElementById('password-gate').style.display = 'none';
+    document.getElementById('dashboard').style.display = 'block';
+    sessionStorage.setItem('oncor_auth', 'true');
+    loadData();
+  } else {
+    document.getElementById('login-error').style.display = 'block';
+    document.getElementById('password-input').value = '';
+    document.getElementById('password-input').focus();
+  }
+}
+
+document.getElementById('password-input').addEventListener('keypress', (e) => {
+  if (e.key === 'Enter') checkPassword();
+});
+
+// Check session
+if (sessionStorage.getItem('oncor_auth') === 'true') {
+  document.getElementById('password-gate').style.display = 'none';
+  document.getElementById('dashboard').style.display = 'block';
+  loadData();
+}
+
+async function loadData() {
+  try {
+    const res = await fetch(`${SUPABASE_URL}/rest/v1/documents?select=*&order=record_date.desc`, {
+      headers: {
+        'apikey': SUPABASE_KEY,
+        'Authorization': `Bearer ${SUPABASE_KEY}`
+      }
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    allDocuments = await res.json();
+    updateStats();
+    applyFilters();
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('data-table').style.display = 'table';
+  } catch (err) {
+    document.getElementById('loading').innerHTML = `<span style="color:var(--red)">Error loading data: ${err.message}</span>`;
+  }
+}
+
+function parseDate(dateStr) {
+  if (!dateStr) return null;
+  // Handle MM-DD-YYYY format
+  const parts = dateStr.split('-');
+  if (parts.length === 3 && parts[0].length <= 2) {
+    return new Date(`${parts[2]}-${parts[0].padStart(2,'0')}-${parts[1].padStart(2,'0')}`);
+  }
+  return new Date(dateStr);
+}
+
+function formatDate(dateStr) {
+  const d = parseDate(dateStr);
+  if (!d || isNaN(d)) return dateStr || '—';
+  return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+}
+
+function updateStats() {
+  document.getElementById('stat-total').textContent = allDocuments.length;
+  document.getElementById('stat-foreclosures').textContent = allDocuments.filter(d => d.is_foreclosure).length;
+  document.getElementById('stat-ce').textContent = allDocuments.filter(d => d.code === 'CE').length;
+  document.getElementById('stat-de').textContent = allDocuments.filter(d => d.code === 'DE').length;
+}
+
+function applyFilters() {
+  const nameFilter = document.getElementById('filter-name').value.toLowerCase();
+  const codeFilter = document.getElementById('filter-code').value;
+  const foreclosureFilter = document.getElementById('filter-foreclosure').value;
+  const dateFrom = document.getElementById('filter-date-from').value;
+  const dateTo = document.getElementById('filter-date-to').value;
+
+  filteredDocuments = allDocuments.filter(doc => {
+    if (nameFilter) {
+      const names = Array.isArray(doc.names) ? doc.names.join(' ').toLowerCase() : (doc.names || '').toLowerCase();
+      if (!names.includes(nameFilter)) return false;
+    }
+    if (codeFilter && doc.code !== codeFilter) return false;
+    if (foreclosureFilter !== '') {
+      const isFC = foreclosureFilter === 'true';
+      if (doc.is_foreclosure !== isFC) return false;
+    }
+    if (dateFrom || dateTo) {
+      const docDate = parseDate(doc.record_date);
+      if (docDate) {
+        if (dateFrom && docDate < new Date(dateFrom)) return false;
+        if (dateTo && docDate > new Date(dateTo + 'T23:59:59')) return false;
+      }
+    }
+    return true;
+  });
+
+  sortDocuments();
+  renderTable();
+}
+
+function sortBy(column) {
+  if (sortColumn === column) {
+    sortDir = sortDir === 'asc' ? 'desc' : 'asc';
+  } else {
+    sortColumn = column;
+    sortDir = 'asc';
+  }
+  // Update header styles
+  document.querySelectorAll('th').forEach(th => th.classList.remove('sorted'));
+  sortDocuments();
+  renderTable();
+}
+
+function sortDocuments() {
+  filteredDocuments.sort((a, b) => {
+    let va = a[sortColumn];
+    let vb = b[sortColumn];
+
+    if (sortColumn === 'names') {
+      va = Array.isArray(va) ? va.join(', ') : (va || '');
+      vb = Array.isArray(vb) ? vb.join(', ') : (vb || '');
+    }
+    if (sortColumn === 'record_date') {
+      va = parseDate(va);
+      vb = parseDate(vb);
+    }
+    if (sortColumn === 'is_foreclosure') {
+      va = va ? 1 : 0;
+      vb = vb ? 1 : 0;
+    }
+    if (sortColumn === 'page_count') {
+      va = va || 0;
+      vb = vb || 0;
+    }
+
+    if (va < vb) return sortDir === 'asc' ? -1 : 1;
+    if (va > vb) return sortDir === 'asc' ? 1 : -1;
+    return 0;
+  });
+}
+
+function renderTable() {
+  const tbody = document.getElementById('table-body');
+  tbody.innerHTML = filteredDocuments.map(doc => {
+    const names = Array.isArray(doc.names) ? doc.names.join(', ') : (doc.names || '—');
+    const codeBadge = doc.code === 'CE' ? 'badge-ce' : 'badge-de';
+    const fcBadge = doc.is_foreclosure ? 'badge-yes' : 'badge-no';
+    const viewUrl = `https://recorder.maricopa.gov/recording/document-preview.html?recordingNumber=${doc.doc_number}`;
+
+    return `<tr>
+      <td><code>${doc.doc_number}</code></td>
+      <td><span class="badge ${codeBadge}">${doc.code}</span></td>
+      <td>${formatDate(doc.record_date)}</td>
+      <td class="names-cell">${escapeHtml(names)}</td>
+      <td>${doc.page_count || '—'}</td>
+      <td><span class="badge ${fcBadge}">${doc.is_foreclosure ? 'Yes' : 'No'}</span></td>
+      <td><a href="${viewUrl}" target="_blank" class="link-btn">View ↗</a></td>
+    </tr>`;
+  }).join('');
+
+  document.getElementById('results-count').textContent = `${filteredDocuments.length} of ${allDocuments.length} documents`;
+
+  // Date range
+  if (filteredDocuments.length > 0) {
+    const dates = filteredDocuments.map(d => parseDate(d.record_date)).filter(d => d && !isNaN(d)).sort((a,b) => a-b);
+    if (dates.length > 0) {
+      const fmt = d => d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+      document.getElementById('date-range').textContent = `${fmt(dates[0])} — ${fmt(dates[dates.length-1])}`;
+    }
+  }
+}
+
+function escapeHtml(str) {
+  const div = document.createElement('div');
+  div.textContent = str;
+  return div.innerHTML;
+}
+
+function clearFilters() {
+  document.getElementById('filter-name').value = '';
+  document.getElementById('filter-code').value = '';
+  document.getElementById('filter-foreclosure').value = '';
+  document.getElementById('filter-date-from').value = '';
+  document.getElementById('filter-date-to').value = '';
+  applyFilters();
+}
+
+function refreshData() {
+  document.getElementById('loading').style.display = 'block';
+  document.getElementById('data-table').style.display = 'none';
+  loadData();
+}
+
+function exportCSV() {
+  const headers = ['doc_number', 'code', 'record_date', 'names', 'page_count', 'is_foreclosure', 'link'];
+  const rows = filteredDocuments.map(doc => {
+    const names = Array.isArray(doc.names) ? doc.names.join('; ') : (doc.names || '');
+    const link = `https://recorder.maricopa.gov/recording/document-preview.html?recordingNumber=${doc.doc_number}`;
+    return [doc.doc_number, doc.code, doc.record_date, `"${names}"`, doc.page_count, doc.is_foreclosure, link];
+  });
+  const csv = [headers.join(','), ...rows.map(r => r.join(','))].join('\n');
+  const blob = new Blob([csv], { type: 'text/csv' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `oncor-foreclosures-${new Date().toISOString().slice(0,10)}.csv`;
+  a.click();
+  URL.revokeObjectURL(url);
+}
+</script>
+</body>
+</html>
