@@ -397,7 +397,7 @@ function renderTable() {
     const names = Array.isArray(doc.names) ? doc.names.join(', ') : (doc.names || '—');
     const codeBadge = doc.code === 'CE' ? 'badge-ce' : 'badge-de';
     const fcBadge = doc.is_foreclosure ? 'badge-yes' : 'badge-no';
-    const viewUrl = `https://recorder.maricopa.gov/recording/document-preview.html?recordingNumber=${doc.doc_number}`;
+    const viewUrl = `https://recorder.maricopa.gov/recording/document-search-results.html?documentTypeSelector=recording&recordingNumber=${doc.doc_number}`;
 
     return `<tr>
       <td><code>${doc.doc_number}</code></td>
@@ -447,7 +447,7 @@ function exportCSV() {
   const headers = ['doc_number', 'code', 'record_date', 'names', 'page_count', 'is_foreclosure', 'link'];
   const rows = filteredDocuments.map(doc => {
     const names = Array.isArray(doc.names) ? doc.names.join('; ') : (doc.names || '');
-    const link = `https://recorder.maricopa.gov/recording/document-preview.html?recordingNumber=${doc.doc_number}`;
+    const link = `https://recorder.maricopa.gov/recording/document-search-results.html?documentTypeSelector=recording&recordingNumber=${doc.doc_number}`;
     return [doc.doc_number, doc.code, doc.record_date, `"${names}"`, doc.page_count, doc.is_foreclosure, link];
   });
   const csv = [headers.join(','), ...rows.map(r => r.join(','))].join('\n');
