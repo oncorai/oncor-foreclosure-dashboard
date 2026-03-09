@@ -122,15 +122,28 @@
     .addr-cell { white-space: normal; max-width: 200px; line-height: 1.4; font-size: 0.9em; }
     .surplus-pos { color: var(--green); font-weight: 700; }
     .surplus-neg { color: var(--red); font-weight: 700; }
-    .notes-cell { min-width: 200px; max-width: 300px; }
+    .crm-cell { min-width: 240px; max-width: 320px; white-space: normal; }
+    .crm-wrap { display: flex; flex-direction: column; gap: 4px; }
+    .status-select {
+      padding: 4px 8px; border-radius: 4px; border: 1px solid var(--border);
+      background: var(--surface2); color: var(--text); font-size: 0.8rem;
+      outline: none; cursor: pointer; width: 100%;
+    }
+    .status-select:focus { border-color: var(--accent); }
+    .status-new { border-left: 3px solid var(--text-dim); }
+    .status-researching { border-left: 3px solid var(--accent2); }
+    .status-contacted { border-left: 3px solid var(--accent); }
+    .status-filed { border-left: 3px solid #a855f7; }
+    .status-claimed { border-left: 3px solid var(--green); }
+    .status-dead { border-left: 3px solid var(--red); }
     .notes-input {
       width: 100%; padding: 6px 8px; border-radius: 4px;
       border: 1px solid var(--border); background: var(--surface2);
-      color: var(--text); font-size: 0.8rem; font-family: inherit;
-      resize: vertical; min-height: 32px; outline: none;
+      color: var(--text); font-size: 0.75rem; font-family: inherit;
+      resize: vertical; min-height: 28px; outline: none;
     }
     .notes-input:focus { border-color: var(--accent); }
-    .notes-saved { color: var(--green); font-size: 0.7rem; opacity: 0; transition: opacity 0.3s; }
+    .notes-saved { color: var(--green); font-size: 0.7rem; opacity: 0; transition: opacity 0.3s; display: inline; }
     .notes-saved.show { opacity: 1; }
 
     .table-footer {
@@ -200,6 +213,18 @@
       <input type="text" id="filter-name" placeholder="Search by name..." oninput="applyFilters()">
     </div>
     <div class="filter-group">
+      <label>Status</label>
+      <select id="filter-status" onchange="applyFilters()">
+        <option value="">All</option>
+        <option value="New">New</option>
+        <option value="Researching">Researching</option>
+        <option value="Contacted">Contacted</option>
+        <option value="Filed">Filed</option>
+        <option value="Claimed">Claimed</option>
+        <option value="Dead">Dead</option>
+      </select>
+    </div>
+    <div class="filter-group">
       <label>Code</label>
       <select id="filter-code" onchange="applyFilters()">
         <option value="">All</option>
@@ -242,7 +267,7 @@
             <th onclick="sortBy('names')">Parties <span class="sort-icon">↕</span></th>
             <th>PDF</th>
             <th>Court</th>
-            <th>Notes</th>
+            <th onclick="sortBy('sale_date')">Status / Notes <span class="sort-icon">↕</span></th>
           </tr>
         </thead>
         <tbody id="table-body"></tbody>
@@ -342,6 +367,7 @@ function updateStats() {
 
 function applyFilters() {
   const nameFilter = document.getElementById('filter-name').value.toLowerCase();
+  const statusFilter = document.getElementById('filter-status').value;
   const codeFilter = document.getElementById('filter-code').value;
   const foreclosureFilter = document.getElementById('filter-foreclosure').value;
   const dateFrom = document.getElementById('filter-date-from').value;
@@ -350,7 +376,12 @@ function applyFilters() {
   filteredDocuments = allDocuments.filter(doc => {
     if (nameFilter) {
       const names = Array.isArray(doc.names) ? doc.names.join(' ').toLowerCase() : (doc.names || '').toLowerCase();
-      if (!names.includes(nameFilter)) return false;
+      const addr = (doc.address || '').toLowerCase();
+      if (!names.includes(nameFilter) && !addr.includes(nameFilter)) return false;
+    }
+    if (statusFilter) {
+      const crm = parseCRM(doc.sale_date);
+      if (crm.status !== statusFilter) return false;
     }
     if (codeFilter && doc.code !== codeFilter) return false;
     if (foreclosureFilter !== '') {
@@ -428,9 +459,8 @@ function renderTable() {
       <td class="names-cell">${escapeHtml(names)}</td>
       <td>${pdfUrl !== '#' ? '<a href="' + pdfUrl + '" target="_blank" class="link-btn">PDF</a>' : '—'}</td>
       <td>${courtUrl !== '#' ? '<a href="' + courtUrl + '" target="_blank" class="link-btn">Court</a>' : '—'}</td>
-      <td class="notes-cell">
-        <textarea class="notes-input" data-doc="${doc.doc_number}" onblur="saveNote(this)" placeholder="Add notes...">${escapeHtml(doc.sale_date || '')}</textarea>
-        <span class="notes-saved" id="saved-${doc.doc_number}">✓ saved</span>
+      <td class="crm-cell">
+        ${renderCRM(doc)}
       </td>
     </tr>`;
   }).join('');
@@ -455,6 +485,7 @@ function escapeHtml(str) {
 
 function clearFilters() {
   document.getElementById('filter-name').value = '';
+  document.getElementById('filter-status').value = '';
   document.getElementById('filter-code').value = '';
   document.getElementById('filter-foreclosure').value = '';
   document.getElementById('filter-date-from').value = '';
@@ -468,14 +499,45 @@ function refreshData() {
   loadData();
 }
 
-let saveTimers = {};
-async function saveNote(el) {
-  const docNumber = el.dataset.doc;
-  const note = el.value.trim();
+const STATUSES = ['New', 'Researching', 'Contacted', 'Filed', 'Claimed', 'Dead'];
+
+function parseCRM(raw) {
+  if (!raw) return { status: 'New', notes: '' };
+  const pipe = raw.indexOf('|');
+  if (pipe === -1) return { status: 'New', notes: raw };
+  return { status: raw.substring(0, pipe) || 'New', notes: raw.substring(pipe + 1) };
+}
+
+function renderCRM(doc) {
+  const crm = parseCRM(doc.sale_date);
+  const statusClass = 'status-' + crm.status.toLowerCase();
+  const options = STATUSES.map(s => 
+    `<option value="${s}" ${s === crm.status ? 'selected' : ''}>${s}</option>`
+  ).join('');
   
-  // Debounce
+  return `<div class="crm-wrap ${statusClass}">
+    <select class="status-select" data-doc="${doc.doc_number}" onchange="saveCRM(this)">
+      ${options}
+    </select>
+    <textarea class="notes-input" data-doc="${doc.doc_number}" onblur="saveCRM(this)" placeholder="Notes...">${escapeHtml(crm.notes)}</textarea>
+    <span class="notes-saved" id="saved-${doc.doc_number}">✓ saved</span>
+  </div>`;
+}
+
+let saveTimers = {};
+function saveCRM(el) {
+  const docNumber = el.dataset.doc;
+  
   if (saveTimers[docNumber]) clearTimeout(saveTimers[docNumber]);
   saveTimers[docNumber] = setTimeout(async () => {
+    // Find both elements for this doc
+    const row = el.closest('td');
+    const select = row.querySelector('select');
+    const textarea = row.querySelector('textarea');
+    const status = select.value;
+    const notes = textarea.value.trim();
+    const combined = status + '|' + notes;
+    
     try {
       const res = await fetch(`${SUPABASE_URL}/rest/v1/documents?doc_number=eq.${docNumber}`, {
         method: 'PATCH',
@@ -485,13 +547,16 @@ async function saveNote(el) {
           'Content-Type': 'application/json',
           'Prefer': 'return=minimal'
         },
-        body: JSON.stringify({ sale_date: note || null })
+        body: JSON.stringify({ sale_date: combined })
       });
       
       if (res.ok) {
-        // Update local data
         const doc = allDocuments.find(d => d.doc_number === docNumber);
-        if (doc) doc.sale_date = note || null;
+        if (doc) doc.sale_date = combined;
+        
+        // Update row border color
+        const wrap = row.querySelector('.crm-wrap');
+        wrap.className = 'crm-wrap status-' + status.toLowerCase();
         
         const saved = document.getElementById('saved-' + docNumber);
         if (saved) {
@@ -500,9 +565,9 @@ async function saveNote(el) {
         }
       }
     } catch (e) {
-      console.error('Failed to save note:', e);
+      console.error('Failed to save CRM data:', e);
     }
-  }, 500);
+  }, 300);
 }
 
 function exportCSV() {
