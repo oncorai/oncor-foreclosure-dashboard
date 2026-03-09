@@ -166,6 +166,12 @@
     }
     .attach-delete:hover { opacity: 1; }
     .upload-progress { font-size: 0.65rem; color: var(--accent); }
+    .archive-btn {
+      background: none; border: none; color: var(--red); cursor: pointer;
+      font-size: 1rem; font-weight: 700; padding: 2px 6px; opacity: 0.4;
+      transition: opacity 0.2s;
+    }
+    .archive-btn:hover { opacity: 1; }
     .inline-edit {
       background: transparent; border: 1px solid transparent; border-radius: 4px;
       color: var(--text); font-size: 0.85rem; font-family: monospace;
@@ -292,6 +298,7 @@
       <table id="data-table" style="display:none">
         <thead>
           <tr>
+            <th style="width:30px"></th>
             <th onclick="sortBy('record_date')">Date <span class="sort-icon">↕</span></th>
             <th onclick="sortBy('parcel_number')">Case # <span class="sort-icon">↕</span></th>
             <th onclick="sortBy('address')">Address <span class="sort-icon">↕</span></th>
@@ -488,6 +495,7 @@ function renderTable() {
     const saleAmt = doc.sale_amount ? parseFloat(doc.sale_amount) : null;
     
     return `<tr>
+      <td><button class="archive-btn" onclick="archiveCase('${doc.doc_number}')" title="Archive">✕</button></td>
       <td>${formatDate(doc.record_date)}</td>
       <td><input class="inline-edit" data-doc="${doc.doc_number}" data-field="parcel_number" value="${escapeHtml(doc.parcel_number || '')}" placeholder="CV20XX-XXXXXX" onblur="saveField(this)"></td>
       <td class="addr-cell"><input class="inline-edit wide" data-doc="${doc.doc_number}" data-field="address" value="${escapeHtml(doc.address || '')}" placeholder="Address" onblur="saveField(this)"></td>
@@ -612,6 +620,37 @@ function saveCRM(el) {
       console.error('Failed to save CRM data:', e);
     }
   }, 300);
+}
+
+// === Archive ===
+
+async function archiveCase(docNumber) {
+  if (!confirm('Archive this case?')) return;
+  
+  try {
+    // Set status to Dead| (archived)
+    const doc = allDocuments.find(d => d.doc_number === docNumber);
+    const crm = parseCRM(doc?.sale_date);
+    const combined = 'Archived|' + crm.notes;
+    
+    await fetch(`${SUPABASE_URL}/rest/v1/documents?doc_number=eq.${docNumber}`, {
+      method: 'PATCH',
+      headers: {
+        'apikey': SUPABASE_KEY,
+        'Authorization': `Bearer ${SUPABASE_KEY}`,
+        'Content-Type': 'application/json',
+        'Prefer': 'return=minimal'
+      },
+      body: JSON.stringify({ sale_date: combined, is_foreclosure: false })
+    });
+    
+    // Remove from local data
+    allDocuments = allDocuments.filter(d => d.doc_number !== docNumber);
+    updateStats();
+    applyFilters();
+  } catch (e) {
+    console.error('Archive failed:', e);
+  }
 }
 
 // === Inline Field Editing ===
