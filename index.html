@@ -244,7 +244,7 @@
 <script>
 const SUPABASE_URL = 'https://jiailsusjabqythgokcb.supabase.co';
 const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImppYWlsc3VzamFicXl0aGdva2NiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzI5OTI5ODgsImV4cCI6MjA4ODU2ODk4OH0.QdfPmDFO1mHful9uKJOAHocZRg4aYb80igQS5DZgdEQ';
-const PASSWORD = '!Proceeds1234';
+const PASSWORD = 'ericjacob123';
 
 let allDocuments = [];
 let filteredDocuments = [];
@@ -254,7 +254,7 @@ let sortDir = 'desc';
 // Password check
 function checkPassword() {
   const input = document.getElementById('password-input').value;
-  if (input === PASSWORD) {
+  if (input.toLowerCase() === PASSWORD.toLowerCase()) {
     document.getElementById('password-gate').style.display = 'none';
     document.getElementById('dashboard').style.display = 'block';
     sessionStorage.setItem('oncor_auth', 'true');
