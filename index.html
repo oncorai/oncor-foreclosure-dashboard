@@ -171,16 +171,16 @@
       <div class="stat-value amber" id="stat-foreclosures">—</div>
     </div>
     <div class="stat-card">
-      <div class="stat-label">With Surplus</div>
-      <div class="stat-value green" id="stat-surplus">—</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-label">Total Surplus $</div>
-      <div class="stat-value green" id="stat-surplus-total">—</div>
+      <div class="stat-label">Total Sale $</div>
+      <div class="stat-value green" id="stat-total-sale">—</div>
     </div>
     <div class="stat-card">
       <div class="stat-label">Avg Sale $</div>
       <div class="stat-value blue" id="stat-avg-sale">—</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">With Sale Data</div>
+      <div class="stat-value" id="stat-has-data">—</div>
     </div>
   </div>
 
@@ -228,9 +228,7 @@
             <th onclick="sortBy('record_date')">Date <span class="sort-icon">↕</span></th>
             <th onclick="sortBy('parcel_number')">Case # <span class="sort-icon">↕</span></th>
             <th onclick="sortBy('address')">Address <span class="sort-icon">↕</span></th>
-            <th onclick="sortBy('sale_amount')">Sale $ <span class="sort-icon">↕</span></th>
-            <th onclick="sortBy('sale_date')">Judgment $ <span class="sort-icon">↕</span></th>
-            <th>Surplus <span class="sort-icon">↕</span></th>
+            <th onclick="sortBy('sale_amount')">Sheriff Sale $ <span class="sort-icon">↕</span></th>
             <th onclick="sortBy('names')">Parties <span class="sort-icon">↕</span></th>
             <th>PDF</th>
             <th>Court</th>
@@ -320,20 +318,15 @@ function formatDate(dateStr) {
 function updateStats() {
   document.getElementById('stat-foreclosures').textContent = allDocuments.length;
   
-  let surplusCount = 0, totalSurplus = 0, saleSum = 0, saleCount = 0;
+  let saleSum = 0, saleCount = 0;
   allDocuments.forEach(d => {
     const sale = d.sale_amount ? parseFloat(d.sale_amount) : null;
-    const judg = d.sale_date ? parseFloat(d.sale_date) : null;
-    if (sale) { saleSum += sale; saleCount++; }
-    if (sale && judg && sale > judg) {
-      surplusCount++;
-      totalSurplus += (sale - judg);
-    }
+    if (sale && sale > 100) { saleSum += sale; saleCount++; }
   });
   
-  document.getElementById('stat-surplus').textContent = surplusCount;
-  document.getElementById('stat-surplus-total').textContent = '$' + Math.round(totalSurplus).toLocaleString();
+  document.getElementById('stat-total-sale').textContent = '$' + Math.round(saleSum).toLocaleString();
   document.getElementById('stat-avg-sale').textContent = saleCount > 0 ? '$' + Math.round(saleSum / saleCount).toLocaleString() : '—';
+  document.getElementById('stat-has-data').textContent = saleCount + '/' + allDocuments.length;
 }
 
 function applyFilters() {
@@ -415,17 +408,12 @@ function renderTable() {
     const pdfUrl = doc.pdf_url || '#';
     const courtUrl = doc.defendant || '#';
     const saleAmt = doc.sale_amount ? parseFloat(doc.sale_amount) : null;
-    const judgAmt = doc.sale_date ? parseFloat(doc.sale_date) : null;
-    const surplus = (saleAmt && judgAmt) ? (saleAmt - judgAmt) : null;
-    const surplusClass = surplus > 0 ? 'surplus-pos' : (surplus < 0 ? 'surplus-neg' : '');
     
     return `<tr>
       <td>${formatDate(doc.record_date)}</td>
       <td><code>${doc.parcel_number || '—'}</code></td>
       <td class="addr-cell">${escapeHtml(doc.address || '—')}</td>
-      <td>${saleAmt ? '$' + saleAmt.toLocaleString() : '—'}</td>
-      <td>${judgAmt ? '$' + judgAmt.toLocaleString() : '—'}</td>
-      <td class="${surplusClass}">${surplus !== null ? (surplus >= 0 ? '+' : '') + '$' + surplus.toLocaleString() : '—'}</td>
+      <td class="sale-amt">${saleAmt ? '$' + saleAmt.toLocaleString() : '—'}</td>
       <td class="names-cell">${escapeHtml(names)}</td>
       <td>${pdfUrl !== '#' ? '<a href="' + pdfUrl + '" target="_blank" class="link-btn">PDF</a>' : '—'}</td>
       <td>${courtUrl !== '#' ? '<a href="' + courtUrl + '" target="_blank" class="link-btn">Court</a>' : '—'}</td>
@@ -466,13 +454,11 @@ function refreshData() {
 }
 
 function exportCSV() {
-  const headers = ['record_date', 'case_number', 'address', 'sale_amount', 'judgment_amount', 'surplus', 'parties', 'pdf_url', 'court_url'];
+  const headers = ['record_date', 'case_number', 'address', 'sheriff_sale_amount', 'parties', 'pdf_url', 'court_url'];
   const rows = filteredDocuments.map(doc => {
     const names = Array.isArray(doc.names) ? doc.names.join('; ') : (doc.names || '');
     const sale = doc.sale_amount ? parseFloat(doc.sale_amount) : '';
-    const judg = doc.sale_date ? parseFloat(doc.sale_date) : '';
-    const surplus = (sale && judg) ? (sale - judg).toFixed(2) : '';
-    return [doc.record_date, doc.parcel_number || '', `"${doc.address || ''}"`, sale, judg, surplus, `"${names}"`, doc.pdf_url || '', doc.defendant || ''];
+    return [doc.record_date, doc.parcel_number || '', `"${doc.address || ''}"`, sale, `"${names}"`, doc.pdf_url || '', doc.defendant || ''];
   });
   const csv = [headers.join(','), ...rows.map(r => r.join(','))].join('\n');
   const blob = new Blob([csv], { type: 'text/csv' });
