@@ -166,6 +166,16 @@
     }
     .attach-delete:hover { opacity: 1; }
     .upload-progress { font-size: 0.65rem; color: var(--accent); }
+    .inline-edit {
+      background: transparent; border: 1px solid transparent; border-radius: 4px;
+      color: var(--text); font-size: 0.85rem; font-family: monospace;
+      padding: 4px 6px; width: 140px; outline: none; transition: all 0.2s;
+    }
+    .inline-edit:hover { border-color: var(--border); }
+    .inline-edit:focus { border-color: var(--accent); background: var(--surface2); }
+    .inline-edit.wide { font-family: inherit; width: 180px; }
+    .inline-edit.narrow { width: 100px; }
+    .inline-edit::placeholder { color: var(--text-dim); opacity: 0.5; }
 
     .table-footer {
       padding: 12px 16px; border-top: 1px solid var(--border);
@@ -478,9 +488,9 @@ function renderTable() {
     
     return `<tr>
       <td>${formatDate(doc.record_date)}</td>
-      <td><code>${doc.parcel_number || '—'}</code></td>
-      <td class="addr-cell">${escapeHtml(doc.address || '—')}</td>
-      <td class="sale-amt">${saleAmt ? '$' + saleAmt.toLocaleString() : '—'}</td>
+      <td><input class="inline-edit" data-doc="${doc.doc_number}" data-field="parcel_number" value="${escapeHtml(doc.parcel_number || '')}" placeholder="CV20XX-XXXXXX" onblur="saveField(this)"></td>
+      <td class="addr-cell"><input class="inline-edit wide" data-doc="${doc.doc_number}" data-field="address" value="${escapeHtml(doc.address || '')}" placeholder="Address" onblur="saveField(this)"></td>
+      <td><input class="inline-edit narrow" data-doc="${doc.doc_number}" data-field="sale_amount" value="${saleAmt || ''}" placeholder="$0.00" onblur="saveField(this)"></td>
       <td class="names-cell">${escapeHtml(names)}</td>
       <td>${pdfUrl !== '#' ? '<a href="' + pdfUrl + '" target="_blank" class="link-btn">PDF</a>' : '—'}</td>
       <td>${courtUrl !== '#' ? '<a href="' + courtUrl + '" target="_blank" class="link-btn">Court</a>' : '—'}</td>
@@ -601,6 +611,42 @@ function saveCRM(el) {
       console.error('Failed to save CRM data:', e);
     }
   }, 300);
+}
+
+// === Inline Field Editing ===
+
+async function saveField(el) {
+  const docNumber = el.dataset.doc;
+  const field = el.dataset.field;
+  let value = el.value.trim() || null;
+  
+  // Auto-generate court URL when case number is entered
+  const updates = { [field]: value };
+  if (field === 'parcel_number' && value && value.startsWith('CV')) {
+    updates.defendant = 'https://www.superiorcourt.maricopa.gov/docket/CivilCourtCases/caseInfo.asp?caseNumber=' + value;
+  }
+  
+  try {
+    const res = await fetch(`${SUPABASE_URL}/rest/v1/documents?doc_number=eq.${docNumber}`, {
+      method: 'PATCH',
+      headers: {
+        'apikey': SUPABASE_KEY,
+        'Authorization': `Bearer ${SUPABASE_KEY}`,
+        'Content-Type': 'application/json',
+        'Prefer': 'return=minimal'
+      },
+      body: JSON.stringify(updates)
+    });
+    
+    if (res.ok) {
+      const doc = allDocuments.find(d => d.doc_number === docNumber);
+      if (doc) Object.assign(doc, updates);
+      el.style.borderColor = 'var(--green)';
+      setTimeout(() => { el.style.borderColor = 'transparent'; }, 1000);
+    }
+  } catch (e) {
+    el.style.borderColor = 'var(--red)';
+  }
 }
 
 // === Attachments ===
