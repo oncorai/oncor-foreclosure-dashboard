@@ -174,7 +174,8 @@
     .inline-edit:hover { border-color: var(--border); }
     .inline-edit:focus { border-color: var(--accent); background: var(--surface2); }
     .inline-edit.wide { font-family: inherit; width: 180px; }
-    .inline-edit.narrow { width: 100px; }
+    .inline-edit.narrow { width: 120px; }
+    .sale-field { color: var(--green); font-weight: 700; }
     .inline-edit::placeholder { color: var(--text-dim); opacity: 0.5; }
 
     .table-footer {
@@ -490,7 +491,7 @@ function renderTable() {
       <td>${formatDate(doc.record_date)}</td>
       <td><input class="inline-edit" data-doc="${doc.doc_number}" data-field="parcel_number" value="${escapeHtml(doc.parcel_number || '')}" placeholder="CV20XX-XXXXXX" onblur="saveField(this)"></td>
       <td class="addr-cell"><input class="inline-edit wide" data-doc="${doc.doc_number}" data-field="address" value="${escapeHtml(doc.address || '')}" placeholder="Address" onblur="saveField(this)"></td>
-      <td><input class="inline-edit narrow" data-doc="${doc.doc_number}" data-field="sale_amount" value="${saleAmt || ''}" placeholder="$0.00" onblur="saveField(this)"></td>
+      <td><input class="inline-edit narrow sale-field" data-doc="${doc.doc_number}" data-field="sale_amount" value="${saleAmt ? '$' + saleAmt.toLocaleString() : ''}" placeholder="$0.00" onblur="saveField(this)" onfocus="this.value=this.value.replace(/[^0-9.]/g,'')"></td>
       <td class="names-cell">${escapeHtml(names)}</td>
       <td>${pdfUrl !== '#' ? '<a href="' + pdfUrl + '" target="_blank" class="link-btn">PDF</a>' : '—'}</td>
       <td>${courtUrl !== '#' ? '<a href="' + courtUrl + '" target="_blank" class="link-btn">Court</a>' : '—'}</td>
@@ -621,6 +622,18 @@ async function saveField(el) {
   let value = el.value.trim() || null;
   
   // Auto-generate court URL when case number is entered
+  // Clean up sale_amount input
+  if (field === 'sale_amount' && value) {
+    value = value.replace(/[^0-9.]/g, '');
+    if (value) {
+      const num = parseFloat(value);
+      value = num.toFixed(2);
+      el.value = '$' + num.toLocaleString();
+    } else {
+      value = null;
+    }
+  }
+  
   const updates = { [field]: value };
   if (field === 'parcel_number' && value && value.startsWith('CV')) {
     updates.defendant = 'https://www.superiorcourt.maricopa.gov/docket/CivilCourtCases/caseInfo.asp?caseNumber=' + value;
