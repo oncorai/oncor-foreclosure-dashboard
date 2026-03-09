@@ -122,6 +122,16 @@
     .addr-cell { white-space: normal; max-width: 200px; line-height: 1.4; font-size: 0.9em; }
     .surplus-pos { color: var(--green); font-weight: 700; }
     .surplus-neg { color: var(--red); font-weight: 700; }
+    .notes-cell { min-width: 200px; max-width: 300px; }
+    .notes-input {
+      width: 100%; padding: 6px 8px; border-radius: 4px;
+      border: 1px solid var(--border); background: var(--surface2);
+      color: var(--text); font-size: 0.8rem; font-family: inherit;
+      resize: vertical; min-height: 32px; outline: none;
+    }
+    .notes-input:focus { border-color: var(--accent); }
+    .notes-saved { color: var(--green); font-size: 0.7rem; opacity: 0; transition: opacity 0.3s; }
+    .notes-saved.show { opacity: 1; }
 
     .table-footer {
       padding: 12px 16px; border-top: 1px solid var(--border);
@@ -232,6 +242,7 @@
             <th onclick="sortBy('names')">Parties <span class="sort-icon">↕</span></th>
             <th>PDF</th>
             <th>Court</th>
+            <th>Notes</th>
           </tr>
         </thead>
         <tbody id="table-body"></tbody>
@@ -417,6 +428,10 @@ function renderTable() {
       <td class="names-cell">${escapeHtml(names)}</td>
       <td>${pdfUrl !== '#' ? '<a href="' + pdfUrl + '" target="_blank" class="link-btn">PDF</a>' : '—'}</td>
       <td>${courtUrl !== '#' ? '<a href="' + courtUrl + '" target="_blank" class="link-btn">Court</a>' : '—'}</td>
+      <td class="notes-cell">
+        <textarea class="notes-input" data-doc="${doc.doc_number}" onblur="saveNote(this)" placeholder="Add notes...">${escapeHtml(doc.sale_date || '')}</textarea>
+        <span class="notes-saved" id="saved-${doc.doc_number}">✓ saved</span>
+      </td>
     </tr>`;
   }).join('');
 
@@ -453,12 +468,49 @@ function refreshData() {
   loadData();
 }
 
+let saveTimers = {};
+async function saveNote(el) {
+  const docNumber = el.dataset.doc;
+  const note = el.value.trim();
+  
+  // Debounce
+  if (saveTimers[docNumber]) clearTimeout(saveTimers[docNumber]);
+  saveTimers[docNumber] = setTimeout(async () => {
+    try {
+      const res = await fetch(`${SUPABASE_URL}/rest/v1/documents?doc_number=eq.${docNumber}`, {
+        method: 'PATCH',
+        headers: {
+          'apikey': SUPABASE_KEY,
+          'Authorization': `Bearer ${SUPABASE_KEY}`,
+          'Content-Type': 'application/json',
+          'Prefer': 'return=minimal'
+        },
+        body: JSON.stringify({ sale_date: note || null })
+      });
+      
+      if (res.ok) {
+        // Update local data
+        const doc = allDocuments.find(d => d.doc_number === docNumber);
+        if (doc) doc.sale_date = note || null;
+        
+        const saved = document.getElementById('saved-' + docNumber);
+        if (saved) {
+          saved.classList.add('show');
+          setTimeout(() => saved.classList.remove('show'), 2000);
+        }
+      }
+    } catch (e) {
+      console.error('Failed to save note:', e);
+    }
+  }, 500);
+}
+
 function exportCSV() {
-  const headers = ['record_date', 'case_number', 'address', 'sheriff_sale_amount', 'parties', 'pdf_url', 'court_url'];
+  const headers = ['record_date', 'case_number', 'address', 'sheriff_sale_amount', 'parties', 'notes', 'pdf_url', 'court_url'];
   const rows = filteredDocuments.map(doc => {
     const names = Array.isArray(doc.names) ? doc.names.join('; ') : (doc.names || '');
     const sale = doc.sale_amount ? parseFloat(doc.sale_amount) : '';
-    return [doc.record_date, doc.parcel_number || '', `"${doc.address || ''}"`, sale, `"${names}"`, doc.pdf_url || '', doc.defendant || ''];
+    return [doc.record_date, doc.parcel_number || '', `"${doc.address || ''}"`, sale, `"${names}"`, `"${doc.sale_date || ''}"`, doc.pdf_url || '', doc.defendant || ''];
   });
   const csv = [headers.join(','), ...rows.map(r => r.join(','))].join('\n');
   const blob = new Blob([csv], { type: 'text/csv' });
