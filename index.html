@@ -16,6 +16,7 @@
       --accent2: #3b82f6;
       --green: #22c55e;
       --red: #ef4444;
+      --purple: #a855f7;
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
@@ -35,14 +36,13 @@
     .login-box input {
       width: 100%; padding: 12px 16px; border-radius: 8px;
       border: 1px solid var(--border); background: var(--surface2);
-      color: var(--text); font-size: 1rem; margin-bottom: 16px;
-      outline: none; transition: border-color 0.2s;
+      color: var(--text); font-size: 1rem; margin-bottom: 16px; outline: none;
     }
     .login-box input:focus { border-color: var(--accent); }
     .login-box button {
       width: 100%; padding: 12px; border-radius: 8px; border: none;
       background: var(--accent); color: #000; font-size: 1rem;
-      font-weight: 600; cursor: pointer; transition: opacity 0.2s;
+      font-weight: 600; cursor: pointer;
     }
     .login-box button:hover { opacity: 0.9; }
     .login-error { color: var(--red); font-size: 0.875rem; margin-top: 8px; display: none; }
@@ -51,7 +51,7 @@
     #dashboard { display: none; padding: 24px; max-width: 1400px; margin: 0 auto; }
     .header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; flex-wrap: wrap; gap: 12px; }
     .header h1 { font-size: 1.5rem; }
-    .header-actions { display: flex; gap: 8px; }
+    .header-actions { display: flex; gap: 8px; flex-wrap: wrap; }
     .btn {
       padding: 8px 16px; border-radius: 8px; border: 1px solid var(--border);
       background: var(--surface2); color: var(--text); font-size: 0.875rem;
@@ -62,13 +62,10 @@
     .btn-accent:hover { opacity: 0.9; color: #000; }
 
     /* Stats */
-    .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-bottom: 24px; }
-    .stat-card {
-      background: var(--surface); border: 1px solid var(--border);
-      border-radius: 12px; padding: 20px;
-    }
-    .stat-label { color: var(--text-dim); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
-    .stat-value { font-size: 1.75rem; font-weight: 700; }
+    .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 24px; }
+    .stat-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px; }
+    .stat-label { color: var(--text-dim); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
+    .stat-value { font-size: 1.5rem; font-weight: 700; }
     .stat-value.green { color: var(--green); }
     .stat-value.amber { color: var(--accent); }
     .stat-value.blue { color: var(--accent2); }
@@ -89,117 +86,115 @@
     .filter-group input[type="text"] { min-width: 200px; }
 
     /* Table */
-    .table-wrap {
-      background: var(--surface); border: 1px solid var(--border);
-      border-radius: 12px; overflow: hidden;
-    }
+    .table-wrap { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
     .table-scroll { overflow-x: auto; }
     table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
     thead { background: var(--surface2); }
-    th {
-      padding: 12px 16px; text-align: left; font-weight: 600;
-      color: var(--text-dim); cursor: pointer; user-select: none;
-      white-space: nowrap; position: relative;
-    }
+    th { padding: 12px 16px; text-align: left; font-weight: 600; color: var(--text-dim); cursor: pointer; user-select: none; white-space: nowrap; }
     th:hover { color: var(--accent); }
-    th .sort-icon { margin-left: 4px; opacity: 0.4; }
-    th.sorted .sort-icon { opacity: 1; color: var(--accent); }
     td { padding: 10px 16px; border-top: 1px solid var(--border); white-space: nowrap; }
-    tr:hover td { background: var(--surface2); }
-    .badge {
-      display: inline-block; padding: 2px 8px; border-radius: 4px;
-      font-size: 0.75rem; font-weight: 600;
-    }
-    .badge-ce { background: rgba(59,130,246,0.15); color: var(--accent2); }
-    .badge-de { background: rgba(245,158,11,0.15); color: var(--accent); }
-    .badge-yes { background: rgba(239,68,68,0.15); color: var(--red); }
-    .badge-no { background: rgba(34,197,94,0.15); color: var(--green); }
-    .link-btn {
-      color: var(--accent2); text-decoration: none; font-weight: 500;
-    }
+    tr.clickable-row { cursor: pointer; }
+    tr.clickable-row:hover td { background: var(--surface2); }
+    .names-cell { white-space: normal; max-width: 200px; line-height: 1.4; font-size: 0.8em; }
+    .addr-cell { white-space: normal; max-width: 180px; line-height: 1.4; font-size: 0.85em; color: var(--text); }
+    .sale-val { color: var(--green); font-weight: 700; font-family: monospace; }
+    .link-btn { color: var(--accent2); text-decoration: none; font-weight: 500; }
     .link-btn:hover { text-decoration: underline; }
-    .names-cell { white-space: normal; max-width: 250px; line-height: 1.4; font-size: 0.85em; }
-    .addr-cell { white-space: normal; max-width: 200px; line-height: 1.4; font-size: 0.9em; }
-    .surplus-pos { color: var(--green); font-weight: 700; }
-    .surplus-neg { color: var(--red); font-weight: 700; }
-    .crm-cell { min-width: 280px; max-width: 360px; white-space: normal; }
-    .crm-wrap { display: flex; flex-direction: column; gap: 4px; }
-    .status-select {
-      padding: 4px 8px; border-radius: 4px; border: 1px solid var(--border);
-      background: var(--surface2); color: var(--text); font-size: 0.8rem;
-      outline: none; cursor: pointer; width: 100%;
-    }
-    .status-select:focus { border-color: var(--accent); }
-    .status-new { border-left: 3px solid var(--text-dim); }
-    .status-researching { border-left: 3px solid var(--accent2); }
-    .status-contacted { border-left: 3px solid var(--accent); }
-    .status-filed { border-left: 3px solid #a855f7; }
-    .status-claimed { border-left: 3px solid var(--green); }
-    .status-dead { border-left: 3px solid var(--red); }
-    .notes-input {
-      width: 100%; padding: 6px 8px; border-radius: 4px;
-      border: 1px solid var(--border); background: var(--surface2);
-      color: var(--text); font-size: 0.75rem; font-family: inherit;
-      resize: vertical; min-height: 28px; outline: none;
-    }
-    .notes-input:focus { border-color: var(--accent); }
-    .notes-saved { color: var(--green); font-size: 0.7rem; opacity: 0; transition: opacity 0.3s; display: inline; }
-    .notes-saved.show { opacity: 1; }
-    .attach-section { margin-top: 4px; }
-    .attach-btn {
-      display: inline-flex; align-items: center; gap: 4px;
-      padding: 3px 8px; border-radius: 4px; border: 1px dashed var(--border);
-      background: transparent; color: var(--text-dim); font-size: 0.7rem;
-      cursor: pointer; transition: all 0.2s;
-    }
-    .attach-btn:hover { border-color: var(--accent); color: var(--accent); }
-    .attach-list { list-style: none; margin: 4px 0 0; padding: 0; }
-    .attach-list li {
-      display: flex; align-items: center; gap: 4px;
-      font-size: 0.7rem; padding: 2px 0; color: var(--text-dim);
-    }
-    .attach-list a { color: var(--accent2); text-decoration: none; word-break: break-all; }
-    .attach-list a:hover { text-decoration: underline; }
-    .attach-delete {
-      background: none; border: none; color: var(--red); cursor: pointer;
-      font-size: 0.7rem; padding: 0 2px; opacity: 0.6;
-    }
-    .attach-delete:hover { opacity: 1; }
-    .upload-progress { font-size: 0.65rem; color: var(--accent); }
-    .archive-btn {
-      background: none; border: none; color: var(--red); cursor: pointer;
-      font-size: 1rem; font-weight: 700; padding: 2px 6px; opacity: 0.4;
-      transition: opacity 0.2s;
-    }
-    .archive-btn:hover { opacity: 1; }
-    .inline-edit {
-      background: transparent; border: 1px solid transparent; border-radius: 4px;
-      color: var(--text); font-size: 0.85rem; font-family: monospace;
-      padding: 4px 6px; width: 140px; outline: none; transition: all 0.2s;
-    }
-    .inline-edit:hover { border-color: var(--border); }
-    .inline-edit:focus { border-color: var(--accent); background: var(--surface2); }
-    .inline-edit.wide { font-family: inherit; width: 180px; }
-    .inline-edit.narrow { width: 120px; }
-    .sale-field { color: var(--green); font-weight: 700; }
-    .inline-edit::placeholder { color: var(--text-dim); opacity: 0.5; }
-
-    .table-footer {
-      padding: 12px 16px; border-top: 1px solid var(--border);
-      color: var(--text-dim); font-size: 0.875rem;
-      display: flex; justify-content: space-between; align-items: center;
-    }
-
+    .status-badge { display: inline-block; padding: 3px 10px; border-radius: 12px; font-size: 0.75rem; font-weight: 600; }
+    .status-new { background: rgba(139,143,163,0.15); color: var(--text-dim); }
+    .status-researching { background: rgba(59,130,246,0.15); color: var(--accent2); }
+    .status-contacted { background: rgba(245,158,11,0.15); color: var(--accent); }
+    .status-filed { background: rgba(168,85,247,0.15); color: var(--purple); }
+    .status-claimed { background: rgba(34,197,94,0.15); color: var(--green); }
+    .status-dead { background: rgba(239,68,68,0.15); color: var(--red); }
+    .notes-preview { color: var(--text-dim); font-size: 0.75rem; max-width: 150px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .table-footer { padding: 12px 16px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.875rem; display: flex; justify-content: space-between; }
     .loading { text-align: center; padding: 48px; color: var(--text-dim); }
     .spinner { display: inline-block; width: 24px; height: 24px; border: 3px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; margin-right: 8px; vertical-align: middle; }
     @keyframes spin { to { transform: rotate(360deg); } }
 
+    /* === CASE DETAIL VIEW === */
+    #case-detail { display: none; padding: 24px; max-width: 1000px; margin: 0 auto; }
+    .back-btn { display: inline-flex; align-items: center; gap: 6px; color: var(--text-dim); font-size: 0.875rem; cursor: pointer; margin-bottom: 20px; background: none; border: none; }
+    .back-btn:hover { color: var(--accent); }
+    .case-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 24px; flex-wrap: wrap; gap: 12px; }
+    .case-header h2 { font-size: 1.3rem; }
+    .case-header .case-num { color: var(--accent); font-family: monospace; }
+    .case-meta { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; margin-bottom: 24px; }
+    .meta-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px; }
+    .meta-card h3 { font-size: 0.75rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; }
+    .meta-field { margin-bottom: 8px; }
+    .meta-field label { display: block; font-size: 0.7rem; color: var(--text-dim); text-transform: uppercase; margin-bottom: 2px; }
+    .meta-field .val { font-size: 0.95rem; }
+    .meta-field .val.big { font-size: 1.3rem; font-weight: 700; color: var(--green); }
+    .meta-field input, .meta-field select {
+      width: 100%; padding: 8px 10px; border-radius: 6px; border: 1px solid var(--border);
+      background: var(--surface2); color: var(--text); font-size: 0.9rem; outline: none;
+    }
+    .meta-field input:focus, .meta-field select:focus { border-color: var(--accent); }
+    .meta-field .saved-indicator { color: var(--green); font-size: 0.7rem; opacity: 0; transition: opacity 0.3s; margin-left: 6px; }
+    .meta-field .saved-indicator.show { opacity: 1; }
+
+    /* Notes Section */
+    .notes-section { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin-bottom: 24px; }
+    .notes-section h3 { font-size: 0.85rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 12px; }
+    .notes-textarea {
+      width: 100%; min-height: 200px; padding: 12px; border-radius: 8px;
+      border: 1px solid var(--border); background: var(--surface2); color: var(--text);
+      font-size: 0.9rem; font-family: inherit; line-height: 1.6; resize: vertical; outline: none;
+    }
+    .notes-textarea:focus { border-color: var(--accent); }
+    .notes-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 8px; }
+    .notes-footer .autosave { color: var(--text-dim); font-size: 0.75rem; }
+    .notes-footer .autosave.saved { color: var(--green); }
+
+    /* Attachments */
+    .attach-section { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin-bottom: 24px; }
+    .attach-section h3 { font-size: 0.85rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 12px; }
+    .file-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 8px; margin-bottom: 12px; }
+    .file-card {
+      display: flex; align-items: center; gap: 8px; padding: 10px 12px;
+      background: var(--surface2); border: 1px solid var(--border); border-radius: 8px;
+      font-size: 0.8rem; transition: border-color 0.2s;
+    }
+    .file-card:hover { border-color: var(--accent2); }
+    .file-card a { color: var(--accent2); text-decoration: none; word-break: break-all; flex: 1; }
+    .file-card a:hover { text-decoration: underline; }
+    .file-card .del-btn { background: none; border: none; color: var(--red); cursor: pointer; opacity: 0.4; font-size: 0.9rem; }
+    .file-card .del-btn:hover { opacity: 1; }
+    .upload-area {
+      border: 2px dashed var(--border); border-radius: 8px; padding: 20px;
+      text-align: center; color: var(--text-dim); font-size: 0.85rem; cursor: pointer;
+      transition: all 0.2s;
+    }
+    .upload-area:hover { border-color: var(--accent); color: var(--accent); }
+    .upload-area input { display: none; }
+    .upload-progress-bar { color: var(--accent); font-size: 0.8rem; margin-top: 8px; }
+
+    /* Links row */
+    .links-row { display: flex; gap: 8px; margin-bottom: 24px; flex-wrap: wrap; }
+    .links-row a {
+      display: inline-flex; align-items: center; gap: 6px; padding: 10px 16px;
+      border-radius: 8px; border: 1px solid var(--border); background: var(--surface);
+      color: var(--accent2); text-decoration: none; font-size: 0.875rem; font-weight: 500;
+    }
+    .links-row a:hover { border-color: var(--accent2); }
+
+    /* Archive button */
+    .danger-zone { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border); }
+    .danger-zone button {
+      padding: 8px 16px; border-radius: 8px; border: 1px solid var(--red);
+      background: transparent; color: var(--red); font-size: 0.85rem; cursor: pointer;
+    }
+    .danger-zone button:hover { background: rgba(239,68,68,0.1); }
+
     @media (max-width: 640px) {
-      #dashboard { padding: 12px; }
+      #dashboard, #case-detail { padding: 12px; }
       .stats { grid-template-columns: repeat(2, 1fr); }
       .filters { flex-direction: column; }
       .filter-group input[type="text"] { min-width: unset; width: 100%; }
-      .header h1 { font-size: 1.2rem; }
+      .case-meta { grid-template-columns: 1fr; }
+      .notes-textarea { min-height: 150px; }
     }
   </style>
 </head>
@@ -209,14 +204,14 @@
 <div id="password-gate">
   <div class="login-box">
     <h1>⚡ Oncor</h1>
-    <p>Maricopa County Foreclosure Dashboard</p>
+    <p>Foreclosure Surplus Dashboard</p>
     <input type="password" id="password-input" placeholder="Enter password" autofocus>
     <button onclick="checkPassword()">Enter</button>
     <div class="login-error" id="login-error">Incorrect password</div>
   </div>
 </div>
 
-<!-- Dashboard -->
+<!-- Dashboard (list view) -->
 <div id="dashboard">
   <div class="header">
     <h1>⚡ Oncor Foreclosure Dashboard</h1>
@@ -227,31 +222,16 @@
   </div>
 
   <div class="stats">
-    <div class="stat-card">
-      <div class="stat-label">Sheriff Sales</div>
-      <div class="stat-value amber" id="stat-foreclosures">—</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-label">Total Sale $</div>
-      <div class="stat-value green" id="stat-total-sale">—</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-label">Avg Sale $</div>
-      <div class="stat-value blue" id="stat-avg-sale">—</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-label">With Sale Data</div>
-      <div class="stat-value" id="stat-has-data">—</div>
-    </div>
+    <div class="stat-card"><div class="stat-label">Sheriff Sales</div><div class="stat-value amber" id="stat-foreclosures">—</div></div>
+    <div class="stat-card"><div class="stat-label">Total Sale $</div><div class="stat-value green" id="stat-total-sale">—</div></div>
+    <div class="stat-card"><div class="stat-label">Avg Sale $</div><div class="stat-value blue" id="stat-avg-sale">—</div></div>
+    <div class="stat-card"><div class="stat-label">With Sale Data</div><div class="stat-value" id="stat-has-data">—</div></div>
+    <div class="stat-card"><div class="stat-label">Researching</div><div class="stat-value blue" id="stat-researching">—</div></div>
   </div>
 
   <div class="filters">
-    <div class="filter-group">
-      <label>Search Names</label>
-      <input type="text" id="filter-name" placeholder="Search by name..." oninput="applyFilters()">
-    </div>
-    <div class="filter-group">
-      <label>Status</label>
+    <div class="filter-group"><label>Search</label><input type="text" id="filter-name" placeholder="Name, address, case#..." oninput="applyFilters()"></div>
+    <div class="filter-group"><label>Status</label>
       <select id="filter-status" onchange="applyFilters()">
         <option value="">All</option>
         <option value="New">New</option>
@@ -262,60 +242,122 @@
         <option value="Dead">Dead</option>
       </select>
     </div>
-    <div class="filter-group">
-      <label>Code</label>
+    <div class="filter-group"><label>Code</label>
       <select id="filter-code" onchange="applyFilters()">
-        <option value="">All</option>
-        <option value="CE">CE - Certificate</option>
-        <option value="DE">DE - Deed</option>
+        <option value="">All</option><option value="CE">CE</option><option value="DE">DE</option>
       </select>
     </div>
-    <div class="filter-group">
-      <label>Foreclosure</label>
-      <select id="filter-foreclosure" onchange="applyFilters()">
-        <option value="">All</option>
-        <option value="true">Yes</option>
-        <option value="false">No</option>
-      </select>
-    </div>
-    <div class="filter-group">
-      <label>Date From</label>
-      <input type="date" id="filter-date-from" onchange="applyFilters()">
-    </div>
-    <div class="filter-group">
-      <label>Date To</label>
-      <input type="date" id="filter-date-to" onchange="applyFilters()">
-    </div>
-    <div class="filter-group">
-      <label>&nbsp;</label>
-      <button class="btn" onclick="clearFilters()">Clear</button>
-    </div>
+    <div class="filter-group"><label>Date From</label><input type="date" id="filter-date-from" onchange="applyFilters()"></div>
+    <div class="filter-group"><label>Date To</label><input type="date" id="filter-date-to" onchange="applyFilters()"></div>
+    <div class="filter-group"><label>&nbsp;</label><button class="btn" onclick="clearFilters()">Clear</button></div>
   </div>
 
   <div class="table-wrap">
-    <div id="loading" class="loading"><span class="spinner"></span> Loading documents...</div>
+    <div id="loading" class="loading"><span class="spinner"></span> Loading...</div>
     <div class="table-scroll">
       <table id="data-table" style="display:none">
-        <thead>
-          <tr>
-            <th style="width:30px"></th>
-            <th onclick="sortBy('record_date')">Date <span class="sort-icon">↕</span></th>
-            <th onclick="sortBy('parcel_number')">Case # <span class="sort-icon">↕</span></th>
-            <th onclick="sortBy('address')">Address <span class="sort-icon">↕</span></th>
-            <th onclick="sortBy('sale_amount')">Sheriff Sale $ <span class="sort-icon">↕</span></th>
-            <th onclick="sortBy('names')">Parties <span class="sort-icon">↕</span></th>
-            <th>PDF</th>
-            <th>Court</th>
-            <th onclick="sortBy('sale_date')">Status / Notes <span class="sort-icon">↕</span></th>
-          </tr>
-        </thead>
+        <thead><tr>
+          <th onclick="sortBy('record_date')">Date ↕</th>
+          <th onclick="sortBy('parcel_number')">Case # ↕</th>
+          <th onclick="sortBy('address')">Address ↕</th>
+          <th onclick="sortBy('sale_amount')">Sale $ ↕</th>
+          <th>Parties</th>
+          <th>Status</th>
+          <th>Notes</th>
+        </tr></thead>
         <tbody id="table-body"></tbody>
       </table>
     </div>
-    <div class="table-footer">
-      <span id="results-count"></span>
-      <span id="date-range"></span>
+    <div class="table-footer"><span id="results-count"></span><span id="date-range"></span></div>
+  </div>
+</div>
+
+<!-- Case Detail View -->
+<div id="case-detail">
+  <button class="back-btn" onclick="showList()">← Back to list</button>
+
+  <div class="case-header">
+    <div>
+      <h2 id="cd-title">Case Detail</h2>
+      <div class="case-num" id="cd-case-num"></div>
     </div>
+    <div id="cd-status-wrap"></div>
+  </div>
+
+  <div class="case-meta">
+    <div class="meta-card">
+      <h3>Property</h3>
+      <div class="meta-field">
+        <label>Address</label>
+        <input id="cd-address" onblur="saveCaseField('address', this.value)">
+        <span class="saved-indicator" id="cd-address-saved">✓</span>
+      </div>
+      <div class="meta-field">
+        <label>Doc Number</label>
+        <div class="val" id="cd-doc-number"></div>
+      </div>
+      <div class="meta-field">
+        <label>Record Date</label>
+        <div class="val" id="cd-record-date"></div>
+      </div>
+      <div class="meta-field">
+        <label>Doc Type</label>
+        <div class="val" id="cd-doc-title"></div>
+      </div>
+    </div>
+    <div class="meta-card">
+      <h3>Financials</h3>
+      <div class="meta-field">
+        <label>Sheriff Sale Amount</label>
+        <input id="cd-sale-amount" onblur="saveSaleAmount(this.value)" style="font-size:1.2rem;font-weight:700;color:var(--green)">
+        <span class="saved-indicator" id="cd-sale-saved">✓</span>
+      </div>
+      <div class="meta-field">
+        <label>Case Number</label>
+        <input id="cd-parcel-number" onblur="saveCaseField('parcel_number', this.value)">
+        <span class="saved-indicator" id="cd-parcel_number-saved">✓</span>
+      </div>
+      <div class="meta-field">
+        <label>Status</label>
+        <select id="cd-status" onchange="saveCaseStatus(this.value)">
+          <option value="New">New</option>
+          <option value="Researching">Researching</option>
+          <option value="Contacted">Contacted</option>
+          <option value="Filed">Filed</option>
+          <option value="Claimed">Claimed</option>
+          <option value="Dead">Dead</option>
+        </select>
+        <span class="saved-indicator" id="cd-status-saved">✓</span>
+      </div>
+    </div>
+    <div class="meta-card">
+      <h3>Parties</h3>
+      <div class="val" id="cd-names" style="font-size:0.85rem;line-height:1.6"></div>
+    </div>
+  </div>
+
+  <div class="links-row" id="cd-links"></div>
+
+  <div class="notes-section">
+    <h3>📝 Notes</h3>
+    <textarea class="notes-textarea" id="cd-notes" placeholder="Add research notes, phone numbers, findings..."></textarea>
+    <div class="notes-footer">
+      <span class="autosave" id="cd-notes-status">Auto-saves on changes</span>
+    </div>
+  </div>
+
+  <div class="attach-section">
+    <h3>📎 Attachments</h3>
+    <div class="file-grid" id="cd-files"></div>
+    <div class="upload-area" onclick="document.getElementById('cd-file-input').click()">
+      Click to upload files (or drag & drop)
+      <input type="file" id="cd-file-input" multiple onchange="uploadCaseFiles(this)">
+    </div>
+    <div class="upload-progress-bar" id="cd-upload-progress"></div>
+  </div>
+
+  <div class="danger-zone">
+    <button onclick="archiveCurrentCase()">🗑️ Archive this case</button>
   </div>
 </div>
 
@@ -330,11 +372,12 @@ let allDocuments = [];
 let filteredDocuments = [];
 let sortColumn = 'record_date';
 let sortDir = 'desc';
+let currentDoc = null;
+let notesSaveTimer = null;
 
-// Password check
+// === PASSWORD ===
 function checkPassword() {
-  const input = document.getElementById('password-input').value;
-  if (input.toLowerCase() === PASSWORD.toLowerCase()) {
+  if (document.getElementById('password-input').value.toLowerCase() === PASSWORD) {
     document.getElementById('password-gate').style.display = 'none';
     document.getElementById('dashboard').style.display = 'block';
     sessionStorage.setItem('oncor_auth', 'true');
@@ -345,25 +388,18 @@ function checkPassword() {
     document.getElementById('password-input').focus();
   }
 }
-
-document.getElementById('password-input').addEventListener('keypress', (e) => {
-  if (e.key === 'Enter') checkPassword();
-});
-
-// Check session
+document.getElementById('password-input').addEventListener('keypress', e => { if (e.key === 'Enter') checkPassword(); });
 if (sessionStorage.getItem('oncor_auth') === 'true') {
   document.getElementById('password-gate').style.display = 'none';
   document.getElementById('dashboard').style.display = 'block';
   loadData();
 }
 
+// === DATA ===
 async function loadData() {
   try {
     const res = await fetch(`${SUPABASE_URL}/rest/v1/documents?select=*&is_foreclosure=eq.true&order=record_date.desc`, {
-      headers: {
-        'apikey': SUPABASE_KEY,
-        'Authorization': `Bearer ${SUPABASE_KEY}`
-      }
+      headers: { 'apikey': SUPABASE_KEY, 'Authorization': `Bearer ${SUPABASE_KEY}` }
     });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     allDocuments = await res.json();
@@ -371,458 +407,315 @@ async function loadData() {
     applyFilters();
     document.getElementById('loading').style.display = 'none';
     document.getElementById('data-table').style.display = 'table';
-    // Load attachments in background
-    loadAllAttachments();
   } catch (err) {
-    document.getElementById('loading').innerHTML = `<span style="color:var(--red)">Error loading data: ${err.message}</span>`;
+    document.getElementById('loading').innerHTML = `<span style="color:var(--red)">Error: ${err.message}</span>`;
   }
 }
 
-function parseDate(dateStr) {
-  if (!dateStr) return null;
-  // Handle MM-DD-YYYY format
-  const parts = dateStr.split('-');
-  if (parts.length === 3 && parts[0].length <= 2) {
-    return new Date(`${parts[2]}-${parts[0].padStart(2,'0')}-${parts[1].padStart(2,'0')}`);
-  }
-  return new Date(dateStr);
+// === CRM HELPERS ===
+const STATUSES = ['New', 'Researching', 'Contacted', 'Filed', 'Claimed', 'Dead'];
+function parseCRM(raw) {
+  if (!raw) return { status: 'New', notes: '' };
+  const i = raw.indexOf('|');
+  if (i === -1) return { status: 'New', notes: raw };
+  return { status: raw.substring(0, i) || 'New', notes: raw.substring(i + 1) };
 }
 
-function formatDate(dateStr) {
-  const d = parseDate(dateStr);
-  if (!d || isNaN(d)) return dateStr || '—';
+// === DATES ===
+function parseDate(s) {
+  if (!s) return null;
+  const p = s.split('-');
+  if (p.length === 3 && p[0].length <= 2) return new Date(`${p[2]}-${p[0].padStart(2,'0')}-${p[1].padStart(2,'0')}`);
+  return new Date(s);
+}
+function formatDate(s) {
+  const d = parseDate(s);
+  if (!d || isNaN(d)) return s || '—';
   return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
 }
+function escapeHtml(s) { const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
 
+// === STATS ===
 function updateStats() {
   document.getElementById('stat-foreclosures').textContent = allDocuments.length;
-  
-  let saleSum = 0, saleCount = 0;
+  let sum = 0, cnt = 0, research = 0;
   allDocuments.forEach(d => {
-    const sale = d.sale_amount ? parseFloat(d.sale_amount) : null;
-    if (sale && sale > 100) { saleSum += sale; saleCount++; }
+    const s = d.sale_amount ? parseFloat(d.sale_amount) : null;
+    if (s && s > 100) { sum += s; cnt++; }
+    const crm = parseCRM(d.sale_date);
+    if (crm.status === 'Researching') research++;
   });
-  
-  document.getElementById('stat-total-sale').textContent = '$' + Math.round(saleSum).toLocaleString();
-  document.getElementById('stat-avg-sale').textContent = saleCount > 0 ? '$' + Math.round(saleSum / saleCount).toLocaleString() : '—';
-  document.getElementById('stat-has-data').textContent = saleCount + '/' + allDocuments.length;
+  document.getElementById('stat-total-sale').textContent = '$' + Math.round(sum).toLocaleString();
+  document.getElementById('stat-avg-sale').textContent = cnt > 0 ? '$' + Math.round(sum / cnt).toLocaleString() : '—';
+  document.getElementById('stat-has-data').textContent = cnt + '/' + allDocuments.length;
+  document.getElementById('stat-researching').textContent = research;
 }
 
+// === FILTERS ===
 function applyFilters() {
-  const nameFilter = document.getElementById('filter-name').value.toLowerCase();
-  const statusFilter = document.getElementById('filter-status').value;
-  const codeFilter = document.getElementById('filter-code').value;
-  const foreclosureFilter = document.getElementById('filter-foreclosure').value;
-  const dateFrom = document.getElementById('filter-date-from').value;
-  const dateTo = document.getElementById('filter-date-to').value;
-
+  const q = document.getElementById('filter-name').value.toLowerCase();
+  const sf = document.getElementById('filter-status').value;
+  const cf = document.getElementById('filter-code').value;
+  const df = document.getElementById('filter-date-from').value;
+  const dt = document.getElementById('filter-date-to').value;
   filteredDocuments = allDocuments.filter(doc => {
-    if (nameFilter) {
-      const names = Array.isArray(doc.names) ? doc.names.join(' ').toLowerCase() : (doc.names || '').toLowerCase();
-      const addr = (doc.address || '').toLowerCase();
-      if (!names.includes(nameFilter) && !addr.includes(nameFilter)) return false;
+    if (q) {
+      const names = Array.isArray(doc.names) ? doc.names.join(' ').toLowerCase() : '';
+      const all = [names, doc.address||'', doc.parcel_number||'', doc.doc_number||''].join(' ').toLowerCase();
+      if (!all.includes(q)) return false;
     }
-    if (statusFilter) {
-      const crm = parseCRM(doc.sale_date);
-      if (crm.status !== statusFilter) return false;
-    }
-    if (codeFilter && doc.code !== codeFilter) return false;
-    if (foreclosureFilter !== '') {
-      const isFC = foreclosureFilter === 'true';
-      if (doc.is_foreclosure !== isFC) return false;
-    }
-    if (dateFrom || dateTo) {
-      const docDate = parseDate(doc.record_date);
-      if (docDate) {
-        if (dateFrom && docDate < new Date(dateFrom)) return false;
-        if (dateTo && docDate > new Date(dateTo + 'T23:59:59')) return false;
-      }
+    if (sf && parseCRM(doc.sale_date).status !== sf) return false;
+    if (cf && doc.code !== cf) return false;
+    if (df || dt) {
+      const dd = parseDate(doc.record_date);
+      if (dd) { if (df && dd < new Date(df)) return false; if (dt && dd > new Date(dt + 'T23:59:59')) return false; }
     }
     return true;
   });
-
   sortDocuments();
   renderTable();
 }
-
-function sortBy(column) {
-  if (sortColumn === column) {
-    sortDir = sortDir === 'asc' ? 'desc' : 'asc';
-  } else {
-    sortColumn = column;
-    sortDir = 'asc';
-  }
-  // Update header styles
-  document.querySelectorAll('th').forEach(th => th.classList.remove('sorted'));
-  sortDocuments();
-  renderTable();
+function clearFilters() {
+  ['filter-name','filter-status','filter-code','filter-date-from','filter-date-to'].forEach(id => document.getElementById(id).value = '');
+  applyFilters();
 }
 
+// === SORT ===
+function sortBy(col) {
+  if (sortColumn === col) sortDir = sortDir === 'asc' ? 'desc' : 'asc';
+  else { sortColumn = col; sortDir = 'asc'; }
+  sortDocuments(); renderTable();
+}
 function sortDocuments() {
   filteredDocuments.sort((a, b) => {
-    let va = a[sortColumn];
-    let vb = b[sortColumn];
-
-    if (sortColumn === 'names') {
-      va = Array.isArray(va) ? va.join(', ') : (va || '');
-      vb = Array.isArray(vb) ? vb.join(', ') : (vb || '');
-    }
-    if (sortColumn === 'record_date') {
-      va = parseDate(va);
-      vb = parseDate(vb);
-    }
-    if (sortColumn === 'is_foreclosure') {
-      va = va ? 1 : 0;
-      vb = vb ? 1 : 0;
-    }
-    if (sortColumn === 'page_count') {
-      va = va || 0;
-      vb = vb || 0;
-    }
-
+    let va = a[sortColumn], vb = b[sortColumn];
+    if (sortColumn === 'names') { va = Array.isArray(va) ? va.join(', ') : (va||''); vb = Array.isArray(vb) ? vb.join(', ') : (vb||''); }
+    if (sortColumn === 'record_date') { va = parseDate(va); vb = parseDate(vb); }
+    if (sortColumn === 'sale_amount') { va = parseFloat(va) || 0; vb = parseFloat(vb) || 0; }
     if (va < vb) return sortDir === 'asc' ? -1 : 1;
     if (va > vb) return sortDir === 'asc' ? 1 : -1;
     return 0;
   });
 }
 
+// === TABLE RENDER ===
 function renderTable() {
   const tbody = document.getElementById('table-body');
   tbody.innerHTML = filteredDocuments.map(doc => {
     const names = Array.isArray(doc.names) ? doc.names.join(', ') : (doc.names || '—');
-    const pdfUrl = doc.pdf_url || '#';
-    const courtUrl = doc.defendant || '#';
-    const saleAmt = doc.sale_amount ? parseFloat(doc.sale_amount) : null;
-    
-    return `<tr>
-      <td><button class="archive-btn" onclick="archiveCase('${doc.doc_number}')" title="Archive">✕</button></td>
+    const sale = doc.sale_amount ? parseFloat(doc.sale_amount) : null;
+    const crm = parseCRM(doc.sale_date);
+    const statusClass = 'status-' + crm.status.toLowerCase();
+    const notesPreview = crm.notes ? crm.notes.substring(0, 40) + (crm.notes.length > 40 ? '…' : '') : '';
+    return `<tr class="clickable-row" onclick="openCase('${doc.doc_number}')">
       <td>${formatDate(doc.record_date)}</td>
-      <td><input class="inline-edit" data-doc="${doc.doc_number}" data-field="parcel_number" value="${escapeHtml(doc.parcel_number || '')}" placeholder="CV20XX-XXXXXX" onblur="saveField(this)"></td>
-      <td class="addr-cell"><input class="inline-edit wide" data-doc="${doc.doc_number}" data-field="address" value="${escapeHtml(doc.address || '')}" placeholder="Address" onblur="saveField(this)"></td>
-      <td><input class="inline-edit narrow sale-field" data-doc="${doc.doc_number}" data-field="sale_amount" value="${saleAmt ? '$' + saleAmt.toLocaleString() : ''}" placeholder="$0.00" onblur="saveField(this)" onfocus="this.value=this.value.replace(/[^0-9.]/g,'')"></td>
+      <td style="font-family:monospace;font-size:0.8rem">${escapeHtml(doc.parcel_number || '—')}</td>
+      <td class="addr-cell">${escapeHtml(doc.address || '—')}</td>
+      <td class="sale-val">${sale ? '$' + sale.toLocaleString() : '—'}</td>
       <td class="names-cell">${escapeHtml(names)}</td>
-      <td>${pdfUrl !== '#' ? '<a href="' + pdfUrl + '" target="_blank" class="link-btn">PDF</a>' : '—'}</td>
-      <td>${courtUrl !== '#' ? '<a href="' + courtUrl + '" target="_blank" class="link-btn">Court</a>' : '—'}</td>
-      <td class="crm-cell">
-        ${renderCRM(doc)}
-      </td>
+      <td><span class="status-badge ${statusClass}">${crm.status}</span></td>
+      <td class="notes-preview">${escapeHtml(notesPreview)}</td>
     </tr>`;
   }).join('');
-
-  document.getElementById('results-count').textContent = `${filteredDocuments.length} of ${allDocuments.length} documents`;
-
-  // Date range
-  if (filteredDocuments.length > 0) {
-    const dates = filteredDocuments.map(d => parseDate(d.record_date)).filter(d => d && !isNaN(d)).sort((a,b) => a-b);
-    if (dates.length > 0) {
-      const fmt = d => d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
-      document.getElementById('date-range').textContent = `${fmt(dates[0])} — ${fmt(dates[dates.length-1])}`;
-    }
-  }
+  document.getElementById('results-count').textContent = `${filteredDocuments.length} of ${allDocuments.length}`;
 }
-
-function escapeHtml(str) {
-  const div = document.createElement('div');
-  div.textContent = str;
-  return div.innerHTML;
-}
-
-function clearFilters() {
-  document.getElementById('filter-name').value = '';
-  document.getElementById('filter-status').value = '';
-  document.getElementById('filter-code').value = '';
-  document.getElementById('filter-foreclosure').value = '';
-  document.getElementById('filter-date-from').value = '';
-  document.getElementById('filter-date-to').value = '';
-  applyFilters();
-}
-
 function refreshData() {
   document.getElementById('loading').style.display = 'block';
   document.getElementById('data-table').style.display = 'none';
   loadData();
 }
 
-const STATUSES = ['New', 'Researching', 'Contacted', 'Filed', 'Claimed', 'Dead'];
+// === CASE DETAIL VIEW ===
+function openCase(docNumber) {
+  currentDoc = allDocuments.find(d => d.doc_number === docNumber);
+  if (!currentDoc) return;
+  const crm = parseCRM(currentDoc.sale_date);
+  const names = Array.isArray(currentDoc.names) ? currentDoc.names.join('<br>') : (currentDoc.names || '—');
+  const sale = currentDoc.sale_amount ? parseFloat(currentDoc.sale_amount) : null;
 
-function parseCRM(raw) {
-  if (!raw) return { status: 'New', notes: '' };
-  const pipe = raw.indexOf('|');
-  if (pipe === -1) return { status: 'New', notes: raw };
-  return { status: raw.substring(0, pipe) || 'New', notes: raw.substring(pipe + 1) };
-}
+  document.getElementById('cd-title').textContent = currentDoc.address || currentDoc.doc_title || 'Case Detail';
+  document.getElementById('cd-case-num').textContent = currentDoc.parcel_number || currentDoc.doc_number;
+  document.getElementById('cd-address').value = currentDoc.address || '';
+  document.getElementById('cd-doc-number').textContent = currentDoc.doc_number;
+  document.getElementById('cd-record-date').textContent = formatDate(currentDoc.record_date);
+  document.getElementById('cd-doc-title').textContent = currentDoc.doc_title || '—';
+  document.getElementById('cd-sale-amount').value = sale ? '$' + sale.toLocaleString() : '';
+  document.getElementById('cd-parcel-number').value = currentDoc.parcel_number || '';
+  document.getElementById('cd-status').value = crm.status;
+  document.getElementById('cd-names').innerHTML = names;
+  document.getElementById('cd-notes').value = crm.notes;
+  document.getElementById('cd-notes-status').textContent = 'Auto-saves on changes';
+  document.getElementById('cd-notes-status').className = 'autosave';
 
-function renderCRM(doc) {
-  const crm = parseCRM(doc.sale_date);
-  const statusClass = 'status-' + crm.status.toLowerCase();
-  const options = STATUSES.map(s => 
-    `<option value="${s}" ${s === crm.status ? 'selected' : ''}>${s}</option>`
-  ).join('');
-  
-  return `<div class="crm-wrap ${statusClass}">
-    <select class="status-select" data-doc="${doc.doc_number}" onchange="saveCRM(this)">
-      ${options}
-    </select>
-    <textarea class="notes-input" data-doc="${doc.doc_number}" onblur="saveCRM(this)" placeholder="Notes...">${escapeHtml(crm.notes)}</textarea>
-    <span class="notes-saved" id="saved-${doc.doc_number}">✓ saved</span>
-    <div class="attach-section">
-      <ul class="attach-list" id="files-${doc.doc_number}"></ul>
-      <label class="attach-btn">
-        📎 Attach
-        <input type="file" multiple hidden data-doc="${doc.doc_number}" onchange="uploadFiles(this)">
-      </label>
-      <span class="upload-progress" id="progress-${doc.doc_number}"></span>
-    </div>
-  </div>`;
-}
-
-let saveTimers = {};
-function saveCRM(el) {
-  const docNumber = el.dataset.doc;
-  
-  if (saveTimers[docNumber]) clearTimeout(saveTimers[docNumber]);
-  saveTimers[docNumber] = setTimeout(async () => {
-    // Find both elements for this doc
-    const row = el.closest('td');
-    const select = row.querySelector('select');
-    const textarea = row.querySelector('textarea');
-    const status = select.value;
-    const notes = textarea.value.trim();
-    const combined = status + '|' + notes;
-    
-    try {
-      const res = await fetch(`${SUPABASE_URL}/rest/v1/documents?doc_number=eq.${docNumber}`, {
-        method: 'PATCH',
-        headers: {
-          'apikey': SUPABASE_KEY,
-          'Authorization': `Bearer ${SUPABASE_KEY}`,
-          'Content-Type': 'application/json',
-          'Prefer': 'return=minimal'
-        },
-        body: JSON.stringify({ sale_date: combined })
-      });
-      
-      if (res.ok) {
-        const doc = allDocuments.find(d => d.doc_number === docNumber);
-        if (doc) doc.sale_date = combined;
-        
-        // Update row border color
-        const wrap = row.querySelector('.crm-wrap');
-        wrap.className = 'crm-wrap status-' + status.toLowerCase();
-        
-        const saved = document.getElementById('saved-' + docNumber);
-        if (saved) {
-          saved.classList.add('show');
-          setTimeout(() => saved.classList.remove('show'), 2000);
-        }
-      }
-    } catch (e) {
-      console.error('Failed to save CRM data:', e);
-    }
-  }, 300);
-}
-
-// === Archive ===
-
-async function archiveCase(docNumber) {
-  if (!confirm('Archive this case?')) return;
-  
-  try {
-    // Set status to Dead| (archived)
-    const doc = allDocuments.find(d => d.doc_number === docNumber);
-    const crm = parseCRM(doc?.sale_date);
-    const combined = 'Archived|' + crm.notes;
-    
-    await fetch(`${SUPABASE_URL}/rest/v1/documents?doc_number=eq.${docNumber}`, {
-      method: 'PATCH',
-      headers: {
-        'apikey': SUPABASE_KEY,
-        'Authorization': `Bearer ${SUPABASE_KEY}`,
-        'Content-Type': 'application/json',
-        'Prefer': 'return=minimal'
-      },
-      body: JSON.stringify({ sale_date: combined, is_foreclosure: false })
-    });
-    
-    // Remove from local data
-    allDocuments = allDocuments.filter(d => d.doc_number !== docNumber);
-    updateStats();
-    applyFilters();
-  } catch (e) {
-    console.error('Archive failed:', e);
+  // Links
+  const links = [];
+  if (currentDoc.pdf_url) links.push(`<a href="${currentDoc.pdf_url}" target="_blank">📄 View PDF</a>`);
+  if (currentDoc.defendant) links.push(`<a href="${currentDoc.defendant}" target="_blank">⚖️ Court Docket</a>`);
+  if (currentDoc.parcel_number) {
+    links.push(`<a href="https://www.superiorcourt.maricopa.gov/docket/CivilCourtCases/caseInfo.asp?caseNumber=${currentDoc.parcel_number}" target="_blank">🔍 Case Lookup</a>`);
   }
+  document.getElementById('cd-links').innerHTML = links.join('');
+
+  // Setup notes auto-save
+  const notesEl = document.getElementById('cd-notes');
+  notesEl.oninput = () => {
+    if (notesSaveTimer) clearTimeout(notesSaveTimer);
+    document.getElementById('cd-notes-status').textContent = 'Saving...';
+    document.getElementById('cd-notes-status').className = 'autosave';
+    notesSaveTimer = setTimeout(() => saveCaseNotes(notesEl.value), 1000);
+  };
+
+  // Load attachments
+  loadCaseAttachments();
+
+  // Show detail, hide list
+  document.getElementById('dashboard').style.display = 'none';
+  document.getElementById('case-detail').style.display = 'block';
+  window.scrollTo(0, 0);
 }
 
-// === Inline Field Editing ===
+function showList() {
+  document.getElementById('case-detail').style.display = 'none';
+  document.getElementById('dashboard').style.display = 'block';
+  currentDoc = null;
+  updateStats();
+  applyFilters();
+}
 
-async function saveField(el) {
-  const docNumber = el.dataset.doc;
-  const field = el.dataset.field;
-  let value = el.value.trim() || null;
-  
-  // Auto-generate court URL when case number is entered
-  // Clean up sale_amount input
-  if (field === 'sale_amount' && value) {
-    value = value.replace(/[^0-9.]/g, '');
-    if (value) {
-      const num = parseFloat(value);
-      value = num.toFixed(2);
-      el.value = '$' + num.toLocaleString();
-    } else {
-      value = null;
-    }
-  }
-  
+// === SAVE FUNCTIONS ===
+async function apiPatch(docNumber, updates) {
+  return fetch(`${SUPABASE_URL}/rest/v1/documents?doc_number=eq.${docNumber}`, {
+    method: 'PATCH',
+    headers: { 'apikey': SUPABASE_KEY, 'Authorization': `Bearer ${SUPABASE_KEY}`, 'Content-Type': 'application/json', 'Prefer': 'return=minimal' },
+    body: JSON.stringify(updates)
+  });
+}
+
+function showSaved(id) {
+  const el = document.getElementById(id);
+  if (el) { el.classList.add('show'); setTimeout(() => el.classList.remove('show'), 2000); }
+}
+
+async function saveCaseField(field, value) {
+  if (!currentDoc) return;
+  value = value.trim() || null;
   const updates = { [field]: value };
   if (field === 'parcel_number' && value && value.startsWith('CV')) {
     updates.defendant = 'https://www.superiorcourt.maricopa.gov/docket/CivilCourtCases/caseInfo.asp?caseNumber=' + value;
   }
-  
-  try {
-    const res = await fetch(`${SUPABASE_URL}/rest/v1/documents?doc_number=eq.${docNumber}`, {
-      method: 'PATCH',
-      headers: {
-        'apikey': SUPABASE_KEY,
-        'Authorization': `Bearer ${SUPABASE_KEY}`,
-        'Content-Type': 'application/json',
-        'Prefer': 'return=minimal'
-      },
-      body: JSON.stringify(updates)
-    });
-    
-    if (res.ok) {
-      const doc = allDocuments.find(d => d.doc_number === docNumber);
-      if (doc) Object.assign(doc, updates);
-      el.style.borderColor = 'var(--green)';
-      setTimeout(() => { el.style.borderColor = 'transparent'; }, 1000);
-    }
-  } catch (e) {
-    el.style.borderColor = 'var(--red)';
+  const res = await apiPatch(currentDoc.doc_number, updates);
+  if (res.ok) {
+    Object.assign(currentDoc, updates);
+    showSaved('cd-' + field + '-saved');
   }
 }
 
-// === Attachments ===
+async function saveSaleAmount(val) {
+  if (!currentDoc) return;
+  val = val.replace(/[^0-9.]/g, '');
+  const num = val ? parseFloat(val) : null;
+  const res = await apiPatch(currentDoc.doc_number, { sale_amount: num });
+  if (res.ok) {
+    currentDoc.sale_amount = num;
+    document.getElementById('cd-sale-amount').value = num ? '$' + num.toLocaleString() : '';
+    showSaved('cd-sale-saved');
+  }
+}
 
-async function loadAttachments(docNumber) {
+async function saveCaseStatus(status) {
+  if (!currentDoc) return;
+  const crm = parseCRM(currentDoc.sale_date);
+  const combined = status + '|' + crm.notes;
+  const res = await apiPatch(currentDoc.doc_number, { sale_date: combined });
+  if (res.ok) {
+    currentDoc.sale_date = combined;
+    showSaved('cd-status-saved');
+  }
+}
+
+async function saveCaseNotes(notes) {
+  if (!currentDoc) return;
+  const crm = parseCRM(currentDoc.sale_date);
+  const combined = crm.status + '|' + notes;
+  const res = await apiPatch(currentDoc.doc_number, { sale_date: combined });
+  if (res.ok) {
+    currentDoc.sale_date = combined;
+    document.getElementById('cd-notes-status').textContent = '✓ Saved';
+    document.getElementById('cd-notes-status').className = 'autosave saved';
+  }
+}
+
+async function archiveCurrentCase() {
+  if (!currentDoc || !confirm('Archive this case? It will be hidden from the dashboard.')) return;
+  await apiPatch(currentDoc.doc_number, { is_foreclosure: false });
+  allDocuments = allDocuments.filter(d => d.doc_number !== currentDoc.doc_number);
+  showList();
+}
+
+// === ATTACHMENTS ===
+async function loadCaseAttachments() {
+  if (!currentDoc) return;
+  const grid = document.getElementById('cd-files');
   try {
     const res = await fetch(`${SUPABASE_URL}/storage/v1/object/list/${ATTACHMENTS_BUCKET}`, {
       method: 'POST',
-      headers: {
-        'apikey': STORAGE_KEY,
-        'Authorization': `Bearer ${STORAGE_KEY}`,
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ prefix: docNumber + '/', limit: 50 })
+      headers: { 'apikey': STORAGE_KEY, 'Authorization': `Bearer ${STORAGE_KEY}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify({ prefix: currentDoc.doc_number + '/', limit: 50 })
     });
-    if (!res.ok) return [];
-    const files = await res.json();
-    return files.filter(f => f.name && !f.name.endsWith('/')).map(f => ({
-      name: f.name,
-      url: `${SUPABASE_URL}/storage/v1/object/public/${ATTACHMENTS_BUCKET}/${docNumber}/${f.name}`,
-      path: `${docNumber}/${f.name}`
-    }));
-  } catch { return []; }
+    if (!res.ok) { grid.innerHTML = ''; return; }
+    const files = (await res.json()).filter(f => f.name && !f.name.endsWith('/'));
+    grid.innerHTML = files.map(f => {
+      const url = `${SUPABASE_URL}/storage/v1/object/public/${ATTACHMENTS_BUCKET}/${currentDoc.doc_number}/${f.name}`;
+      return `<div class="file-card">
+        <a href="${url}" target="_blank">📄 ${escapeHtml(f.name)}</a>
+        <button class="del-btn" onclick="deleteCaseFile('${f.name}')" title="Delete">✕</button>
+      </div>`;
+    }).join('') || '<div style="color:var(--text-dim);font-size:0.85rem">No attachments yet</div>';
+  } catch { grid.innerHTML = ''; }
 }
 
-async function loadAllAttachments() {
-  for (const doc of allDocuments) {
-    const files = await loadAttachments(doc.doc_number);
-    renderFileList(doc.doc_number, files);
-  }
-}
-
-function renderFileList(docNumber, files) {
-  const ul = document.getElementById('files-' + docNumber);
-  if (!ul) return;
-  ul.innerHTML = files.map(f => `
-    <li>
-      <a href="${f.url}" target="_blank">📄 ${escapeHtml(f.name)}</a>
-      <button class="attach-delete" onclick="deleteFile('${docNumber}', '${f.name}')" title="Delete">✕</button>
-    </li>
-  `).join('');
-}
-
-async function uploadFiles(input) {
-  const docNumber = input.dataset.doc;
-  const files = input.files;
-  if (!files.length) return;
-  
-  const progress = document.getElementById('progress-' + docNumber);
-  
-  for (let i = 0; i < files.length; i++) {
-    const file = files[i];
-    progress.textContent = `Uploading ${i+1}/${files.length}...`;
-    
+async function uploadCaseFiles(input) {
+  if (!currentDoc || !input.files.length) return;
+  const prog = document.getElementById('cd-upload-progress');
+  for (let i = 0; i < input.files.length; i++) {
+    const file = input.files[i];
+    prog.textContent = `Uploading ${i+1}/${input.files.length}: ${file.name}...`;
     try {
-      const path = `${docNumber}/${file.name}`;
-      const res = await fetch(`${SUPABASE_URL}/storage/v1/object/${ATTACHMENTS_BUCKET}/${path}`, {
+      await fetch(`${SUPABASE_URL}/storage/v1/object/${ATTACHMENTS_BUCKET}/${currentDoc.doc_number}/${file.name}`, {
         method: 'POST',
-        headers: {
-          'apikey': STORAGE_KEY,
-          'Authorization': `Bearer ${STORAGE_KEY}`,
-          'Content-Type': file.type || 'application/octet-stream',
-          'x-upsert': 'true'
-        },
+        headers: { 'apikey': STORAGE_KEY, 'Authorization': `Bearer ${STORAGE_KEY}`, 'Content-Type': file.type || 'application/octet-stream', 'x-upsert': 'true' },
         body: file
       });
-      
-      if (!res.ok) {
-        progress.textContent = `❌ Failed: ${file.name}`;
-        continue;
-      }
-    } catch (e) {
-      progress.textContent = `❌ Error: ${e.message}`;
-      continue;
-    }
+    } catch (e) { prog.textContent = `❌ Failed: ${file.name}`; }
   }
-  
-  progress.textContent = '✓ Uploaded';
-  setTimeout(() => { progress.textContent = ''; }, 2000);
-  
-  // Refresh file list
-  const updatedFiles = await loadAttachments(docNumber);
-  renderFileList(docNumber, updatedFiles);
-  
-  // Reset input
+  prog.textContent = '✓ Uploaded';
+  setTimeout(() => { prog.textContent = ''; }, 2000);
+  loadCaseAttachments();
   input.value = '';
 }
 
-async function deleteFile(docNumber, fileName) {
-  if (!confirm(`Delete ${fileName}?`)) return;
-  
-  try {
-    await fetch(`${SUPABASE_URL}/storage/v1/object/${ATTACHMENTS_BUCKET}`, {
-      method: 'DELETE',
-      headers: {
-        'apikey': STORAGE_KEY,
-        'Authorization': `Bearer ${STORAGE_KEY}`,
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ prefixes: [`${docNumber}/${fileName}`] })
-    });
-    
-    const updatedFiles = await loadAttachments(docNumber);
-    renderFileList(docNumber, updatedFiles);
-  } catch (e) {
-    console.error('Delete failed:', e);
-  }
+async function deleteCaseFile(fileName) {
+  if (!currentDoc || !confirm(`Delete ${fileName}?`)) return;
+  await fetch(`${SUPABASE_URL}/storage/v1/object/${ATTACHMENTS_BUCKET}`, {
+    method: 'DELETE',
+    headers: { 'apikey': STORAGE_KEY, 'Authorization': `Bearer ${STORAGE_KEY}`, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ prefixes: [`${currentDoc.doc_number}/${fileName}`] })
+  });
+  loadCaseAttachments();
 }
 
+// === CSV EXPORT ===
 function exportCSV() {
-  const headers = ['record_date', 'case_number', 'address', 'sheriff_sale_amount', 'parties', 'notes', 'pdf_url', 'court_url'];
-  const rows = filteredDocuments.map(doc => {
-    const names = Array.isArray(doc.names) ? doc.names.join('; ') : (doc.names || '');
-    const sale = doc.sale_amount ? parseFloat(doc.sale_amount) : '';
-    return [doc.record_date, doc.parcel_number || '', `"${doc.address || ''}"`, sale, `"${names}"`, `"${doc.sale_date || ''}"`, doc.pdf_url || '', doc.defendant || ''];
+  const h = ['record_date','case_number','address','sale_amount','parties','status','notes','pdf_url','court_url'];
+  const rows = filteredDocuments.map(d => {
+    const names = Array.isArray(d.names) ? d.names.join('; ') : (d.names || '');
+    const crm = parseCRM(d.sale_date);
+    return [d.record_date, d.parcel_number||'', `"${d.address||''}"`, d.sale_amount||'', `"${names}"`, crm.status, `"${crm.notes}"`, d.pdf_url||'', d.defendant||''];
   });
-  const csv = [headers.join(','), ...rows.map(r => r.join(','))].join('\n');
+  const csv = [h.join(','), ...rows.map(r => r.join(','))].join('\n');
   const blob = new Blob([csv], { type: 'text/csv' });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = `oncor-foreclosures-${new Date().toISOString().slice(0,10)}.csv`;
-  a.click();
-  URL.revokeObjectURL(url);
+  const a = document.createElement('a'); a.href = URL.createObjectURL(blob);
+  a.download = `oncor-foreclosures-${new Date().toISOString().slice(0,10)}.csv`; a.click();
 }
 </script>
 </body>
