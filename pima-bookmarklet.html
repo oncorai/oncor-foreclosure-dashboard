@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>⚡ Oncor Pima Scraper</title>
+<style>
+  body { font-family: -apple-system, sans-serif; background: #0f1117; color: #e4e6ed; padding: 40px; max-width: 600px; margin: 0 auto; }
+  h1 { color: #f59e0b; }
+  .step { background: #1a1d27; border: 1px solid #2e3245; border-radius: 8px; padding: 16px; margin: 16px 0; }
+  .step h3 { color: #3b82f6; margin-bottom: 8px; }
+  code { background: #242736; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+  .bookmarklet-link {
+    display: inline-block; padding: 12px 24px; background: #f59e0b; color: #000;
+    border-radius: 8px; font-weight: 700; text-decoration: none; font-size: 1rem;
+    margin: 8px 0;
+  }
+  .bookmarklet-link:hover { opacity: 0.9; }
+  .note { color: #8b8fa3; font-size: 0.85rem; margin-top: 8px; }
+  textarea { width: 100%; height: 80px; background: #242736; color: #e4e6ed; border: 1px solid #2e3245; border-radius: 8px; padding: 12px; font-family: monospace; font-size: 0.8rem; }
+</style>
+</head>
+<body>
+<h1>⚡ Pima County Scraper</h1>
+<p>Scrape Sheriff's Deeds from the Pima County Recorder and send them to our database.</p>
+
+<div class="step">
+  <h3>Step 1: Open Pima Recorder Search</h3>
+  <p><a href="https://pimacountyaz-web.tylerhost.net/web/search/DOCSEARCH55S8" target="_blank" style="color:#3b82f6">Open Search Page →</a></p>
+  <p>Solve the captcha and click "I Accept"</p>
+</div>
+
+<div class="step">
+  <h3>Step 2: Search for Sheriff's Deeds</h3>
+  <p>Enter your search criteria and click Search. Wait for results to load.</p>
+</div>
+
+<div class="step">
+  <h3>Step 3: Drag this button to your bookmarks bar</h3>
+  <p>
+    <a class="bookmarklet-link" href="javascript:void(function(){var SUPABASE_URL='https://jiailsusjabqythgokcb.supabase.co';var SUPABASE_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImppYWlsc3VzamFicXl0aGdva2NiIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3Mjk5Mjk4OCwiZXhwIjoyMDg4NTY4OTg4fQ.l8qqw90e3GJk-S3VtMoyawBmT_A4CCS-hLDlvqAQEvk';var results=[];var rows=document.querySelectorAll('.selfServiceSearchResultList li, .ui-li-has-alt, tr.resultRow, [data-role=list-divider] ~ li');if(!rows.length){rows=document.querySelectorAll('li[data-theme]');} if(!rows.length){var allLinks=document.querySelectorAll('a[href*=document]');alert('Found '+allLinks.length+' document links. Checking page structure...');var body=document.body.innerText.substring(0,500);prompt('Page content preview (copy and send to Zeus):',body);return;} var count=0;rows.forEach(function(row){var text=row.innerText||'';var links=row.querySelectorAll('a');var docLink='';links.forEach(function(a){if(a.href&&a.href.includes('document')){docLink=a.href;}});var lines=text.split('\n').map(function(s){return s.trim()}).filter(Boolean);if(lines.length<2)return;var docNum='';var match=text.match(/\d{8,}/);if(match)docNum=match[0];var dateMatch=text.match(/\d{1,2}\/\d{1,2}\/\d{4}/);var recDate=dateMatch?dateMatch[0]:'';results.push({doc_number:docNum,record_date:recDate,names:lines.slice(0,3).join(', '),doc_title:text.includes('SHERIFF')?'SHERIFF DEED':'',raw_text:text.substring(0,300),source_url:docLink,county:'Pima'});count++;});if(results.length===0){alert('No results found on page. Make sure search results are visible.');return;}var msg='Found '+results.length+' results. Send to Oncor database?';if(!confirm(msg))return;var saved=0;var errors=0;function saveNext(i){if(i>=results.length){alert('Done! Saved: '+saved+', Errors: '+errors);return;}var r=results[i];fetch(SUPABASE_URL+'/rest/v1/documents',{method:'POST',headers:{'apikey':SUPABASE_KEY,'Authorization':'Bearer '+SUPABASE_KEY,'Content-Type':'application/json','Prefer':'return=minimal'},body:JSON.stringify({doc_number:'PIMA-'+r.doc_number,code:'DE',record_date:r.record_date,names:[r.names],is_foreclosure:true,doc_title:r.doc_title||'SHERIFF DEED (PIMA)',doc_type:'Pima County',address:'',parcel_number:'',sale_amount:null,sale_date:'New|'+r.raw_text.substring(0,100)})}).then(function(res){if(res.ok)saved++;else errors++;saveNext(i+1);}).catch(function(){errors++;saveNext(i+1);});}saveNext(0);}());">⚡ Scrape to Oncor</a>
+  </p>
+  <p class="note">Or right-click → "Add to Bookmarks" if you can't drag it</p>
+</div>
+
+<div class="step">
+  <h3>Step 4: Click the bookmark on the results page</h3>
+  <p>After search results load, click the "⚡ Scrape to Oncor" bookmark. It'll grab all results and send them to the database tagged as Pima County.</p>
+</div>
+
+<div class="step">
+  <h3>Alternative: Console Script</h3>
+  <p>If the bookmarklet doesn't work, paste this in the browser console (F12 → Console) while on the results page:</p>
+  <textarea readonly onclick="this.select()">
+// Copy everything from the bookmarklet link above
+// Or just screenshot the results and send to Zeus
+  </textarea>
+</div>
+
+<p class="note">This only works on the Pima County Recorder site after solving the captcha. Results are sent to the Oncor Supabase database with county=Pima tag.</p>
+</body>
+</html>
