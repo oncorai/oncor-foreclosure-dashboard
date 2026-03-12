@@ -243,6 +243,11 @@
         <option value="Dead">Dead</option>
       </select>
     </div>
+    <div class="filter-group"><label>County</label>
+      <select id="filter-county" onchange="applyFilters()">
+        <option value="">All</option>
+      </select>
+    </div>
     <div class="filter-group"><label>Code</label>
       <select id="filter-code" onchange="applyFilters()">
         <option value="">All</option><option value="CE">CE</option><option value="DE">DE</option>
@@ -258,6 +263,7 @@
     <div class="table-scroll">
       <table id="data-table" style="display:none">
         <thead><tr>
+          <th onclick="sortBy('doc_type')">County ↕</th>
           <th onclick="sortBy('record_date')">Date ↕</th>
           <th onclick="sortBy('parcel_number')">Case # ↕</th>
           <th onclick="sortBy('address')">Address ↕</th>
@@ -292,6 +298,10 @@
         <label>Address</label>
         <input id="cd-address" onblur="saveCaseField('address', this.value)">
         <span class="saved-indicator" id="cd-address-saved">✓</span>
+      </div>
+      <div class="meta-field">
+        <label>County</label>
+        <div class="val" id="cd-county" style="color:var(--accent)"></div>
       </div>
       <div class="meta-field">
         <label>Doc Number</label>
@@ -405,6 +415,7 @@ async function loadData() {
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     allDocuments = await res.json();
     updateStats();
+    buildCountyFilter();
     applyFilters();
     document.getElementById('loading').style.display = 'none';
     document.getElementById('data-table').style.display = 'table';
@@ -452,11 +463,19 @@ function updateStats() {
   document.getElementById('stat-researching').textContent = research;
 }
 
+// === COUNTY FILTER ===
+function buildCountyFilter() {
+  const counties = [...new Set(allDocuments.map(d => d.doc_type || 'Maricopa'))].sort();
+  const sel = document.getElementById('filter-county');
+  sel.innerHTML = '<option value="">All Counties</option>' + counties.map(c => `<option value="${c}">${c}</option>`).join('');
+}
+
 // === FILTERS ===
 function applyFilters() {
   const q = document.getElementById('filter-name').value.toLowerCase();
   const sf = document.getElementById('filter-status').value;
   const cf = document.getElementById('filter-code').value;
+  const countyF = document.getElementById('filter-county').value;
   const df = document.getElementById('filter-date-from').value;
   const dt = document.getElementById('filter-date-to').value;
   filteredDocuments = allDocuments.filter(doc => {
@@ -467,6 +486,7 @@ function applyFilters() {
     }
     if (sf && parseCRM(doc.sale_date).status !== sf) return false;
     if (cf && doc.code !== cf) return false;
+    if (countyF && (doc.doc_type || 'Maricopa') !== countyF) return false;
     if (df || dt) {
       const dd = parseDate(doc.record_date);
       if (dd) { if (df && dd < new Date(df)) return false; if (dt && dd > new Date(dt + 'T23:59:59')) return false; }
@@ -477,7 +497,7 @@ function applyFilters() {
   renderTable();
 }
 function clearFilters() {
-  ['filter-name','filter-status','filter-code','filter-date-from','filter-date-to'].forEach(id => document.getElementById(id).value = '');
+  ['filter-name','filter-status','filter-county','filter-code','filter-date-from','filter-date-to'].forEach(id => document.getElementById(id).value = '');
   applyFilters();
 }
 
@@ -508,7 +528,9 @@ function renderTable() {
     const crm = parseCRM(doc.sale_date);
     const statusClass = 'status-' + crm.status.toLowerCase();
     const notesPreview = crm.notes ? crm.notes.substring(0, 40) + (crm.notes.length > 40 ? '…' : '') : '';
+    var county = doc.doc_type || 'Maricopa';
     return `<tr class="clickable-row" onclick="openCase('${doc.doc_number}')">
+      <td style="font-size:0.8rem">${escapeHtml(county)}</td>
       <td>${formatDate(doc.record_date)}</td>
       <td style="font-family:monospace;font-size:0.8rem">${escapeHtml(doc.parcel_number || '—')}</td>
       <td class="addr-cell">${escapeHtml(doc.address || '—')}</td>
@@ -537,6 +559,7 @@ function openCase(docNumber) {
   document.getElementById('cd-title').textContent = currentDoc.address || currentDoc.doc_title || 'Case Detail';
   document.getElementById('cd-case-num').textContent = currentDoc.parcel_number || currentDoc.doc_number;
   document.getElementById('cd-address').value = currentDoc.address || '';
+  document.getElementById('cd-county').textContent = currentDoc.doc_type || 'Maricopa';
   document.getElementById('cd-doc-number').textContent = currentDoc.doc_number;
   document.getElementById('cd-record-date').textContent = formatDate(currentDoc.record_date);
   document.getElementById('cd-doc-title').textContent = currentDoc.doc_title || '—';
