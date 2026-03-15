@@ -452,7 +452,7 @@ function updateStats() {
   document.getElementById('stat-foreclosures').textContent = allDocuments.length;
   let sum = 0, cnt = 0, research = 0;
   allDocuments.forEach(d => {
-    const s = d.sale_amount ? parseFloat(d.sale_amount) : null;
+    const s = d.sale_amount ? parseFloat(String(d.sale_amount).replace(/[$,]/g,'')) : null;
     if (s && s > 100) { sum += s; cnt++; }
     const crm = parseCRM(d.sale_date);
     if (crm.status === 'Researching') research++;
@@ -512,7 +512,7 @@ function sortDocuments() {
     let va = a[sortColumn], vb = b[sortColumn];
     if (sortColumn === 'names') { va = Array.isArray(va) ? va.join(', ') : (va||''); vb = Array.isArray(vb) ? vb.join(', ') : (vb||''); }
     if (sortColumn === 'record_date') { va = parseDate(va); vb = parseDate(vb); }
-    if (sortColumn === 'sale_amount') { va = parseFloat(va) || 0; vb = parseFloat(vb) || 0; }
+    if (sortColumn === 'sale_amount') { va = parseFloat(String(va).replace(/[$,]/g,'')) || 0; vb = parseFloat(String(vb).replace(/[$,]/g,'')) || 0; }
     if (va < vb) return sortDir === 'asc' ? -1 : 1;
     if (va > vb) return sortDir === 'asc' ? 1 : -1;
     return 0;
@@ -524,7 +524,7 @@ function renderTable() {
   const tbody = document.getElementById('table-body');
   tbody.innerHTML = filteredDocuments.map(doc => {
     const names = Array.isArray(doc.names) ? doc.names.join(', ') : (doc.names || '—');
-    const sale = doc.sale_amount ? parseFloat(doc.sale_amount) : null;
+    const sale = doc.sale_amount ? parseFloat(String(doc.sale_amount).replace(/[$,]/g,'')) : null;
     const crm = parseCRM(doc.sale_date);
     const statusClass = 'status-' + crm.status.toLowerCase();
     const notesPreview = crm.notes ? crm.notes.substring(0, 40) + (crm.notes.length > 40 ? '…' : '') : '';
@@ -554,7 +554,7 @@ function openCase(docNumber) {
   if (!currentDoc) return;
   const crm = parseCRM(currentDoc.sale_date);
   const names = Array.isArray(currentDoc.names) ? currentDoc.names.join('<br>') : (currentDoc.names || '—');
-  const sale = currentDoc.sale_amount ? parseFloat(currentDoc.sale_amount) : null;
+  const sale = currentDoc.sale_amount ? parseFloat(String(currentDoc.sale_amount).replace(/[$,]/g,'')) : null;
 
   document.getElementById('cd-title').textContent = currentDoc.address || currentDoc.doc_title || 'Case Detail';
   document.getElementById('cd-case-num').textContent = currentDoc.parcel_number || currentDoc.doc_number;
