@@ -434,12 +434,12 @@ function parseCRM(raw) {
 
 // === PARTY NAME FILTER ===
 function filterPartyNames(names) {
-  const corpWords = ['ASSOCIATION','INC.','INC','LLC','CORP','CORPORATION','BANK','CREDIT UNION','SECRETARY OF HOUSING','DEPARTMENT','HOSPITAL','MORTGAGE','NATIONSTAR','LENDMARK','MIDLAND','CAVALRY','CAPITAL ONE','DISCOVER','BARCLAYS','WELLS FARGO','COMPASS BANK','VANTAGE WEST','PIMA FEDERAL','MERIWEST','PIMA CO SHERIFF','SHERIFF','D/B/A','ASSIGNEES','SUCCESSORS','CT CORPORATION','FUNDING','CERTIFIED MAIL'];
+  const corpWords = ['ASSOCIATION','INC.','INC,','LLC','CORP','CORPORATION','BANK','CREDIT UNION','SECRETARY OF HOUSING','DEPARTMENT','HOSPITAL','MORTGAGE','NATIONSTAR','LENDMARK','MIDLAND','CAVALRY','CAPITAL ONE','DISCOVER','BARCLAYS','WELLS FARGO','COMPASS BANK','VANTAGE WEST','PIMA FEDERAL','MERIWEST','PIMA CO SHERIFF','SHERIFF','D/B/A','ASSIGNEES','SUCCESSORS','CT CORPORATION','FUNDING','CERTIFIED MAIL','PROPERTIES','ENTERPRISES','COMMUNITY','HOMEOWNERS','PROGRAM','VILLAGE','VS.','ET AL'];
   const filtered = names.filter(n => {
-    const upper = n.toUpperCase();
-    return !corpWords.some(w => upper.includes(w));
+    const upper = n.toUpperCase().trim();
+    return upper.length > 2 && !corpWords.some(w => upper.includes(w));
   });
-  return filtered.length > 0 ? filtered : [names[0] || '—'];
+  return filtered.length > 0 ? filtered : ['—'];
 }
 
 // === DATES ===
