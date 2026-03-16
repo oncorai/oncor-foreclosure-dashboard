@@ -107,7 +107,7 @@
     .status-filed { background: rgba(168,85,247,0.15); color: var(--purple); }
     .status-claimed { background: rgba(34,197,94,0.15); color: var(--green); }
     .status-dead { background: rgba(239,68,68,0.15); color: var(--red); }
-    .status-sold { background: rgba(245,158,11,0.15); color: var(--accent); }
+    .status-no-certificate { background: rgba(245,158,11,0.15); color: var(--accent); }
     .status-pre-auction { background: rgba(168,85,247,0.15); color: #a855f7; }
     .row-complete { border-left: 3px solid var(--green); }
     .row-sold-missing { border-left: 3px solid var(--accent); }
@@ -241,7 +241,7 @@
       <select id="filter-status" onchange="applyFilters()">
         <option value="">All</option>
         <option value="New">New</option>
-        <option value="Sold">Sold</option>
+        <option value="No Certificate">No Certificate</option>
         <option value="Pre-Auction">Pre-Auction</option>
         <option value="Researching">Researching</option>
         <option value="Contacted">Contacted</option>
@@ -338,7 +338,7 @@
         <label>Status</label>
         <select id="cd-status" onchange="saveCaseStatus(this.value)">
           <option value="New">New</option>
-          <option value="Sold">Sold</option>
+          <option value="No Certificate">No Certificate</option>
           <option value="Pre-Auction">Pre-Auction</option>
           <option value="Researching">Researching</option>
           <option value="Contacted">Contacted</option>
@@ -433,7 +433,7 @@ async function loadData() {
 }
 
 // === CRM HELPERS ===
-const STATUSES = ['New', 'Sold', 'Pre-Auction', 'Researching', 'Contacted', 'Filed', 'Claimed', 'Dead'];
+const STATUSES = ['New', 'No Certificate', 'Pre-Auction', 'Researching', 'Contacted', 'Filed', 'Claimed', 'Dead'];
 function parseCRM(raw) {
   if (!raw) return { status: 'New', notes: '' };
   const i = raw.indexOf('|');
@@ -544,10 +544,10 @@ function renderTable() {
     const names = Array.isArray(doc.names) ? filterPartyNames(doc.names).join(', ') : (doc.names || '—');
     const sale = doc.sale_amount ? parseFloat(String(doc.sale_amount).replace(/[$,]/g,'')) : null;
     const crm = parseCRM(doc.sale_date);
-    const statusClass = 'status-' + crm.status.toLowerCase();
+    const statusClass = 'status-' + crm.status.toLowerCase().replace(/\s+/g, '-');
     var county = doc.doc_type || 'Maricopa';
     const hasProceeds = sale && sale > 100;
-    const rowClass = hasProceeds ? 'row-complete' : (crm.status === 'Sold' ? 'row-sold-missing' : (crm.status === 'Pre-Auction' ? 'row-pending' : '')); 
+    const rowClass = hasProceeds ? 'row-complete' : (crm.status === 'No Certificate' ? 'row-sold-missing' : (crm.status === 'Pre-Auction' ? 'row-pending' : '')); 
     return `<tr class="clickable-row" onclick="openCase('${doc.doc_number}')">
       <td style="font-size:0.8rem">${escapeHtml(county)}</td>
       <td>${formatDate(doc.record_date)}</td>
