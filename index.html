@@ -224,9 +224,9 @@
 
   <div class="stats">
     <div class="stat-card"><div class="stat-label">Sheriff Sales</div><div class="stat-value amber" id="stat-foreclosures">—</div></div>
-    <div class="stat-card"><div class="stat-label">Total Sale $</div><div class="stat-value green" id="stat-total-sale">—</div></div>
-    <div class="stat-card"><div class="stat-label">Avg Sale $</div><div class="stat-value blue" id="stat-avg-sale">—</div></div>
-    <div class="stat-card"><div class="stat-label">With Sale Data</div><div class="stat-value" id="stat-has-data">—</div></div>
+    <div class="stat-card"><div class="stat-label">Total Proceeds</div><div class="stat-value green" id="stat-total-sale">—</div></div>
+    <div class="stat-card"><div class="stat-label">Avg Proceeds</div><div class="stat-value blue" id="stat-avg-sale">—</div></div>
+    <div class="stat-card"><div class="stat-label">With Proceeds</div><div class="stat-value" id="stat-has-data">—</div></div>
     <div class="stat-card"><div class="stat-label">Researching</div><div class="stat-value blue" id="stat-researching">—</div></div>
   </div>
 
@@ -267,10 +267,9 @@
           <th onclick="sortBy('record_date')">Date ↕</th>
           <th onclick="sortBy('parcel_number')">Case # ↕</th>
           <th onclick="sortBy('address')">Address ↕</th>
-          <th onclick="sortBy('sale_amount')">Sale $ ↕</th>
+          <th onclick="sortBy('sale_amount')">Proceeds ↕</th>
           <th>Parties</th>
           <th>Status</th>
-          <th>Notes</th>
         </tr></thead>
         <tbody id="table-body"></tbody>
       </table>
@@ -319,7 +318,7 @@
     <div class="meta-card">
       <h3>Financials</h3>
       <div class="meta-field">
-        <label>Sheriff Sale Amount</label>
+        <label>Proceeds</label>
         <input id="cd-sale-amount" onblur="saveSaleAmount(this.value)" style="font-size:1.2rem;font-weight:700;color:var(--green)">
         <span class="saved-indicator" id="cd-sale-saved">✓</span>
       </div>
@@ -433,6 +432,16 @@ function parseCRM(raw) {
   return { status: raw.substring(0, i) || 'New', notes: raw.substring(i + 1) };
 }
 
+// === PARTY NAME FILTER ===
+function filterPartyNames(names) {
+  const corpWords = ['ASSOCIATION','INC.','INC','LLC','CORP','CORPORATION','BANK','CREDIT UNION','SECRETARY OF HOUSING','DEPARTMENT','HOSPITAL','MORTGAGE','NATIONSTAR','LENDMARK','MIDLAND','CAVALRY','CAPITAL ONE','DISCOVER','BARCLAYS','WELLS FARGO','COMPASS BANK','VANTAGE WEST','PIMA FEDERAL','MERIWEST','PIMA CO SHERIFF','SHERIFF','D/B/A','ASSIGNEES','SUCCESSORS','CT CORPORATION','FUNDING','CERTIFIED MAIL'];
+  const filtered = names.filter(n => {
+    const upper = n.toUpperCase();
+    return !corpWords.some(w => upper.includes(w));
+  });
+  return filtered.length > 0 ? filtered : [names[0] || '—'];
+}
+
 // === DATES ===
 function parseDate(s) {
   if (!s) return null;
@@ -523,11 +532,10 @@ function sortDocuments() {
 function renderTable() {
   const tbody = document.getElementById('table-body');
   tbody.innerHTML = filteredDocuments.map(doc => {
-    const names = Array.isArray(doc.names) ? doc.names.join(', ') : (doc.names || '—');
+    const names = Array.isArray(doc.names) ? filterPartyNames(doc.names).join(', ') : (doc.names || '—');
     const sale = doc.sale_amount ? parseFloat(String(doc.sale_amount).replace(/[$,]/g,'')) : null;
     const crm = parseCRM(doc.sale_date);
     const statusClass = 'status-' + crm.status.toLowerCase();
-    const notesPreview = crm.notes ? crm.notes.substring(0, 40) + (crm.notes.length > 40 ? '…' : '') : '';
     var county = doc.doc_type || 'Maricopa';
     return `<tr class="clickable-row" onclick="openCase('${doc.doc_number}')">
       <td style="font-size:0.8rem">${escapeHtml(county)}</td>
@@ -537,7 +545,6 @@ function renderTable() {
       <td class="sale-val">${sale ? '$' + sale.toLocaleString() : '—'}</td>
       <td class="names-cell">${escapeHtml(names)}</td>
       <td><span class="status-badge ${statusClass}">${crm.status}</span></td>
-      <td class="notes-preview">${escapeHtml(notesPreview)}</td>
     </tr>`;
   }).join('');
   document.getElementById('results-count').textContent = `${filteredDocuments.length} of ${allDocuments.length}`;
@@ -730,7 +737,7 @@ async function deleteCaseFile(fileName) {
 
 // === CSV EXPORT ===
 function exportCSV() {
-  const h = ['record_date','case_number','address','sale_amount','parties','status','notes','pdf_url','court_url'];
+  const h = ['record_date','case_number','address','proceeds','parties','status','notes','pdf_url','court_url'];
   const rows = filteredDocuments.map(d => {
     const names = Array.isArray(d.names) ? d.names.join('; ') : (d.names || '');
     const crm = parseCRM(d.sale_date);
