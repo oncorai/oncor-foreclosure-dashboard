@@ -140,6 +140,51 @@
     .meta-field .saved-indicator { color: var(--green); font-size: 0.7rem; opacity: 0; transition: opacity 0.3s; margin-left: 6px; }
     .meta-field .saved-indicator.show { opacity: 1; }
 
+    /* Case Intel Section */
+    .intel-section { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin-bottom: 24px; }
+    .intel-section h3 { font-size: 0.85rem; color: var(--accent2); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+    .intel-tabs { display: flex; gap: 4px; margin-bottom: 16px; flex-wrap: wrap; }
+    .intel-tab { padding: 6px 14px; border-radius: 6px; border: 1px solid var(--border); background: var(--surface2); color: var(--text-dim); font-size: 0.8rem; cursor: pointer; }
+    .intel-tab.active { background: var(--accent2); color: #fff; border-color: var(--accent2); }
+    .intel-tab:hover:not(.active) { border-color: var(--accent2); color: var(--accent2); }
+    .intel-panel { display: none; }
+    .intel-panel.active { display: block; }
+    
+    /* Timeline */
+    .timeline { position: relative; padding-left: 24px; }
+    .timeline::before { content: ''; position: absolute; left: 8px; top: 4px; bottom: 4px; width: 2px; background: var(--border); }
+    .timeline-item { position: relative; margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid rgba(46,50,69,0.5); }
+    .timeline-item:last-child { margin-bottom: 0; border-bottom: none; }
+    .timeline-item::before { content: ''; position: absolute; left: -20px; top: 6px; width: 10px; height: 10px; border-radius: 50%; background: var(--border); border: 2px solid var(--surface); }
+    .timeline-item.milestone::before { background: var(--accent); }
+    .timeline-item.active-step::before { background: var(--green); }
+    .timeline-item.warning::before { background: var(--red); }
+    .tl-date { font-size: 0.7rem; color: var(--text-dim); font-family: monospace; }
+    .tl-entry { font-size: 0.85rem; color: var(--text); margin-top: 2px; }
+    .tl-entry.highlight { color: var(--accent); font-weight: 600; }
+    
+    /* People cards */
+    .person-card { background: var(--surface2); border: 1px solid var(--border); border-radius: 10px; padding: 14px; margin-bottom: 10px; }
+    .person-card h4 { font-size: 0.95rem; color: var(--text); margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+    .person-card h4 .role-badge { font-size: 0.65rem; padding: 2px 8px; border-radius: 4px; font-weight: 600; }
+    .role-defendant { background: rgba(239,68,68,0.15); color: var(--red); }
+    .role-plaintiff { background: rgba(59,130,246,0.15); color: var(--accent2); }
+    .person-detail { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 8px; font-size: 0.8rem; }
+    .person-detail .pd-label { color: var(--text-dim); font-size: 0.7rem; text-transform: uppercase; }
+    .person-detail .pd-value { color: var(--text); }
+    .person-detail .pd-value a { color: var(--accent2); text-decoration: none; }
+    .person-detail .pd-value a:hover { text-decoration: underline; }
+    
+    /* Surplus calc */
+    .surplus-card { background: linear-gradient(135deg, rgba(34,197,94,0.08), rgba(34,197,94,0.02)); border: 1px solid rgba(34,197,94,0.2); border-radius: 10px; padding: 16px; margin-bottom: 16px; }
+    .surplus-card h4 { color: var(--green); font-size: 0.85rem; margin-bottom: 10px; }
+    .surplus-row { display: flex; justify-content: space-between; align-items: center; padding: 4px 0; font-size: 0.9rem; }
+    .surplus-row.total { border-top: 2px solid var(--green); margin-top: 8px; padding-top: 8px; font-weight: 700; font-size: 1.1rem; color: var(--green); }
+    .surplus-row .label { color: var(--text-dim); }
+    
+    .intel-empty { color: var(--text-dim); font-size: 0.85rem; padding: 20px; text-align: center; font-style: italic; }
+    .intel-loading { color: var(--text-dim); font-size: 0.85rem; padding: 16px; text-align: center; }
+
     /* Notes Section */
     .notes-section { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin-bottom: 24px; }
     .notes-section h3 { font-size: 0.85rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 12px; }
@@ -357,8 +402,36 @@
 
   <div class="links-row" id="cd-links"></div>
 
+  <!-- Case Intel (Zeus's auto-populated section) -->
+  <div class="intel-section">
+    <h3>🧠 Case Intel <span style="font-size:0.7rem;color:var(--text-dim);font-weight:400">(auto-populated by Zeus)</span></h3>
+    
+    <div class="intel-tabs">
+      <div class="intel-tab active" onclick="switchIntelTab('timeline')">📋 Timeline</div>
+      <div class="intel-tab" onclick="switchIntelTab('people')">👤 People</div>
+      <div class="intel-tab" onclick="switchIntelTab('financials')">💰 Surplus Calc</div>
+      <div class="intel-tab" onclick="switchIntelTab('property')">🏠 Property</div>
+    </div>
+    
+    <div class="intel-panel active" id="intel-timeline">
+      <div class="intel-loading" id="intel-timeline-loading">Loading docket...</div>
+    </div>
+    
+    <div class="intel-panel" id="intel-people">
+      <div class="intel-loading" id="intel-people-loading">Loading people data...</div>
+    </div>
+    
+    <div class="intel-panel" id="intel-financials">
+      <div class="intel-loading" id="intel-financials-loading">Loading financials...</div>
+    </div>
+    
+    <div class="intel-panel" id="intel-property">
+      <div class="intel-loading" id="intel-property-loading">Loading property data...</div>
+    </div>
+  </div>
+
   <div class="notes-section">
-    <h3>📝 Notes</h3>
+    <h3>📝 Your CRM Notes</h3>
     <textarea class="notes-textarea" id="cd-notes" placeholder="Add research notes, phone numbers, findings..."></textarea>
     <div class="notes-footer">
       <span class="autosave" id="cd-notes-status">Auto-saves on changes</span>
@@ -607,8 +680,12 @@ function openCase(docNumber) {
     notesSaveTimer = setTimeout(() => saveCaseNotes(notesEl.value), 1000);
   };
 
-  // Load attachments
+  // Load intel data + attachments
+  loadIntelData();
   loadCaseAttachments();
+
+  // Reset intel tabs to timeline
+  switchIntelTab('timeline');
 
   // Show detail, hide list
   document.getElementById('dashboard').style.display = 'none';
@@ -744,6 +821,190 @@ async function deleteCaseFile(fileName) {
     body: JSON.stringify({ prefixes: [`${currentDoc.doc_number}/${fileName}`] })
   });
   loadCaseAttachments();
+}
+
+// === CASE INTEL ===
+function switchIntelTab(tabName) {
+  document.querySelectorAll('.intel-tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.intel-panel').forEach(p => p.classList.remove('active'));
+  document.getElementById('intel-' + tabName).classList.add('active');
+  document.querySelector(`.intel-tab[onclick*="${tabName}"]`).classList.add('active');
+}
+
+function loadCaseIntel() {
+  if (!currentDoc) return;
+  const intel = currentDoc._intel || {};
+  renderTimeline(intel.docket || []);
+  renderPeople(intel.people || []);
+  renderFinancials(intel);
+  renderProperty(intel);
+}
+
+function renderTimeline(docket) {
+  const el = document.getElementById('intel-timeline');
+  if (!docket.length) {
+    el.innerHTML = '<div class="intel-empty">No docket data yet. Zeus will populate this automatically.</div>';
+    return;
+  }
+  
+  const milestoneKeywords = ['judgment', 'default', 'order', 'writ', 'execution', 'levy', 'sale', 'sheriff', 'satisfaction', 'dismiss'];
+  const warningKeywords = ['dismiss', 'vacate', 'stay'];
+  const activeKeywords = ['writ of execution', 'writ of special execution', 'sheriff', 'sale', 'certificate', 'return'];
+  
+  el.innerHTML = '<div class="timeline">' + docket.map(d => {
+    const entryLower = (d.entry || d.description || '').toLowerCase();
+    const isMilestone = milestoneKeywords.some(k => entryLower.includes(k));
+    const isWarning = warningKeywords.some(k => entryLower.includes(k));
+    const isActive = activeKeywords.some(k => entryLower.includes(k));
+    const cls = isActive ? 'active-step' : (isWarning ? 'warning' : (isMilestone ? 'milestone' : ''));
+    const hlCls = (isMilestone || isActive) ? ' highlight' : '';
+    return `<div class="timeline-item ${cls}">
+      <div class="tl-date">${escapeHtml(d.date || '')}</div>
+      <div class="tl-entry${hlCls}">${escapeHtml(d.entry || d.description || '')}</div>
+    </div>`;
+  }).join('') + '</div>';
+}
+
+function renderPeople(people) {
+  const el = document.getElementById('intel-people');
+  if (!people.length) {
+    // Fallback: parse from doc names + defendant fields
+    const fallbackPeople = buildPeopleFromDoc();
+    if (!fallbackPeople.length) {
+      el.innerHTML = '<div class="intel-empty">No skip trace data yet. Zeus will populate this when available.</div>';
+      return;
+    }
+    renderPeopleCards(el, fallbackPeople);
+    return;
+  }
+  renderPeopleCards(el, people);
+}
+
+function buildPeopleFromDoc() {
+  if (!currentDoc) return [];
+  const people = [];
+  
+  // Parse defendants from defendant field
+  if (currentDoc.defendant && !currentDoc.defendant.startsWith('http')) {
+    const defs = currentDoc.defendant.split(';').map(s => s.trim()).filter(s => s);
+    defs.forEach(name => {
+      people.push({ name, role: 'Defendant', address: currentDoc.address || '', phone: '', email: '', notes: '' });
+    });
+  }
+  
+  // Parse names array for plaintiffs (HOAs)
+  if (Array.isArray(currentDoc.names)) {
+    const corpWords = ['ASSOCIATION','LLC','INC','CORP','BANK','SHERIFF','DEPARTMENT','MORTGAGE'];
+    currentDoc.names.forEach(name => {
+      if (corpWords.some(w => name.toUpperCase().includes(w))) {
+        people.push({ name, role: 'Plaintiff (HOA)', phone: '', email: '', notes: '' });
+      }
+    });
+  }
+  
+  return people;
+}
+
+function renderPeopleCards(el, people) {
+  el.innerHTML = people.map(p => {
+    const roleClass = p.role?.toLowerCase().includes('defendant') ? 'role-defendant' : 'role-plaintiff';
+    const details = [];
+    if (p.address) details.push(`<div><div class="pd-label">Address</div><div class="pd-value">${escapeHtml(p.address)}</div></div>`);
+    if (p.phone) details.push(`<div><div class="pd-label">Phone</div><div class="pd-value"><a href="tel:${p.phone}">${escapeHtml(p.phone)}</a></div></div>`);
+    if (p.email) details.push(`<div><div class="pd-label">Email</div><div class="pd-value"><a href="mailto:${p.email}">${escapeHtml(p.email)}</a></div></div>`);
+    if (p.relatives) details.push(`<div><div class="pd-label">Relatives</div><div class="pd-value">${escapeHtml(p.relatives)}</div></div>`);
+    if (p.age) details.push(`<div><div class="pd-label">Age</div><div class="pd-value">${escapeHtml(String(p.age))}</div></div>`);
+    if (p.notes) details.push(`<div style="grid-column:1/-1"><div class="pd-label">Intel Notes</div><div class="pd-value">${escapeHtml(p.notes)}</div></div>`);
+    
+    return `<div class="person-card">
+      <h4>${escapeHtml(p.name)} <span class="role-badge ${roleClass}">${escapeHtml(p.role || 'Unknown')}</span></h4>
+      ${details.length ? `<div class="person-detail">${details.join('')}</div>` : '<div style="color:var(--text-dim);font-size:0.8rem">No contact info found yet</div>'}
+    </div>`;
+  }).join('');
+}
+
+function renderFinancials(intel) {
+  const el = document.getElementById('intel-financials');
+  const sale = currentDoc?.sale_amount ? parseFloat(String(currentDoc.sale_amount).replace(/[$,]/g,'')) : null;
+  const judgment = intel.judgment_amount ? parseFloat(String(intel.judgment_amount).replace(/[$,]/g,'')) : null;
+  
+  if (!sale && !judgment) {
+    el.innerHTML = '<div class="intel-empty">No financial data yet. Surplus = Sale Price - Judgment Amount.</div>';
+    return;
+  }
+  
+  const surplus = (sale && judgment) ? sale - judgment : null;
+  const fee30 = surplus ? surplus * 0.30 : null;
+  
+  let html = '<div class="surplus-card"><h4>💰 Surplus Calculation</h4>';
+  
+  if (judgment) html += `<div class="surplus-row"><span class="label">Judgment Amount</span><span>$${judgment.toLocaleString()}</span></div>`;
+  else html += `<div class="surplus-row"><span class="label">Judgment Amount</span><span style="color:var(--text-dim)">Unknown</span></div>`;
+  
+  if (sale) html += `<div class="surplus-row"><span class="label">Sheriff Sale Price</span><span>$${sale.toLocaleString()}</span></div>`;
+  else html += `<div class="surplus-row"><span class="label">Sheriff Sale Price</span><span style="color:var(--text-dim)">Unknown</span></div>`;
+  
+  if (surplus !== null) {
+    if (surplus > 0) {
+      html += `<div class="surplus-row total"><span>Estimated Surplus</span><span>$${Math.round(surplus).toLocaleString()}</span></div>`;
+      html += `<div class="surplus-row"><span class="label">30% Fee (yours)</span><span style="color:var(--accent)">$${Math.round(fee30).toLocaleString()}</span></div>`;
+    } else {
+      html += `<div class="surplus-row total" style="color:var(--red)"><span>Deficiency (no surplus)</span><span>-$${Math.round(Math.abs(surplus)).toLocaleString()}</span></div>`;
+    }
+  }
+  
+  html += '</div>';
+  
+  // Additional financial notes
+  if (intel.financial_notes) {
+    html += `<div style="font-size:0.8rem;color:var(--text-dim);padding:8px;line-height:1.5">${escapeHtml(intel.financial_notes)}</div>`;
+  }
+  
+  el.innerHTML = html;
+}
+
+function renderProperty(intel) {
+  const el = document.getElementById('intel-property');
+  const props = [];
+  
+  if (currentDoc?.address) props.push(['Address', currentDoc.address]);
+  if (intel.fcv) props.push(['Full Cash Value (FCV)', '$' + Number(intel.fcv).toLocaleString()]);
+  if (intel.sqft) props.push(['Square Feet', Number(intel.sqft).toLocaleString()]);
+  if (intel.subdivision) props.push(['Subdivision', intel.subdivision]);
+  if (intel.parcel) props.push(['Parcel Number', intel.parcel]);
+  if (intel.owner) props.push(['Current Owner', intel.owner]);
+  if (intel.sale_history?.length) {
+    props.push(['Sale History', intel.sale_history.map(s => `${s.date}: $${Number(s.value).toLocaleString()}`).join(', ')]);
+  }
+  if (intel.assessor_url) props.push(['Assessor Link', `<a href="${intel.assessor_url}" target="_blank" style="color:var(--accent2)">View on Assessor</a>`]);
+  
+  if (!props.length) {
+    el.innerHTML = '<div class="intel-empty">No property data yet. Zeus will pull from county assessor when available.</div>';
+    return;
+  }
+  
+  el.innerHTML = '<div class="person-card">' + props.map(([label, value]) => 
+    `<div style="margin-bottom:8px"><div class="pd-label">${escapeHtml(label)}</div><div class="pd-value">${value.startsWith('<a') ? value : escapeHtml(value)}</div></div>`
+  ).join('') + '</div>';
+}
+
+// Load intel data from Supabase storage (stored as JSON per case)
+async function loadIntelData() {
+  if (!currentDoc) return;
+  const docNum = currentDoc.doc_number;
+  
+  try {
+    const res = await fetch(`${SUPABASE_URL}/storage/v1/object/public/${ATTACHMENTS_BUCKET}/${docNum}/_intel.json?t=${Date.now()}`);
+    if (res.ok) {
+      currentDoc._intel = await res.json();
+    } else {
+      currentDoc._intel = {};
+    }
+  } catch {
+    currentDoc._intel = {};
+  }
+  
+  loadCaseIntel();
 }
 
 // === CSV EXPORT ===
