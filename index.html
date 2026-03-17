@@ -834,10 +834,20 @@ function switchIntelTab(tabName) {
 function loadCaseIntel() {
   if (!currentDoc) return;
   const intel = currentDoc._intel || {};
+  
+  // Always render — use intel data if available, fall back to doc fields
   renderTimeline(intel.docket || []);
   renderPeople(intel.people || []);
   renderFinancials(intel);
   renderProperty(intel);
+  
+  // Show tab counts
+  const docketCount = (intel.docket || []).length;
+  const peopleCount = (intel.people || buildPeopleFromDoc()).length;
+  document.querySelectorAll('.intel-tab').forEach(t => {
+    if (t.textContent.includes('Timeline') && docketCount) t.textContent = `📋 Timeline (${docketCount})`;
+    if (t.textContent.includes('People') && peopleCount) t.textContent = `👤 People (${peopleCount})`;
+  });
 }
 
 function renderTimeline(docket) {
@@ -867,17 +877,13 @@ function renderTimeline(docket) {
 
 function renderPeople(people) {
   const el = document.getElementById('intel-people');
-  if (!people.length) {
-    // Fallback: parse from doc names + defendant fields
-    const fallbackPeople = buildPeopleFromDoc();
-    if (!fallbackPeople.length) {
-      el.innerHTML = '<div class="intel-empty">No skip trace data yet. Zeus will populate this when available.</div>';
-      return;
-    }
-    renderPeopleCards(el, fallbackPeople);
+  // Always try to show something — merge intel people with fallback
+  const allPeople = people.length ? people : buildPeopleFromDoc();
+  if (!allPeople.length) {
+    el.innerHTML = '<div class="intel-empty">No people data available. Intel will be populated automatically.</div>';
     return;
   }
-  renderPeopleCards(el, people);
+  renderPeopleCards(el, allPeople);
 }
 
 function buildPeopleFromDoc() {
@@ -927,9 +933,10 @@ function renderFinancials(intel) {
   const el = document.getElementById('intel-financials');
   const sale = currentDoc?.sale_amount ? parseFloat(String(currentDoc.sale_amount).replace(/[$,]/g,'')) : null;
   const judgment = intel.judgment_amount ? parseFloat(String(intel.judgment_amount).replace(/[$,]/g,'')) : null;
+  const fcv = intel.fcv ? parseFloat(String(intel.fcv)) : null;
   
-  if (!sale && !judgment) {
-    el.innerHTML = '<div class="intel-empty">No financial data yet. Surplus = Sale Price - Judgment Amount.</div>';
+  if (!sale && !judgment && !fcv) {
+    el.innerHTML = '<div class="intel-empty">No financial data yet. Surplus = Sale Price − Judgment Amount.</div>';
     return;
   }
   
@@ -992,16 +999,19 @@ function renderProperty(intel) {
 async function loadIntelData() {
   if (!currentDoc) return;
   const docNum = currentDoc.doc_number;
+  currentDoc._intel = {};
   
   try {
-    const res = await fetch(`${SUPABASE_URL}/storage/v1/object/public/${ATTACHMENTS_BUCKET}/${docNum}/_intel.json?t=${Date.now()}`);
+    const url = `${SUPABASE_URL}/storage/v1/object/public/${ATTACHMENTS_BUCKET}/${encodeURIComponent(docNum)}/_intel.json?t=${Date.now()}`;
+    const res = await fetch(url);
     if (res.ok) {
-      currentDoc._intel = await res.json();
-    } else {
-      currentDoc._intel = {};
+      const text = await res.text();
+      if (text && text.startsWith('{')) {
+        currentDoc._intel = JSON.parse(text);
+      }
     }
-  } catch {
-    currentDoc._intel = {};
+  } catch(e) {
+    console.log('Intel load error:', e);
   }
   
   loadCaseIntel();
