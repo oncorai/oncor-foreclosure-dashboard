@@ -453,6 +453,7 @@
   </div>
 </div>
 
+<script src="intel-data.js"></script>
 <script>
 const SUPABASE_URL = 'https://jiailsusjabqythgokcb.supabase.co';
 const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImppYWlsc3VzamFicXl0aGdva2NiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzI5OTI5ODgsImV4cCI6MjA4ODU2ODk4OH0.QdfPmDFO1mHful9uKJOAHocZRg4aYb80igQS5DZgdEQ';
@@ -999,19 +1000,22 @@ function renderProperty(intel) {
 async function loadIntelData() {
   if (!currentDoc) return;
   const docNum = currentDoc.doc_number;
-  currentDoc._intel = {};
   
-  try {
-    const url = `${SUPABASE_URL}/storage/v1/object/public/${ATTACHMENTS_BUCKET}/${encodeURIComponent(docNum)}/_intel.json?t=${Date.now()}`;
-    const res = await fetch(url);
-    if (res.ok) {
-      const text = await res.text();
-      if (text && text.startsWith('{')) {
-        currentDoc._intel = JSON.parse(text);
+  // Try embedded data first (instant), then fall back to storage fetch
+  if (typeof INTEL_DATA !== 'undefined' && INTEL_DATA[docNum]) {
+    currentDoc._intel = INTEL_DATA[docNum];
+  } else {
+    currentDoc._intel = {};
+    try {
+      const url = `${SUPABASE_URL}/storage/v1/object/public/${ATTACHMENTS_BUCKET}/${docNum}/_intel.json?t=${Date.now()}`;
+      const res = await fetch(url);
+      if (res.ok) {
+        const text = await res.text();
+        if (text && text.startsWith('{')) {
+          currentDoc._intel = JSON.parse(text);
+        }
       }
-    }
-  } catch(e) {
-    console.log('Intel load error:', e);
+    } catch(e) { /* no intel available */ }
   }
   
   loadCaseIntel();
