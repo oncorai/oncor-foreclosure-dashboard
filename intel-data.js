@@ -367,7 +367,10 @@ const INTEL_DATA = {
         "address": "2126 S. 101st Drive, Tolleson, AZ 85353",
         "phone": "",
         "email": "",
-        "notes": "Former owner of 2126 S. 101st Drive, Tolleson, AZ 85353. Property sold at sheriff sale for $83,065.39. Estimated surplus: $75,250.39. Need: current phone, email, mailing address via skip trace service."
+        "other_cases": "CV2004-018020 (2004): Civil Court Case Information - Case History\nCV2004-018023 (2004): Civil Court Case Information - Case History\nTJ2006-000717 (2006): Worldwide Asset Purchasing L L C vs \nCV2007-009728 (2007): Civil Court Case Information - Case History\nTJ2013-011563 (2013): Capital One Bank U S A, N A vs  [debt/credit] [DEFAULT]\nCV2014-014544 (2014): United Automobile Insurance Company vs  [insurance/accident]\nCV2014-096299 (2014): State Farm Mutual Automobile Insurance Company vs  [insurance/accident]",
+        "relatives": "",
+        "best_leads": "\u2022 Property address: 2126 S. 101st Drive, Tolleson, AZ 85353\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)",
+        "notes": "Former owner of 2126 S. 101st Drive, Tolleson, AZ 85353. Property sold at sheriff sale for $83,065.39. Financial history: 1 debt/credit cases."
       },
       {
         "name": "Country Place Community Master Association",
@@ -375,9 +378,9 @@ const INTEL_DATA = {
         "notes": "Filed the original HOA lien foreclosure."
       }
     ],
-    "story": "Country Place Community Master Association sued Jesus A Trevizo-Acosta for HOA lien foreclosure.\n\u26a0\ufe0f Satisfaction of Judgment filed (11/26/2025) \u2014 case may be settled/paid.\nSheriff sale conducted (11/25/2025). Sale price: $83,065.39\nWrit of Special Execution issued (11/20/2025) \u2014 sheriff sale authorized.\nWrit of Special Execution issued (11/20/2025) \u2014 sheriff sale authorized.\nDefault judgment entered (12/17/2024).\nDefault judgment entered (12/16/2024).",
+    "story": "Case: CV2024-025099 | Sale: $83,065.39\n\nCountry Place Community Master Association sued for HOA lien foreclosure.\n\u2022 \u26a0\ufe0f Satisfaction of Judgment filed (11/26/2025)\n\u2022 Sheriff sold the property for $83,065.39 (11/25/2025)\n\u2022 Writ of execution issued (11/20/2025)\n\u2022 Writ of execution issued (11/20/2025)\n\u2022 Never responded \u2014 default entered (12/17/2024)\n\u2022 Never responded \u2014 default entered (12/16/2024)\n\u2022 Couldn't find them \u2014 court granted alternative service (11/14/2024)\n\n\u2500\u2500\u2500\n\nCourt History (7 other cases):\n\u2022 CV2004-018020 (2004): Civil Court Case Information - Case History\n\u2022 CV2004-018023 (2004): Civil Court Case Information - Case History\n\u2022 TJ2006-000717 (2006): Worldwide Asset Purchasing L L C vs \n\u2022 CV2007-009728 (2007): Civil Court Case Information - Case History\n\u2022 TJ2013-011563 (2013): Capital One Bank U S A, N A vs  [debt/credit] [DEFAULT]\n\u2022 CV2014-014544 (2014): United Automobile Insurance Company vs  [insurance/accident]\n\u2022 CV2014-096299 (2014): State Farm Mutual Automobile Insurance Company vs  [insurance/accident]",
     "red_flags": [
-      "Satisfaction of Judgment filed \u2014 may already be resolved"
+      "Satisfaction of Judgment filed (11/26/2025) \u2014 case may be settled"
     ],
     "financial_notes": "Sale price: $83,065.39. Judgment: $7815."
   },
@@ -400,7 +403,10 @@ const INTEL_DATA = {
         "address": "3151 North 142nd Drive, Goodyear, AZ",
         "phone": "",
         "email": "",
-        "notes": "Former owner of 3151 North 142nd Drive, Goodyear, AZ. Property sold at sheriff sale for $34,109.38. Need: current phone, email, mailing address via skip trace service."
+        "other_cases": "CV2008-018315 (2008): D T D-D E V C O 6, L L C vs  [DEFAULT]\nCV2009-003061 (2009): Civil Court Case Information - Case History",
+        "relatives": "",
+        "best_leads": "\u2022 Property address: 3151 North 142nd Drive, Goodyear, AZ\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)",
+        "notes": "Former owner of 3151 North 142nd Drive, Goodyear, AZ. Property sold at sheriff sale for $34,109.38."
       },
       {
         "name": "D T D-Devco-6 L L C",
@@ -408,7 +414,10 @@ const INTEL_DATA = {
         "address": "3151 North 142nd Drive, Goodyear, AZ",
         "phone": "",
         "email": "",
-        "notes": "Former owner of 3151 North 142nd Drive, Goodyear, AZ. Property sold at sheriff sale for $34,109.38. Need: current phone, email, mailing address via skip trace service."
+        "other_cases": "",
+        "relatives": "",
+        "best_leads": "\u2022 Property address: 3151 North 142nd Drive, Goodyear, AZ\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)",
+        "notes": "Former owner of 3151 North 142nd Drive, Goodyear, AZ. Property sold at sheriff sale for $34,109.38."
       },
       {
         "name": "Palm Valley Phases I I And I I I Community Association Inc",
@@ -416,7 +425,7 @@ const INTEL_DATA = {
         "notes": "Filed the original HOA lien foreclosure."
       }
     ],
-    "story": "Palm Valley Phases I I And I I I Community Association Inc sued Timothy Baiardi, D T D-Devco-6 L L C for HOA lien foreclosure.\nSheriff sale conducted (12/18/2025). Sale price: $34,109.38\nWrit of Special Execution issued (12/12/2025) \u2014 sheriff sale authorized.",
+    "story": "Case: CV2025-002165 | Sale: $34,109.38\n\nPalm Valley Phases I I And I I I Community Association Inc sued for HOA lien foreclosure.\n\u2022 Sheriff sold the property for $34,109.38 (12/18/2025)\n\u2022 Writ of execution issued (12/12/2025)\n\n\u2500\u2500\u2500\n\nCourt History (2 other cases):\n\u2022 CV2008-018315 (2008): D T D-D E V C O 6, L L C vs  [DEFAULT]\n\u2022 CV2009-003061 (2009): Civil Court Case Information - Case History",
     "red_flags": [],
     "financial_notes": "Sale price: $34,109.38. Judgment: Unknown \u2014 check court docket."
   },
@@ -430,7 +439,10 @@ const INTEL_DATA = {
         "address": "3118 North 303rd Drive, Buckeye, AZ",
         "phone": "",
         "email": "",
-        "notes": "Former owner of 3118 North 303rd Drive, Buckeye, AZ. Property sold at sheriff sale for $8,356.82. Need: current phone, email, mailing address via skip trace service."
+        "other_cases": "CV2026-004455 (2026): Civil Court Case Information - Case History",
+        "relatives": "",
+        "best_leads": "\u2022 Property address: 3118 North 303rd Drive, Buckeye, AZ\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)",
+        "notes": "Former owner of 3118 North 303rd Drive, Buckeye, AZ. Property sold at sheriff sale for $8,356.82."
       },
       {
         "name": "Tartesso Community Association",
@@ -438,7 +450,7 @@ const INTEL_DATA = {
         "notes": "Filed the original HOA lien foreclosure."
       }
     ],
-    "story": "Tartesso Community Association sued Samantha Irene Reyna for HOA lien foreclosure.",
+    "story": "Case: CV2024-025208 | Sale: $8,356.82\n\nTartesso Community Association sued for HOA lien foreclosure.\n\n\u2500\u2500\u2500\n\nCourt History (1 other cases):\n\u2022 CV2026-004455 (2026): Civil Court Case Information - Case History",
     "red_flags": [],
     "financial_notes": "Sale price: $8,356.82. Judgment: Unknown \u2014 check court docket."
   },
@@ -489,7 +501,10 @@ const INTEL_DATA = {
         "address": "2565 E. Southern Ave., Unit #63, Mesa, AZ",
         "phone": "",
         "email": "",
-        "notes": "Former owner of 2565 E. Southern Ave., Unit #63, Mesa, AZ. Property sold at sheriff sale for $40,004.68. Need: current phone, email, mailing address via skip trace service."
+        "other_cases": "CV1996-090247 (1996): Civil Court Case Information - Case History\nCV2006-092240 (2006): Civil Court Case Information - Case History\nTJ2011-014185 (2011): Citifinancial Inc vs \nCV2018-096026 (2018): Civil Court Case Information - Case History\nCV2026-010657 (2026): Civil Court Case Information - Case History",
+        "relatives": "",
+        "best_leads": "\u2022 Property address: 2565 E. Southern Ave., Unit #63, Mesa, AZ\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)\n\u2022 Nicholas Sanderson \u2014 co-defendant in CV2026-010657 \u2014 likely family\n\u2022 Property address: 2565 E. Southern Ave., Unit #63, Mesa, AZ\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)\n\u2022 Property address: 2565 E. Southern Ave., Unit #63, Mesa, AZ\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)",
+        "notes": "Former owner of 2565 E. Southern Ave., Unit #63, Mesa, AZ. Property sold at sheriff sale for $40,004.68."
       },
       {
         "name": "Casey Sanderson",
@@ -497,7 +512,10 @@ const INTEL_DATA = {
         "address": "2565 E. Southern Ave., Unit #63, Mesa, AZ",
         "phone": "",
         "email": "",
-        "notes": "Former owner of 2565 E. Southern Ave., Unit #63, Mesa, AZ. Property sold at sheriff sale for $40,004.68. Need: current phone, email, mailing address via skip trace service."
+        "other_cases": "CV2026-010657 (2026): Civil Court Case Information - Case History",
+        "relatives": "Nicholas Sanderson \u2014 co-defendant in CV2026-010657 \u2014 likely family",
+        "best_leads": "\u2022 Property address: 2565 E. Southern Ave., Unit #63, Mesa, AZ\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)\n\u2022 Nicholas Sanderson \u2014 co-defendant in CV2026-010657 \u2014 likely family\n\u2022 Property address: 2565 E. Southern Ave., Unit #63, Mesa, AZ\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)\n\u2022 Property address: 2565 E. Southern Ave., Unit #63, Mesa, AZ\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)",
+        "notes": "Former owner of 2565 E. Southern Ave., Unit #63, Mesa, AZ. Property sold at sheriff sale for $40,004.68."
       },
       {
         "name": "Nicolas Sanderson",
@@ -505,7 +523,10 @@ const INTEL_DATA = {
         "address": "2565 E. Southern Ave., Unit #63, Mesa, AZ",
         "phone": "",
         "email": "",
-        "notes": "Former owner of 2565 E. Southern Ave., Unit #63, Mesa, AZ. Property sold at sheriff sale for $40,004.68. Need: current phone, email, mailing address via skip trace service."
+        "other_cases": "",
+        "relatives": "",
+        "best_leads": "\u2022 Property address: 2565 E. Southern Ave., Unit #63, Mesa, AZ\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)\n\u2022 Nicholas Sanderson \u2014 co-defendant in CV2026-010657 \u2014 likely family\n\u2022 Property address: 2565 E. Southern Ave., Unit #63, Mesa, AZ\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)\n\u2022 Property address: 2565 E. Southern Ave., Unit #63, Mesa, AZ\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)",
+        "notes": "Former owner of 2565 E. Southern Ave., Unit #63, Mesa, AZ. Property sold at sheriff sale for $40,004.68."
       },
       {
         "name": "Lindsay Park Homeowners Association",
@@ -513,7 +534,7 @@ const INTEL_DATA = {
         "notes": "Filed the original HOA lien foreclosure."
       }
     ],
-    "story": "Lindsay Park Homeowners Association sued Loretta J Damon, Casey Sanderson, Nicolas Sanderson for HOA lien foreclosure.\nDefault judgment entered (12/19/2024).\nDefault judgment entered (12/16/2024).\nDefault judgment entered (12/16/2024).\nDefault judgment entered (12/16/2024).\nDefault judgment entered (12/16/2024).\nDefault judgment entered (12/16/2024).",
+    "story": "Case: CV2024-021770 | Sale: $40,004.68\n\nLindsay Park Homeowners Association sued for HOA lien foreclosure.\n\u2022 Never responded \u2014 default entered (12/19/2024)\n\u2022 Never responded \u2014 default entered (12/16/2024)\n\u2022 Never responded \u2014 default entered (12/16/2024)\n\u2022 Never responded \u2014 default entered (12/16/2024)\n\u2022 Never responded \u2014 default entered (12/16/2024)\n\u2022 Never responded \u2014 default entered (12/16/2024)\n\n\u2500\u2500\u2500\n\nCourt History (5 other cases):\n\u2022 CV1996-090247 (1996): Civil Court Case Information - Case History\n\u2022 CV2006-092240 (2006): Civil Court Case Information - Case History\n\u2022 TJ2011-014185 (2011): Citifinancial Inc vs \n\u2022 CV2018-096026 (2018): Civil Court Case Information - Case History\n\u2022 CV2026-010657 (2026): Civil Court Case Information - Case History\nCase: CV2024-021770 | Sale: $40,004.68\n\nLindsay Park Homeowners Association sued for HOA lien foreclosure.\n\u2022 Never responded \u2014 default entered (12/19/2024)\n\u2022 Never responded \u2014 default entered (12/16/2024)\n\u2022 Never responded \u2014 default entered (12/16/2024)\n\u2022 Never responded \u2014 default entered (12/16/2024)\n\u2022 Never responded \u2014 default entered (12/16/2024)\n\u2022 Never responded \u2014 default entered (12/16/2024)\n\n\u2500\u2500\u2500\n\nCourt History (1 other cases):\n\u2022 CV2026-010657 (2026): Civil Court Case Information - Case History\n\nFamily/Connections:\n\u2022 Nicholas Sanderson \u2014 co-defendant in CV2026-010657 \u2014 likely family\nCase: CV2024-021770 | Sale: $40,004.68\n\nLindsay Park Homeowners Association sued for HOA lien foreclosure.\n\u2022 Never responded \u2014 default entered (12/19/2024)\n\u2022 Never responded \u2014 default entered (12/16/2024)\n\u2022 Never responded \u2014 default entered (12/16/2024)\n\u2022 Never responded \u2014 default entered (12/16/2024)\n\u2022 Never responded \u2014 default entered (12/16/2024)\n\u2022 Never responded \u2014 default entered (12/16/2024)",
     "red_flags": [],
     "financial_notes": "Sale price: $40,004.68. Judgment: Unknown \u2014 check court docket."
   },
@@ -556,7 +577,10 @@ const INTEL_DATA = {
         "address": "11633 W Hadley St, Avondale, AZ",
         "phone": "",
         "email": "",
-        "notes": "Former owner of 11633 W Hadley St, Avondale, AZ. Property sold at sheriff sale for $59,064.25. Need: current phone, email, mailing address via skip trace service."
+        "other_cases": "CV1993-005342 (1993): Civil Court Case Information - Case History\nCV1993-006355 (1993): Christopher Todd Brown vs \nCV1993-018068 (1993): Civil Court Case Information - Case History\nCV1997-014799 (1997): Casi Inc vs  [DEFAULT]\nCV2001-001142 (2001): Civil Court Case Information - Case History\nCV2001-007492 (2001): Civil Court Case Information - Case History\nCV2001-010341 (2001): 1995 Tercel Vin:jt2El55Dxs0080201 vs \nCV2001-017868 (2001): Civil Court Case Information - Case History\nCV2002-023325 (2002): Paulette Linder vs \nCV2005-010892 (2005): Civil Court Case Information - Case History",
+        "relatives": "Davona R Brown \u2014 co-defendant in CV1993-005342 \u2014 likely family\nJuan Brown \u2014 co-defendant in CV1997-014799 \u2014 likely family\nGeorge W Brown \u2014 co-defendant in CV1997-014799 \u2014 likely family\nBeatrice M Brown \u2014 co-defendant in CV1997-014799 \u2014 likely family",
+        "best_leads": "\u2022 Davona R Brown \u2014 co-defendant in CV1993-005342 \u2014 likely family\n\u2022 Juan Brown \u2014 co-defendant in CV1997-014799 \u2014 likely family\n\u2022 George W Brown \u2014 co-defendant in CV1997-014799 \u2014 likely family\n\u2022 Property address: 11633 W Hadley St, Avondale, AZ\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)\n\u2022 Christopher M Brown \u2014 co-defendant in CV2025-063209 \u2014 likely family\n\u2022 Property address: 11633 W Hadley St, Avondale, AZ\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)",
+        "notes": "Former owner of 11633 W Hadley St, Avondale, AZ. Property sold at sheriff sale for $59,064.25."
       },
       {
         "name": "Leslye Brown",
@@ -564,7 +588,10 @@ const INTEL_DATA = {
         "address": "11633 W Hadley St, Avondale, AZ",
         "phone": "",
         "email": "",
-        "notes": "Former owner of 11633 W Hadley St, Avondale, AZ. Property sold at sheriff sale for $59,064.25. Need: current phone, email, mailing address via skip trace service."
+        "other_cases": "CV2021-018059 (2021): Civil Court Case Information - Case History\nCV2025-063209 (2025): Houseopoly L L C vs ",
+        "relatives": "Christopher M Brown \u2014 co-defendant in CV2025-063209 \u2014 likely family",
+        "best_leads": "\u2022 Davona R Brown \u2014 co-defendant in CV1993-005342 \u2014 likely family\n\u2022 Juan Brown \u2014 co-defendant in CV1997-014799 \u2014 likely family\n\u2022 George W Brown \u2014 co-defendant in CV1997-014799 \u2014 likely family\n\u2022 Property address: 11633 W Hadley St, Avondale, AZ\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)\n\u2022 Christopher M Brown \u2014 co-defendant in CV2025-063209 \u2014 likely family\n\u2022 Property address: 11633 W Hadley St, Avondale, AZ\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)",
+        "notes": "Former owner of 11633 W Hadley St, Avondale, AZ. Property sold at sheriff sale for $59,064.25."
       },
       {
         "name": "Glenhurst Homeowners Association",
@@ -572,7 +599,7 @@ const INTEL_DATA = {
         "notes": "Filed the original HOA lien foreclosure."
       }
     ],
-    "story": "Glenhurst Homeowners Association sued Christopher Brown, Leslye Brown for HOA lien foreclosure.\nDefault judgment entered (12/19/2024).\nDefault judgment entered (12/18/2024).\nDefault judgment entered (12/18/2024).\nDefault judgment entered (11/13/2024).\nDefault judgment entered (10/30/2024).",
+    "story": "Case: CV2024-008149 | Sale: $59,064.25\n\nGlenhurst Homeowners Association sued for HOA lien foreclosure.\n\u2022 Never responded \u2014 default entered (12/19/2024)\n\u2022 Default judgment granted (12/18/2024)\n\u2022 Default judgment granted (12/18/2024)\n\u2022 Default judgment granted (11/13/2024)\n\u2022 Never responded \u2014 default entered (10/30/2024)\n\n\u2500\u2500\u2500\n\nCourt History (10 other cases):\n\u2022 CV1993-005342 (1993): Civil Court Case Information - Case History\n\u2022 CV1993-006355 (1993): Christopher Todd Brown vs \n\u2022 CV1993-018068 (1993): Civil Court Case Information - Case History\n\u2022 CV1997-014799 (1997): Casi Inc vs  [DEFAULT]\n\u2022 CV2001-001142 (2001): Civil Court Case Information - Case History\n\u2022 CV2001-007492 (2001): Civil Court Case Information - Case History\n\u2022 CV2001-010341 (2001): 1995 Tercel Vin:jt2El55Dxs0080201 vs \n\u2022 CV2001-017868 (2001): Civil Court Case Information - Case History\n\u2022 CV2002-023325 (2002): Paulette Linder vs \n\u2022 CV2005-010892 (2005): Civil Court Case Information - Case History\n\nFamily/Connections:\n\u2022 Davona R Brown \u2014 co-defendant in CV1993-005342 \u2014 likely family\n\u2022 Juan Brown \u2014 co-defendant in CV1997-014799 \u2014 likely family\n\u2022 George W Brown \u2014 co-defendant in CV1997-014799 \u2014 likely family\n\u2022 Beatrice M Brown \u2014 co-defendant in CV1997-014799 \u2014 likely family\nCase: CV2024-008149 | Sale: $59,064.25\n\nGlenhurst Homeowners Association sued for HOA lien foreclosure.\n\u2022 Never responded \u2014 default entered (12/19/2024)\n\u2022 Default judgment granted (12/18/2024)\n\u2022 Default judgment granted (12/18/2024)\n\u2022 Default judgment granted (11/13/2024)\n\u2022 Never responded \u2014 default entered (10/30/2024)\n\n\u2500\u2500\u2500\n\nCourt History (2 other cases):\n\u2022 CV2021-018059 (2021): Civil Court Case Information - Case History\n\u2022 CV2025-063209 (2025): Houseopoly L L C vs \n\nFamily/Connections:\n\u2022 Christopher M Brown \u2014 co-defendant in CV2025-063209 \u2014 likely family",
     "red_flags": [],
     "financial_notes": "Sale price: $59,064.25. Judgment: Unknown \u2014 check court docket."
   },
@@ -591,7 +618,10 @@ const INTEL_DATA = {
         "address": "25603 West Burgess Lane, Buckeye, AZ",
         "phone": "",
         "email": "",
-        "notes": "Former owner of 25603 West Burgess Lane, Buckeye, AZ. Property sold at sheriff sale for $11,772.80. Need: current phone, email, mailing address via skip trace service."
+        "other_cases": "CV2022-050096 (2022): Civil Court Case Information - Case History\nCV2025-033036 (2025): Civil Court Case Information - Case History [DEFAULT]",
+        "relatives": "",
+        "best_leads": "\u2022 Property address: 25603 West Burgess Lane, Buckeye, AZ\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)\n\u2022 Property address: 25603 West Burgess Lane, Buckeye, AZ\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)",
+        "notes": "Former owner of 25603 West Burgess Lane, Buckeye, AZ. Property sold at sheriff sale for $11,772.80."
       },
       {
         "name": "Moses Hawkins",
@@ -599,7 +629,10 @@ const INTEL_DATA = {
         "address": "25603 West Burgess Lane, Buckeye, AZ",
         "phone": "",
         "email": "",
-        "notes": "Former owner of 25603 West Burgess Lane, Buckeye, AZ. Property sold at sheriff sale for $11,772.80. Need: current phone, email, mailing address via skip trace service."
+        "other_cases": "CV2020-004832 (2020): Civil Court Case Information - Case History [DEFAULT]\nCV2020-054955 (2020): Civil Court Case Information - Case History\nCV2025-066335 (2025): Civil Court Case Information - Case History",
+        "relatives": "",
+        "best_leads": "\u2022 Property address: 25603 West Burgess Lane, Buckeye, AZ\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)\n\u2022 Property address: 25603 West Burgess Lane, Buckeye, AZ\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)",
+        "notes": "Former owner of 25603 West Burgess Lane, Buckeye, AZ. Property sold at sheriff sale for $11,772.80."
       },
       {
         "name": "Santarra Community Association",
@@ -607,9 +640,9 @@ const INTEL_DATA = {
         "notes": "Filed the original HOA lien foreclosure."
       }
     ],
-    "story": "Santarra Community Association sued Nathan Manigault, Moses Hawkins for HOA lien foreclosure.\nSheriff sale conducted (11/12/2025). Sale price: $11,772.80\n\ud83d\udea8 APPLICATION FOR SURPLUS PROCEEDS filed (11/12/2025) \u2014 someone is already claiming this!",
+    "story": "Case: CV2024-015621 | Sale: $11,772.80\n\nSantarra Community Association sued for HOA lien foreclosure.\n\u2022 Sheriff sold the property for $11,772.80 (11/12/2025)\n\u2022 \ud83d\udea8 SURPLUS PROCEEDS APPLICATION filed (11/12/2025)\n\n\u2500\u2500\u2500\n\nCourt History (2 other cases):\n\u2022 CV2022-050096 (2022): Civil Court Case Information - Case History\n\u2022 CV2025-033036 (2025): Civil Court Case Information - Case History [DEFAULT]\nCase: CV2024-015621 | Sale: $11,772.80\n\nSantarra Community Association sued for HOA lien foreclosure.\n\u2022 Sheriff sold the property for $11,772.80 (11/12/2025)\n\u2022 \ud83d\udea8 SURPLUS PROCEEDS APPLICATION filed (11/12/2025)\n\n\u2500\u2500\u2500\n\nCourt History (3 other cases):\n\u2022 CV2020-004832 (2020): Civil Court Case Information - Case History [DEFAULT]\n\u2022 CV2020-054955 (2020): Civil Court Case Information - Case History\n\u2022 CV2025-066335 (2025): Civil Court Case Information - Case History",
     "red_flags": [
-      "\u26a0\ufe0f SURPLUS APPLICATION ALREADY FILED \u2014 competitor or former owner beat us"
+      "SURPLUS APPLICATION ALREADY FILED \u2014 someone beat us to it"
     ],
     "financial_notes": "Sale price: $11,772.80. Judgment: Unknown \u2014 check court docket."
   },
@@ -656,7 +689,10 @@ const INTEL_DATA = {
         "address": "1030 North Mason Drive, Chandler, AZ",
         "phone": "",
         "email": "",
-        "notes": "Former owner of 1030 North Mason Drive, Chandler, AZ. Property sold at sheriff sale for $72,720.88. Need: current phone, email, mailing address via skip trace service."
+        "other_cases": "CV2002-014744 (2002): Civil Court Case Information - Case History\nCV2007-016944 (2007): Civil Court Case Information - Case History\nCV2015-013215 (2015): Civil Court Case Information - Case History\nCV2020-054183 (2020): Provinces Master Community Association vs  [HOA/foreclosure]\nCV2022-052195 (2022): Provinces Master Community Association vs  [HOA/foreclosure] [DEFAULT]\nCV2022-053381 (2022): Chandler Village Homeowers Association Inc vs  [HOA/foreclosure]",
+        "relatives": "",
+        "best_leads": "\u2022 Property address: 1030 North Mason Drive, Chandler, AZ\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)",
+        "notes": "Former owner of 1030 North Mason Drive, Chandler, AZ. Property sold at sheriff sale for $72,720.88. \u26a0\ufe0f 3 other HOA/foreclosure cases \u2014 repeat offender."
       },
       {
         "name": "Provinces Master Community Association",
@@ -664,7 +700,7 @@ const INTEL_DATA = {
         "notes": "Filed the original HOA lien foreclosure."
       }
     ],
-    "story": "Provinces Master Community Association sued Michael R Renfro for HOA lien foreclosure.\nSheriff sale conducted (11/25/2025). Sale price: $72,720.88\nWrit of Special Execution issued (11/20/2025) \u2014 sheriff sale authorized.\nWrit of Special Execution issued (11/20/2025) \u2014 sheriff sale authorized.\nDefault judgment entered (12/19/2024).\nDefault judgment entered (12/18/2024).\nDefault judgment entered (12/18/2024).",
+    "story": "Case: CV2024-026641 | Sale: $72,720.88\n\nProvinces Master Community Association sued for HOA lien foreclosure.\n\u2022 Sheriff sold the property for $72,720.88 (11/25/2025)\n\u2022 Writ of execution issued (11/20/2025)\n\u2022 Writ of execution issued (11/20/2025)\n\u2022 Never responded \u2014 default entered (12/19/2024)\n\u2022 Never responded \u2014 default entered (12/18/2024)\n\u2022 Never responded \u2014 default entered (12/18/2024)\n\u2022 Couldn't find them \u2014 court granted alternative service (11/12/2024)\n\u2022 Couldn't find them \u2014 court granted alternative service (10/30/2024)\n\n\u2500\u2500\u2500\n\nCourt History (6 other cases):\n\u2022 CV2002-014744 (2002): Civil Court Case Information - Case History\n\u2022 CV2007-016944 (2007): Civil Court Case Information - Case History\n\u2022 CV2015-013215 (2015): Civil Court Case Information - Case History\n\u2022 CV2020-054183 (2020): Provinces Master Community Association vs  [HOA/foreclosure]\n\u2022 CV2022-052195 (2022): Provinces Master Community Association vs  [HOA/foreclosure] [DEFAULT]\n\u2022 CV2022-053381 (2022): Chandler Village Homeowers Association Inc vs  [HOA/foreclosure]\n\nPattern:\n\u2022 3 other HOA/foreclosure cases \u2014 repeat offender",
     "red_flags": [],
     "financial_notes": "Sale price: $72,720.88. Judgment: Unknown \u2014 check court docket."
   },
@@ -683,7 +719,10 @@ const INTEL_DATA = {
         "address": "3011 East Janelle Way, Gilbert, AZ",
         "phone": "",
         "email": "",
-        "notes": "Former owner of 3011 East Janelle Way, Gilbert, AZ. Property sold at sheriff sale for $47,040.19. Need: current phone, email, mailing address via skip trace service."
+        "other_cases": "",
+        "relatives": "",
+        "best_leads": "\u2022 Property address: 3011 East Janelle Way, Gilbert, AZ\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)\n\u2022 Property address: 3011 East Janelle Way, Gilbert, AZ\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)",
+        "notes": "Former owner of 3011 East Janelle Way, Gilbert, AZ. Property sold at sheriff sale for $47,040.19."
       },
       {
         "name": "Stephanie Cuomo",
@@ -691,7 +730,10 @@ const INTEL_DATA = {
         "address": "3011 East Janelle Way, Gilbert, AZ",
         "phone": "",
         "email": "",
-        "notes": "Former owner of 3011 East Janelle Way, Gilbert, AZ. Property sold at sheriff sale for $47,040.19. Need: current phone, email, mailing address via skip trace service."
+        "other_cases": "CV2025-064805 (2025): Civil Court Case Information - Case History",
+        "relatives": "",
+        "best_leads": "\u2022 Property address: 3011 East Janelle Way, Gilbert, AZ\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)\n\u2022 Property address: 3011 East Janelle Way, Gilbert, AZ\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)",
+        "notes": "Former owner of 3011 East Janelle Way, Gilbert, AZ. Property sold at sheriff sale for $47,040.19."
       },
       {
         "name": "Shamrock Estates Community Association",
@@ -699,7 +741,7 @@ const INTEL_DATA = {
         "notes": "Filed the original HOA lien foreclosure."
       }
     ],
-    "story": "Shamrock Estates Community Association sued Jeff Cuomo, Stephanie Cuomo for HOA lien foreclosure.",
+    "story": "Case: CV2024-015773 | Sale: $47,040.19\n\nShamrock Estates Community Association sued for HOA lien foreclosure.\nCase: CV2024-015773 | Sale: $47,040.19\n\nShamrock Estates Community Association sued for HOA lien foreclosure.\n\n\u2500\u2500\u2500\n\nCourt History (1 other cases):\n\u2022 CV2025-064805 (2025): Civil Court Case Information - Case History",
     "red_flags": [],
     "financial_notes": "Sale price: $47,040.19. Judgment: Unknown \u2014 check court docket."
   },
@@ -742,7 +784,10 @@ const INTEL_DATA = {
         "address": "2369 North 212th Drive, Buckeye, AZ",
         "phone": "",
         "email": "",
-        "notes": "Former owner of 2369 North 212th Drive, Buckeye, AZ. Property sold at sheriff sale for $15,511.21. Need: current phone, email, mailing address via skip trace service."
+        "other_cases": "",
+        "relatives": "",
+        "best_leads": "\u2022 Property address: 2369 North 212th Drive, Buckeye, AZ\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)\n\u2022 Property address: 2369 North 212th Drive, Buckeye, AZ\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)",
+        "notes": "Former owner of 2369 North 212th Drive, Buckeye, AZ. Property sold at sheriff sale for $15,511.21."
       },
       {
         "name": "Kerlly Pacheco",
@@ -750,7 +795,10 @@ const INTEL_DATA = {
         "address": "2369 North 212th Drive, Buckeye, AZ",
         "phone": "",
         "email": "",
-        "notes": "Former owner of 2369 North 212th Drive, Buckeye, AZ. Property sold at sheriff sale for $15,511.21. Need: current phone, email, mailing address via skip trace service."
+        "other_cases": "",
+        "relatives": "",
+        "best_leads": "\u2022 Property address: 2369 North 212th Drive, Buckeye, AZ\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)\n\u2022 Property address: 2369 North 212th Drive, Buckeye, AZ\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)",
+        "notes": "Former owner of 2369 North 212th Drive, Buckeye, AZ. Property sold at sheriff sale for $15,511.21."
       },
       {
         "name": "Sienna Hills Community Association",
@@ -758,7 +806,7 @@ const INTEL_DATA = {
         "notes": "Filed the original HOA lien foreclosure."
       }
     ],
-    "story": "Sienna Hills Community Association sued Ismael Pacheco Ruelas, Kerlly Pacheco for HOA lien foreclosure.",
+    "story": "Case: CV2024-030821 | Sale: $15,511.21\n\nSienna Hills Community Association sued for HOA lien foreclosure.\nCase: CV2024-030821 | Sale: $15,511.21\n\nSienna Hills Community Association sued for HOA lien foreclosure.",
     "red_flags": [],
     "financial_notes": "Sale price: $15,511.21. Judgment: Unknown \u2014 check court docket."
   },
@@ -809,7 +857,10 @@ const INTEL_DATA = {
         "address": "805 South Sycamore Street #130, Mesa, AZ",
         "phone": "",
         "email": "",
-        "notes": "Former owner of 805 South Sycamore Street #130, Mesa, AZ. Property sold at sheriff sale for $43,557.88. Need: current phone, email, mailing address via skip trace service."
+        "other_cases": "TJ2024-000687 (2024): Wells Fargo Bank N A vs  [debt/credit]",
+        "relatives": "",
+        "best_leads": "\u2022 Property address: 805 South Sycamore Street #130, Mesa, AZ\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)",
+        "notes": "Former owner of 805 South Sycamore Street #130, Mesa, AZ. Property sold at sheriff sale for $43,557.88. Financial history: 1 debt/credit cases."
       },
       {
         "name": "Graysill Condominium Association",
@@ -817,7 +868,7 @@ const INTEL_DATA = {
         "notes": "Filed the original HOA lien foreclosure."
       }
     ],
-    "story": "Graysill Condominium Association sued Richard Robert Vandiepen for HOA lien foreclosure.\nDefault judgment entered (12/12/2024).\nDefault judgment entered (12/11/2024).",
+    "story": "Case: CV2024-030233 | Sale: $43,557.88\n\nGraysill Condominium Association sued for HOA lien foreclosure.\n\u2022 Never responded \u2014 default entered (12/12/2024)\n\u2022 Never responded \u2014 default entered (12/11/2024)\n\n\u2500\u2500\u2500\n\nCourt History (1 other cases):\n\u2022 TJ2024-000687 (2024): Wells Fargo Bank N A vs  [debt/credit]",
     "red_flags": [],
     "financial_notes": "Sale price: $43,557.88. Judgment: Unknown \u2014 check court docket."
   },
@@ -852,7 +903,10 @@ const INTEL_DATA = {
         "address": "23828 W Mesquite Dr, Buckeye, AZ 85326",
         "phone": "",
         "email": "",
-        "notes": "Former owner of 23828 W Mesquite Dr, Buckeye, AZ 85326. Property sold at sheriff sale for $112,929.42. Need: current phone, email, mailing address via skip trace service."
+        "other_cases": "",
+        "relatives": "",
+        "best_leads": "\u2022 Christine Maturi Lewis \u2014 co-defendant in CV2018-009104 \u2014 likely family\n\u2022 Property address: 23828 W Mesquite Dr, Buckeye, AZ 85326\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)",
+        "notes": "Former owner of 23828 W Mesquite Dr, Buckeye, AZ 85326. Property sold at sheriff sale for $112,929.42."
       },
       {
         "name": "Marcus John Lewis",
@@ -860,7 +914,10 @@ const INTEL_DATA = {
         "address": "23828 W Mesquite Dr, Buckeye, AZ 85326",
         "phone": "",
         "email": "",
-        "notes": "Former owner of 23828 W Mesquite Dr, Buckeye, AZ 85326. Property sold at sheriff sale for $112,929.42. Need: current phone, email, mailing address via skip trace service."
+        "other_cases": "CV2006-011602 (2006): Civil Court Case Information - Case History\nCV2010-017850 (2010): Civil Court Case Information - Case History\nCV2015-004607 (2015): Portfolio Recovery Associates L L C vs \nCV2015-007384 (2015): Civil Court Case Information - Case History\nCV2015-053324 (2015): Civil Court Case Information - Case History\nCV2016-015148 (2016): Civil Court Case Information - Case History\nCV2016-090858 (2016): Civil Court Case Information - Case History\nCV2016-094846 (2016): State Farm Fire And Casualty Company vs  [insurance/accident] [DEFAULT]\nCV2018-009104 (2018): Civil Court Case Information - Case History\nCV2020-010369 (2020): Civil Court Case Information - Case History",
+        "relatives": "Christine Maturi Lewis \u2014 co-defendant in CV2018-009104 \u2014 likely family",
+        "best_leads": "\u2022 Christine Maturi Lewis \u2014 co-defendant in CV2018-009104 \u2014 likely family\n\u2022 Property address: 23828 W Mesquite Dr, Buckeye, AZ 85326\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)",
+        "notes": "Former owner of 23828 W Mesquite Dr, Buckeye, AZ 85326. Property sold at sheriff sale for $112,929.42."
       },
       {
         "name": "Sundance Residential Homeowners Association Inc",
@@ -868,9 +925,9 @@ const INTEL_DATA = {
         "notes": "Filed the original HOA lien foreclosure."
       }
     ],
-    "story": "Sundance Residential Homeowners Association Inc sued M J L Companies L L C, Marcus John Lewis for HOA lien foreclosure.\n\u26a0\ufe0f Satisfaction of Judgment filed (11/17/2025) \u2014 case may be settled/paid.\nDefault judgment entered (12/29/2023).\nDefault judgment entered (12/29/2023).",
+    "story": "Case: CV2023-009635 | Sale: $112,929.42\n\nSundance Residential Homeowners Association Inc sued for HOA lien foreclosure.\n\u2022 \u26a0\ufe0f Satisfaction of Judgment filed (11/17/2025)\n\u2022 Never responded \u2014 default entered (12/29/2023)\n\u2022 Never responded \u2014 default entered (12/29/2023)\n\n\u2500\u2500\u2500\n\nCourt History (10 other cases):\n\u2022 CV2006-011602 (2006): Civil Court Case Information - Case History\n\u2022 CV2010-017850 (2010): Civil Court Case Information - Case History\n\u2022 CV2015-004607 (2015): Portfolio Recovery Associates L L C vs \n\u2022 CV2015-007384 (2015): Civil Court Case Information - Case History\n\u2022 CV2015-053324 (2015): Civil Court Case Information - Case History\n\u2022 CV2016-015148 (2016): Civil Court Case Information - Case History\n\u2022 CV2016-090858 (2016): Civil Court Case Information - Case History\n\u2022 CV2016-094846 (2016): State Farm Fire And Casualty Company vs  [insurance/accident] [DEFAULT]\n\u2022 CV2018-009104 (2018): Civil Court Case Information - Case History\n\u2022 CV2020-010369 (2020): Civil Court Case Information - Case History\n\nFamily/Connections:\n\u2022 Christine Maturi Lewis \u2014 co-defendant in CV2018-009104 \u2014 likely family",
     "red_flags": [
-      "Satisfaction of Judgment filed \u2014 may already be resolved"
+      "Satisfaction of Judgment filed (11/17/2025) \u2014 case may be settled"
     ],
     "financial_notes": "Sale price: $112,929.42. Judgment: Unknown \u2014 check court docket."
   },
@@ -921,7 +978,10 @@ const INTEL_DATA = {
         "address": "2329 East Gondola Avenue, Gilbert, AZ",
         "phone": "",
         "email": "",
-        "notes": "Former owner of 2329 East Gondola Avenue, Gilbert, AZ. Property sold at sheriff sale for $46,670.86. Need: current phone, email, mailing address via skip trace service."
+        "other_cases": "TJ1994-000568 (1994): Peter Cahill vs \nTJ2001-001284 (2001): Judgment Recovery Services Inc vs \nCV2023-095821 (2023): Civil Court Case Information - Case History",
+        "relatives": "",
+        "best_leads": "\u2022 Property address: 2329 East Gondola Avenue, Gilbert, AZ\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)",
+        "notes": "Former owner of 2329 East Gondola Avenue, Gilbert, AZ. Property sold at sheriff sale for $46,670.86."
       },
       {
         "name": "Val Vista Lakes Community Association, The",
@@ -929,7 +989,7 @@ const INTEL_DATA = {
         "notes": "Filed the original HOA lien foreclosure."
       }
     ],
-    "story": "Val Vista Lakes Community Association, The sued Peter J Cahill for HOA lien foreclosure.\nWrit of Special Execution issued (10/31/2025) \u2014 sheriff sale authorized.",
+    "story": "Case: CV2024-017272 | Sale: $46,670.86\n\nVal Vista Lakes Community Association, The sued for HOA lien foreclosure.\n\u2022 Writ of execution issued (10/31/2025)\n\n\u2500\u2500\u2500\n\nCourt History (3 other cases):\n\u2022 TJ1994-000568 (1994): Peter Cahill vs \n\u2022 TJ2001-001284 (2001): Judgment Recovery Services Inc vs \n\u2022 CV2023-095821 (2023): Civil Court Case Information - Case History",
     "red_flags": [],
     "financial_notes": "Sale price: $46,670.86. Judgment: Unknown \u2014 check court docket."
   },
@@ -948,7 +1008,10 @@ const INTEL_DATA = {
         "address": "9948 E Dragoon Cir, Mesa, AZ",
         "phone": "",
         "email": "",
-        "notes": "Former owner of 9948 E Dragoon Cir, Mesa, AZ. Property sold at sheriff sale for $89,041.42. Need: current phone, email, mailing address via skip trace service."
+        "other_cases": "CV1995-012081 (1995): Civil Court Case Information - Case History\nCV1995-091694 (1995): Civil Court Case Information - Case History\nCV2001-021153 (2001): Lisa White vs \nCV2002-017847 (2002): Civil Court Case Information - Case History\nCV2003-090634 (2003): Civil Court Case Information - Case History\nCV2004-011280 (2004): Civil Court Case Information - Case History\nCV2004-091901 (2004): Civil Court Case Information - Case History\nCV2006-007372 (2006): Unifund C C R Partners vs \nCV2006-018692 (2006): Terry Goddard vs  [harassment/injunction]\nCV2007-092454 (2007): Civil Court Case Information - Case History",
+        "relatives": "Jerry T White \u2014 co-defendant in CV2004-011280 \u2014 likely family\nAnthony White \u2014 co-defendant in CV2006-018692 \u2014 likely family",
+        "best_leads": "\u2022 Jerry T White \u2014 co-defendant in CV2004-011280 \u2014 likely family\n\u2022 Anthony White \u2014 co-defendant in CV2006-018692 \u2014 likely family\n\u2022 Property address: 9948 E Dragoon Cir, Mesa, AZ\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)",
+        "notes": "Former owner of 9948 E Dragoon Cir, Mesa, AZ. Property sold at sheriff sale for $89,041.42."
       },
       {
         "name": "Wynstone Park Homeowners Association Inc",
@@ -956,7 +1019,7 @@ const INTEL_DATA = {
         "notes": "Filed the original HOA lien foreclosure."
       }
     ],
-    "story": "Wynstone Park Homeowners Association Inc sued Lisa White for HOA lien foreclosure.",
+    "story": "Case: CV2025-017648 | Sale: $89,041.42\n\nWynstone Park Homeowners Association Inc sued for HOA lien foreclosure.\n\n\u2500\u2500\u2500\n\nCourt History (10 other cases):\n\u2022 CV1995-012081 (1995): Civil Court Case Information - Case History\n\u2022 CV1995-091694 (1995): Civil Court Case Information - Case History\n\u2022 CV2001-021153 (2001): Lisa White vs \n\u2022 CV2002-017847 (2002): Civil Court Case Information - Case History\n\u2022 CV2003-090634 (2003): Civil Court Case Information - Case History\n\u2022 CV2004-011280 (2004): Civil Court Case Information - Case History\n\u2022 CV2004-091901 (2004): Civil Court Case Information - Case History\n\u2022 CV2006-007372 (2006): Unifund C C R Partners vs \n\u2022 CV2006-018692 (2006): Terry Goddard vs  [harassment/injunction]\n\u2022 CV2007-092454 (2007): Civil Court Case Information - Case History\n\nFamily/Connections:\n\u2022 Jerry T White \u2014 co-defendant in CV2004-011280 \u2014 likely family\n\u2022 Anthony White \u2014 co-defendant in CV2006-018692 \u2014 likely family",
     "red_flags": [],
     "financial_notes": "Sale price: $89,041.42. Judgment: Unknown \u2014 check court docket."
   },
@@ -975,7 +1038,10 @@ const INTEL_DATA = {
         "address": "5901 E. Norwood St, Gilbert, AZ",
         "phone": "",
         "email": "",
-        "notes": "Former owner of 5901 E. Norwood St, Gilbert, AZ. Property sold at sheriff sale for $28,534.21. Need: current phone, email, mailing address via skip trace service."
+        "other_cases": "CV2008-031160 (2008): Civil Court Case Information - Case History\nCV2009-018577 (2009): Civil Court Case Information - Case History\nCV2009-026028 (2009): Civil Court Case Information - Case History\nCV2009-052717 (2009): Civil Court Case Information - Case History\nTJ2009-013093 (2009): North Shore H O A vs \nCV2012-057226 (2012): Civil Court Case Information - Case History\nCV2014-014655 (2014): Civil Court Case Information - Case History\nCV2022-013009 (2022): Civil Court Case Information - Case History [harassment/injunction]\nCV2023-017961 (2023): Civil Court Case Information - Case History [harassment/injunction]\nCV2024-018051 (2024): Civil Court Case Information - Case History",
+        "relatives": "Lisa Dy \u2014 co-defendant in TJ2009-013093 \u2014 likely family",
+        "best_leads": "\u2022 Lisa Dy \u2014 co-defendant in TJ2009-013093 \u2014 likely family\n\u2022 Property address: 5901 E. Norwood St, Gilbert, AZ\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)",
+        "notes": "Former owner of 5901 E. Norwood St, Gilbert, AZ. Property sold at sheriff sale for $28,534.21."
       },
       {
         "name": "Loma Villa Homeowners Association",
@@ -983,7 +1049,7 @@ const INTEL_DATA = {
         "notes": "Filed the original HOA lien foreclosure."
       }
     ],
-    "story": "Loma Villa Homeowners Association sued Donald J Dy for HOA lien foreclosure.",
+    "story": "Case: CV2025-011771 | Sale: $28,534.21\n\nLoma Villa Homeowners Association sued for HOA lien foreclosure.\n\n\u2500\u2500\u2500\n\nCourt History (10 other cases):\n\u2022 CV2008-031160 (2008): Civil Court Case Information - Case History\n\u2022 CV2009-018577 (2009): Civil Court Case Information - Case History\n\u2022 CV2009-026028 (2009): Civil Court Case Information - Case History\n\u2022 CV2009-052717 (2009): Civil Court Case Information - Case History\n\u2022 TJ2009-013093 (2009): North Shore H O A vs \n\u2022 CV2012-057226 (2012): Civil Court Case Information - Case History\n\u2022 CV2014-014655 (2014): Civil Court Case Information - Case History\n\u2022 CV2022-013009 (2022): Civil Court Case Information - Case History [harassment/injunction]\n\u2022 CV2023-017961 (2023): Civil Court Case Information - Case History [harassment/injunction]\n\u2022 CV2024-018051 (2024): Civil Court Case Information - Case History\n\nFamily/Connections:\n\u2022 Lisa Dy \u2014 co-defendant in TJ2009-013093 \u2014 likely family",
     "red_flags": [],
     "financial_notes": "Sale price: $28,534.21. Judgment: Unknown \u2014 check court docket."
   },
@@ -1038,7 +1104,10 @@ const INTEL_DATA = {
         "address": "4525 N 66th St #7, Scottsdale, AZ 85251",
         "phone": "",
         "email": "",
-        "notes": "Former owner of 4525 N 66th St #7, Scottsdale, AZ 85251. Property sold at sheriff sale for $166,408.51. Need: current phone, email, mailing address via skip trace service."
+        "other_cases": "",
+        "relatives": "",
+        "best_leads": "\u2022 John W Kanz \u2014 co-defendant in TJ2007-003615 \u2014 likely family\n\u2022 Property address: 4525 N 66th St #7, Scottsdale, AZ 85251\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)",
+        "notes": "Former owner of 4525 N 66th St #7, Scottsdale, AZ 85251. Property sold at sheriff sale for $166,408.51."
       },
       {
         "name": "Casa Del Monte Inc",
@@ -1046,9 +1115,9 @@ const INTEL_DATA = {
         "notes": "Filed the original HOA lien foreclosure."
       }
     ],
-    "story": "Casa Del Monte Inc sued Successor Trustee To Darlene T Kanz for HOA lien foreclosure.\n\u26a0\ufe0f Satisfaction of Judgment filed (12/30/2025) \u2014 case may be settled/paid.",
+    "story": "Case: CV2023-018377 | Sale: $166,408.51\n\nCasa Del Monte Inc sued for HOA lien foreclosure.\n\u2022 \u26a0\ufe0f Satisfaction of Judgment filed (12/30/2025)\n\n\u2500\u2500\u2500\n\nCourt History (3 other cases):\n\u2022 CV1997-091099 (1997): Civil Court Case Information - Case History\n\u2022 CV2000-092030 (2000): Civil Court Case Information - Case History\n\u2022 TJ2007-003615 (2007): Alliance Credit Services Inc vs  [debt/credit]\n\nFamily/Connections:\n\u2022 John W Kanz \u2014 co-defendant in TJ2007-003615 \u2014 likely family",
     "red_flags": [
-      "Satisfaction of Judgment filed \u2014 may already be resolved"
+      "Satisfaction of Judgment filed (12/30/2025) \u2014 case may be settled"
     ],
     "financial_notes": "Sale price: $166,408.51. Judgment: Unknown \u2014 check court docket."
   },
@@ -1067,7 +1136,10 @@ const INTEL_DATA = {
         "address": "4725 Saint John Road, Phoenix, AZ",
         "phone": "",
         "email": "",
-        "notes": "Former owner of 4725 Saint John Road, Phoenix, AZ. Property sold at sheriff sale for $106,696.20. Need: current phone, email, mailing address via skip trace service."
+        "other_cases": "CV2022-090222 (2022): Tatum Lane Homeowners Association vs  [HOA/foreclosure]\nCV2023-054573 (2023): Civil Court Case Information - Case History\nCV2026-004684 (2026): Civil Court Case Information - Case History",
+        "relatives": "",
+        "best_leads": "\u2022 Employer: Tatum Lane Homeowners Association (garnishment in CV2022-090222)\n\u2022 Property address: 4725 Saint John Road, Phoenix, AZ\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)",
+        "notes": "Former owner of 4725 Saint John Road, Phoenix, AZ. Property sold at sheriff sale for $106,696.20. \u26a0\ufe0f 1 other HOA/foreclosure cases \u2014 repeat offender."
       },
       {
         "name": "Tatum Lane Homeowners Association",
@@ -1075,7 +1147,7 @@ const INTEL_DATA = {
         "notes": "Filed the original HOA lien foreclosure."
       }
     ],
-    "story": "Tatum Lane Homeowners Association sued Matthew Sansone for HOA lien foreclosure.",
+    "story": "Case: CV2024-015300 | Sale: $106,696.20\n\nTatum Lane Homeowners Association sued for HOA lien foreclosure.\n\n\u2500\u2500\u2500\n\nCourt History (3 other cases):\n\u2022 CV2022-090222 (2022): Tatum Lane Homeowners Association vs  [HOA/foreclosure]\n\u2022 CV2023-054573 (2023): Civil Court Case Information - Case History\n\u2022 CV2026-004684 (2026): Civil Court Case Information - Case History\n\nPattern:\n\u2022 1 other HOA/foreclosure cases \u2014 repeat offender",
     "red_flags": [],
     "financial_notes": "Sale price: $106,696.20. Judgment: Unknown \u2014 check court docket."
   },
@@ -1118,7 +1190,10 @@ const INTEL_DATA = {
         "address": "9620 North 182nd Lane, Waddell, AZ",
         "phone": "",
         "email": "",
-        "notes": "Former owner of 9620 North 182nd Lane, Waddell, AZ. Property sold at sheriff sale for $138,120.57. Need: current phone, email, mailing address via skip trace service."
+        "other_cases": "CV2009-007902 (2009): Jpmorgan Chase & Co vs \nCV2013-015709 (2013): American Family Mutual Insurance Company vs  [insurance/accident]\nCV2015-006869 (2015): Civil Court Case Information - Case History\nCV2015-008275 (2015): Civil Court Case Information - Case History",
+        "relatives": "Daisy Elaine Alvarado \u2014 co-defendant in CV2015-006869 \u2014 likely family",
+        "best_leads": "\u2022 Daisy Elaine Alvarado \u2014 co-defendant in CV2015-006869 \u2014 likely family\n\u2022 Property address: 9620 North 182nd Lane, Waddell, AZ\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)",
+        "notes": "Former owner of 9620 North 182nd Lane, Waddell, AZ. Property sold at sheriff sale for $138,120.57."
       },
       {
         "name": "Cortessa Community Association",
@@ -1126,9 +1201,9 @@ const INTEL_DATA = {
         "notes": "Filed the original HOA lien foreclosure."
       }
     ],
-    "story": "Cortessa Community Association sued Hector Alvarado for HOA lien foreclosure.\n\u26a0\ufe0f Satisfaction of Judgment filed (10/29/2024) \u2014 case may be settled/paid.\nDefault judgment entered (12/13/2023).\nDefault judgment entered (11/28/2023).\nDefault judgment entered (11/28/2023).\nDefault judgment entered (11/28/2023).",
+    "story": "Case: CV2023-052201 | Sale: $138,120.57\n\nCortessa Community Association sued for HOA lien foreclosure.\n\u2022 \u26a0\ufe0f Satisfaction of Judgment filed (10/29/2024)\n\u2022 Default judgment granted (12/13/2023)\n\u2022 Default judgment granted (11/28/2023)\n\u2022 Default judgment granted (11/28/2023)\n\u2022 Default judgment granted (11/28/2023)\n\n\u2500\u2500\u2500\n\nCourt History (4 other cases):\n\u2022 CV2009-007902 (2009): Jpmorgan Chase & Co vs \n\u2022 CV2013-015709 (2013): American Family Mutual Insurance Company vs  [insurance/accident]\n\u2022 CV2015-006869 (2015): Civil Court Case Information - Case History\n\u2022 CV2015-008275 (2015): Civil Court Case Information - Case History\n\nFamily/Connections:\n\u2022 Daisy Elaine Alvarado \u2014 co-defendant in CV2015-006869 \u2014 likely family",
     "red_flags": [
-      "Satisfaction of Judgment filed \u2014 may already be resolved"
+      "Satisfaction of Judgment filed (10/29/2024) \u2014 case may be settled"
     ],
     "financial_notes": "Sale price: $138,120.57. Judgment: Unknown \u2014 check court docket."
   },
@@ -1167,7 +1242,10 @@ const INTEL_DATA = {
         "address": "7558 East Baywood Avenue, Mesa, AZ",
         "phone": "",
         "email": "",
-        "notes": "Former owner of 7558 East Baywood Avenue, Mesa, AZ. Property sold at sheriff sale for $6,868.44. Need: current phone, email, mailing address via skip trace service."
+        "other_cases": "CV1997-091263 (1997): Civil Court Case Information - Case History\nCV2000-010161 (2000): Civil Court Case Information - Case History\nCV2000-010175 (2000): Civil Court Case Information - Case History\nCV2000-093347 (2000): Civil Court Case Information - Case History [harassment/injunction]\nCV2001-090050 (2001): Civil Court Case Information - Case History\nCV2001-092278 (2001): Civil Court Case Information - Case History\nCV2003-090617 (2003): Civil Court Case Information - Case History\nCV2005-052076 (2005): Civil Court Case Information - Case History\nCV2026-006225 (2026): Houseopoly L L C vs ",
+        "relatives": "",
+        "best_leads": "\u2022 Property address: 7558 East Baywood Avenue, Mesa, AZ\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)",
+        "notes": "Former owner of 7558 East Baywood Avenue, Mesa, AZ. Property sold at sheriff sale for $6,868.44."
       },
       {
         "name": "Mesa East Property Owners Association",
@@ -1175,7 +1253,7 @@ const INTEL_DATA = {
         "notes": "Filed the original HOA lien foreclosure."
       }
     ],
-    "story": "Mesa East Property Owners Association sued Carina Boon for HOA lien foreclosure.",
+    "story": "Case: CV2024-024202 | Sale: $6,868.44\n\nMesa East Property Owners Association sued for HOA lien foreclosure.\n\u2022 Couldn't find them \u2014 court granted alternative service (12/11/2024)\n\u2022 Couldn't find them \u2014 court granted alternative service (11/27/2024)\n\u2022 Couldn't find them \u2014 court granted alternative service (11/20/2024)\n\n\u2500\u2500\u2500\n\nCourt History (9 other cases):\n\u2022 CV1997-091263 (1997): Civil Court Case Information - Case History\n\u2022 CV2000-010161 (2000): Civil Court Case Information - Case History\n\u2022 CV2000-010175 (2000): Civil Court Case Information - Case History\n\u2022 CV2000-093347 (2000): Civil Court Case Information - Case History [harassment/injunction]\n\u2022 CV2001-090050 (2001): Civil Court Case Information - Case History\n\u2022 CV2001-092278 (2001): Civil Court Case Information - Case History\n\u2022 CV2003-090617 (2003): Civil Court Case Information - Case History\n\u2022 CV2005-052076 (2005): Civil Court Case Information - Case History\n\u2022 CV2026-006225 (2026): Houseopoly L L C vs ",
     "red_flags": [],
     "financial_notes": "Sale price: $6,868.44. Judgment: Unknown \u2014 check court docket."
   }
