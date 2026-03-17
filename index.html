@@ -453,7 +453,7 @@
   </div>
 </div>
 
-<script src="intel-data.js"></script>
+<script src="intel-data.js?v=3"></script>
 <script>
 const SUPABASE_URL = 'https://jiailsusjabqythgokcb.supabase.co';
 const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImppYWlsc3VzamFicXl0aGdva2NiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzI5OTI5ODgsImV4cCI6MjA4ODU2ODk4OH0.QdfPmDFO1mHful9uKJOAHocZRg4aYb80igQS5DZgdEQ';
@@ -681,12 +681,16 @@ function openCase(docNumber) {
     notesSaveTimer = setTimeout(() => saveCaseNotes(notesEl.value), 1000);
   };
 
-  // Load intel data + attachments
-  loadIntelData();
+  // Load intel data + attachments, then render
+  loadIntelData().then(() => {
+    loadCaseIntel();
+    switchIntelTab('timeline');
+  });
   loadCaseAttachments();
 
-  // Reset intel tabs to timeline
+  // Reset intel tabs to timeline (show immediately, will re-render when data loads)
   switchIntelTab('timeline');
+  loadCaseIntel(); // Render with whatever we have now (fallback data)
 
   // Show detail, hide list
   document.getElementById('dashboard').style.display = 'none';
@@ -833,6 +837,7 @@ function switchIntelTab(tabName) {
 }
 
 function loadCaseIntel() {
+  console.log("[Intel] Rendering intel for:", currentDoc?.doc_number, "has _intel:", !!currentDoc?._intel, "docket:", currentDoc?._intel?.docket?.length || 0);
   if (!currentDoc) return;
   const intel = currentDoc._intel || {};
   
@@ -1024,12 +1029,14 @@ function renderProperty(intel) {
 
 // Load intel data from Supabase storage (stored as JSON per case)
 async function loadIntelData() {
+  console.log("[Intel] Loading for:", currentDoc?.doc_number);
   if (!currentDoc) return;
   const docNum = currentDoc.doc_number;
   
   // Try embedded data first (instant), then fall back to storage fetch
   if (typeof INTEL_DATA !== 'undefined' && INTEL_DATA[docNum]) {
     currentDoc._intel = INTEL_DATA[docNum];
+    console.log("[Intel] Found embedded data for", docNum, "keys:", Object.keys(currentDoc._intel));
   } else {
     currentDoc._intel = {};
     try {
