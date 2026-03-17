@@ -913,21 +913,47 @@ function buildPeopleFromDoc() {
 }
 
 function renderPeopleCards(el, people) {
-  el.innerHTML = people.map(p => {
+  const intel = currentDoc?._intel || {};
+  
+  // Story narrative at top (if available)
+  let storyHtml = '';
+  if (intel.story) {
+    storyHtml = `<div class="person-card" style="border-left:3px solid var(--accent2)">
+      <h4 style="color:var(--accent2)">📖 The Story</h4>
+      <div style="font-size:0.85rem;line-height:1.7;color:var(--text);white-space:pre-line">${escapeHtml(intel.story)}</div>
+    </div>`;
+  }
+  
+  // Red flags
+  let flagsHtml = '';
+  if (intel.red_flags?.length) {
+    flagsHtml = `<div class="person-card" style="border-left:3px solid var(--red)">
+      <h4 style="color:var(--red)">🚩 Red Flags</h4>
+      ${intel.red_flags.map(f => `<div style="font-size:0.85rem;color:var(--text);margin-bottom:4px">• ${escapeHtml(f)}</div>`).join('')}
+    </div>`;
+  }
+  
+  // People cards
+  const cardsHtml = people.map(p => {
     const roleClass = p.role?.toLowerCase().includes('defendant') ? 'role-defendant' : 'role-plaintiff';
     const details = [];
-    if (p.address) details.push(`<div><div class="pd-label">Address</div><div class="pd-value">${escapeHtml(p.address)}</div></div>`);
+    if (p.address) details.push(`<div><div class="pd-label">Last Known Address</div><div class="pd-value">${escapeHtml(p.address)}</div></div>`);
     if (p.phone) details.push(`<div><div class="pd-label">Phone</div><div class="pd-value"><a href="tel:${p.phone}">${escapeHtml(p.phone)}</a></div></div>`);
     if (p.email) details.push(`<div><div class="pd-label">Email</div><div class="pd-value"><a href="mailto:${p.email}">${escapeHtml(p.email)}</a></div></div>`);
-    if (p.relatives) details.push(`<div><div class="pd-label">Relatives</div><div class="pd-value">${escapeHtml(p.relatives)}</div></div>`);
+    if (p.employer) details.push(`<div><div class="pd-label">Employer</div><div class="pd-value">${escapeHtml(p.employer)}</div></div>`);
+    if (p.relatives) details.push(`<div><div class="pd-label">Family / Connections</div><div class="pd-value">${escapeHtml(p.relatives)}</div></div>`);
     if (p.age) details.push(`<div><div class="pd-label">Age</div><div class="pd-value">${escapeHtml(String(p.age))}</div></div>`);
-    if (p.notes) details.push(`<div style="grid-column:1/-1"><div class="pd-label">Intel Notes</div><div class="pd-value">${escapeHtml(p.notes)}</div></div>`);
+    if (p.other_cases) details.push(`<div style="grid-column:1/-1"><div class="pd-label">Other Court Cases</div><div class="pd-value" style="font-size:0.8rem;line-height:1.6">${escapeHtml(p.other_cases)}</div></div>`);
+    if (p.best_leads) details.push(`<div style="grid-column:1/-1"><div class="pd-label">🎯 Best Leads to Find Them</div><div class="pd-value" style="white-space:pre-line">${escapeHtml(p.best_leads)}</div></div>`);
+    if (p.notes) details.push(`<div style="grid-column:1/-1"><div class="pd-label">Intel Notes</div><div class="pd-value" style="line-height:1.6;white-space:pre-line">${escapeHtml(p.notes)}</div></div>`);
     
     return `<div class="person-card">
       <h4>${escapeHtml(p.name)} <span class="role-badge ${roleClass}">${escapeHtml(p.role || 'Unknown')}</span></h4>
-      ${details.length ? `<div class="person-detail">${details.join('')}</div>` : '<div style="color:var(--text-dim);font-size:0.8rem">No contact info found yet</div>'}
+      ${details.length ? `<div class="person-detail">${details.join('')}</div>` : '<div style="color:var(--text-dim);font-size:0.8rem">No contact info found yet — needs skip trace</div>'}
     </div>`;
   }).join('');
+  
+  el.innerHTML = storyHtml + flagsHtml + cardsHtml;
 }
 
 function renderFinancials(intel) {
