@@ -1,523 +1,346 @@
 const INTEL_DATA = {
   "PIMA-20260070422": {
-    "judgment_amount": 15282.72,
-    "fcv": 127600,
-    "owner": "BDB CAPITAL (purchased at sheriff sale)",
-    "parcel": "Unknown \u2014 Tucson Estates area",
-    "subdivision": "Tucson Estates",
-    "assessor_url": "https://www.asr.pima.gov",
-    "financial_notes": "BDB Capital is a known surplus buyer. They paid $90K at sheriff sale on Dec 4, 2024. Judgment was $15,282.72. Big spread = big surplus for former owner.",
-    "docket": [
-      {
-        "date": "1/21/2026",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "12/12/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "12/4/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "8/29/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "7/23/2025",
-        "entry": "Available"
-      },
-      {
-        "date": "7/21/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "6/17/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "6/11/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "6/11/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "6/11/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "6/11/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "6/11/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "6/11/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "6/11/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "6/11/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "6/11/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "4/17/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "4/17/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "4/17/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "3/20/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/25/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/11/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/11/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "1/17/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "1/17/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "1/9/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "1/9/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "1/9/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "1/9/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "1/7/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "12/30/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "12/30/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "12/30/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "12/30/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "12/4/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "10/24/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "10/24/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "10/16/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "10/16/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "10/15/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "10/3/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "9/18/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "9/17/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "9/17/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "9/17/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "9/9/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "9/5/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "9/5/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "9/4/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "9/4/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "9/4/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "9/4/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "8/15/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "8/14/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "8/14/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "8/14/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "8/14/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "6/27/2024",
-        "entry": "Available"
-      },
-      {
-        "date": "6/6/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "6/4/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "6/4/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "5/16/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "5/9/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "5/3/2024",
-        "entry": "Available"
-      },
-      {
-        "date": "3/5/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "3/1/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "3/1/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/29/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/29/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/29/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/29/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/29/2024",
-        "entry": "Available at Courthouse"
-      }
-    ],
+    "story": "Case: C20241215 | Sale: $90,000.00\n\nTUCSON ESTATES PROPERTY OWNERS ASSOCIATION sued JUANITA MAE SMITH, JANET KOCIEMBA for HOA lien foreclosure.\n\u2022 Levy (12/12/2025): RETURN OF LEVY/ SALE REAL / PERSONAL PROPERTY\n\u2022 Default judgment (7/23/2025): CIVIL DEFAULT JUDGMENT\n\u2022 Default judgment (6/11/2025): Motion for Default Judgment by Hearing\n\u2022 Default judgment (6/11/2025): Exhibit A to Motion for Default Judgment by Hearing\n\u2022 Default judgment (6/11/2025): Exhibit B to Motion for Default Judgment by Hearing\n\u2022 Default entered (4/17/2025)\n\u2022 Default entered (4/17/2025)\n\u2022 Default entered (4/17/2025)\n\u2022 Certificate (3/20/2025): CERTIFICATE OF SERVICE\n\u2022 Summons issued (10/15/2024)\n\u2022 Certificate (10/3/2024): CERTIFICATE OF SERVICE\n\u2022 Complaint filed (9/4/2024)\n\u2022 Summons issued (9/4/2024)\n\u2022 Summons issued (9/4/2024)\n\u2022 Complaint filed (9/4/2024)\n\u2022 Certificate (5/16/2024): CERTIFICATE OF ATTEMPTED SERVICE\n\u2022 Certificate (5/9/2024): CERTIFICATE OF ATTEMPTED SERVICE BY PRIVATE PERSON\n\u2022 \u26a0\ufe0f NOTICE OF IMPENDING DISMISSAL (5/3/2024)\n\u2022 Certificate (3/1/2024): Rule 102(a) FASTAR Certificate\n\u2022 Complaint filed (2/29/2024)\n\u2022 Summons issued (2/29/2024)\n\u2022 Summons issued (2/29/2024)\n\u2022 Complaint filed (2/29/2024)\n\nJudgment: $15,282.72\nEstimated surplus: $74,717.28\nYour 30% fee: $22,415.18",
+    "red_flags": [],
     "people": [
       {
         "name": "JUANITA MAE SMITH",
         "role": "Defendant (Former Owner)",
-        "address": "5422 W Circle Z St, Tucson, AZ 85713",
+        "address": "5422 W CIRCLE Z ST, TUCSON, AZ 85713",
         "phone": "",
         "email": "",
-        "relatives": "Janet Kociembra (co-defendant)",
-        "notes": "Former owner. Property sold at sheriff sale Dec 4, 2024. Has 2 years from sale date to claim surplus (~$74,717). Deadline: Dec 4, 2026."
+        "notes": "Named in C20241215. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Last known property: 5422 W CIRCLE Z ST, TUCSON, AZ 85713\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
       },
       {
-        "name": "JANET KOCIEMBRA",
-        "role": "Defendant (Co-Owner)",
-        "address": "5422 W Circle Z St, Tucson, AZ 85713",
+        "name": "JANET KOCIEMBA",
+        "role": "Defendant (Former Owner)",
+        "address": "5422 W CIRCLE Z ST, TUCSON, AZ 85713",
         "phone": "",
         "email": "",
-        "notes": "Co-defendant on HOA lien. May also have claim to surplus."
+        "notes": "Named in C20241215. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Last known property: 5422 W CIRCLE Z ST, TUCSON, AZ 85713\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "JILL ANNE SMITH",
+        "role": "Defendant (Former Owner)",
+        "address": "5422 W CIRCLE Z ST, TUCSON, AZ 85713",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20241215. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Last known property: 5422 W CIRCLE Z ST, TUCSON, AZ 85713\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "GLORIA ANNE DOWELL",
+        "role": "Defendant (Former Owner)",
+        "address": "5422 W CIRCLE Z ST, TUCSON, AZ 85713",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20241215. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Last known property: 5422 W CIRCLE Z ST, TUCSON, AZ 85713\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
       },
       {
         "name": "TUCSON ESTATES PROPERTY OWNERS ASSOCIATION",
         "role": "Plaintiff (HOA)",
-        "notes": "Filed the original HOA lien foreclosure. Judgment: $15,282.72."
-      },
-      {
-        "name": "BDB CAPITAL",
-        "role": "Buyer at Sheriff Sale",
-        "notes": "Purchased property for $90,000 at Dec 4, 2024 sheriff sale. Known surplus sale buyer in Pima County."
+        "notes": ""
       }
     ],
-    "sale_history": [
-      {
-        "date": "Dec 2024",
-        "value": 90000
-      },
-      {
-        "date": "Original purchase",
-        "value": "Unknown"
-      }
-    ],
-    "story": "Case: C20241215 | Sale: $90,000.00\nTucson Estates POA sued Juanita Mae Smith for HOA lien foreclosure.\nJudgment: $15,282.72\nEstimated surplus: $74,717.28"
-  },
-  "PIMA-COURT-C20235724": {
-    "judgment_amount": null,
-    "fcv": 412458,
-    "financial_notes": "Assessor shows sale at $412,458. Enormous value. If typical HOA judgment, surplus could be $397-407K. This would be the single biggest surplus recovery in our pipeline. PRIORITY CASE.",
     "docket": [
       {
-        "date": "9/13/2024",
-        "entry": "Available at Courthouse"
+        "date": "1/21/2026",
+        "entry": "All Money Receipts #4027427"
+      },
+      {
+        "date": "12/12/2025",
+        "entry": "RETURN OF LEVY/ SALE REAL / PERSONAL PROPERTY"
+      },
+      {
+        "date": "12/4/2025",
+        "entry": "Affidavit of Publication"
+      },
+      {
+        "date": "8/29/2025",
+        "entry": "PRAECIPE"
+      },
+      {
+        "date": "7/23/2025",
+        "entry": "CIVIL DEFAULT JUDGMENT"
+      },
+      {
+        "date": "7/21/2025",
+        "entry": "JUDGMENT"
+      },
+      {
+        "date": "6/17/2025",
+        "entry": "NOTICE OF HEARING"
+      },
+      {
+        "date": "6/11/2025",
+        "entry": "Motion for Default Judgment by Hearing"
+      },
+      {
+        "date": "6/11/2025",
+        "entry": "Application for Attorney Fees"
+      },
+      {
+        "date": "6/11/2025",
+        "entry": "Affidavit in Support of Award of Attorney Fees"
+      },
+      {
+        "date": "6/11/2025",
+        "entry": "Verified Statement of Taxable and Non-Taxable Costs"
+      },
+      {
+        "date": "6/11/2025",
+        "entry": "Notice of Lodging Proposed Form of Judgment"
+      },
+      {
+        "date": "6/11/2025",
+        "entry": "Exhibit A to Motion for Default Judgment by Hearing"
+      },
+      {
+        "date": "6/11/2025",
+        "entry": "Exhibit B to Motion for Default Judgment by Hearing"
+      },
+      {
+        "date": "6/11/2025",
+        "entry": "Exhibit A to Affidavit in Support of Award of Attorney Fees"
+      },
+      {
+        "date": "6/11/2025",
+        "entry": "Exhibit A to Verified Statement of Taxable and Non-Taxable Costs"
+      },
+      {
+        "date": "4/17/2025",
+        "entry": "Application for Entry of Default"
+      },
+      {
+        "date": "4/17/2025",
+        "entry": "Exhibit A to Application for Entry of Default"
+      },
+      {
+        "date": "4/17/2025",
+        "entry": "Exhibit B to Application for Entry of Default"
+      },
+      {
+        "date": "3/20/2025",
+        "entry": "CERTIFICATE OF SERVICE"
+      },
+      {
+        "date": "2/25/2025",
+        "entry": "AFFIDAVIT OF PUBLICATION"
+      },
+      {
+        "date": "2/11/2025",
+        "entry": "Rule 4.2(C) Affidavit of Service By United States Mail"
+      },
+      {
+        "date": "2/11/2025",
+        "entry": "Exhibit A to Rule 4.2(C) Affidavit of Service By United States Mail"
+      },
+      {
+        "date": "1/17/2025",
+        "entry": "ORDER"
+      },
+      {
+        "date": "1/17/2025",
+        "entry": "ORDER"
+      },
+      {
+        "date": "1/9/2025",
+        "entry": "Motion to Publish"
+      },
+      {
+        "date": "1/9/2025",
+        "entry": "Exhibit A to Motion to Publish"
+      },
+      {
+        "date": "1/9/2025",
+        "entry": "Exhibit B to Motion to Publish"
+      },
+      {
+        "date": "1/9/2025",
+        "entry": "Exhibit C to Motion to Publish"
+      },
+      {
+        "date": "1/7/2025",
+        "entry": "ORDER"
+      },
+      {
+        "date": "12/30/2024",
+        "entry": "Motion to Extend Time for Service"
+      },
+      {
+        "date": "12/30/2024",
+        "entry": "Exhibit A to Motion to Extend Time for Service"
+      },
+      {
+        "date": "12/30/2024",
+        "entry": "Exhibit B to Motion to Extend Time for Service"
+      },
+      {
+        "date": "12/30/2024",
+        "entry": "Exhibit C to Motion to Extend Time for Service"
+      },
+      {
+        "date": "12/4/2024",
+        "entry": "ORDER"
+      },
+      {
+        "date": "10/24/2024",
+        "entry": "Affidavit of Service by Publication"
+      },
+      {
+        "date": "10/24/2024",
+        "entry": "Exhibit A to Affidavit of Service by Publication"
+      },
+      {
+        "date": "10/16/2024",
+        "entry": "ORDER"
+      },
+      {
+        "date": "10/16/2024",
+        "entry": "Stipulated Disclaimer of Interest"
+      },
+      {
+        "date": "10/15/2024",
+        "entry": "AFFIDAVIT OF PUBLICATION/SUMMONS"
+      },
+      {
+        "date": "10/3/2024",
+        "entry": "CERTIFICATE OF SERVICE"
+      },
+      {
+        "date": "9/18/2024",
+        "entry": "AFFIDAVIT OF SERVICE"
+      },
+      {
+        "date": "9/17/2024",
+        "entry": "Notice of Correction"
+      },
+      {
+        "date": "9/17/2024",
+        "entry": "Exhibit A to Notice of Correction"
+      },
+      {
+        "date": "9/17/2024",
+        "entry": "AFFIDAVIT OF SERVICE"
+      },
+      {
+        "date": "9/9/2024",
+        "entry": "ORDER"
+      },
+      {
+        "date": "9/5/2024",
+        "entry": "Motion to Publish"
+      },
+      {
+        "date": "9/5/2024",
+        "entry": "Exhibit A to Motion to Publish"
+      },
+      {
+        "date": "9/4/2024",
+        "entry": "First Amended Complaint"
+      },
+      {
+        "date": "9/4/2024",
+        "entry": "Summons"
+      },
+      {
+        "date": "9/4/2024",
+        "entry": "Summons"
+      },
+      {
+        "date": "9/4/2024",
+        "entry": "Exhibit A to Amended Complaint"
       },
       {
         "date": "8/15/2024",
-        "entry": "Available at Courthouse"
+        "entry": "ORDER"
       },
       {
-        "date": "8/15/2024",
-        "entry": "Available at Courthouse"
+        "date": "8/14/2024",
+        "entry": "Motion for Alternative Service"
+      },
+      {
+        "date": "8/14/2024",
+        "entry": "Exhibit A to Motion for Alternative Service"
+      },
+      {
+        "date": "8/14/2024",
+        "entry": "Exhibit B to Motion for Alternative Service"
+      },
+      {
+        "date": "8/14/2024",
+        "entry": "Exhibit C to Motion for Alternative Service"
+      },
+      {
+        "date": "6/27/2024",
+        "entry": "Notice Re: Reassignment"
+      },
+      {
+        "date": "6/6/2024",
+        "entry": "ORDER"
       },
       {
         "date": "6/4/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Motion to Extend Time for Service"
       },
       {
-        "date": "3/19/2024",
-        "entry": "Available"
+        "date": "6/4/2024",
+        "entry": "Exhibit A to Motion to Extend Time for Service"
       },
       {
-        "date": "3/18/2024",
-        "entry": "Available at Courthouse"
+        "date": "5/16/2024",
+        "entry": "CERTIFICATE OF ATTEMPTED SERVICE"
+      },
+      {
+        "date": "5/9/2024",
+        "entry": "CERTIFICATE OF ATTEMPTED SERVICE BY PRIVATE PERSON"
+      },
+      {
+        "date": "5/3/2024",
+        "entry": "NOTICE OF IMPENDING DISMISSAL"
       },
       {
         "date": "3/5/2024",
-        "entry": "Available at Courthouse"
+        "entry": "All Money Receipts #3725741"
+      },
+      {
+        "date": "3/1/2024",
+        "entry": "Rule 102(a) FASTAR Certificate"
+      },
+      {
+        "date": "3/1/2024",
+        "entry": "Notice of Lis Pendens"
       },
       {
         "date": "2/29/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Foreclosure Complaint"
       },
       {
-        "date": "2/28/2024",
-        "entry": "Available at Courthouse"
+        "date": "2/29/2024",
+        "entry": "Civil Cover Sheet"
       },
       {
-        "date": "2/28/2024",
-        "entry": "Available at Courthouse"
+        "date": "2/29/2024",
+        "entry": "Summons"
       },
       {
-        "date": "2/28/2024",
-        "entry": "Available at Courthouse"
+        "date": "2/29/2024",
+        "entry": "Summons"
       },
       {
-        "date": "2/28/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/28/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/28/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/28/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/28/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/28/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/28/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/28/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/28/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/28/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/7/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/6/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/6/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "1/29/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "1/29/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "1/29/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "1/29/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "1/29/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "1/4/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "12/28/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "12/28/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "12/7/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "12/7/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "12/6/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "12/6/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "12/6/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "12/6/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "12/6/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "12/6/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "12/6/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "12/6/2023",
-        "entry": "Available at Courthouse"
+        "date": "2/29/2024",
+        "entry": "Exhibit A to Foreclosure Complaint"
       }
     ],
+    "judgment_amount": 15282.72
+  },
+  "PIMA-COURT-C20235724": {
+    "story": "Case: C20235724 | Sale: $412,458\n\nRANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC. sued KYLE M. BERRY, JARED SPEAR for HOA lien foreclosure.\n\u2022 Default judgment (3/19/2024): CIVIL DEFAULT JUDGMENT\n\u2022 Default entered (2/28/2024)\n\u2022 Default entered (2/28/2024)\n\u2022 Default entered (2/28/2024)\n\u2022 Default entered (2/6/2024)\n\u2022 Stipulation (2/6/2024): Stipulation to Lien Priority Regarding Defendant State of Ar\n\u2022 Default entered (1/29/2024)\n\u2022 Default entered (1/29/2024)\n\u2022 Default entered (1/29/2024)\n\u2022 Default entered (1/29/2024)\n\u2022 Default entered (1/29/2024)\n\u2022 Certificate (1/4/2024): CERTIFICATE OF SERVICE\n\u2022 Certificate (12/28/2023): CERTIFICATE OF SERVICE\n\u2022 Certificate (12/28/2023): CERTIFICATE OF SERVICE\n\u2022 Certificate (12/7/2023): Certificate of Compulsory Arbitration\n\u2022 Complaint filed (12/6/2023)\n\u2022 Certificate (12/6/2023): FASTAR Certificate\n\u2022 Summons issued (12/6/2023)\n\u2022 Summons issued (12/6/2023)\n\u2022 Summons issued (12/6/2023)\n\u2022 Summons issued (12/6/2023)",
+    "red_flags": [],
     "people": [
-      {
-        "name": "RANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC.",
-        "role": "Plaintiff (HOA/Corp)",
-        "notes": ""
-      },
       {
         "name": "KYLE M. BERRY",
         "role": "Defendant (Former Owner)",
@@ -537,16 +360,6 @@ const INTEL_DATA = {
         "best_leads": "\u2022 Last known property: 5476 W TUMACACORI TR (FCV: $354,742)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
       },
       {
-        "name": "NORTHWEST SAHUARITA HOSPITAL, LLC",
-        "role": "Plaintiff (HOA/Corp)",
-        "notes": ""
-      },
-      {
-        "name": "NORTHWEST SAHUARITA HOSPITAL, LLC",
-        "role": "Plaintiff (HOA/Corp)",
-        "notes": ""
-      },
-      {
         "name": "STATE OF ARIZONA",
         "role": "Defendant (Former Owner)",
         "address": "5476 W TUMACACORI TR (FCV: $354,742)",
@@ -554,200 +367,204 @@ const INTEL_DATA = {
         "email": "",
         "notes": "Named in C20235724. Needs skip trace for current contact info.",
         "best_leads": "\u2022 Last known property: 5476 W TUMACACORI TR (FCV: $354,742)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
-      }
-    ],
-    "story": "Case: C20235724 | Sale: $412,458\nRANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC. sued KYLE M. BERRY for HOA lien foreclosure."
-  },
-  "PIMA-COURT-C20230042": {
-    "judgment_amount": 7741.52,
-    "docket": [
-      {
-        "date": "3/19/2024",
-        "entry": "Available at Courthouse"
       },
-      {
-        "date": "3/19/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "1/16/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "9/25/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "9/7/2023",
-        "entry": "Available"
-      },
-      {
-        "date": "9/5/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "7/24/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "7/24/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "7/24/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "7/24/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "7/24/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "7/24/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "7/24/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "7/24/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "7/24/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "7/24/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "7/24/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "7/24/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "7/24/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "7/24/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "5/30/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "5/30/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "5/30/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "5/30/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "5/30/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "5/30/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "3/13/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "3/10/2023",
-        "entry": "Available"
-      },
-      {
-        "date": "2/28/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/28/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/28/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/28/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/28/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/28/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/3/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/3/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "1/23/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "1/5/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "1/5/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "1/5/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "1/5/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "1/5/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "1/5/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "1/5/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "1/5/2023",
-        "entry": "Available at Courthouse"
-      }
-    ],
-    "people": [
       {
         "name": "RANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC.",
-        "role": "Plaintiff (HOA/Corp)",
+        "role": "Plaintiff (HOA)",
         "notes": ""
       },
+      {
+        "name": "RANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC.",
+        "role": "Plaintiff (HOA)",
+        "notes": ""
+      },
+      {
+        "name": "NORTHWEST SAHUARITA HOSPITAL, LLC",
+        "role": "Defendant (Lienholder)",
+        "notes": "Has a lien on the property. May have claim on surplus."
+      },
+      {
+        "name": "NORTHWEST SAHUARITA HOSPITAL, LLC",
+        "role": "Defendant (Lienholder)",
+        "notes": "Has a lien on the property. May have claim on surplus."
+      }
+    ],
+    "docket": [
+      {
+        "date": "9/13/2024",
+        "entry": "AFFIDAVIT OF NON-SERVICE"
+      },
+      {
+        "date": "8/15/2024",
+        "entry": "Satisfaction of Judgment"
+      },
+      {
+        "date": "8/15/2024",
+        "entry": "Release of Lis Pendens"
+      },
+      {
+        "date": "6/4/2024",
+        "entry": "PRAECIPE"
+      },
+      {
+        "date": "3/19/2024",
+        "entry": "CIVIL DEFAULT JUDGMENT"
+      },
+      {
+        "date": "3/18/2024",
+        "entry": "JUDGMENT"
+      },
+      {
+        "date": "3/5/2024",
+        "entry": "Motion to Appear Telephonically"
+      },
+      {
+        "date": "2/29/2024",
+        "entry": "ORDER"
+      },
+      {
+        "date": "2/28/2024",
+        "entry": "Motion and Affidavit for Foreclosure"
+      },
+      {
+        "date": "2/28/2024",
+        "entry": "Affidavit in Support of Foreclosure"
+      },
+      {
+        "date": "2/28/2024",
+        "entry": "Statement of Costs"
+      },
+      {
+        "date": "2/28/2024",
+        "entry": "Affidavit in Support of Attorney Fees"
+      },
+      {
+        "date": "2/28/2024",
+        "entry": "Motion to Set Default Hearing"
+      },
+      {
+        "date": "2/28/2024",
+        "entry": "Exhibit 1 to Affidavit in Support of Foreclosure"
+      },
+      {
+        "date": "2/28/2024",
+        "entry": "Exhibit 2 to Affidavit in Support of Foreclosure"
+      },
+      {
+        "date": "2/28/2024",
+        "entry": "Exhibit 3 to Affidavit in Support of Foreclosure"
+      },
+      {
+        "date": "2/28/2024",
+        "entry": "Exhibit 4 to Affidavit in Support of Foreclosure"
+      },
+      {
+        "date": "2/28/2024",
+        "entry": "Exhibit 1 to Affidavit in Support of Attorney Fees"
+      },
+      {
+        "date": "2/28/2024",
+        "entry": "Exhibit 2 to Affidavit in Support of Attorney Fees"
+      },
+      {
+        "date": "2/28/2024",
+        "entry": "Exhibit 1 to Motion to Set Default Hearing"
+      },
+      {
+        "date": "2/28/2024",
+        "entry": "Exhibit 1-2 to Motion to Set Default Hearing"
+      },
+      {
+        "date": "2/7/2024",
+        "entry": "ORDER"
+      },
+      {
+        "date": "2/6/2024",
+        "entry": "Notice of Withdrawl of Notice of Intent to Seek Entry of Default"
+      },
+      {
+        "date": "2/6/2024",
+        "entry": "Stipulation to Lien Priority Regarding Defendant State of Arizona only"
+      },
+      {
+        "date": "1/29/2024",
+        "entry": "Notice of Intent to Seek Entry of Default"
+      },
+      {
+        "date": "1/29/2024",
+        "entry": "Application for Default"
+      },
+      {
+        "date": "1/29/2024",
+        "entry": "Exhibit 1 of Application for Default"
+      },
+      {
+        "date": "1/29/2024",
+        "entry": "Exhibit 1-2 of Application for Default"
+      },
+      {
+        "date": "1/29/2024",
+        "entry": "Exhibit 1-3 of Application for Default"
+      },
+      {
+        "date": "1/4/2024",
+        "entry": "CERTIFICATE OF SERVICE"
+      },
+      {
+        "date": "12/28/2023",
+        "entry": "CERTIFICATE OF SERVICE"
+      },
+      {
+        "date": "12/28/2023",
+        "entry": "CERTIFICATE OF SERVICE"
+      },
+      {
+        "date": "12/7/2023",
+        "entry": "Certificate of Compulsory Arbitration"
+      },
+      {
+        "date": "12/7/2023",
+        "entry": "Notice of Lis Pendens"
+      },
+      {
+        "date": "12/6/2023",
+        "entry": "Complaint"
+      },
+      {
+        "date": "12/6/2023",
+        "entry": "Civil Cover Sheet"
+      },
+      {
+        "date": "12/6/2023",
+        "entry": "FASTAR Certificate"
+      },
+      {
+        "date": "12/6/2023",
+        "entry": "Summons"
+      },
+      {
+        "date": "12/6/2023",
+        "entry": "Summons"
+      },
+      {
+        "date": "12/6/2023",
+        "entry": "Summons"
+      },
+      {
+        "date": "12/6/2023",
+        "entry": "Summons"
+      },
+      {
+        "date": "12/6/2023",
+        "entry": "All Money Receipts 3695794"
+      }
+    ],
+    "judgment_amount": null
+  },
+  "PIMA-COURT-C20230042": {
+    "story": "Case: C20230042 | Sale: $10,896.00\n\nRANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC. sued JUDITH M. WERNER, MARCUS L. WERNER for HOA lien foreclosure.\n\u2022 Default entered (9/7/2023)\n\u2022 Default entered (7/24/2023)\n\u2022 Default entered (7/24/2023)\n\u2022 Default entered (7/24/2023)\n\u2022 Default judgment (5/30/2023): NOTICE OF INTENT TO SEEK ENTRY OF DEFAULT AND JUDGMENT BY DE\n\u2022 Default entered (5/30/2023)\n\u2022 Default entered (5/30/2023)\n\u2022 Default entered (5/30/2023)\n\u2022 Default entered (5/30/2023)\n\u2022 Default entered (5/30/2023)\n\u2022 Certificate (3/13/2023): CERTIFICATE OF SERVICE\n\u2022 \u26a0\ufe0f NOTICE OF IMPENDING DISMISSAL (3/10/2023)\n\u2022 Certificate (1/23/2023): CERTIFICATE OF SERVICE\n\u2022 Certificate (1/5/2023): Certificate of Compulsory Arbitration\n\u2022 Complaint filed (1/5/2023)\n\u2022 Certificate (1/5/2023): FASTAR Certificate\n\u2022 Summons issued (1/5/2023)\n\u2022 Summons issued (1/5/2023)\n\nJudgment: $7,741.52\nEstimated surplus: $3,154.48\nYour 30% fee: $946.34",
+    "red_flags": [],
+    "people": [
       {
         "name": "JUDITH M. WERNER",
         "role": "Defendant (Former Owner)",
@@ -765,184 +582,206 @@ const INTEL_DATA = {
         "email": "",
         "notes": "Named in C20230042. Needs skip trace for current contact info.",
         "best_leads": "\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
-      }
-    ],
-    "story": "Case: C20230042 | Sale: $10,896.00\nRANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC. sued JUDITH M. WERNER for HOA lien foreclosure.\nJudgment: $7,741.52\nEstimated surplus: $3,154.48"
-  },
-  "PIMA-COURT-C20242205": {
-    "judgment_amount": 10115.51,
-    "docket": [
-      {
-        "date": "8/19/2025",
-        "entry": "Available at Courthouse"
       },
-      {
-        "date": "8/19/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "8/19/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "8/19/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "5/9/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "1/9/2025",
-        "entry": "Available"
-      },
-      {
-        "date": "10/29/2024",
-        "entry": "Available"
-      },
-      {
-        "date": "10/29/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "8/29/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "8/21/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "8/21/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "8/21/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "8/21/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "8/21/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "8/21/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "8/21/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "8/21/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "8/21/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "8/21/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "8/21/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "8/21/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "8/21/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "7/18/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "7/17/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "7/8/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "7/8/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "7/8/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "7/8/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "6/27/2024",
-        "entry": "Available"
-      },
-      {
-        "date": "5/21/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "5/21/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "5/21/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "5/21/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "4/15/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "4/15/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "4/12/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "4/12/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "4/12/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "4/12/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "4/12/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "4/12/2024",
-        "entry": "Available at Courthouse"
-      }
-    ],
-    "people": [
       {
         "name": "RANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC.",
-        "role": "Plaintiff (HOA/Corp)",
+        "role": "Plaintiff (HOA)",
         "notes": ""
       },
+      {
+        "name": "RANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC.",
+        "role": "Plaintiff (HOA)",
+        "notes": ""
+      }
+    ],
+    "docket": [
+      {
+        "date": "3/19/2024",
+        "entry": "Satisfaction of Judgment"
+      },
+      {
+        "date": "3/19/2024",
+        "entry": "Release of Lis Pendens"
+      },
+      {
+        "date": "1/16/2024",
+        "entry": "AFFIDAVIT OF SERVICE"
+      },
+      {
+        "date": "9/25/2023",
+        "entry": "PRAECIPE"
+      },
+      {
+        "date": "9/7/2023",
+        "entry": "DEFAULT HEARING"
+      },
+      {
+        "date": "9/5/2023",
+        "entry": "JUDGMENT"
+      },
+      {
+        "date": "7/24/2023",
+        "entry": "ORDER"
+      },
+      {
+        "date": "7/24/2023",
+        "entry": "Motion and Affidavit for Foreclosure"
+      },
+      {
+        "date": "7/24/2023",
+        "entry": "Affidavit in Support of Foreclosure"
+      },
+      {
+        "date": "7/24/2023",
+        "entry": "Statement of Costs"
+      },
+      {
+        "date": "7/24/2023",
+        "entry": "Affidavit in Support of Attorney Fees"
+      },
+      {
+        "date": "7/24/2023",
+        "entry": "Motion to Set Default Hearing"
+      },
+      {
+        "date": "7/24/2023",
+        "entry": "Exhibit 1 to Affidavit in Support of Foreclosure"
+      },
+      {
+        "date": "7/24/2023",
+        "entry": "Exhibit 2 to Affidavit in Support of Foreclosure"
+      },
+      {
+        "date": "7/24/2023",
+        "entry": "Exhibit 3 to Affidavit in Support of Foreclosure"
+      },
+      {
+        "date": "7/24/2023",
+        "entry": "Exhibit 4 to Affidavit in Support of Foreclosure"
+      },
+      {
+        "date": "7/24/2023",
+        "entry": "Exhibit 1 to Affidavit in Support of Attorney Fees"
+      },
+      {
+        "date": "7/24/2023",
+        "entry": "Exhibit 2 to Affidavit in Support of Attorney Fees"
+      },
+      {
+        "date": "7/24/2023",
+        "entry": "Exhibit 1-1 to Motion to Set Default Hearing"
+      },
+      {
+        "date": "7/24/2023",
+        "entry": "Exhibit 1-2 to Motion to Set Default Hearing"
+      },
+      {
+        "date": "5/30/2023",
+        "entry": "NOTICE OF INTENT TO SEEK ENTRY OF DEFAULT AND JUDGMENT BY DEFAULT"
+      },
+      {
+        "date": "5/30/2023",
+        "entry": "Application for Default; Affidavit on Default"
+      },
+      {
+        "date": "5/30/2023",
+        "entry": "Exhibit 1-1-Application for Default; Affidavit on Default"
+      },
+      {
+        "date": "5/30/2023",
+        "entry": "Exhibit 1-2-Application for Default; Affidavit on Default"
+      },
+      {
+        "date": "5/30/2023",
+        "entry": "Exhibit 2-1-Application for Default; Affidavit on Default"
+      },
+      {
+        "date": "5/30/2023",
+        "entry": "Exhibit 2-2-Application for Default; Affidavit on Default"
+      },
+      {
+        "date": "3/13/2023",
+        "entry": "CERTIFICATE OF SERVICE"
+      },
+      {
+        "date": "3/10/2023",
+        "entry": "NOTICE OF IMPENDING DISMISSAL"
+      },
+      {
+        "date": "2/28/2023",
+        "entry": "ORDER"
+      },
+      {
+        "date": "2/28/2023",
+        "entry": "Motion for Alternative Method of Service"
+      },
+      {
+        "date": "2/28/2023",
+        "entry": "Exhibit A- Pima Assessor"
+      },
+      {
+        "date": "2/28/2023",
+        "entry": "Exhibit B-Affidavit of Service for Judith Werner"
+      },
+      {
+        "date": "2/28/2023",
+        "entry": "Exhibit C- TLO"
+      },
+      {
+        "date": "2/28/2023",
+        "entry": "Exhibit D- Attempted Service Affidavit"
+      },
+      {
+        "date": "2/3/2023",
+        "entry": "AFFIDAVIT OF ATTEMPTED SERVICE"
+      },
+      {
+        "date": "2/3/2023",
+        "entry": "AFFIDAVIT OF ATTEMPTED SERVICE"
+      },
+      {
+        "date": "1/23/2023",
+        "entry": "CERTIFICATE OF SERVICE"
+      },
+      {
+        "date": "1/5/2023",
+        "entry": "Certificate of Compulsory Arbitration"
+      },
+      {
+        "date": "1/5/2023",
+        "entry": "Notice of Lis Pendens"
+      },
+      {
+        "date": "1/5/2023",
+        "entry": "Complaint"
+      },
+      {
+        "date": "1/5/2023",
+        "entry": "Civil Cover Sheet"
+      },
+      {
+        "date": "1/5/2023",
+        "entry": "FASTAR Certificate"
+      },
+      {
+        "date": "1/5/2023",
+        "entry": "Summons"
+      },
+      {
+        "date": "1/5/2023",
+        "entry": "Summons"
+      },
+      {
+        "date": "1/5/2023",
+        "entry": "All Money Receipts 3572233"
+      }
+    ],
+    "judgment_amount": 7741.52
+  },
+  "PIMA-COURT-C20242205": {
+    "story": "Case: C20242205 | Sale: $14,870.24\n\nRANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC. sued LOUIE P MASON, SECRETARY OF HOUSING AND URBAN DEVELOPMENT for HOA lien foreclosure.\n\u2022 Levy (8/19/2025): RETURN OF LEVY/ SALE REAL / PERSONAL PROPERTY\n\u2022 Levy (8/19/2025): RETURN OF LEVY/ SALE REAL / PERSONAL PROPERTY\n\u2022 Levy (8/19/2025): SHERIFFS LEVY ON REAL PROPERTY\n\u2022 Sale (8/19/2025): NOTICE OF SALE ON REAL PROPERTY\n\u2022 Default judgment (1/9/2025): AMENDED-CIVIL DEFAULT JUDGMENT\n\u2022 Default judgment (10/29/2024): CIVIL DEFAULT JUDGMENT\n\u2022 Default entered (8/21/2024)\n\u2022 Default entered (8/21/2024)\n\u2022 Stipulation (7/17/2024): Stipulation to Judgment as to Defendant Secretary of Housing\n\u2022 Default entered (7/8/2024)\n\u2022 Default entered (7/8/2024)\n\u2022 Default entered (7/8/2024)\n\u2022 Default entered (7/8/2024)\n\u2022 Certificate (5/21/2024): CERTIFICATE OF SERVICE\n\u2022 Certificate (5/21/2024): CERTIFICATE OF SERVICE\n\u2022 Certificate (5/21/2024): CERTIFICATE OF SERVICE\n\u2022 Certificate (5/21/2024): CERTIFICATE OF SERVICE\n\u2022 Certificate (4/15/2024): Certificate of Compulsory Arbitration\n\u2022 Complaint filed (4/12/2024)\n\u2022 Certificate (4/12/2024): FASTAR Certificate\n\u2022 Summons issued (4/12/2024)\n\u2022 Summons issued (4/12/2024)\n\nJudgment: $10,115.51\nEstimated surplus: $4,754.73\nYour 30% fee: $1,426.42",
+    "red_flags": [],
+    "people": [
       {
         "name": "LOUIE P MASON",
         "role": "Defendant (Former Owner)",
@@ -960,439 +799,350 @@ const INTEL_DATA = {
         "email": "",
         "notes": "Named in C20242205. Needs skip trace for current contact info.",
         "best_leads": "\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "RANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC.",
+        "role": "Plaintiff (HOA)",
+        "notes": ""
+      },
+      {
+        "name": "RANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC.",
+        "role": "Plaintiff (HOA)",
+        "notes": ""
       }
     ],
-    "story": "Case: C20242205 | Sale: $14,870.24\nRANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC. sued LOUIE P MASON for HOA lien foreclosure.\nJudgment: $10,115.51\nEstimated surplus: $4,754.73"
-  },
-  "PIMA-COURT-C20241424": {
-    "judgment_amount": 6223.27,
     "docket": [
       {
-        "date": "1/7/2025",
-        "entry": "Available at Courthouse"
+        "date": "8/19/2025",
+        "entry": "RETURN OF LEVY/ SALE REAL / PERSONAL PROPERTY"
       },
       {
-        "date": "1/7/2025",
-        "entry": "Available at Courthouse"
+        "date": "8/19/2025",
+        "entry": "RETURN OF LEVY/ SALE REAL / PERSONAL PROPERTY"
       },
       {
-        "date": "11/15/2024",
-        "entry": "Available at Courthouse"
+        "date": "8/19/2025",
+        "entry": "SHERIFFS LEVY ON REAL PROPERTY"
       },
       {
-        "date": "11/6/2024",
-        "entry": "Available at Courthouse"
+        "date": "8/19/2025",
+        "entry": "NOTICE OF SALE ON REAL PROPERTY"
       },
       {
-        "date": "7/23/2024",
-        "entry": "Available at Courthouse"
+        "date": "5/9/2025",
+        "entry": "PRAECIPE"
       },
       {
-        "date": "7/10/2024",
-        "entry": "Available at Courthouse"
+        "date": "1/9/2025",
+        "entry": "AMENDED-CIVIL DEFAULT JUDGMENT"
       },
       {
-        "date": "7/10/2024",
-        "entry": "Available"
+        "date": "10/29/2024",
+        "entry": "CIVIL DEFAULT JUDGMENT"
       },
       {
-        "date": "6/28/2024",
-        "entry": "Available at Courthouse"
+        "date": "10/29/2024",
+        "entry": "JUDGMENT"
       },
       {
-        "date": "6/24/2024",
-        "entry": "Available at Courthouse"
+        "date": "8/29/2024",
+        "entry": "ORDER"
       },
       {
-        "date": "6/24/2024",
-        "entry": "Available at Courthouse"
+        "date": "8/21/2024",
+        "entry": "Motion to Set Default Hearing"
       },
       {
-        "date": "6/24/2024",
-        "entry": "Available at Courthouse"
+        "date": "8/21/2024",
+        "entry": "Motion to Appear Telephonically"
       },
       {
-        "date": "6/24/2024",
-        "entry": "Available at Courthouse"
+        "date": "8/21/2024",
+        "entry": "Exhibit 1 to Motion to Set Default Hearing"
       },
       {
-        "date": "6/24/2024",
-        "entry": "Available at Courthouse"
+        "date": "8/21/2024",
+        "entry": "Statement of Costs"
       },
       {
-        "date": "6/24/2024",
-        "entry": "Available at Courthouse"
+        "date": "8/21/2024",
+        "entry": "Affidavit in Support of Attorney Fees"
       },
       {
-        "date": "6/24/2024",
-        "entry": "Available at Courthouse"
+        "date": "8/21/2024",
+        "entry": "Exhibit 1 to Affidavit in Support of Attorney Fees"
       },
       {
-        "date": "6/24/2024",
-        "entry": "Available at Courthouse"
+        "date": "8/21/2024",
+        "entry": "Exhibit 2 to Affidavit in Support of Attorney Fees"
       },
       {
-        "date": "6/24/2024",
-        "entry": "Available at Courthouse"
+        "date": "8/21/2024",
+        "entry": "Motion and Affidavit for Foreclosure"
       },
       {
-        "date": "6/24/2024",
-        "entry": "Available at Courthouse"
+        "date": "8/21/2024",
+        "entry": "Affidavit in Support of Foreclosure"
       },
       {
-        "date": "6/24/2024",
-        "entry": "Available at Courthouse"
+        "date": "8/21/2024",
+        "entry": "Exhibit 1 to Affidavit in Support of Foreclosure"
       },
       {
-        "date": "6/24/2024",
-        "entry": "Available at Courthouse"
+        "date": "8/21/2024",
+        "entry": "Exhibit 2 to Affidavit in Support of Foreclosure"
       },
       {
-        "date": "6/24/2024",
-        "entry": "Available at Courthouse"
+        "date": "8/21/2024",
+        "entry": "Exhibit 3 to Affidavit in Support of Foreclosure"
       },
       {
-        "date": "5/13/2024",
-        "entry": "Available at Courthouse"
+        "date": "8/21/2024",
+        "entry": "Exhibit 4 to Affidavit in Support of Foreclosure"
       },
       {
-        "date": "5/13/2024",
-        "entry": "Available at Courthouse"
+        "date": "7/18/2024",
+        "entry": "ORDER"
       },
       {
-        "date": "5/13/2024",
-        "entry": "Available at Courthouse"
+        "date": "7/17/2024",
+        "entry": "Stipulation to Judgment as to Defendant Secretary of Housing and Urban Development only"
       },
       {
-        "date": "5/13/2024",
-        "entry": "Available at Courthouse"
+        "date": "7/8/2024",
+        "entry": "Notice of Intent to Seek Entry of Default"
+      },
+      {
+        "date": "7/8/2024",
+        "entry": "Application for Default"
+      },
+      {
+        "date": "7/8/2024",
+        "entry": "Exhibit 1 to Application for Default"
+      },
+      {
+        "date": "7/8/2024",
+        "entry": "Exhibit 2 to Application for Default"
+      },
+      {
+        "date": "6/27/2024",
+        "entry": "Notice Re: Reassignment"
+      },
+      {
+        "date": "5/21/2024",
+        "entry": "CERTIFICATE OF SERVICE"
+      },
+      {
+        "date": "5/21/2024",
+        "entry": "CERTIFICATE OF SERVICE"
+      },
+      {
+        "date": "5/21/2024",
+        "entry": "CERTIFICATE OF SERVICE"
+      },
+      {
+        "date": "5/21/2024",
+        "entry": "CERTIFICATE OF SERVICE"
+      },
+      {
+        "date": "4/15/2024",
+        "entry": "Certificate of Compulsory Arbitration"
+      },
+      {
+        "date": "4/15/2024",
+        "entry": "Notice of Lis Pendens"
       },
       {
         "date": "4/12/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Complaint"
       },
       {
-        "date": "3/12/2024",
-        "entry": "Available at Courthouse"
+        "date": "4/12/2024",
+        "entry": "Civil Cover Sheet"
       },
       {
-        "date": "3/12/2024",
-        "entry": "Available at Courthouse"
+        "date": "4/12/2024",
+        "entry": "FASTAR Certificate"
       },
       {
-        "date": "3/11/2024",
-        "entry": "Available at Courthouse"
+        "date": "4/12/2024",
+        "entry": "Summons"
       },
       {
-        "date": "3/11/2024",
-        "entry": "Available at Courthouse"
+        "date": "4/12/2024",
+        "entry": "Summons"
       },
       {
-        "date": "3/11/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "3/11/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "3/11/2024",
-        "entry": "Available at Courthouse"
+        "date": "4/12/2024",
+        "entry": "All Money Receipts 3741246"
       }
     ],
-    "people": [
-      {
-        "name": "EDWARD MENCHACA",
-        "role": "Defendant",
-        "notes": "Also AMANDA MENCHACA. Surplus ~$4,499."
-      },
-      {
-        "name": "AMANDA MENCHACA",
-        "role": "Defendant (Co-Owner)"
-      }
-    ],
-    "story": "Case: C20241424 | Sale: $10,722.13\nRANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC. sued A LARIVIERE for HOA lien foreclosure.\nJudgment: $6,223.27\nEstimated surplus: $4,498.86"
+    "judgment_amount": 10115.51
   },
-  "PIMA-COURT-C20246821": {
-    "judgment_amount": 23645.97,
-    "fcv": 306000,
-    "financial_notes": "Property FCV $306K. Sold at sheriff sale for $92K. Judgment $23,646. Surplus ~$68,354. High FCV suggests property worth much more than sale price.",
-    "docket": [
-      {
-        "date": "12/12/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "12/11/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "11/6/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "8/4/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "7/23/2025",
-        "entry": "Available"
-      },
-      {
-        "date": "7/21/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "6/5/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "5/28/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "5/28/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "5/28/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "5/28/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "5/28/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "5/28/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "5/28/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "5/28/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "5/28/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "5/28/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "5/28/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "5/28/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "5/28/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "4/28/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "4/28/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "4/28/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "4/28/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "4/7/2025",
-        "entry": "Available"
-      },
-      {
-        "date": "4/3/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "4/2/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "4/2/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "4/2/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "4/2/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "4/2/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "4/2/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "4/2/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "4/2/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "3/13/2025",
-        "entry": "Available"
-      },
-      {
-        "date": "2/20/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/11/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/5/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/5/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/5/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/5/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/5/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/5/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/4/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "1/28/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "1/28/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "1/28/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "1/28/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "1/28/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "1/28/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "1/24/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "1/17/2025",
-        "entry": "Available"
-      },
-      {
-        "date": "1/15/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "1/15/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "1/15/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "1/15/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "1/15/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "1/15/2025",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "12/31/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "11/27/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "11/13/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "11/13/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "11/12/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "11/12/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "11/12/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "11/12/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "11/12/2024",
-        "entry": "Available at Courthouse"
-      }
-    ],
+  "PIMA-COURT-C20241424": {
+    "story": "Case: C20241424 | Sale: $10,722.13\n\nRANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC. sued AMANDA LARIVIERE for HOA lien foreclosure.\n\u2022 Writ/Execution (11/15/2024): WRIT OF SPECIAL EXECUTION\n\u2022 Default judgment (7/10/2024): CIVIL DEFAULT JUDGMENT\n\u2022 Default entered (6/24/2024)\n\u2022 Default entered (6/24/2024)\n\u2022 Default entered (5/13/2024)\n\u2022 Default entered (5/13/2024)\n\u2022 Default entered (5/13/2024)\n\u2022 Default entered (5/13/2024)\n\u2022 Certificate (4/12/2024): CERTIFICATE OF SERVICE\n\u2022 Certificate (3/12/2024): Certificate of Compulsory Arbitration\n\u2022 Complaint filed (3/11/2024)\n\u2022 Certificate (3/11/2024): FASTAR Certificate\n\u2022 Summons issued (3/11/2024)\n\nJudgment: $6,223.27\nEstimated surplus: $4,498.86\nYour 30% fee: $1,349.66",
+    "red_flags": [],
     "people": [
       {
-        "name": "CASA CLUB OWNERS ASSOCIATION, INC.",
-        "role": "Plaintiff (HOA/Corp)",
+        "name": "AMANDA LARIVIERE",
+        "role": "Defendant (Former Owner)",
+        "address": "15105 S THEODORE ROOSEVELT WY (FCV: $182,665)",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20241424. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Last known property: 15105 S THEODORE ROOSEVELT WY (FCV: $182,665)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "RANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC.",
+        "role": "Plaintiff (HOA)",
         "notes": ""
       },
+      {
+        "name": "RANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC.",
+        "role": "Plaintiff (HOA)",
+        "notes": ""
+      }
+    ],
+    "docket": [
+      {
+        "date": "1/7/2025",
+        "entry": "Satisfaction of Judgment"
+      },
+      {
+        "date": "1/7/2025",
+        "entry": "Release of Lis Pendens"
+      },
+      {
+        "date": "11/15/2024",
+        "entry": "WRIT OF SPECIAL EXECUTION"
+      },
+      {
+        "date": "11/6/2024",
+        "entry": "AFFIDAVIT OF SERVICE"
+      },
+      {
+        "date": "7/23/2024",
+        "entry": "PRAECIPE"
+      },
+      {
+        "date": "7/10/2024",
+        "entry": "JUDGMENT"
+      },
+      {
+        "date": "7/10/2024",
+        "entry": "CIVIL DEFAULT JUDGMENT"
+      },
+      {
+        "date": "6/28/2024",
+        "entry": "ORDER"
+      },
+      {
+        "date": "6/24/2024",
+        "entry": "Motion and Affidavit for Foreclosure"
+      },
+      {
+        "date": "6/24/2024",
+        "entry": "Affidavit in Support of Foreclosure"
+      },
+      {
+        "date": "6/24/2024",
+        "entry": "Statement of Costs"
+      },
+      {
+        "date": "6/24/2024",
+        "entry": "Affidavit in Support of Attorney Fees"
+      },
+      {
+        "date": "6/24/2024",
+        "entry": "Motion to Set Default Hearing"
+      },
+      {
+        "date": "6/24/2024",
+        "entry": "Motion to Appear Telephonically"
+      },
+      {
+        "date": "6/24/2024",
+        "entry": "Exhibit 1 to Affidavit in Support of Foreclosure"
+      },
+      {
+        "date": "6/24/2024",
+        "entry": "Exhibit 2 to Affidavit in Support of Foreclosure"
+      },
+      {
+        "date": "6/24/2024",
+        "entry": "Exhibit 3 to Affidavit in Support of Foreclosure"
+      },
+      {
+        "date": "6/24/2024",
+        "entry": "Exhibit 4 to Affidavit in Support of Foreclosure"
+      },
+      {
+        "date": "6/24/2024",
+        "entry": "Exhibit 1 to Affidavit in Support of Attorney Fees"
+      },
+      {
+        "date": "6/24/2024",
+        "entry": "Exhibit 2 to Affidavit in Support of Attorney Fees"
+      },
+      {
+        "date": "6/24/2024",
+        "entry": "Exhibit 1 to Motion to Set Default Hearing"
+      },
+      {
+        "date": "5/13/2024",
+        "entry": "Notice of Intent to Seek Entry of Default"
+      },
+      {
+        "date": "5/13/2024",
+        "entry": "Application for Default"
+      },
+      {
+        "date": "5/13/2024",
+        "entry": "Exhibit 1 to Application for Default"
+      },
+      {
+        "date": "5/13/2024",
+        "entry": "Exhibit 2 to Application for Default"
+      },
+      {
+        "date": "4/12/2024",
+        "entry": "CERTIFICATE OF SERVICE"
+      },
+      {
+        "date": "3/12/2024",
+        "entry": "Certificate of Compulsory Arbitration"
+      },
+      {
+        "date": "3/12/2024",
+        "entry": "Notice of Lis Pendens"
+      },
+      {
+        "date": "3/11/2024",
+        "entry": "Complaint"
+      },
+      {
+        "date": "3/11/2024",
+        "entry": "Civil Cover Sheet"
+      },
+      {
+        "date": "3/11/2024",
+        "entry": "FASTAR Certificate"
+      },
+      {
+        "date": "3/11/2024",
+        "entry": "Summons"
+      },
+      {
+        "date": "3/11/2024",
+        "entry": "All Money Receipts 3728376"
+      }
+    ],
+    "judgment_amount": 6223.27
+  },
+  "PIMA-COURT-C20246821": {
+    "story": "Case: C20246821 | Sale: $92,000\n\nCASA CLUB OWNERS ASSOCIATION, INC. sued EILEEN K. HIGH for HOA lien foreclosure.\n\u2022 Levy (12/12/2025): AMENDED RETURN OF LEVY/ SALE REAL / PERSONAL PROPERTY\n\u2022 Levy (11/6/2025): RETURN OF LEVY/ SALE REAL / PERSONAL PROPERTY\n\u2022 Default judgment (7/23/2025): PLAINTIFF'S MOTION FOR FORECLOSURE JUDGMENT BY DEFAULT\n\u2022 Sale (7/21/2025): JUDGMENT AND DECREE OF FORECLOSURE AND ORDER OF SALE\n\u2022 Default entered (5/28/2025)\n\u2022 Default entered (5/28/2025)\n\u2022 Default entered (4/28/2025)\n\u2022 Default entered (4/28/2025)\n\u2022 Default entered (4/28/2025)\n\u2022 Default entered (4/28/2025)\n\u2022 Certificate (2/20/2025): CERTIFICATE OF SERVICE\n\u2022 \u26a0\ufe0f NOTICE OF IMPENDING DISMISSAL (1/17/2025)\n\u2022 Certificate (12/31/2024): CERTIFICATE OF SERVICE\n\u2022 Certificate (11/13/2024): Certificate of Compulsory Arbitration\n\u2022 Complaint filed (11/12/2024)\n\u2022 Certificate (11/12/2024): FASTAR Certificate\n\u2022 Summons issued (11/12/2024)\n\nJudgment: $23,645.97\nEstimated surplus: $68,354.03\nYour 30% fee: $20,506.21",
+    "red_flags": [],
+    "people": [
       {
         "name": "EILEEN K. HIGH",
         "role": "Defendant (Former Owner)",
@@ -1401,317 +1151,434 @@ const INTEL_DATA = {
         "email": "",
         "notes": "Named in C20246821. Needs skip trace for current contact info.",
         "best_leads": "\u2022 Last known property: 1810 E BLACKLIDGE DR (FCV: $71,372)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "CASA CLUB OWNERS ASSOCIATION, INC.",
+        "role": "Plaintiff (HOA)",
+        "notes": ""
+      },
+      {
+        "name": "CASA CLUB OWNERS ASSOCIATION, INC.",
+        "role": "Plaintiff (HOA)",
+        "notes": ""
       }
     ],
-    "story": "Case: C20246821 | Sale: $92,000\nCASA CLUB OWNERS ASSOCIATION, INC. sued EILEEN K. HIGH for HOA lien foreclosure.\nJudgment: $23,645.97\nEstimated surplus: $68,354.03"
-  },
-  "PIMA-COURT-C20233628": {
-    "judgment_amount": 13870.43,
     "docket": [
       {
-        "date": "9/3/2024",
-        "entry": "Available at Courthouse"
+        "date": "12/12/2025",
+        "entry": "AMENDED RETURN OF LEVY/ SALE REAL / PERSONAL PROPERTY"
       },
       {
-        "date": "5/3/2024",
-        "entry": "Available at Courthouse"
+        "date": "12/11/2025",
+        "entry": "All Money Receipts #4015031"
       },
       {
-        "date": "4/25/2024",
-        "entry": "Available at Courthouse"
+        "date": "11/6/2025",
+        "entry": "RETURN OF LEVY/ SALE REAL / PERSONAL PROPERTY"
       },
       {
-        "date": "12/22/2023",
-        "entry": "Available at Courthouse"
+        "date": "8/4/2025",
+        "entry": "PRAECIPE"
       },
       {
-        "date": "12/15/2023",
-        "entry": "Available at Courthouse"
+        "date": "7/23/2025",
+        "entry": "PLAINTIFF'S MOTION FOR FORECLOSURE JUDGMENT BY DEFAULT"
       },
       {
-        "date": "12/15/2023",
-        "entry": "Available"
+        "date": "7/21/2025",
+        "entry": "JUDGMENT AND DECREE OF FORECLOSURE AND ORDER OF SALE"
       },
       {
-        "date": "12/8/2023",
-        "entry": "Available at Courthouse"
+        "date": "6/5/2025",
+        "entry": "ORDER"
       },
       {
-        "date": "11/30/2023",
-        "entry": "Available"
+        "date": "5/28/2025",
+        "entry": "Motion to Set Default Hearing"
       },
       {
-        "date": "11/7/2023",
-        "entry": "Available at Courthouse"
+        "date": "5/28/2025",
+        "entry": "Motion to Appear Telephonically"
       },
       {
-        "date": "11/7/2023",
-        "entry": "Available at Courthouse"
+        "date": "5/28/2025",
+        "entry": "Exhibit 1 to Motion to Set Default Hearing"
       },
       {
-        "date": "11/7/2023",
-        "entry": "Available at Courthouse"
+        "date": "5/28/2025",
+        "entry": "Statement of Costs"
       },
       {
-        "date": "11/7/2023",
-        "entry": "Available at Courthouse"
+        "date": "5/28/2025",
+        "entry": "Affidavit in Support of Attorney Fees"
       },
       {
-        "date": "11/7/2023",
-        "entry": "Available at Courthouse"
+        "date": "5/28/2025",
+        "entry": "Exhibit 1 to Affidavit in Support of Attorney Fees"
       },
       {
-        "date": "11/7/2023",
-        "entry": "Available at Courthouse"
+        "date": "5/28/2025",
+        "entry": "Exhibit 2 to Affidavit in Support of Attorney Fees"
       },
       {
-        "date": "11/7/2023",
-        "entry": "Available at Courthouse"
+        "date": "5/28/2025",
+        "entry": "Motion and Affidavit for Foreclosure Judgment"
       },
       {
-        "date": "11/7/2023",
-        "entry": "Available at Courthouse"
+        "date": "5/28/2025",
+        "entry": "Affidavit in Support of Foreclosure"
       },
       {
-        "date": "11/7/2023",
-        "entry": "Available at Courthouse"
+        "date": "5/28/2025",
+        "entry": "Exhibit 1 to Affidavit in Support of Foreclosure"
       },
       {
-        "date": "11/7/2023",
-        "entry": "Available at Courthouse"
+        "date": "5/28/2025",
+        "entry": "Exhibit 2 to Affidavit in Support of Foreclosure"
       },
       {
-        "date": "10/2/2023",
-        "entry": "Available at Courthouse"
+        "date": "5/28/2025",
+        "entry": "Exhibit 3 to Affidavit in Support of Foreclosure"
       },
       {
-        "date": "10/2/2023",
-        "entry": "Available at Courthouse"
+        "date": "5/28/2025",
+        "entry": "Exhibit 4 to Affidavit in Support of Foreclosure"
       },
       {
-        "date": "10/2/2023",
-        "entry": "Available at Courthouse"
+        "date": "4/28/2025",
+        "entry": "Notice of Intent to Seek Entry of Default"
       },
       {
-        "date": "8/25/2023",
-        "entry": "Available at Courthouse"
+        "date": "4/28/2025",
+        "entry": "Application for Default"
       },
       {
-        "date": "8/10/2023",
-        "entry": "Available at Courthouse"
+        "date": "4/28/2025",
+        "entry": "Exhibit 1 to Application for Default"
       },
       {
-        "date": "8/10/2023",
-        "entry": "Available at Courthouse"
+        "date": "4/28/2025",
+        "entry": "Exhibit 2 to Application for Default"
       },
       {
-        "date": "8/8/2023",
-        "entry": "Available at Courthouse"
+        "date": "4/7/2025",
+        "entry": "Notice Re: Reassignment"
       },
       {
-        "date": "8/8/2023",
-        "entry": "Available at Courthouse"
+        "date": "4/3/2025",
+        "entry": "ORDER"
       },
       {
-        "date": "8/8/2023",
-        "entry": "Available at Courthouse"
+        "date": "4/2/2025",
+        "entry": "Motion & Affidavit in Support of Service By Publication"
       },
       {
-        "date": "8/8/2023",
-        "entry": "Available at Courthouse"
+        "date": "4/2/2025",
+        "entry": "Exhibit 1 to Motion & Affidavit in Support of Service By Publication"
       },
       {
-        "date": "8/8/2023",
-        "entry": "Available at Courthouse"
+        "date": "4/2/2025",
+        "entry": "Exhibit 2 to Motion & Affidavit in Support of Service By Publication"
+      },
+      {
+        "date": "4/2/2025",
+        "entry": "Exhibit 3 to Motion & Affidavit in Support of Service By Publication"
+      },
+      {
+        "date": "4/2/2025",
+        "entry": "Exhibit 4 to Motion & Affidavit in Support of Service By Publication"
+      },
+      {
+        "date": "4/2/2025",
+        "entry": "Exhibit 5 to Motion & Affidavit in Support of Service By Publication"
+      },
+      {
+        "date": "4/2/2025",
+        "entry": "Exhibit 6 to Motion & Affidavit in Support of Service By Publication"
+      },
+      {
+        "date": "4/2/2025",
+        "entry": "Exhibit 7 to Motion & Affidavit in Support of Service By Publication"
+      },
+      {
+        "date": "3/13/2025",
+        "entry": "IN CHAMBERS"
+      },
+      {
+        "date": "2/20/2025",
+        "entry": "CERTIFICATE OF SERVICE"
+      },
+      {
+        "date": "2/11/2025",
+        "entry": "ORDER"
+      },
+      {
+        "date": "2/5/2025",
+        "entry": "Motion to Extend Time for Service"
+      },
+      {
+        "date": "2/5/2025",
+        "entry": "Exhibit 1 to Motion to Extend Time for Service"
+      },
+      {
+        "date": "2/5/2025",
+        "entry": "Exhibit 2 to Motion to Extend Time for Service"
+      },
+      {
+        "date": "2/5/2025",
+        "entry": "Exhibit 3 to Motion to Extend Time for Service"
+      },
+      {
+        "date": "2/5/2025",
+        "entry": "Exhibit 4 to Motion to Extend Time for Service"
+      },
+      {
+        "date": "2/5/2025",
+        "entry": "Exhibit 5 to Motion to Extend Time for Service"
+      },
+      {
+        "date": "2/4/2025",
+        "entry": "ORDER"
+      },
+      {
+        "date": "1/28/2025",
+        "entry": "Motion for Alternative Method of Service"
+      },
+      {
+        "date": "1/28/2025",
+        "entry": "Exhibit 1 to Motion for Alternative Method of Service"
+      },
+      {
+        "date": "1/28/2025",
+        "entry": "Exhibit 2 to Motion for Alternative Method of Service"
+      },
+      {
+        "date": "1/28/2025",
+        "entry": "Exhibit 3 to Motion for Alternative Method of Service"
+      },
+      {
+        "date": "1/28/2025",
+        "entry": "Exhibit 4 to Motion for Alternative Method of Service"
+      },
+      {
+        "date": "1/28/2025",
+        "entry": "Exhibit 5 to Motion for Alternative Method of Service"
+      },
+      {
+        "date": "1/24/2025",
+        "entry": "ORDER"
+      },
+      {
+        "date": "1/17/2025",
+        "entry": "NOTICE OF IMPENDING DISMISSAL"
+      },
+      {
+        "date": "1/15/2025",
+        "entry": "Motion for Alternative Method of Service"
+      },
+      {
+        "date": "1/15/2025",
+        "entry": "Exhibit A to Motion for Alternative Method of Service"
+      },
+      {
+        "date": "1/15/2025",
+        "entry": "Exhibit B to Motion for Alternative Method of Service"
+      },
+      {
+        "date": "1/15/2025",
+        "entry": "Exhibit C to Motion for Alternative Method of Service"
+      },
+      {
+        "date": "1/15/2025",
+        "entry": "Exhibit D to Motion for Alternative Method of Service"
+      },
+      {
+        "date": "1/15/2025",
+        "entry": "Exhibit E to Motion for Alternative Method of Service"
+      },
+      {
+        "date": "12/31/2024",
+        "entry": "CERTIFICATE OF SERVICE"
+      },
+      {
+        "date": "11/27/2024",
+        "entry": "AFFIDAVIT OF ATTEMPTED SERVICE"
+      },
+      {
+        "date": "11/13/2024",
+        "entry": "Certificate of Compulsory Arbitration"
+      },
+      {
+        "date": "11/13/2024",
+        "entry": "Notice of Lis Pendens"
+      },
+      {
+        "date": "11/12/2024",
+        "entry": "Complaint"
+      },
+      {
+        "date": "11/12/2024",
+        "entry": "Civil Cover Sheet"
+      },
+      {
+        "date": "11/12/2024",
+        "entry": "FASTAR Certificate"
+      },
+      {
+        "date": "11/12/2024",
+        "entry": "Summons"
+      },
+      {
+        "date": "11/12/2024",
+        "entry": "All Money Receipts 3854354"
       }
     ],
+    "judgment_amount": 23645.97
+  },
+  "PIMA-COURT-C20233628": {
+    "story": "Case: C20233628 | Sale: $16,442.73\n\nTHE MONACO CONDOMINIUM OWNERS' ASSOCIATION, INC. sued Unknown for HOA lien foreclosure.\n\u2022 Levy (9/3/2024): RETURN OF LEVY/SALE REAL/PERSONAL PROPERTY\n\u2022 Default judgment (12/15/2023): CIVIL DEFAULT JUDGMENT\n\u2022 Default judgment (11/30/2023): IN CHAMBERS RE: PLAINTIFF'S MOTION AND AFFIDAVIT FOR ENTRY O\n\u2022 Default entered (11/7/2023)\n\u2022 Default entered (10/2/2023)\n\u2022 Default entered (10/2/2023)\n\u2022 Default entered (10/2/2023)\n\u2022 Certificate (8/25/2023): CERTIFICATE OF SERVICE\n\u2022 Certificate (8/10/2023): Certificate of Compulsory Arbitration\n\u2022 Complaint filed (8/8/2023)\n\u2022 Certificate (8/8/2023): FASTAR Certificate\n\u2022 Summons issued (8/8/2023)\n\nJudgment: $13,870.43\nEstimated surplus: $2,572.30\nYour 30% fee: $771.69",
+    "red_flags": [],
     "people": [
       {
         "name": "THE MONACO CONDOMINIUM OWNERS' ASSOCIATION, INC.",
-        "role": "Plaintiff (HOA/Corp)",
+        "role": "Plaintiff (HOA)",
+        "notes": ""
+      },
+      {
+        "name": "THE MONACO CONDOMINIUM OWNERS' ASSOCIATION, INC.",
+        "role": "Plaintiff (HOA)",
         "notes": ""
       },
       {
         "name": "VEDA SYSTEMS INC",
-        "role": "Plaintiff (HOA/Corp)",
-        "notes": ""
+        "role": "Defendant (Lienholder)",
+        "notes": "Has a lien on the property. May have claim on surplus."
       }
     ],
-    "story": "Case: C20233628 | Sale: $16,442.73\nTHE MONACO CONDOMINIUM OWNERS&#39; ASSOCIATION, INC. sued VEDA SYSTEMS INC for HOA lien foreclosure.\nJudgment: $13,870.43\nEstimated surplus: $2,572.30"
-  },
-  "PIMA-COURT-C20230665": {
-    "judgment_amount": null,
-    "fcv": 270000,
-    "owner": "New owner (third-party buyer)",
-    "financial_notes": "Assessor shows sale at $270,000. Judgment amount unknown \u2014 not published in Daily Territorial. If typical HOA judgment ($5-15K), surplus could be $255-265K. Need to find judgment amount.",
     "docket": [
       {
-        "date": "2/2/2024",
-        "entry": "Available at Courthouse"
+        "date": "9/3/2024",
+        "entry": "RETURN OF LEVY/SALE REAL/PERSONAL PROPERTY"
       },
       {
-        "date": "2/2/2024",
-        "entry": "Available at Courthouse"
+        "date": "5/3/2024",
+        "entry": "AFFIDAVIT OF SERVICE"
       },
       {
-        "date": "12/14/2023",
-        "entry": "Available at Courthouse"
+        "date": "4/25/2024",
+        "entry": "PRAECIPE"
       },
       {
-        "date": "11/14/2023",
-        "entry": "Available at Courthouse"
+        "date": "12/22/2023",
+        "entry": "PRAECIPE"
       },
       {
-        "date": "10/25/2023",
-        "entry": "Available"
+        "date": "12/15/2023",
+        "entry": "JUDGMENT"
       },
       {
-        "date": "10/20/2023",
-        "entry": "Available at Courthouse"
+        "date": "12/15/2023",
+        "entry": "CIVIL DEFAULT JUDGMENT"
       },
       {
-        "date": "9/21/2023",
-        "entry": "Available at Courthouse"
+        "date": "12/8/2023",
+        "entry": "ORDER"
       },
       {
-        "date": "8/31/2023",
-        "entry": "Available at Courthouse"
+        "date": "11/30/2023",
+        "entry": "IN CHAMBERS RE: PLAINTIFF'S MOTION AND AFFIDAVIT FOR ENTRY OF JUDGMENT BY DEFAULT WITH HEARING"
       },
       {
-        "date": "8/31/2023",
-        "entry": "Available at Courthouse"
+        "date": "11/7/2023",
+        "entry": "Motion and Affidavit for Foreclosure"
       },
       {
-        "date": "8/31/2023",
-        "entry": "Available at Courthouse"
+        "date": "11/7/2023",
+        "entry": "Affidavit in Support of Foreclosure"
       },
       {
-        "date": "8/31/2023",
-        "entry": "Available at Courthouse"
+        "date": "11/7/2023",
+        "entry": "Statement of Costs"
       },
       {
-        "date": "8/31/2023",
-        "entry": "Available at Courthouse"
+        "date": "11/7/2023",
+        "entry": "Affidavit in Support of Attorney Fees"
       },
       {
-        "date": "8/31/2023",
-        "entry": "Available at Courthouse"
+        "date": "11/7/2023",
+        "entry": "Motion to Set Default Hearing"
       },
       {
-        "date": "8/31/2023",
-        "entry": "Available at Courthouse"
+        "date": "11/7/2023",
+        "entry": "Exhibit 1 to Affidavit in Support of Foreclosure"
       },
       {
-        "date": "8/31/2023",
-        "entry": "Available at Courthouse"
+        "date": "11/7/2023",
+        "entry": "Exhibit 2 to Affidavit in Support of Foreclosure"
       },
       {
-        "date": "8/31/2023",
-        "entry": "Available at Courthouse"
+        "date": "11/7/2023",
+        "entry": "Exhibit 3 to Affidavit in Support of Foreclosure"
       },
       {
-        "date": "8/18/2023",
-        "entry": "Available at Courthouse"
+        "date": "11/7/2023",
+        "entry": "Exhibit 1 to Affidavit in Support of Attorney Fees"
       },
       {
-        "date": "8/18/2023",
-        "entry": "Available at Courthouse"
+        "date": "11/7/2023",
+        "entry": "Exhibit 2 to Affidavit in Support of Attorney Fees"
       },
       {
-        "date": "8/17/2023",
-        "entry": "Available at Courthouse"
+        "date": "10/2/2023",
+        "entry": "Notice of Intent to Seek Entry of Default"
       },
       {
-        "date": "6/13/2023",
-        "entry": "Available at Courthouse"
+        "date": "10/2/2023",
+        "entry": "Application for Default"
       },
       {
-        "date": "6/13/2023",
-        "entry": "Available at Courthouse"
+        "date": "10/2/2023",
+        "entry": "Exhibit 1 to Application for Default"
       },
       {
-        "date": "6/13/2023",
-        "entry": "Available at Courthouse"
+        "date": "8/25/2023",
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
-        "date": "4/24/2023",
-        "entry": "Available"
+        "date": "8/10/2023",
+        "entry": "Certificate of Compulsory Arbitration"
       },
       {
-        "date": "4/24/2023",
-        "entry": "Available at Courthouse"
+        "date": "8/10/2023",
+        "entry": "Notice of Lis Pendens"
       },
       {
-        "date": "4/19/2023",
-        "entry": "Available at Courthouse"
+        "date": "8/8/2023",
+        "entry": "Complaint"
       },
       {
-        "date": "4/7/2023",
-        "entry": "Available at Courthouse"
+        "date": "8/8/2023",
+        "entry": "Civil Cover Sheet"
       },
       {
-        "date": "4/7/2023",
-        "entry": "Available at Courthouse"
+        "date": "8/8/2023",
+        "entry": "FASTAR Certificate"
       },
       {
-        "date": "4/7/2023",
-        "entry": "Available at Courthouse"
+        "date": "8/8/2023",
+        "entry": "Summons"
       },
       {
-        "date": "4/7/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "4/7/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "4/3/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/13/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/13/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/13/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/13/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/13/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/13/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/13/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/13/2023",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "2/13/2023",
-        "entry": "Available at Courthouse"
+        "date": "8/8/2023",
+        "entry": "All Money Receipts 3654870"
       }
     ],
+    "judgment_amount": 13870.43
+  },
+  "PIMA-COURT-C20230665": {
+    "story": "Case: C20230665 | Sale: $270,000\n\nSTAR VALLEY MASTER HOMEOWNERS ASSOCIATION sued AURELIO ORENDAIN, NIDIA SALAZAR for HOA lien foreclosure.\n\u2022 Default judgment (10/25/2023): DEFAULT JUDGMENT\n\u2022 Default judgment (8/31/2023): Motion for Default Judgment by Hearing\n\u2022 Default judgment (8/31/2023): Exhibit A to Motion for Default Judgment by Hearing\n\u2022 Default judgment (8/31/2023): Exhibit B to Motion for Default Judgment by Hearing\n\u2022 Default entered (8/18/2023)\n\u2022 Default entered (8/18/2023)\n\u2022 Default entered (6/13/2023)\n\u2022 Default entered (6/13/2023)\n\u2022 Default entered (6/13/2023)\n\u2022 \u26a0\ufe0f NOTICE RE IMPENDING DISMISSAL (4/24/2023)\n\u2022 Certificate (4/24/2023): CERTIFICATE OF SERVICE\n\u2022 Certificate (4/19/2023): CERTIFICATE OF SERVICE\n\u2022 Certificate (2/13/2023): Rule 102(A) Fastar \tCertificate\n\u2022 Complaint filed (2/13/2023)\n\u2022 Summons issued (2/13/2023)\n\u2022 Summons issued (2/13/2023)\n\u2022 Summons issued (2/13/2023)",
+    "red_flags": [],
     "people": [
-      {
-        "name": "STAR VALLEY MASTER HOMEOWNERS ASSOCIATION",
-        "role": "Plaintiff (HOA/Corp)",
-        "notes": ""
-      },
       {
         "name": "AURELIO ORENDAIN",
         "role": "Defendant (Former Owner)",
@@ -1731,189 +1598,184 @@ const INTEL_DATA = {
         "best_leads": "\u2022 Last known property: 9230 W GEORGE ST (FCV: $225,261)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
       },
       {
-        "name": "ACTION IMMIGRATION BONDS & INSURANCE SERVICES, INC.",
-        "role": "Plaintiff (HOA/Corp)",
+        "name": "STAR VALLEY MASTER HOMEOWNERS ASSOCIATION",
+        "role": "Plaintiff (HOA)",
         "notes": ""
+      },
+      {
+        "name": "ACTION IMMIGRATION BONDS & INSURANCE SERVICES, INC.",
+        "role": "Defendant (Lienholder)",
+        "notes": "Has a lien on the property. May have claim on surplus."
       }
     ],
-    "story": "Case: C20230665 | Sale: $270,000\nSTAR VALLEY MASTER HOMEOWNERS ASSOCIATION sued AURELIO ORENDAIN for HOA lien foreclosure."
-  },
-  "PIMA-COURT-C20247319": {
-    "judgment_amount": 28666.74,
-    "fcv": 205000,
-    "financial_notes": "Continental Ranch vs Stephens estate. Sale $35,800 minus $28,667 judgment = $7,133 surplus. Small but confirmed.",
     "docket": [
       {
-        "date": "3/9/2026",
-        "entry": "Available at Courthouse"
+        "date": "2/2/2024",
+        "entry": "Satisfaction of Judgment"
       },
       {
-        "date": "2/11/2026",
-        "entry": "Available at Courthouse"
+        "date": "2/2/2024",
+        "entry": "Notice of Release of Lis Pendens"
       },
       {
-        "date": "2/10/2026",
-        "entry": "Available at Courthouse"
+        "date": "12/14/2023",
+        "entry": "AFFIDAVIT OF SERVICE"
       },
       {
-        "date": "10/30/2025",
-        "entry": "Available at Courthouse"
+        "date": "11/14/2023",
+        "entry": "PRAECIPE"
       },
       {
-        "date": "9/2/2025",
-        "entry": "Available"
+        "date": "10/25/2023",
+        "entry": "DEFAULT JUDGMENT"
       },
       {
-        "date": "9/2/2025",
-        "entry": "Available at Courthouse"
+        "date": "10/20/2023",
+        "entry": "JUDGMENT"
       },
       {
-        "date": "8/8/2025",
-        "entry": "Available at Courthouse"
+        "date": "9/21/2023",
+        "entry": "NOTICE OF HEARING"
       },
       {
-        "date": "8/7/2025",
-        "entry": "Available at Courthouse"
+        "date": "8/31/2023",
+        "entry": "Motion for Default Judgment by Hearing"
       },
       {
-        "date": "8/7/2025",
-        "entry": "Available at Courthouse"
+        "date": "8/31/2023",
+        "entry": "Application for Attorney Fees"
       },
       {
-        "date": "8/7/2025",
-        "entry": "Available at Courthouse"
+        "date": "8/31/2023",
+        "entry": "Affidavit in Support of Award of Attorney Fees"
       },
       {
-        "date": "8/7/2025",
-        "entry": "Available at Courthouse"
+        "date": "8/31/2023",
+        "entry": "Verified Statement of Costs"
       },
       {
-        "date": "8/7/2025",
-        "entry": "Available at Courthouse"
+        "date": "8/31/2023",
+        "entry": "Notice of Lodging"
       },
       {
-        "date": "8/7/2025",
-        "entry": "Available at Courthouse"
+        "date": "8/31/2023",
+        "entry": "Exhibit A to Motion for Default Judgment by Hearing"
       },
       {
-        "date": "8/7/2025",
-        "entry": "Available at Courthouse"
+        "date": "8/31/2023",
+        "entry": "Exhibit B to Motion for Default Judgment by Hearing"
       },
       {
-        "date": "7/15/2025",
-        "entry": "Available"
+        "date": "8/31/2023",
+        "entry": "Exhibit A to Affidavit in Support of Award of Attorney Fees"
       },
       {
-        "date": "6/24/2025",
-        "entry": "Available at Courthouse"
+        "date": "8/31/2023",
+        "entry": "Exhibit A to Verified Statement of Costs"
       },
       {
-        "date": "6/24/2025",
-        "entry": "Available at Courthouse"
+        "date": "8/18/2023",
+        "entry": "Application for Entry of Default and Affidavit of Military Status as to Service"
       },
       {
-        "date": "6/24/2025",
-        "entry": "Available at Courthouse"
+        "date": "8/18/2023",
+        "entry": "Exhibit A as to App for Entry of Default (Certificate of Service)"
       },
       {
-        "date": "6/24/2025",
-        "entry": "Available at Courthouse"
+        "date": "8/17/2023",
+        "entry": "CIVIL ORDER"
       },
       {
-        "date": "6/12/2025",
-        "entry": "Available at Courthouse"
+        "date": "6/13/2023",
+        "entry": "Application for Entry of Default and Affidavit of Military Status as to Service"
       },
       {
-        "date": "6/12/2025",
-        "entry": "Available at Courthouse"
+        "date": "6/13/2023",
+        "entry": "Exhibit A as to App for Default and Affidavit of Military (Certificate)"
       },
       {
-        "date": "4/28/2025",
-        "entry": "Available at Courthouse"
+        "date": "6/13/2023",
+        "entry": "Exhibit B as to App for Default and Affidavit of Military (DMDC)"
       },
       {
-        "date": "3/21/2025",
-        "entry": "Available at Courthouse"
+        "date": "4/24/2023",
+        "entry": "NOTICE RE IMPENDING DISMISSAL"
       },
       {
-        "date": "3/4/2025",
-        "entry": "Available at Courthouse"
+        "date": "4/24/2023",
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
-        "date": "3/4/2025",
-        "entry": "Available at Courthouse"
+        "date": "4/19/2023",
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
-        "date": "1/21/2025",
-        "entry": "Available at Courthouse"
+        "date": "4/7/2023",
+        "entry": "ORDER"
       },
       {
-        "date": "1/7/2025",
-        "entry": "Available at Courthouse"
+        "date": "4/7/2023",
+        "entry": "Motion for Alternative Service"
       },
       {
-        "date": "1/7/2025",
-        "entry": "Available at Courthouse"
+        "date": "4/7/2023",
+        "entry": "Exhibit A (Non-Service Reports)"
       },
       {
-        "date": "12/16/2024",
-        "entry": "Available at Courthouse"
+        "date": "4/7/2023",
+        "entry": "Exhibit B (Vehicle Registration)"
       },
       {
-        "date": "12/5/2024",
-        "entry": "Available at Courthouse"
+        "date": "4/7/2023",
+        "entry": "Exhibit C (Assessor's Office)"
       },
       {
-        "date": "12/5/2024",
-        "entry": "Available at Courthouse"
+        "date": "4/3/2023",
+        "entry": "AFFIDAVIT OF ATTEMPTED SERVICE"
       },
       {
-        "date": "12/5/2024",
-        "entry": "Available at Courthouse"
+        "date": "2/13/2023",
+        "entry": "Rule 102(A) Fastar \tCertificate"
       },
       {
-        "date": "12/5/2024",
-        "entry": "Available at Courthouse"
+        "date": "2/13/2023",
+        "entry": "Notice of Lis Pendens"
       },
       {
-        "date": "12/5/2024",
-        "entry": "Available at Courthouse"
+        "date": "2/13/2023",
+        "entry": "Foreclosure Complaint"
       },
       {
-        "date": "12/5/2024",
-        "entry": "Available at Courthouse"
+        "date": "2/13/2023",
+        "entry": "Civil Cover Sheet"
       },
       {
-        "date": "12/5/2024",
-        "entry": "Available at Courthouse"
+        "date": "2/13/2023",
+        "entry": "Summons"
       },
       {
-        "date": "12/5/2024",
-        "entry": "Available at Courthouse"
+        "date": "2/13/2023",
+        "entry": "Summons"
       },
       {
-        "date": "12/5/2024",
-        "entry": "Available at Courthouse"
+        "date": "2/13/2023",
+        "entry": "Summons"
       },
       {
-        "date": "12/5/2024",
-        "entry": "Available at Courthouse"
+        "date": "2/13/2023",
+        "entry": "Exhibit A [Lien Holder Doc]"
       },
       {
-        "date": "12/5/2024",
-        "entry": "Available at Courthouse"
-      },
-      {
-        "date": "12/5/2024",
-        "entry": "Available at Courthouse"
+        "date": "2/13/2023",
+        "entry": "All Money Receipts 3584647"
       }
     ],
+    "judgment_amount": null
+  },
+  "PIMA-COURT-C20247319": {
+    "story": "Case: C20247319 | Sale: $35,800.00\n\nORANGE GROVE MOBILE ESTATES ASSOCIATION sued THE ESTATE OF KAREN L. STEPHENS for HOA lien foreclosure.\n\u2022 Levy (2/11/2026): AMENDED RETURN OF LEVY/ SALE REAL / PERSONAL PROPERTY\n\u2022 Levy (2/10/2026): RETURN OF LEVY/ SALE REAL / PERSONAL PROPERTY\n\u2022 Default judgment (9/2/2025): CIVIL DEFAULT JUDGMENT\n\u2022 Default judgment (8/7/2025): Motion and Affidavit for Foreclosure Judgment by Default wit\n\u2022 Sale (8/7/2025): Notice of Lodging Order for Judgment and Decree of Foreclosu\n\u2022 \u26a0\ufe0f DISMISSAL CALENDAR NOTICE (7/15/2025)\n\u2022 Default entered (6/24/2025)\n\u2022 Default entered (6/24/2025)\n\u2022 Default entered (6/24/2025)\n\u2022 Certificate (12/16/2024): CERTIFICATE OF SERVICE\n\u2022 Complaint filed (12/5/2024)\n\u2022 Summons issued (12/5/2024)\n\u2022 Summons issued (12/5/2024)\n\u2022 Summons issued (12/5/2024)\n\u2022 Summons issued (12/5/2024)\n\u2022 Complaint filed (12/5/2024)\n\u2022 Complaint filed (12/5/2024)\n\u2022 Complaint filed (12/5/2024)\n\u2022 Complaint filed (12/5/2024)\n\u2022 Complaint filed (12/5/2024)\n\nJudgment: $28,666.74\nEstimated surplus: $7,133.26\nYour 30% fee: $2,139.98",
+    "red_flags": [],
     "people": [
-      {
-        "name": "ORANGE GROVE MOBILE ESTATES ASSOCIATION",
-        "role": "Plaintiff (HOA/Corp)",
-        "notes": ""
-      },
       {
         "name": "THE ESTATE OF KAREN L. STEPHENS",
         "role": "Defendant (Former Owner)",
@@ -1922,9 +1784,180 @@ const INTEL_DATA = {
         "email": "",
         "notes": "Named in C20247319. Needs skip trace for current contact info.",
         "best_leads": "\u2022 Last known property: 1920 E POLE STAR PL (FCV: $359,312)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "ORANGE GROVE MOBILE ESTATES ASSOCIATION",
+        "role": "Plaintiff (HOA)",
+        "notes": ""
       }
     ],
-    "story": "Case: C20247319 | Sale: $35,800.00\nORANGE GROVE MOBILE ESTATES ASSOCIATION sued THE ESTATE OF KAREN L. STEPHENS for HOA lien foreclosure.\nJudgment: $28,666.74\nEstimated surplus: $7,133.26"
+    "docket": [
+      {
+        "date": "3/9/2026",
+        "entry": "All Money Receipts #4045436"
+      },
+      {
+        "date": "2/11/2026",
+        "entry": "AMENDED RETURN OF LEVY/ SALE REAL / PERSONAL PROPERTY"
+      },
+      {
+        "date": "2/10/2026",
+        "entry": "RETURN OF LEVY/ SALE REAL / PERSONAL PROPERTY"
+      },
+      {
+        "date": "10/30/2025",
+        "entry": "PRAECIPE"
+      },
+      {
+        "date": "9/2/2025",
+        "entry": "CIVIL DEFAULT JUDGMENT"
+      },
+      {
+        "date": "9/2/2025",
+        "entry": "JUDGMENT"
+      },
+      {
+        "date": "8/8/2025",
+        "entry": "NOTICE OF HEARING"
+      },
+      {
+        "date": "8/7/2025",
+        "entry": "Motion and Affidavit for Foreclosure Judgment by Default with Hearing"
+      },
+      {
+        "date": "8/7/2025",
+        "entry": "Affidavit in Support of Attorney''s Fees"
+      },
+      {
+        "date": "8/7/2025",
+        "entry": "Statement of Costs and Notice of Taxation of Costs"
+      },
+      {
+        "date": "8/7/2025",
+        "entry": "Notice of Lodging Order for Judgment and Decree of Foreclosure and Order of Sale"
+      },
+      {
+        "date": "8/7/2025",
+        "entry": "Affidavit - Exhibit A"
+      },
+      {
+        "date": "8/7/2025",
+        "entry": "Affidavit - Exhibit B"
+      },
+      {
+        "date": "8/7/2025",
+        "entry": "Proposed Judgment - Exhibit 1"
+      },
+      {
+        "date": "7/15/2025",
+        "entry": "DISMISSAL CALENDAR NOTICE"
+      },
+      {
+        "date": "6/24/2025",
+        "entry": "Application for Default"
+      },
+      {
+        "date": "6/24/2025",
+        "entry": "Affidavit of Default"
+      },
+      {
+        "date": "6/24/2025",
+        "entry": "Notice of Application for Entry of Default"
+      },
+      {
+        "date": "6/24/2025",
+        "entry": "Affidavit -Exhibit A"
+      },
+      {
+        "date": "6/12/2025",
+        "entry": "Affidavit of Service by Publication"
+      },
+      {
+        "date": "6/12/2025",
+        "entry": "Affidavit of Service by Publication"
+      },
+      {
+        "date": "4/28/2025",
+        "entry": "AFFIDAVIT OF PUBLICATION"
+      },
+      {
+        "date": "3/21/2025",
+        "entry": "ORDER"
+      },
+      {
+        "date": "3/4/2025",
+        "entry": "Motion for Order Authorizing Service by Publication"
+      },
+      {
+        "date": "3/4/2025",
+        "entry": "Motion - Exhibit 1"
+      },
+      {
+        "date": "1/21/2025",
+        "entry": "IN CHAMBERS ORDER RE: MOTION FOR ORDER AUHTORIZING ALTERNATIVE SERVICE"
+      },
+      {
+        "date": "1/7/2025",
+        "entry": "Motion for Order Authorizing Alternative Service"
+      },
+      {
+        "date": "1/7/2025",
+        "entry": "Motion - Exhibit 1"
+      },
+      {
+        "date": "12/16/2024",
+        "entry": "CERTIFICATE OF SERVICE"
+      },
+      {
+        "date": "12/5/2024",
+        "entry": "Complaint (Contract; Lien Foreclosure)"
+      },
+      {
+        "date": "12/5/2024",
+        "entry": "Civil Cover Sheet"
+      },
+      {
+        "date": "12/5/2024",
+        "entry": "Summons"
+      },
+      {
+        "date": "12/5/2024",
+        "entry": "Summons"
+      },
+      {
+        "date": "12/5/2024",
+        "entry": "Summons"
+      },
+      {
+        "date": "12/5/2024",
+        "entry": "Summons"
+      },
+      {
+        "date": "12/5/2024",
+        "entry": "Complaint - Exhibit 1"
+      },
+      {
+        "date": "12/5/2024",
+        "entry": "Complaint - Exhibit 2"
+      },
+      {
+        "date": "12/5/2024",
+        "entry": "Complaint - Exhibit 3"
+      },
+      {
+        "date": "12/5/2024",
+        "entry": "Complaint - Exhibit 4"
+      },
+      {
+        "date": "12/5/2024",
+        "entry": "Complaint - Exhibit 5"
+      },
+      {
+        "date": "12/5/2024",
+        "entry": "All Money Receipts 3867607"
+      }
+    ],
+    "judgment_amount": 28666.74
   },
   "20250673939": {
     "judgment_amount": 7815,
@@ -2856,14 +2889,9 @@ const INTEL_DATA = {
     "financial_notes": "Sale price: $6,868.44. Judgment: Unknown \u2014 check court docket."
   },
   "PIMA-20260430104": {
-    "story": "Case: C20241706 | Sale: $7,853.71\nVistoso Community Association sued Nina Limmer for HOA lien foreclosure.\nJudgment: $6,864.89\nEstimated surplus: $988.82",
+    "story": "Case: C20241706 | Sale: $7,853.71\n\nVISTOSO COMMUNITY ASSOCIATION sued NINA LIMMER, SECRETARY OF HOUSING AND URBAN DEVELOPMENT BY CERTIFIED MAIL for HOA lien foreclosure.\n\u2022 Levy (12/31/2024): RECEIPTS OF SALE/RETURN OF LEVY/SALE REAL/PERSONAL PROPERTY\n\u2022 Default judgment (9/9/2024): PLAINTIFF'S MOTION FOR DEFAULT JUDGMENT\n\u2022 Default entered (8/12/2024)\n\u2022 Default entered (8/12/2024)\n\u2022 Default entered (7/8/2024)\n\u2022 Default entered (7/8/2024)\n\u2022 Default entered (7/8/2024)\n\u2022 Default entered (7/8/2024)\n\u2022 Stipulation (6/13/2024): Stipulation to Judgment as to Defendant Secretary of Housing\n\u2022 Certificate (5/16/2024): CERTIFICATE OF SERVICE\n\u2022 Certificate (4/18/2024): CERTIFICATE OF SERVICE\n\u2022 Certificate (4/16/2024): CERTIFICATE OF SERVICE\n\u2022 Certificate (4/16/2024): CERTIFICATE OF SERVICE\n\u2022 Certificate (3/26/2024): Certificate of Compulsory Arbitration\n\u2022 Complaint filed (3/22/2024)\n\u2022 Certificate (3/22/2024): FASTAR Certificate\n\u2022 Summons issued (3/22/2024)\n\u2022 Summons issued (3/22/2024)\n\nJudgment: $6,864.89\nEstimated surplus: $988.82\nYour 30% fee: $296.65",
     "red_flags": [],
     "people": [
-      {
-        "name": "VISTOSO COMMUNITY ASSOCIATION",
-        "role": "Plaintiff (HOA/Corp)",
-        "notes": ""
-      },
       {
         "name": "NINA LIMMER",
         "role": "Defendant (Former Owner)",
@@ -2872,181 +2900,195 @@ const INTEL_DATA = {
         "email": "",
         "notes": "Named in C20241706. Needs skip trace for current contact info.",
         "best_leads": "\u2022 Last known property: 13575 N BARLASSINA, ORO VALLEY, AZ\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "SECRETARY OF HOUSING AND URBAN DEVELOPMENT BY CERTIFIED MAIL",
+        "role": "Defendant (Former Owner)",
+        "address": "13575 N BARLASSINA, ORO VALLEY, AZ",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20241706. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Last known property: 13575 N BARLASSINA, ORO VALLEY, AZ\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "VISTOSO COMMUNITY ASSOCIATION",
+        "role": "Plaintiff (HOA)",
+        "notes": ""
+      },
+      {
+        "name": "VISTOSO COMMUNITY ASSOCIATION",
+        "role": "Plaintiff (HOA)",
+        "notes": ""
       }
     ],
     "docket": [
       {
         "date": "9/8/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Satisfaction of Judgment"
       },
       {
         "date": "9/8/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Release of Lis Pendens"
       },
       {
         "date": "12/31/2024",
-        "entry": "Available at Courthouse"
+        "entry": "RECEIPTS OF SALE/RETURN OF LEVY/SALE REAL/PERSONAL PROPERTY"
       },
       {
         "date": "9/19/2024",
-        "entry": "Available at Courthouse"
+        "entry": "PRAECIPE"
       },
       {
         "date": "9/9/2024",
-        "entry": "Available"
+        "entry": "PLAINTIFF'S MOTION FOR DEFAULT JUDGMENT"
       },
       {
         "date": "9/4/2024",
-        "entry": "Available at Courthouse"
+        "entry": "JUDGMENT"
       },
       {
         "date": "8/28/2024",
-        "entry": "Available at Courthouse"
+        "entry": "ORDER"
       },
       {
         "date": "8/20/2024",
-        "entry": "Available"
+        "entry": "IN CHAMBERS: NOTICE OF REFERRAL"
       },
       {
         "date": "8/12/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Affidavit in Support of Attorney Fees"
       },
       {
         "date": "8/12/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Motion to Set Default Hearing"
       },
       {
         "date": "8/12/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Motion to Appear Telephonically"
       },
       {
         "date": "8/12/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to Affidavit in Support of Attorney Fees"
       },
       {
         "date": "8/12/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 2 to Affidavit in Support of Attorney Fees"
       },
       {
         "date": "8/12/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to Motion to Set Default Hearing"
       },
       {
         "date": "8/12/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Motion and Affidavit for Foreclosure"
       },
       {
         "date": "8/12/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Affidavit in Support of Foreclosure"
       },
       {
         "date": "8/12/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Statement of Costs"
       },
       {
         "date": "8/12/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to Affidavit in Support of Foreclosure"
       },
       {
         "date": "8/12/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 2 to Affidavit in Support of Foreclosure"
       },
       {
         "date": "8/12/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 3 to Affidavit in Support of Foreclosure"
       },
       {
         "date": "8/12/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 4 to Affidavit in Support of Foreclosure"
       },
       {
         "date": "7/8/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Notice of Intent to Seek Entry of Default"
       },
       {
         "date": "7/8/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Application for Default"
       },
       {
         "date": "7/8/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to Application for Default"
       },
       {
         "date": "7/8/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 2 to Application for Default"
       },
       {
         "date": "6/17/2024",
-        "entry": "Available at Courthouse"
+        "entry": "ORDER"
       },
       {
         "date": "6/13/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Stipulation to Judgment as to Defendant Secretary of Housing and Urban Development only"
       },
       {
         "date": "5/31/2024",
-        "entry": "Available"
+        "entry": "Notice Re: Reassignment"
       },
       {
         "date": "5/16/2024",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "4/18/2024",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "4/16/2024",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "4/16/2024",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "3/26/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Certificate of Compulsory Arbitration"
       },
       {
         "date": "3/26/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Notice of Lis Pendens"
       },
       {
         "date": "3/22/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Complaint"
       },
       {
         "date": "3/22/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Civil Cover Sheet"
       },
       {
         "date": "3/22/2024",
-        "entry": "Available at Courthouse"
+        "entry": "FASTAR Certificate"
       },
       {
         "date": "3/22/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "3/22/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "3/22/2024",
-        "entry": "Available at Courthouse"
+        "entry": "All Money Receipts 3733592"
       }
     ],
     "judgment_amount": 6864.89
   },
   "PIMA-COURT-C20256063": {
-    "story": "Case: C20256063 | Sale: Unknown\nRANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC. sued MALIK IDRISSOU for HOA lien foreclosure.",
+    "story": "Case: C20256063 | Sale: Unknown\n\nRANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC. sued MALIK IDRISSOU for HOA lien foreclosure.\n\u2022 Default judgment (2/9/2026): CIVIL DEFAULT JUDGMENT\n\u2022 Default entered (1/6/2026)\n\u2022 Default entered (1/6/2026)\n\u2022 Default entered (11/19/2025)\n\u2022 Default entered (11/19/2025)\n\u2022 Default entered (11/19/2025)\n\u2022 Default entered (11/19/2025)\n\u2022 Certificate (10/1/2025): CERTIFICATE OF SERVICE OF PROCESS BY PRIVATE PERSON\n\u2022 Certificate (9/3/2025): Certificate of Compulsory Arbitration\n\u2022 Complaint filed (8/28/2025)\n\u2022 Certificate (8/28/2025): FASTAR Certificate\n\u2022 Summons issued (8/28/2025)",
     "red_flags": [],
     "people": [
-      {
-        "name": "RANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC.",
-        "role": "Plaintiff (HOA/Corp)",
-        "notes": ""
-      },
       {
         "name": "MALIK IDRISSOU",
         "role": "Defendant (Former Owner)",
@@ -3055,141 +3097,146 @@ const INTEL_DATA = {
         "email": "",
         "notes": "Named in C20256063. Needs skip trace for current contact info.",
         "best_leads": "\u2022 Last known property: 503 E PLACITA CUESCO (FCV: $352,778)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "RANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC.",
+        "role": "Plaintiff (HOA)",
+        "notes": ""
+      },
+      {
+        "name": "RANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC.",
+        "role": "Plaintiff (HOA)",
+        "notes": ""
       }
     ],
     "docket": [
       {
         "date": "2/12/2026",
-        "entry": "Available at Courthouse"
+        "entry": "PRAECIPE"
       },
       {
         "date": "2/9/2026",
-        "entry": "Available"
+        "entry": "CIVIL DEFAULT JUDGMENT"
       },
       {
         "date": "2/9/2026",
-        "entry": "Available at Courthouse"
+        "entry": "JUDGMENT"
       },
       {
         "date": "1/7/2026",
-        "entry": "Available at Courthouse"
+        "entry": "ORDER"
       },
       {
         "date": "1/6/2026",
-        "entry": "Available at Courthouse"
+        "entry": "Motion to Set Default Hearing"
       },
       {
         "date": "1/6/2026",
-        "entry": "Available at Courthouse"
+        "entry": "Motion to Appear Telephonically"
       },
       {
         "date": "1/6/2026",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to Motion to Set Default Hearing"
       },
       {
         "date": "1/6/2026",
-        "entry": "Available at Courthouse"
+        "entry": "Statement of Costs"
       },
       {
         "date": "1/6/2026",
-        "entry": "Available at Courthouse"
+        "entry": "Affidavit in Support of Attorney Fees"
       },
       {
         "date": "1/6/2026",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to Affidavit in Support of Attorney Fees"
       },
       {
         "date": "1/6/2026",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 2 to Affidavit in Support of Attorney Fees"
       },
       {
         "date": "1/6/2026",
-        "entry": "Available at Courthouse"
+        "entry": "Motion and Affidavit for Foreclosure Judgment"
       },
       {
         "date": "1/6/2026",
-        "entry": "Available at Courthouse"
+        "entry": "Affidavit in Support of Foreclosure"
       },
       {
         "date": "1/6/2026",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to Affidavit in Support of Foreclosure"
       },
       {
         "date": "1/6/2026",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 2 to Affidavit in Support of Foreclosure"
       },
       {
         "date": "1/6/2026",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 3 to Affidavit in Support of Foreclosure"
       },
       {
         "date": "1/6/2026",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 4 to Affidavit in Support of Foreclosure"
       },
       {
         "date": "11/19/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Notice of Intent to Seek Entry of Default"
       },
       {
         "date": "11/19/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Application for Default"
       },
       {
         "date": "11/19/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to Application for Default"
       },
       {
         "date": "11/19/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 2 to Application for Default"
       },
       {
         "date": "10/1/2025",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE OF PROCESS BY PRIVATE PERSON"
       },
       {
         "date": "9/22/2025",
-        "entry": "Available at Courthouse"
+        "entry": "AFFIDAVIT OF ATTEMPTED SERVICE"
       },
       {
         "date": "9/3/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Certificate of Compulsory Arbitration"
       },
       {
         "date": "9/3/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Notice of Lis Pendens"
       },
       {
         "date": "8/28/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Complaint"
       },
       {
         "date": "8/28/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Civil Cover Sheet"
       },
       {
         "date": "8/28/2025",
-        "entry": "Available at Courthouse"
+        "entry": "FASTAR Certificate"
       },
       {
         "date": "8/28/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "8/28/2025",
-        "entry": "Available at Courthouse"
+        "entry": "All Money Receipts 3981204"
       }
     ],
     "judgment_amount": null
   },
   "PIMA-COURT-C20247334": {
-    "story": "Case: C20247334 | Sale: Unknown\nRANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC. sued CARLOS A. RAMIREZ for HOA lien foreclosure.\nJudgment: $16,396.71",
+    "story": "Case: C20247334 | Sale: Unknown\n\nRANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC. sued CARLOS A. RAMIREZ for HOA lien foreclosure.\n\u2022 Writ/Execution (9/3/2025): RETURN ON PROPERTY EXECUTION\n\u2022 Writ/Execution (5/19/2025): PRAECIPE - WRIT OF EXECUTION\n\u2022 Default judgment (5/14/2025): PLAINTIFF'S MOTION AND AFFIDAVIT FOR FORECLOSURE JUDGMENT BY\n\u2022 Default entered (3/31/2025)\n\u2022 Default entered (3/31/2025)\n\u2022 Stipulation (3/13/2025): Stipulation to Lien Priority Regarding Defendant Wells Fargo\n\u2022 Default entered (2/24/2025)\n\u2022 Default entered (2/24/2025)\n\u2022 Default entered (2/24/2025)\n\u2022 Default entered (2/24/2025)\n\u2022 Certificate (1/30/2025): AMENDED  CERTIFICATE OF SERVICE\n\u2022 Certificate (1/17/2025): CERTIFICATE OF SERVICE\n\u2022 Complaint filed (1/2/2025)\n\u2022 Certificate (12/23/2024): CERTIFICATE OF SERVICE\n\u2022 Certificate (12/8/2024): Certificate of Compulsory Arbitration\n\u2022 Complaint filed (12/5/2024)\n\u2022 Certificate (12/5/2024): FASTAR Certificate\n\u2022 Summons issued (12/5/2024)\n\u2022 Summons issued (12/5/2024)\n\nJudgment: $16,396.71",
     "red_flags": [],
     "people": [
-      {
-        "name": "RANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC.",
-        "role": "Plaintiff (HOA/Corp)",
-        "notes": ""
-      },
       {
         "name": "CARLOS A. RAMIREZ",
         "role": "Defendant (Former Owner)",
@@ -3200,204 +3247,209 @@ const INTEL_DATA = {
         "best_leads": "\u2022 Last known property: 84 E CALLE PRIMOROSA (FCV: $1,142,710)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
       },
       {
-        "name": "WELLS FARGO BANK, NA",
-        "role": "Plaintiff (HOA/Corp)",
+        "name": "RANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC.",
+        "role": "Plaintiff (HOA)",
         "notes": ""
+      },
+      {
+        "name": "RANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC.",
+        "role": "Plaintiff (HOA)",
+        "notes": ""
+      },
+      {
+        "name": "WELLS FARGO BANK, NA",
+        "role": "Defendant (Lienholder)",
+        "notes": "Has a lien on the property. May have claim on surplus."
       }
     ],
     "docket": [
       {
         "date": "10/20/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Release of Lis Pendens"
       },
       {
         "date": "10/20/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Satisfaction of Judgment"
       },
       {
         "date": "9/3/2025",
-        "entry": "Available at Courthouse"
+        "entry": "RETURN ON PROPERTY EXECUTION"
       },
       {
         "date": "5/19/2025",
-        "entry": "Available at Courthouse"
+        "entry": "PRAECIPE - WRIT OF EXECUTION"
       },
       {
         "date": "5/14/2025",
-        "entry": "Available"
+        "entry": "PLAINTIFF'S MOTION AND AFFIDAVIT FOR FORECLOSURE JUDGMENT BY DEFAULT WITH HEARING"
       },
       {
         "date": "5/13/2025",
-        "entry": "Available at Courthouse"
+        "entry": "JUDGMENT"
       },
       {
         "date": "4/1/2025",
-        "entry": "Available at Courthouse"
+        "entry": "ORDER"
       },
       {
         "date": "3/31/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Motion to Set Default Hearing"
       },
       {
         "date": "3/31/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Motion to Appear Telephonically"
       },
       {
         "date": "3/31/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to Motion to Set Default Hearing"
       },
       {
         "date": "3/31/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Statement of Costs"
       },
       {
         "date": "3/31/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Affidavit in Support of Attorney Fees"
       },
       {
         "date": "3/31/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to Affidavit in Support of Attorney Fees"
       },
       {
         "date": "3/31/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 2 to Affidavit in Support of Attorney Fees"
       },
       {
         "date": "3/31/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Motion and Affidavit for Foreclosure Judgment"
       },
       {
         "date": "3/31/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Affidavit in Support of Foreclosure"
       },
       {
         "date": "3/31/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to Affidavit in Support of Foreclosure"
       },
       {
         "date": "3/31/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 2 to Affidavit in Support of Foreclosure"
       },
       {
         "date": "3/31/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 3 to Affidavit in Support of Foreclosure"
       },
       {
         "date": "3/31/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 4 to Affidavit in Support of Foreclosure"
       },
       {
         "date": "3/19/2025",
-        "entry": "Available at Courthouse"
+        "entry": "ORDER"
       },
       {
         "date": "3/13/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Stipulation to Lien Priority Regarding Defendant Wells Fargo Bank, NA only"
       },
       {
         "date": "2/24/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Notice of Intent to Seek Entry of Default"
       },
       {
         "date": "2/24/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Application for Default"
       },
       {
         "date": "2/24/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to Application for Default"
       },
       {
         "date": "2/24/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 2 to Application for Default"
       },
       {
         "date": "1/30/2025",
-        "entry": "Available at Courthouse"
+        "entry": "AMENDED  CERTIFICATE OF SERVICE"
       },
       {
         "date": "1/17/2025",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "1/8/2025",
-        "entry": "Available at Courthouse"
+        "entry": "ORDER"
       },
       {
         "date": "1/7/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Motion for Alternative Method of Service"
       },
       {
         "date": "1/7/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit A to Motion for Alternative Method of Service"
       },
       {
         "date": "1/7/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit B to Motion for Alternative Method of Service"
       },
       {
         "date": "1/7/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit C to Motion for Alternative Method of Service"
       },
       {
         "date": "1/2/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Wells Fargo Bank, N.A.''s Answer to Plaintiff''s Complaint"
       },
       {
         "date": "1/2/2025",
-        "entry": "Available at Courthouse"
+        "entry": "All Money Receipts 3881918"
       },
       {
         "date": "1/2/2025",
-        "entry": "Available at Courthouse"
+        "entry": "AFFIDAVIT OF SERVICE/NON-SERVICE"
       },
       {
         "date": "12/23/2024",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "12/8/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Certificate of Compulsory Arbitration"
       },
       {
         "date": "12/8/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Notice of Lis Pendens"
       },
       {
         "date": "12/5/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Complaint"
       },
       {
         "date": "12/5/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Civil Cover Sheet"
       },
       {
         "date": "12/5/2024",
-        "entry": "Available at Courthouse"
+        "entry": "FASTAR Certificate"
       },
       {
         "date": "12/5/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "12/5/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "12/5/2024",
-        "entry": "Available at Courthouse"
+        "entry": "All Money Receipts 3867878"
       }
     ],
     "judgment_amount": 16396.71
   },
   "PIMA-COURT-C20253647": {
-    "story": "Case: C20253647 | Sale: $56,100.00\nRANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC. sued JOHN L. WOLETZ for HOA lien foreclosure.",
+    "story": "Case: C20253647 | Sale: $56,100.00\n\nRANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC. sued JOHN L. WOLETZ, ANDREA R. WOLETZ for HOA lien foreclosure.\n\u2022 Default entered (11/24/2025)\n\u2022 Default entered (10/30/2025)\n\u2022 Default entered (10/30/2025)\n\u2022 Default entered (10/30/2025)\n\u2022 Default entered (9/22/2025)\n\u2022 Default entered (9/22/2025)\n\u2022 Default entered (9/22/2025)\n\u2022 Default entered (9/22/2025)\n\u2022 Certificate (8/26/2025): CERTIFICATE OF SERVICE\n\u2022 Certificate (8/26/2025): AMENDED CERTIFICATE OF SERVICE\n\u2022 Certificate (8/20/2025): CERTIFICATE OF SERVICE OF PROCESS BY PRIVATE PERSON\n\u2022 \u26a0\ufe0f NOTICE RE: IMPENDING DISMISSAL (8/4/2025)\n\u2022 Certificate (6/24/2025): CERTIFICATE OF SERVICE\n\u2022 Certificate (6/24/2025): CERTIFICATE OF SERVICE\n\u2022 Certificate (6/24/2025): CERTIFICATE OF SERVICE\n\u2022 Certificate (6/24/2025): CERTIFICATE OF SERVICE\n\u2022 Complaint filed (6/9/2025)\n\u2022 Certificate (6/9/2025): Amended Certificate of Compulsory Arbitration\n\u2022 Certificate (6/2/2025): Certificate of Compulsory Arbitration\n\u2022 Complaint filed (5/30/2025)\n\u2022 Certificate (5/30/2025): FASTAR Certificate\n\u2022 Summons issued (5/30/2025)\n\u2022 Summons issued (5/30/2025)\n\u2022 Summons issued (5/30/2025)\n\u2022 Summons issued (5/30/2025)\n\u2022 Summons issued (5/30/2025)",
     "red_flags": [],
     "people": [
-      {
-        "name": "RANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC.",
-        "role": "Plaintiff (HOA/Corp)",
-        "notes": ""
-      },
       {
         "name": "JOHN L. WOLETZ",
         "role": "Defendant (Former Owner)",
@@ -3417,270 +3469,275 @@ const INTEL_DATA = {
         "best_leads": "\u2022 Last known property: 14654 S CAMINO TIERRA ALEGRA (FCV: $296,849)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
       },
       {
-        "name": "USAA FEDERAL SAVINGS BANK",
-        "role": "Plaintiff (HOA/Corp)",
+        "name": "RANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC.",
+        "role": "Plaintiff (HOA)",
         "notes": ""
+      },
+      {
+        "name": "RANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC.",
+        "role": "Plaintiff (HOA)",
+        "notes": ""
+      },
+      {
+        "name": "USAA FEDERAL SAVINGS BANK",
+        "role": "Defendant (Lienholder)",
+        "notes": "Has a lien on the property. May have claim on surplus."
       },
       {
         "name": "UNIFUND CCR, LLC",
-        "role": "Plaintiff (HOA/Corp)",
-        "notes": ""
+        "role": "Defendant (Lienholder)",
+        "notes": "Has a lien on the property. May have claim on surplus."
       },
       {
         "name": "CAVALRY SPV I, LLC",
-        "role": "Plaintiff (HOA/Corp)",
-        "notes": ""
+        "role": "Defendant (Lienholder)",
+        "notes": "Has a lien on the property. May have claim on surplus."
       }
     ],
     "docket": [
       {
         "date": "12/8/2025",
-        "entry": "Available at Courthouse"
+        "entry": "PRAECIPE"
       },
       {
         "date": "11/24/2025",
-        "entry": "Available"
+        "entry": "APPLICATION FOR DEFAULT"
       },
       {
         "date": "11/24/2025",
-        "entry": "Available at Courthouse"
+        "entry": "JUDGMENT"
       },
       {
         "date": "10/31/2025",
-        "entry": "Available at Courthouse"
+        "entry": "ORDER"
       },
       {
         "date": "10/30/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Motion to Set Default Hearing"
       },
       {
         "date": "10/30/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Motion to Appear Telephonically"
       },
       {
         "date": "10/30/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to Motion to Set Default Hearing"
       },
       {
         "date": "10/30/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1-2 to Motion to Set Default Hearing"
       },
       {
         "date": "10/30/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Statement of Costs"
       },
       {
         "date": "10/30/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Affidavit in Support of Attorney Fees"
       },
       {
         "date": "10/30/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to Affidavit in Support of Attorney Fees"
       },
       {
         "date": "10/30/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 2 to Affidavit in Support of Attorney Fees"
       },
       {
         "date": "10/30/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Motion and Affidavit for Foreclosure Judgment"
       },
       {
         "date": "10/30/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Affidavit in Support of Foreclosure"
       },
       {
         "date": "10/30/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to Affidavit in Support of Foreclosure"
       },
       {
         "date": "10/30/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 2 to Affidavit in Support of Foreclosure"
       },
       {
         "date": "10/30/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 3 to Affidavit in Support of Foreclosure"
       },
       {
         "date": "10/30/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 4 to Affidavit in Support of Foreclosure"
       },
       {
         "date": "9/22/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Notice of Intent to Seek Entry of Default"
       },
       {
         "date": "9/22/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Application for Default"
       },
       {
         "date": "9/22/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to Application for Default"
       },
       {
         "date": "9/22/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 2 to Application for Default"
       },
       {
         "date": "8/26/2025",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "8/26/2025",
-        "entry": "Available at Courthouse"
+        "entry": "AMENDED CERTIFICATE OF SERVICE"
       },
       {
         "date": "8/20/2025",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE OF PROCESS BY PRIVATE PERSON"
       },
       {
         "date": "8/13/2025",
-        "entry": "Available at Courthouse"
+        "entry": "ORDER"
       },
       {
         "date": "8/13/2025",
-        "entry": "Available at Courthouse"
+        "entry": "ORDER"
       },
       {
         "date": "8/13/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Motion for Alternative Method of Service"
       },
       {
         "date": "8/13/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit A to Motion for Alternative Method of Service"
       },
       {
         "date": "8/13/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit B to Motion for Alternative Method of Service"
       },
       {
         "date": "8/13/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit C to Motion for Alternative Method of Service"
       },
       {
         "date": "8/13/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit D to Motion for Alternative Method of Service"
       },
       {
         "date": "8/13/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit E to Motion for Alternative Method of Service"
       },
       {
         "date": "8/13/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Motion to Extend Time for Service"
       },
       {
         "date": "8/13/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to Motion to Extend Time for Service"
       },
       {
         "date": "8/13/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 2 to Motion to Extend Time for Service"
       },
       {
         "date": "8/13/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 3 to Motion to Extend Time for Service"
       },
       {
         "date": "8/13/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 4 to Motion to Extend Time for Service"
       },
       {
         "date": "8/13/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 5 to Motion to Extend Time for Service"
       },
       {
         "date": "8/4/2025",
-        "entry": "Available"
+        "entry": "NOTICE RE: IMPENDING DISMISSAL"
       },
       {
         "date": "7/25/2025",
-        "entry": "Available at Courthouse"
+        "entry": "AFFIDAVIT OF ATTEMPTED SERVICE"
       },
       {
         "date": "6/24/2025",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "6/24/2025",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "6/24/2025",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "6/24/2025",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "6/9/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Amended Complaint"
       },
       {
         "date": "6/9/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Amended Certificate of Compulsory Arbitration"
       },
       {
         "date": "6/9/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Amended Notice of Lis Pendens"
       },
       {
         "date": "6/2/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Certificate of Compulsory Arbitration"
       },
       {
         "date": "6/2/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Notice of Lis Pendens"
       },
       {
         "date": "5/30/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Complaint"
       },
       {
         "date": "5/30/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Civil Cover Sheet"
       },
       {
         "date": "5/30/2025",
-        "entry": "Available at Courthouse"
+        "entry": "FASTAR Certificate"
       },
       {
         "date": "5/30/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "5/30/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "5/30/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "5/30/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "5/30/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "5/30/2025",
-        "entry": "Available at Courthouse"
+        "entry": "All Money Receipts 3945802"
       }
     ],
     "judgment_amount": null
   },
   "PIMA-COURT-C20251110": {
-    "story": "Case: C20251110 | Sale: Unknown\nRANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC. sued MYRNA DIANNE ALVARADO for HOA lien foreclosure.\nJudgment: $20,492.05",
+    "story": "Case: C20251110 | Sale: Unknown\n\nRANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC. sued MYRNA DIANNE ALVARADO, TOWN OF SAHUARITA WASTEWATER DEPARTMENT for HOA lien foreclosure.\n\u2022 Writ/Execution (11/10/2025): RETURN ON PROPERTY EXECUTION\n\u2022 Default judgment (8/1/2025): PLAINTIFF'S MOTION FOR DEFAULT JUDGMENT\n\u2022 Default entered (5/28/2025)\n\u2022 Default entered (5/28/2025)\n\u2022 Default entered (4/15/2025)\n\u2022 Default entered (4/15/2025)\n\u2022 Default entered (4/15/2025)\n\u2022 Default entered (4/15/2025)\n\u2022 Certificate (3/14/2025): CERTIFICATE OF SERVICE\n\u2022 Certificate (3/5/2025): CERTIFICATE OF SERVICE\n\u2022 Certificate (2/18/2025): Certificate of Compulsory Arbitration\n\u2022 Complaint filed (2/16/2025)\n\u2022 Certificate (2/16/2025): FASTAR Certificate\n\u2022 Summons issued (2/16/2025)\n\u2022 Summons issued (2/16/2025)\n\nJudgment: $20,492.05",
     "red_flags": [],
     "people": [
-      {
-        "name": "RANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC.",
-        "role": "Plaintiff (HOA/Corp)",
-        "notes": ""
-      },
       {
         "name": "MYRNA DIANNE ALVARADO",
         "role": "Defendant (Former Owner)",
@@ -3692,159 +3749,168 @@ const INTEL_DATA = {
       },
       {
         "name": "TOWN OF SAHUARITA WASTEWATER DEPARTMENT",
-        "role": "Plaintiff (HOA/Corp)",
+        "role": "Defendant (Former Owner)",
+        "address": "14216 S AVENIDA ZUMBA (FCV: $230,740)",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20251110. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Last known property: 14216 S AVENIDA ZUMBA (FCV: $230,740)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "RANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC.",
+        "role": "Plaintiff (HOA)",
+        "notes": ""
+      },
+      {
+        "name": "RANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC.",
+        "role": "Plaintiff (HOA)",
         "notes": ""
       }
     ],
     "docket": [
       {
         "date": "1/14/2026",
-        "entry": "Available at Courthouse"
+        "entry": "Satisfaction of Judgment"
       },
       {
         "date": "1/14/2026",
-        "entry": "Available at Courthouse"
+        "entry": "Release of Lis Pendens"
       },
       {
         "date": "11/10/2025",
-        "entry": "Available at Courthouse"
+        "entry": "RETURN ON PROPERTY EXECUTION"
       },
       {
         "date": "8/6/2025",
-        "entry": "Available at Courthouse"
+        "entry": "PRAECIPE"
       },
       {
         "date": "8/1/2025",
-        "entry": "Available"
+        "entry": "PLAINTIFF'S MOTION FOR DEFAULT JUDGMENT"
       },
       {
         "date": "7/28/2025",
-        "entry": "Available at Courthouse"
+        "entry": "JUDGMENT"
       },
       {
         "date": "6/18/2025",
-        "entry": "Available at Courthouse"
+        "entry": "ORDER"
       },
       {
         "date": "5/28/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Motion to Set Default Hearing"
       },
       {
         "date": "5/28/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Motion to Appear Telephonically"
       },
       {
         "date": "5/28/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to Motion to Set Default Hearing"
       },
       {
         "date": "5/28/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Statement of Costs"
       },
       {
         "date": "5/28/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Affidavit in Support of Attorney Fees"
       },
       {
         "date": "5/28/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to Affidavit in Support of Attorney Fees"
       },
       {
         "date": "5/28/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 2 to Affidavit in Support of Attorney Fees"
       },
       {
         "date": "5/28/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Motion and Affidavit for Foreclosure Judgment"
       },
       {
         "date": "5/28/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Affidavit in Support of Foreclosure"
       },
       {
         "date": "5/28/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to Affidavit in Support of Foreclosure"
       },
       {
         "date": "5/28/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 2 to Affidavit in Support of Foreclosure"
       },
       {
         "date": "5/28/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 3 to Affidavit in Support of Foreclosure"
       },
       {
         "date": "4/15/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Notice of Intent to Seek Entry of Default"
       },
       {
         "date": "4/15/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Application for Default"
       },
       {
         "date": "4/15/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to Application for Default"
       },
       {
         "date": "4/15/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 2 to Application for Default"
       },
       {
         "date": "3/26/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Disclaimer of Interest of Defendant Town of Sahuarita"
       },
       {
         "date": "3/14/2025",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "3/5/2025",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "2/18/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Certificate of Compulsory Arbitration"
       },
       {
         "date": "2/18/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Notice of Lis Pendens"
       },
       {
         "date": "2/16/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Complaint"
       },
       {
         "date": "2/16/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Civil Cover Sheet"
       },
       {
         "date": "2/16/2025",
-        "entry": "Available at Courthouse"
+        "entry": "FASTAR Certificate"
       },
       {
         "date": "2/16/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "2/16/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "2/16/2025",
-        "entry": "Available at Courthouse"
+        "entry": "All Money Receipts 3904716"
       }
     ],
     "judgment_amount": 20492.05
   },
   "PIMA-COURT-C20256442": {
-    "story": "Case: C20256442 | Sale: Unknown\nRANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC., sued SIRENA L. MOORE for HOA lien foreclosure.",
+    "story": "Case: C20256442 | Sale: Unknown\n\nRANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC., sued SIRENA L. MOORE, SECRETARY OF HOUSING AND URBAN DEVELOPMENT for HOA lien foreclosure.\n\u2022 Default judgment (2/11/2026): CIVIL DEFAULT JUDGMENT\n\u2022 Default entered (1/6/2026)\n\u2022 Default entered (1/6/2026)\n\u2022 Stipulation (12/17/2025): Stipulation to Judgment as to Defendant Secretary of Housing\n\u2022 Default entered (11/26/2025)\n\u2022 Default entered (11/26/2025)\n\u2022 Default entered (11/26/2025)\n\u2022 Default entered (11/26/2025)\n\u2022 Certificate (10/23/2025): CERTIFICATE OF SERVICE\n\u2022 Certificate (10/16/2025): CERTIFICATE OF SERVICE\n\u2022 Certificate (10/13/2025): CERTIFICATE OF SERVICE OF PROCESS BY PRIVATE PERSON\n\u2022 Certificate (10/7/2025): CERTIFICATE OF SERVICE\n\u2022 Certificate (9/18/2025): Certificate of Compulsory Arbitration\n\u2022 Complaint filed (9/15/2025)\n\u2022 Certificate (9/15/2025): FASTAR Certificate\n\u2022 Summons issued (9/15/2025)\n\u2022 Summons issued (9/15/2025)",
     "red_flags": [],
     "people": [
-      {
-        "name": "RANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC.,",
-        "role": "Plaintiff (HOA/Corp)",
-        "notes": ""
-      },
       {
         "name": "SIRENA L. MOORE",
         "role": "Defendant (Former Owner)",
@@ -3862,157 +3928,162 @@ const INTEL_DATA = {
         "email": "",
         "notes": "Named in C20256442. Needs skip trace for current contact info.",
         "best_leads": "\u2022 Last known property: 546 W CALLE FRANJA VERDE (FCV: $239,544)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "RANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC.,",
+        "role": "Plaintiff (HOA)",
+        "notes": ""
+      },
+      {
+        "name": "RANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC.,",
+        "role": "Plaintiff (HOA)",
+        "notes": ""
       }
     ],
     "docket": [
       {
         "date": "2/18/2026",
-        "entry": "Available at Courthouse"
+        "entry": "PRAECIPE"
       },
       {
         "date": "2/11/2026",
-        "entry": "Available"
+        "entry": "CIVIL DEFAULT JUDGMENT"
       },
       {
         "date": "2/10/2026",
-        "entry": "Available at Courthouse"
+        "entry": "JUDGMENT"
       },
       {
         "date": "1/12/2026",
-        "entry": "Available at Courthouse"
+        "entry": "ORDER"
       },
       {
         "date": "1/6/2026",
-        "entry": "Available at Courthouse"
+        "entry": "Motion to Set Default Hearing"
       },
       {
         "date": "1/6/2026",
-        "entry": "Available at Courthouse"
+        "entry": "Motion to Appear Telephonically"
       },
       {
         "date": "1/6/2026",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to Motion to Set Default Hearing"
       },
       {
         "date": "1/6/2026",
-        "entry": "Available at Courthouse"
+        "entry": "Statement of Costs"
       },
       {
         "date": "1/6/2026",
-        "entry": "Available at Courthouse"
+        "entry": "Affidavit in Support of Attorney Fees"
       },
       {
         "date": "1/6/2026",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to Affidavit in Support of Attorney Fees"
       },
       {
         "date": "1/6/2026",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 2 to Affidavit in Support of Attorney Fees"
       },
       {
         "date": "1/6/2026",
-        "entry": "Available at Courthouse"
+        "entry": "Motion and Affidavit for Foreclosure Judgment"
       },
       {
         "date": "1/6/2026",
-        "entry": "Available at Courthouse"
+        "entry": "Affidavit in Support of Foreclosure"
       },
       {
         "date": "1/6/2026",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to Affidavit in Support of Foreclosure"
       },
       {
         "date": "1/6/2026",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 2 to Affidavit in Support of Foreclosure"
       },
       {
         "date": "1/6/2026",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 3 to Affidavit in Support of Foreclosure"
       },
       {
         "date": "12/30/2025",
-        "entry": "Available at Courthouse"
+        "entry": "ORDER"
       },
       {
         "date": "12/17/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Stipulation to Judgment as to Defendant Secretary of Housing and Urban Development only"
       },
       {
         "date": "11/26/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Notice of Intent to Seek Entry of Default"
       },
       {
         "date": "11/26/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Application for Default"
       },
       {
         "date": "11/26/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to Application for Default"
       },
       {
         "date": "11/26/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 2 to Application for Default"
       },
       {
         "date": "10/23/2025",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "10/16/2025",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "10/13/2025",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE OF PROCESS BY PRIVATE PERSON"
       },
       {
         "date": "10/7/2025",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "9/18/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Certificate of Compulsory Arbitration"
       },
       {
         "date": "9/18/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Notice of Lis Pendens"
       },
       {
         "date": "9/15/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Complaint"
       },
       {
         "date": "9/15/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Civil Cover Sheet"
       },
       {
         "date": "9/15/2025",
-        "entry": "Available at Courthouse"
+        "entry": "FASTAR Certificate"
       },
       {
         "date": "9/15/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "9/15/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "9/15/2025",
-        "entry": "Available at Courthouse"
+        "entry": "All Money Receipts 3986965"
       }
     ],
     "judgment_amount": null
   },
   "PIMA-COURT-C20255137": {
-    "story": "Case: C20255137 | Sale: Unknown\nDESERT STONE HOMEOWNERS ASSOCIATION sued TOMMY J. GALLARDO for HOA lien foreclosure.",
+    "story": "Case: C20255137 | Sale: Unknown\n\nDESERT STONE HOMEOWNERS ASSOCIATION sued TOMMY J. GALLARDO, JULIE A. GALLARDO for HOA lien foreclosure.\n\u2022 Default judgment (2/5/2026): CIVIL DEFAULT JUDGMENT\n\u2022 Default entered (12/2/2025)\n\u2022 Default entered (12/2/2025)\n\u2022 Default entered (12/2/2025)\n\u2022 Default entered (9/22/2025)\n\u2022 Default entered (9/22/2025)\n\u2022 Default entered (9/22/2025)\n\u2022 Default entered (9/22/2025)\n\u2022 Certificate (8/20/2025): CERTIFICATE OF SERVICE\n\u2022 Certificate (7/31/2025): Certificate of Compulsory Arbitration\n\u2022 Complaint filed (7/30/2025)\n\u2022 Certificate (7/30/2025): FASTAR Certificate\n\u2022 Summons issued (7/30/2025)\n\u2022 Summons issued (7/30/2025)",
     "red_flags": [],
     "people": [
-      {
-        "name": "DESERT STONE HOMEOWNERS ASSOCIATION",
-        "role": "Plaintiff (HOA/Corp)",
-        "notes": ""
-      },
       {
         "name": "TOMMY J. GALLARDO",
         "role": "Defendant (Former Owner)",
@@ -4030,149 +4101,154 @@ const INTEL_DATA = {
         "email": "",
         "notes": "Named in C20255137. Needs skip trace for current contact info.",
         "best_leads": "\u2022 Last known property: 7901 S SENTINAL STONE DR (FCV: $221,926)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "DESERT STONE HOMEOWNERS ASSOCIATION",
+        "role": "Plaintiff (HOA)",
+        "notes": ""
+      },
+      {
+        "name": "DESERT STONE HOMEOWNERS ASSOCIATION",
+        "role": "Plaintiff (HOA)",
+        "notes": ""
       }
     ],
     "docket": [
       {
         "date": "2/11/2026",
-        "entry": "Available at Courthouse"
+        "entry": "PRAECIPE"
       },
       {
         "date": "2/5/2026",
-        "entry": "Available"
+        "entry": "CIVIL DEFAULT JUDGMENT"
       },
       {
         "date": "2/3/2026",
-        "entry": "Available at Courthouse"
+        "entry": "JUDGMENT"
       },
       {
         "date": "1/8/2026",
-        "entry": "Available at Courthouse"
+        "entry": "ORDER"
       },
       {
         "date": "12/2/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Motion to Set Default Hearing"
       },
       {
         "date": "12/2/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Motion to Appear Telephonically"
       },
       {
         "date": "12/2/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to Motion to Set Default Hearing"
       },
       {
         "date": "12/2/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1-2 to Motion to Set Default Hearing"
       },
       {
         "date": "12/2/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Statement of Costs"
       },
       {
         "date": "12/2/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Affidavit in Support of Attorney Fees"
       },
       {
         "date": "12/2/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to Affidavit in Support of Attorney Fees"
       },
       {
         "date": "12/2/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 2 to Affidavit in Support of Attorney Fees"
       },
       {
         "date": "12/2/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Motion and Affidavit for Foreclosure Judgment"
       },
       {
         "date": "12/2/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Affidavit in Support of Foreclosure"
       },
       {
         "date": "12/2/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to Affidavit in Support of Foreclosure"
       },
       {
         "date": "12/2/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 2 to Affidavit in Support of Foreclosure"
       },
       {
         "date": "12/2/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 3 to Affidavit in Support of Foreclosure"
       },
       {
         "date": "12/2/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 4 to Affidavit in Support of Foreclosure"
       },
       {
         "date": "11/4/2025",
-        "entry": "Available at Courthouse"
+        "entry": "CIVIL ORDER"
       },
       {
         "date": "9/22/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Notice of Intent to Seek Entry of Default"
       },
       {
         "date": "9/22/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Application for Default"
       },
       {
         "date": "9/22/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to Application for Default"
       },
       {
         "date": "9/22/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 2 to Application for Default"
       },
       {
         "date": "8/20/2025",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "7/31/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Certificate of Compulsory Arbitration"
       },
       {
         "date": "7/31/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Notice of Lis Pendens"
       },
       {
         "date": "7/30/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Complaint"
       },
       {
         "date": "7/30/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Civil Cover Sheet"
       },
       {
         "date": "7/30/2025",
-        "entry": "Available at Courthouse"
+        "entry": "FASTAR Certificate"
       },
       {
         "date": "7/30/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "7/30/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "7/30/2025",
-        "entry": "Available at Courthouse"
+        "entry": "All Money Receipts 3968908"
       }
     ],
     "judgment_amount": null
   },
   "PIMA-COURT-C20250220": {
-    "story": "Case: C20250220 | Sale: Unknown\nGLADDEN FARMS COMMUNITY ASSOCIATION sued MEAGAN ALLEN for HOA lien foreclosure.",
+    "story": "Case: C20250220 | Sale: Unknown\n\nGLADDEN FARMS COMMUNITY ASSOCIATION sued MEAGAN ALLEN for HOA lien foreclosure.\n\u2022 Sale (5/22/2025): Stipulation to entry of Judgment and Decree of foreclosure a\n\u2022 Certificate (1/29/2025): CERTIFICATE OF SERVICE\n\u2022 Complaint filed (1/8/2025)\n\u2022 Certificate (1/8/2025): FASTAR Certificate\n\u2022 Summons issued (1/8/2025)",
     "red_flags": [],
     "people": [
-      {
-        "name": "GLADDEN FARMS COMMUNITY ASSOCIATION",
-        "role": "Plaintiff (HOA/Corp)",
-        "notes": ""
-      },
       {
         "name": "MEAGAN ALLEN",
         "role": "Defendant (Former Owner)",
@@ -4181,77 +4257,77 @@ const INTEL_DATA = {
         "email": "",
         "notes": "Named in C20250220. Needs skip trace for current contact info.",
         "best_leads": "\u2022 Last known property: 10732 W CHESTNUT ST (FCV: $311,293)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "GLADDEN FARMS COMMUNITY ASSOCIATION",
+        "role": "Plaintiff (HOA)",
+        "notes": ""
       }
     ],
     "docket": [
       {
         "date": "6/2/2025",
-        "entry": "Available at Courthouse"
+        "entry": "ORDER"
       },
       {
         "date": "5/22/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Stipulation to entry of Judgment and Decree of foreclosure and Order of Sale"
       },
       {
         "date": "5/22/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Covenant Not to Execute"
       },
       {
         "date": "5/7/2025",
-        "entry": "Available at Courthouse"
+        "entry": "CIVIL ORDER"
       },
       {
         "date": "4/7/2025",
-        "entry": "Available"
+        "entry": "Notice Re: Reassignment"
       },
       {
         "date": "3/28/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Answer"
       },
       {
         "date": "3/28/2025",
-        "entry": "Available at Courthouse"
+        "entry": "All Money Receipts 3922235"
       },
       {
         "date": "1/29/2025",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "1/8/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Complaint"
       },
       {
         "date": "1/8/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Notice of Lis Pendens"
       },
       {
         "date": "1/8/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Civil Cover Sheet"
       },
       {
         "date": "1/8/2025",
-        "entry": "Available at Courthouse"
+        "entry": "FASTAR Certificate"
       },
       {
         "date": "1/8/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "1/8/2025",
-        "entry": "Available at Courthouse"
+        "entry": "All Money Receipts 3885902"
       }
     ],
     "judgment_amount": null
   },
   "PIMA-COURT-C20240586": {
-    "story": "Case: C20240586 | Sale: $318,000\nGLADDEN FARMS COMMUNITY ASSOCIATION sued ROBERT RUIZ for HOA lien foreclosure.",
+    "story": "Case: C20240586 | Sale: $318,000\n\nGLADDEN FARMS COMMUNITY ASSOCIATION sued ROBERT RUIZ for HOA lien foreclosure.\n\u2022 Default judgment (9/16/2024): CIVIL DEFAULT JUDGMENT\n\u2022 Default entered (8/22/2024)\n\u2022 Default entered (4/29/2024)\n\u2022 Default entered (3/13/2024)\n\u2022 Default entered (3/13/2024)\n\u2022 Certificate (2/15/2024): CERTIFICATE OF SERVICE\n\u2022 Complaint filed (1/30/2024)\n\u2022 Certificate (1/30/2024): FASTAR Certificate\n\u2022 Summons issued (1/30/2024)",
     "red_flags": [],
     "people": [
-      {
-        "name": "GLADDEN FARMS COMMUNITY ASSOCIATION",
-        "role": "Plaintiff (HOA/Corp)",
-        "notes": ""
-      },
       {
         "name": "ROBERT RUIZ",
         "role": "Defendant (Former Owner)",
@@ -4260,121 +4336,121 @@ const INTEL_DATA = {
         "email": "",
         "notes": "Named in C20240586. Needs skip trace for current contact info.",
         "best_leads": "\u2022 Last known property: 6947 S LUNDY DR (FCV: $262,181)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "GLADDEN FARMS COMMUNITY ASSOCIATION",
+        "role": "Plaintiff (HOA)",
+        "notes": ""
       }
     ],
     "docket": [
       {
         "date": "2/12/2026",
-        "entry": "Available at Courthouse"
+        "entry": "PRAECIPE"
       },
       {
         "date": "9/26/2025",
-        "entry": "Available at Courthouse"
+        "entry": "IN CHAMBERS:"
       },
       {
         "date": "7/21/2025",
-        "entry": "Available at Courthouse"
+        "entry": "IN CHAMBERS:"
       },
       {
         "date": "7/2/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Application for PJ"
       },
       {
         "date": "7/2/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Affidavit on PJ Fees and Costs"
       },
       {
         "date": "9/16/2024",
-        "entry": "Available"
+        "entry": "CIVIL DEFAULT JUDGMENT"
       },
       {
         "date": "9/16/2024",
-        "entry": "Available at Courthouse"
+        "entry": "JUDGMENT"
       },
       {
         "date": "8/26/2024",
-        "entry": "Available at Courthouse"
+        "entry": "ORDER"
       },
       {
         "date": "8/22/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Plaintiff's Request for Default Hearing and Request to Appear Telephonically"
       },
       {
         "date": "7/19/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Application for Attorneys Fees and Costs"
       },
       {
         "date": "7/19/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Affidavit Regarding Attorney Fees"
       },
       {
         "date": "7/19/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Statement of Costs and Notice of Taxation"
       },
       {
         "date": "6/25/2024",
-        "entry": "Available at Courthouse"
+        "entry": "IN CHAMBERS ORDER"
       },
       {
         "date": "5/20/2024",
-        "entry": "Available at Courthouse"
+        "entry": "IN CHAMBERS ORDER"
       },
       {
         "date": "4/29/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Plaintiffs Request for Default Hearing and Request to Appear Telephonically"
       },
       {
         "date": "4/3/2024",
-        "entry": "Available at Courthouse"
+        "entry": "IN CHAMBERS ORDER"
       },
       {
         "date": "3/13/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Application for Entry of Default"
       },
       {
         "date": "3/13/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Affidavit of Default and Entry of Default"
       },
       {
         "date": "2/15/2024",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "1/30/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Complaint"
       },
       {
         "date": "1/30/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Notice of Lis Pendens"
       },
       {
         "date": "1/30/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Civil Cover Sheet"
       },
       {
         "date": "1/30/2024",
-        "entry": "Available at Courthouse"
+        "entry": "FASTAR Certificate"
       },
       {
         "date": "1/30/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "1/30/2024",
-        "entry": "Available at Courthouse"
+        "entry": "All Money Receipts 3712799"
       }
     ],
     "judgment_amount": null
   },
   "PIMA-COURT-C20241050": {
-    "story": "Case: C20241050 | Sale: Unknown\nGLADDEN FARMS COMMUNITY ASSOCIATION sued ANTHONY GUIDA for HOA lien foreclosure.",
+    "story": "Case: C20241050 | Sale: Unknown\n\nGLADDEN FARMS COMMUNITY ASSOCIATION sued ANTHONY GUIDA for HOA lien foreclosure.\n\u2022 Sale (4/25/2024): Stipulation to Entry of Judgment and Decree of Foreclosure a\n\u2022 Certificate (3/5/2024): CERTIFICATE OF SERVICE\n\u2022 Complaint filed (2/22/2024)\n\u2022 Certificate (2/22/2024): FASTAR Certificate\n\u2022 Summons issued (2/22/2024)",
     "red_flags": [],
     "people": [
-      {
-        "name": "GLADDEN FARMS COMMUNITY ASSOCIATION",
-        "role": "Plaintiff (HOA/Corp)",
-        "notes": ""
-      },
       {
         "name": "ANTHONY GUIDA",
         "role": "Defendant (Former Owner)",
@@ -4383,196 +4459,196 @@ const INTEL_DATA = {
         "email": "",
         "notes": "Named in C20241050. Needs skip trace for current contact info.",
         "best_leads": "\u2022 Last known property: 12441 N WILLOWVALE DR (FCV: $332,587)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "GLADDEN FARMS COMMUNITY ASSOCIATION",
+        "role": "Plaintiff (HOA)",
+        "notes": ""
       }
     ],
     "docket": [
       {
         "date": "5/9/2024",
-        "entry": "Available at Courthouse"
+        "entry": "JUDGMENT"
       },
       {
         "date": "4/25/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Stipulation to Entry of Judgment and Decree of Foreclosure and Order of Sale"
       },
       {
         "date": "4/25/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Covenant Not to Execute"
       },
       {
         "date": "3/5/2024",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "2/22/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Complaint"
       },
       {
         "date": "2/22/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Notice of Lis Pendens"
       },
       {
         "date": "2/22/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Civil Cover Sheet"
       },
       {
         "date": "2/22/2024",
-        "entry": "Available at Courthouse"
+        "entry": "FASTAR Certificate"
       },
       {
         "date": "2/22/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "2/22/2024",
-        "entry": "Available at Courthouse"
+        "entry": "All Money Receipts 3720689"
       }
     ],
     "judgment_amount": null
   },
   "PIMA-COURT-C20246663": {
-    "story": "Case: C20246663 | Sale: Unknown\nALTA VISTA PROPERTY ASSOCIATION INC. sued WILLPOWER PROPERTIES, LLC for HOA lien foreclosure.",
+    "story": "Case: C20246663 | Sale: Unknown\n\nALTA VISTA PROPERTY ASSOCIATION INC. sued Unknown for HOA lien foreclosure.\n\u2022 Default judgment (4/28/2025): DEFAULT JUDGMENT\n\u2022 Sale (4/2/2025): IN CHAMBERS ORDER VACATING JUDGMENT AND DECREE OF FORECLOSUR\n\u2022 Default judgment (2/27/2025): Motion for Default Judgment by Hearing\n\u2022 Default judgment (2/27/2025): Exhibit A to Motion for Default Judgment by Hearing\n\u2022 Default judgment (2/27/2025): Exhibit B to Motion for Default Judgment by Hearing\n\u2022 Default entered (1/21/2025)\n\u2022 Default entered (1/21/2025)\n\u2022 Certificate (12/31/2024): CERTIFICATE OF SERVICE\n\u2022 Certificate (12/5/2024): CERTIFICATE OF SERVICE\n\u2022 Certificate (11/6/2024): Rule 102(a) FASTAR Certificate\n\u2022 Complaint filed (11/5/2024)\n\u2022 Summons issued (11/5/2024)\n\u2022 Complaint filed (11/5/2024)",
     "red_flags": [],
     "people": [
       {
         "name": "ALTA VISTA PROPERTY ASSOCIATION INC.",
-        "role": "Plaintiff (HOA/Corp)",
+        "role": "Plaintiff (HOA)",
         "notes": ""
       },
       {
         "name": "WILLPOWER PROPERTIES, LLC, AN ARIZONA LIMITED LIABILITY",
-        "role": "Plaintiff (HOA/Corp)",
-        "notes": ""
+        "role": "Defendant (Lienholder)",
+        "notes": "Has a lien on the property. May have claim on surplus."
       }
     ],
     "docket": [
       {
         "date": "12/3/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Satisfaction of Judgment"
       },
       {
         "date": "12/3/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Notice of Release of Lis Pendens"
       },
       {
         "date": "4/28/2025",
-        "entry": "Available"
+        "entry": "DEFAULT JUDGMENT"
       },
       {
         "date": "4/25/2025",
-        "entry": "Available at Courthouse"
+        "entry": "JUDGMENT"
       },
       {
         "date": "4/23/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Notice of Lodging Proposed Form of Judgment"
       },
       {
         "date": "4/2/2025",
-        "entry": "Available at Courthouse"
+        "entry": "IN CHAMBERS ORDER VACATING JUDGMENT AND DECREE OF FORECLOSURE AND ORDER OF SALE/SETTING HEARING"
       },
       {
         "date": "2/28/2025",
-        "entry": "Available at Courthouse"
+        "entry": "JUDGMENT"
       },
       {
         "date": "2/27/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Motion for Default Judgment by Hearing"
       },
       {
         "date": "2/27/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Application for Attorney Fees"
       },
       {
         "date": "2/27/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Affidavit in Support of Award of Attorney Fees"
       },
       {
         "date": "2/27/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Verified Statement of Costs"
       },
       {
         "date": "2/27/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Notice of Lodging Proposed Form of Judgment"
       },
       {
         "date": "2/27/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit A to Motion for Default Judgment by Hearing"
       },
       {
         "date": "2/27/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit B to Motion for Default Judgment by Hearing"
       },
       {
         "date": "2/27/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit A to Affidavit in Support of Award of Attorney Fees"
       },
       {
         "date": "2/27/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit A to Verified Statement of Costs"
       },
       {
         "date": "1/21/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Application For Entry of Default"
       },
       {
         "date": "1/21/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit A to Application for Entry of Default"
       },
       {
         "date": "1/6/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Rule 4.1(i) Affidavit of Service By United States Mail"
       },
       {
         "date": "1/6/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit A to Rule 4.1(i) Affidavit of Service By United States Mail"
       },
       {
         "date": "12/31/2024",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "12/5/2024",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "11/6/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Rule 102(a) FASTAR Certificate"
       },
       {
         "date": "11/6/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Notice of Lis Pendens"
       },
       {
         "date": "11/5/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Complaint"
       },
       {
         "date": "11/5/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Civil Cover Sheet"
       },
       {
         "date": "11/5/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "11/5/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit A to Complaint"
       },
       {
         "date": "11/5/2024",
-        "entry": "Available at Courthouse"
+        "entry": "All Money Receipts 3850422"
       }
     ],
     "judgment_amount": null
   },
   "PIMA-COURT-C20246660": {
-    "story": "Case: C20246660 | Sale: Unknown\nSTAR VALLEY MASTER HOMEOWNERS ASSOCIATION sued ALEJ, RO LEON JR for HOA lien foreclosure.",
+    "story": "Case: C20246660 | Sale: Unknown\n\nSTAR VALLEY MASTER HOMEOWNERS ASSOCIATION sued ALEJANDRO LEON JR, JESSICA MATUS for HOA lien foreclosure.\n\u2022 Default judgment (7/23/2025): CIVIL DEFAULT JUDGMENT\n\u2022 Default judgment (6/2/2025): Motion for Default Judgment by Hearing\n\u2022 Default judgment (6/2/2025): Exhibit A to Motion for Default Judgment by Hearing\n\u2022 Default judgment (6/2/2025): Exhibit B to Motion for Default Judgment by Hearing\n\u2022 Stipulation (6/2/2025): Stipulation to Entry of Judgment\n\u2022 Stipulation (6/2/2025): Exhibit A to Stipulation to Entry of Judgment\n\u2022 Default entered (1/14/2025)\n\u2022 Default entered (1/14/2025)\n\u2022 Default entered (1/14/2025)\n\u2022 Default entered (1/14/2025)\n\u2022 Certificate (12/3/2024): CERTIFICATE OF SERVICE\n\u2022 Certificate (12/3/2024): CERTIFICATE OF SERVICE\n\u2022 Certificate (12/3/2024): CERTIFICATE OF SERVICE\n\u2022 Certificate (12/3/2024): CERTIFICATE OF SERVICE\n\u2022 Certificate (12/3/2024): CERTIFICATE OF SERVICE\n\u2022 Certificate (12/3/2024): CERTIFICATE OF SERVICE\n\u2022 Certificate (12/3/2024): CERTIFICATE OF SERVICE\n\u2022 Summons issued (11/20/2024)\n\u2022 Summons issued (11/20/2024)\n\u2022 Summons issued (11/20/2024)\n\u2022 Certificate (11/6/2024): Rule 102(a) FASTAR Certificate\n\u2022 Complaint filed (11/5/2024)\n\u2022 Summons issued (11/5/2024)\n\u2022 Summons issued (11/5/2024)\n\u2022 Complaint filed (11/5/2024)\n\u2022 Complaint filed (11/5/2024)",
     "red_flags": [],
     "people": [
-      {
-        "name": "STAR VALLEY MASTER HOMEOWNERS ASSOCIATION",
-        "role": "Plaintiff (HOA/Corp)",
-        "notes": ""
-      },
       {
         "name": "ALEJANDRO LEON JR",
         "role": "Defendant (Former Owner)",
@@ -4592,214 +4668,214 @@ const INTEL_DATA = {
         "best_leads": "\u2022 Last known property: 9655 N BROADMEDE ST (FCV: $275,488)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
       },
       {
-        "name": "DISCOVER BANK",
-        "role": "Plaintiff (HOA/Corp)",
+        "name": "STAR VALLEY MASTER HOMEOWNERS ASSOCIATION",
+        "role": "Plaintiff (HOA)",
         "notes": ""
+      },
+      {
+        "name": "DISCOVER BANK",
+        "role": "Defendant (Lienholder)",
+        "notes": "Has a lien on the property. May have claim on surplus."
       },
       {
         "name": "MIDLAND CREDIT MANAGEMENT, INC.",
-        "role": "Plaintiff (HOA/Corp)",
-        "notes": ""
+        "role": "Defendant (Lienholder)",
+        "notes": "Has a lien on the property. May have claim on surplus."
       },
       {
         "name": "CAPITAL ONE, NATIONAL ASSOCIATION",
-        "role": "Plaintiff (HOA/Corp)",
-        "notes": ""
+        "role": "Defendant (Lienholder)",
+        "notes": "Has a lien on the property. May have claim on surplus."
       }
     ],
     "docket": [
       {
         "date": "10/13/2025",
-        "entry": "Available at Courthouse"
+        "entry": "JUDGMENT"
       },
       {
         "date": "9/5/2025",
-        "entry": "Available at Courthouse"
+        "entry": "JUDGMENT"
       },
       {
         "date": "9/2/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Notice of Lodging Proposed Form of Judgment"
       },
       {
         "date": "7/23/2025",
-        "entry": "Available"
+        "entry": "CIVIL DEFAULT JUDGMENT"
       },
       {
         "date": "6/24/2025",
-        "entry": "Available at Courthouse"
+        "entry": "IN CHAMBERS"
       },
       {
         "date": "6/17/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Notice of Clarification"
       },
       {
         "date": "6/3/2025",
-        "entry": "Available at Courthouse"
+        "entry": "NOTICE OF HEARING"
       },
       {
         "date": "6/3/2025",
-        "entry": "Available at Courthouse"
+        "entry": "IN CHAMBERS"
       },
       {
         "date": "6/2/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Motion for Default Judgment by Hearing"
       },
       {
         "date": "6/2/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Application for Attorney Fees"
       },
       {
         "date": "6/2/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Affidavit in Support of Award of Attorney Fees"
       },
       {
         "date": "6/2/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Verified Statement of Taxable and Non-Taxable Costs"
       },
       {
         "date": "6/2/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Notice of Lodging Proposed Form of Judgment"
       },
       {
         "date": "6/2/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit A to Motion for Default Judgment by Hearing"
       },
       {
         "date": "6/2/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit B to Motion for Default Judgment by Hearing"
       },
       {
         "date": "6/2/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit A to Affidavit in Support of Award of Attorney Fees"
       },
       {
         "date": "6/2/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit A to Verified Statement of Taxable and Non-Taxable Costs"
       },
       {
         "date": "6/2/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Stipulation to Entry of Judgment"
       },
       {
         "date": "6/2/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit A to Stipulation to Entry of Judgment"
       },
       {
         "date": "1/14/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Application For Entry of Default"
       },
       {
         "date": "1/14/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit A to Application For Entry of Default"
       },
       {
         "date": "1/14/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit B to Application For Entry of Default"
       },
       {
         "date": "1/14/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit C to Application For Entry of Default"
       },
       {
         "date": "12/4/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Rule 4.2 (h) Affidavit of Service by United States Mail"
       },
       {
         "date": "12/4/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit A to Rule 4.2 (h) Affidavit of Service by United States Mail"
       },
       {
         "date": "12/3/2024",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "12/3/2024",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "12/3/2024",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "12/3/2024",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "12/3/2024",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "12/3/2024",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "12/3/2024",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "11/20/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Praecipe"
       },
       {
         "date": "11/20/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "11/20/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "11/20/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "11/6/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Rule 102(a) FASTAR Certificate"
       },
       {
         "date": "11/6/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Notice of Lis Pendens"
       },
       {
         "date": "11/5/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Complaint"
       },
       {
         "date": "11/5/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Civil Cover Sheet"
       },
       {
         "date": "11/5/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "11/5/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "11/5/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit A to Complaint"
       },
       {
         "date": "11/5/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit B to Complaint"
       },
       {
         "date": "11/5/2024",
-        "entry": "Available at Courthouse"
+        "entry": "All Money Receipts 3850290"
       }
     ],
     "judgment_amount": null
   },
   "PIMA-COURT-C20250255": {
-    "story": "Case: C20250255 | Sale: Unknown\nSTAR VALLEY MASTER HOMEOWNERS ASSOCIATION sued GORETT VALENZUELA for HOA lien foreclosure.",
+    "story": "Case: C20250255 | Sale: Unknown\n\nSTAR VALLEY MASTER HOMEOWNERS ASSOCIATION sued GORETT VALENZUELA, SECRETARY OF HOUSING AND URBAN DEVELOPMENT for HOA lien foreclosure.\n\u2022 Writ/Execution (10/2/2025): RETURN ON PROPERTY EXECUTION\n\u2022 Default judgment (5/29/2025): CIVIL DEFAULT JUDGMENT\n\u2022 Default judgment (4/28/2025): Motion for Default Judgment by Hearing\n\u2022 Default judgment (4/28/2025): Exhibit A to Motion for Default Judgment by Hearing\n\u2022 Default judgment (4/28/2025): Exhibit B to Motion for Default Judgment by Hearing\n\u2022 Default entered (4/7/2025)\n\u2022 Default entered (4/7/2025)\n\u2022 Default entered (4/7/2025)\n\u2022 Default entered (4/7/2025)\n\u2022 Stipulation (4/1/2025): Stipulation to Judgment as to Defendant Secretary of Housing\n\u2022 Certificate (2/11/2025): CERTIFICATE OF SERVICE\n\u2022 Certificate (2/5/2025): CERTIFICATE OF SERVICE\n\u2022 Certificate (2/5/2025): CERTIFICATE OF SERVICE\n\u2022 Complaint filed (2/3/2025)\n\u2022 Certificate (1/10/2025): Rule 102(a) FASTAR Certificate\n\u2022 Complaint filed (1/9/2025)\n\u2022 Summons issued (1/9/2025)\n\u2022 Summons issued (1/9/2025)\n\u2022 Summons issued (1/9/2025)\n\u2022 Complaint filed (1/9/2025)\n\u2022 Complaint filed (1/9/2025)",
     "red_flags": [],
     "people": [
-      {
-        "name": "STAR VALLEY MASTER HOMEOWNERS ASSOCIATION",
-        "role": "Plaintiff (HOA/Corp)",
-        "notes": ""
-      },
       {
         "name": "GORETT VALENZUELA",
         "role": "Defendant (Former Owner)",
@@ -4819,192 +4895,192 @@ const INTEL_DATA = {
         "best_leads": "\u2022 Last known property: 6767 W BRIGHTWATER WY (FCV: $247,580)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
       },
       {
-        "name": "LENDMARK FINANCIAL SERVICES, LLC",
-        "role": "Plaintiff (HOA/Corp)",
+        "name": "STAR VALLEY MASTER HOMEOWNERS ASSOCIATION",
+        "role": "Plaintiff (HOA)",
         "notes": ""
+      },
+      {
+        "name": "LENDMARK FINANCIAL SERVICES, LLC",
+        "role": "Defendant (Lienholder)",
+        "notes": "Has a lien on the property. May have claim on surplus."
       }
     ],
     "docket": [
       {
         "date": "10/2/2025",
-        "entry": "Available at Courthouse"
+        "entry": "RETURN ON PROPERTY EXECUTION"
       },
       {
         "date": "8/13/2025",
-        "entry": "Available at Courthouse"
+        "entry": "PRAECIPE"
       },
       {
         "date": "6/5/2025",
-        "entry": "Available at Courthouse"
+        "entry": "JUDGMENT"
       },
       {
         "date": "5/29/2025",
-        "entry": "Available"
+        "entry": "CIVIL DEFAULT JUDGMENT"
       },
       {
         "date": "4/30/2025",
-        "entry": "Available at Courthouse"
+        "entry": "NOTICE OF HEARING"
       },
       {
         "date": "4/28/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Motion for Default Judgment by Hearing"
       },
       {
         "date": "4/28/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Application for Attorney Fees"
       },
       {
         "date": "4/28/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Affidavit in Support of Award of Attorney Fees"
       },
       {
         "date": "4/28/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Verified Statement of Taxable and Non-Taxable Costs"
       },
       {
         "date": "4/28/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Notice of Lodging Proposed Form of Judgment"
       },
       {
         "date": "4/28/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit A to Motion for Default Judgment by Hearing"
       },
       {
         "date": "4/28/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit B to Motion for Default Judgment by Hearing"
       },
       {
         "date": "4/28/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit A to Affidavit in Support of Award of Attorney Fees"
       },
       {
         "date": "4/28/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit A to Verified Statement of Taxable and Non-Taxable Costs"
       },
       {
         "date": "4/7/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Application for Entry of Default"
       },
       {
         "date": "4/7/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit A to Application for Entry of Default"
       },
       {
         "date": "4/7/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit B to Application for Entry of Default"
       },
       {
         "date": "4/7/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit C to Application for Entry of Default"
       },
       {
         "date": "4/1/2025",
-        "entry": "Available at Courthouse"
+        "entry": "ORDER"
       },
       {
         "date": "4/1/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Stipulation to Judgment as to Defendant Secretary of Housing and Urban Development Only"
       },
       {
         "date": "2/28/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Rule 4.1(i) Affidavit of Service By United States Mail"
       },
       {
         "date": "2/28/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit A to Rule 4.1(i) Affidavit of Service By United States Mail"
       },
       {
         "date": "2/27/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Rule 4.2(C) Affidavit of Service By United States Mail"
       },
       {
         "date": "2/27/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit A to Rule 4.2(C) Affidavit of Service By United States Mail"
       },
       {
         "date": "2/27/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit B to Rule 4.2(C) Affidavit of Service By United States Mail"
       },
       {
         "date": "2/27/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit C to Rule 4.2(C) Affidavit of Service By United States Mail"
       },
       {
         "date": "2/27/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit D to Rule 4.2(C) Affidavit of Service By United States Mail"
       },
       {
         "date": "2/11/2025",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "2/5/2025",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "2/5/2025",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "2/3/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Notice of Addition to Exhibit B to Complaint"
       },
       {
         "date": "2/3/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit A to Notice"
       },
       {
         "date": "1/10/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Rule 102(a) FASTAR Certificate"
       },
       {
         "date": "1/10/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Notice of Lis Pendens"
       },
       {
         "date": "1/9/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Complaint"
       },
       {
         "date": "1/9/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Civil Cover Sheet"
       },
       {
         "date": "1/9/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "1/9/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "1/9/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "1/9/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit A to Complaint"
       },
       {
         "date": "1/9/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit B to Complaint"
       },
       {
         "date": "1/9/2025",
-        "entry": "Available at Courthouse"
+        "entry": "All Money Receipts 3886575"
       }
     ],
     "judgment_amount": null
   },
   "PIMA-COURT-C20244148": {
-    "story": "Case: C20244148 | Sale: Unknown\nSTAR VALLEY MASTER HOMEOWNERS ASSOCIATION sued KARIAN A FIMBRES for HOA lien foreclosure.",
+    "story": "Case: C20244148 | Sale: Unknown\n\nSTAR VALLEY MASTER HOMEOWNERS ASSOCIATION sued KARIAN A FIMBRES, SECRETARY OF HOUSING AND URBAN DEVELOPMENT (HUD) for HOA lien foreclosure.\n\u2022 Sale (11/25/2024): Stipulation to Entry of Judgment and Decree of Foreclosure a\n\u2022 Default judgment (10/21/2024): PLAINTIFF'S MOTION FOR ENTRY OF DEFAULT JUDGMENT\n\u2022 Default entered (10/7/2024)\n\u2022 Stipulation (9/25/2024): Stipulation to Judgment as to Defendant HUD\n\u2022 Default judgment (9/18/2024): NOTICE OF LODGING ORDER ENTERING DEFAULT JUDGMENT AGAINST DE\n\u2022 Default entered (9/18/2024)\n\u2022 Default entered (8/15/2024)\n\u2022 Default entered (8/15/2024)\n\u2022 Certificate (8/2/2024): CERTIFICATE OF SERVICE\n\u2022 Certificate (8/2/2024): CERTIFICATE OF SERVICE\n\u2022 Certificate (7/24/2024): CERTIFICATE OF SERVICE\n\u2022 Certificate (7/24/2024): CERTIFICATE OF SERVICE\n\u2022 Certificate (7/24/2024): CERTIFICATE OF SERVICE\n\u2022 Complaint filed (7/16/2024)\n\u2022 Certificate (7/16/2024): FASTAR Certificate\n\u2022 Summons issued (7/16/2024)\n\u2022 Summons issued (7/16/2024)\n\u2022 Summons issued (7/16/2024)",
     "red_flags": [],
     "people": [
-      {
-        "name": "STAR VALLEY MASTER HOMEOWNERS ASSOCIATION",
-        "role": "Plaintiff (HOA/Corp)",
-        "notes": ""
-      },
       {
         "name": "KARIAN A FIMBRES",
         "role": "Defendant (Former Owner)",
@@ -5024,176 +5100,176 @@ const INTEL_DATA = {
         "best_leads": "\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
       },
       {
-        "name": "NORTHWEST HOSPITAL, LLC",
-        "role": "Plaintiff (HOA/Corp)",
+        "name": "STAR VALLEY MASTER HOMEOWNERS ASSOCIATION",
+        "role": "Plaintiff (HOA)",
         "notes": ""
+      },
+      {
+        "name": "NORTHWEST HOSPITAL, LLC",
+        "role": "Defendant (Lienholder)",
+        "notes": "Has a lien on the property. May have claim on surplus."
       }
     ],
     "docket": [
       {
         "date": "11/26/2024",
-        "entry": "Available at Courthouse"
+        "entry": "JUDGMENT"
       },
       {
         "date": "11/25/2024",
-        "entry": "Available at Courthouse"
+        "entry": "COVENANT NOT TO EXECUTE"
       },
       {
         "date": "11/25/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Stipulation to Entry of Judgment and Decree of Foreclosure and Order of Sale"
       },
       {
         "date": "10/21/2024",
-        "entry": "Available"
+        "entry": "PLAINTIFF'S MOTION FOR ENTRY OF DEFAULT JUDGMENT"
       },
       {
         "date": "10/21/2024",
-        "entry": "Available at Courthouse"
+        "entry": "JUDGMENT"
       },
       {
         "date": "10/7/2024",
-        "entry": "Available"
+        "entry": "DEFAULT HEARING"
       },
       {
         "date": "9/25/2024",
-        "entry": "Available at Courthouse"
+        "entry": "ORDER"
       },
       {
         "date": "9/25/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Stipulation to Judgment as to Defendant HUD"
       },
       {
         "date": "9/18/2024",
-        "entry": "Available at Courthouse"
+        "entry": "ORDER"
       },
       {
         "date": "9/18/2024",
-        "entry": "Available at Courthouse"
+        "entry": "NOTICE OF LODGING ORDER ENTERING DEFAULT JUDGMENT AGAINST DEFENDANT NORTHWEST HOSPITAL, LLC D/B/A N"
       },
       {
         "date": "9/18/2024",
-        "entry": "Available at Courthouse"
+        "entry": "PLAINTIFF''S MOTION TO SET A DEFAULT HEARING AND TO APPEAR TELEPHONICALLY"
       },
       {
         "date": "8/19/2024",
-        "entry": "Available at Courthouse"
+        "entry": "ORDER"
       },
       {
         "date": "8/16/2024",
-        "entry": "Available at Courthouse"
+        "entry": "MOTION TO VACATE ORDER TO SHOW CAUSE HEARING"
       },
       {
         "date": "8/15/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Application for Entry of Default"
       },
       {
         "date": "8/15/2024",
-        "entry": "Available at Courthouse"
+        "entry": "AFFIDAVIT ON DEFAULT AND ENTRY OF DEFAULT"
       },
       {
         "date": "8/2/2024",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "8/2/2024",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "7/29/2024",
-        "entry": "Available at Courthouse"
+        "entry": "ORDER"
       },
       {
         "date": "7/29/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Expedited Stip to Continue Hearing"
       },
       {
         "date": "7/24/2024",
-        "entry": "Available at Courthouse"
+        "entry": "IN CHAMBERS - MOTION TO APPEAR TELEPHONICALLY"
       },
       {
         "date": "7/24/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Motion to Appear Telephonically or by Video Conference at the Evidentiary Injunction Hearing"
       },
       {
         "date": "7/24/2024",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "7/24/2024",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "7/24/2024",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "7/17/2024",
-        "entry": "Available at Courthouse"
+        "entry": "ORDER"
       },
       {
         "date": "7/16/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Plaintiff's Request to Schedule Hearing Re Order to Show Cause"
       },
       {
         "date": "7/16/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Request for Preliminary and Permanent Injunctions"
       },
       {
         "date": "7/16/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Lis Pendens"
       },
       {
         "date": "7/16/2024",
-        "entry": "Available at Courthouse"
+        "entry": "VERIFIED COMPLAINT"
       },
       {
         "date": "7/16/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Civil Cover Sheet"
       },
       {
         "date": "7/16/2024",
-        "entry": "Available at Courthouse"
+        "entry": "FASTAR Certificate"
       },
       {
         "date": "7/16/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "7/16/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "7/16/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "7/16/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibits A-D"
       },
       {
         "date": "7/16/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit E"
       },
       {
         "date": "7/16/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibits F-I"
       },
       {
         "date": "7/16/2024",
-        "entry": "Available at Courthouse"
+        "entry": "All Money Receipts 3787768"
       }
     ],
     "judgment_amount": null
   },
   "PIMA-COURT-C20245087": {
-    "story": "Case: C20245087 | Sale: Unknown\nORANGE GROVE MOBILE ESTATES ASSOCIATION sued REW JAMES HERREN for HOA lien foreclosure.\nJudgment: $27,292.64",
+    "story": "Case: C20245087 | Sale: Unknown\n\nORANGE GROVE MOBILE ESTATES ASSOCIATION sued ANDREW JAMES HERREN for HOA lien foreclosure.\n\u2022 Writ/Execution (7/7/2025): RETURN OF PROPERTY EXECUTION\n\u2022 Sale (2/11/2025): Motion to Correct Clerical Error in Order for Judgment and D\n\u2022 Default judgment (1/31/2025): DEFAULT JUDGMENT\n\u2022 Default judgment (12/19/2024): Motion and Affidavit for Foreclosure Judgment by Default wit\n\u2022 Sale (12/19/2024): Notice of Lodging Order for Judgment and Decree of Foreclosu\n\u2022 Default entered (10/29/2024)\n\u2022 Default entered (10/29/2024)\n\u2022 Default entered (10/29/2024)\n\u2022 Default entered (10/29/2024)\n\u2022 Certificate (9/12/2024): CERTIFICATE OF SERVICE\n\u2022 Complaint filed (8/27/2024)\n\u2022 Summons issued (8/27/2024)\n\u2022 Summons issued (8/27/2024)\n\u2022 Summons issued (8/27/2024)\n\u2022 Summons issued (8/27/2024)\n\u2022 Complaint filed (8/27/2024)\n\u2022 Complaint filed (8/27/2024)\n\u2022 Complaint filed (8/27/2024)\n\u2022 Complaint filed (8/27/2024)\n\u2022 Complaint filed (8/27/2024)\n\nJudgment: $27,292.64",
     "red_flags": [],
     "people": [
-      {
-        "name": "ORANGE GROVE MOBILE ESTATES ASSOCIATION",
-        "role": "Plaintiff (HOA/Corp)",
-        "notes": ""
-      },
       {
         "name": "ANDREW JAMES HERREN",
         "role": "Defendant (Former Owner)",
@@ -5202,145 +5278,145 @@ const INTEL_DATA = {
         "email": "",
         "notes": "Named in C20245087. Needs skip trace for current contact info.",
         "best_leads": "\u2022 Last known property: 14135 S RENEGADE AV (FCV: $242,574)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "ORANGE GROVE MOBILE ESTATES ASSOCIATION",
+        "role": "Plaintiff (HOA)",
+        "notes": ""
       }
     ],
     "docket": [
       {
         "date": "7/10/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Full Satisfaction of Judgment and Release of Lien and Lis Pendens as to Defendants"
       },
       {
         "date": "7/7/2025",
-        "entry": "Available at Courthouse"
+        "entry": "RETURN OF PROPERTY EXECUTION"
       },
       {
         "date": "3/6/2025",
-        "entry": "Available at Courthouse"
+        "entry": "JUDGMENT"
       },
       {
         "date": "2/11/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Motion to Correct Clerical Error in Order for Judgment and Decree of Foreclosure and Order of Sale"
       },
       {
         "date": "1/31/2025",
-        "entry": "Available"
+        "entry": "DEFAULT JUDGMENT"
       },
       {
         "date": "1/27/2025",
-        "entry": "Available at Courthouse"
+        "entry": "JUDGMENT"
       },
       {
         "date": "12/23/2024",
-        "entry": "Available at Courthouse"
+        "entry": "NOTICE OF HEARING"
       },
       {
         "date": "12/19/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Motion and Affidavit for Foreclosure Judgment by Default with Hearing"
       },
       {
         "date": "12/19/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Affidavit in Support of Attorney''s Fees"
       },
       {
         "date": "12/19/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Statement of Costs and Notice of Taxation of Costs"
       },
       {
         "date": "12/19/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Notice of Lodging Order for Judgment and Decree of Foreclosure and Order of Sale"
       },
       {
         "date": "12/19/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Affidavit - Exhibit A"
       },
       {
         "date": "12/19/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Affidavit - Exhibit B"
       },
       {
         "date": "12/19/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Judgment - Exhibit 1"
       },
       {
         "date": "10/29/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Application for Default"
       },
       {
         "date": "10/29/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Affidavit of Default"
       },
       {
         "date": "10/29/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Notice of Application for Entry of Default"
       },
       {
         "date": "10/29/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Affidavit of Default - Exhibit A"
       },
       {
         "date": "9/12/2024",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "8/27/2024",
-        "entry": "Available at Courthouse"
+        "entry": "HERREN Foreclosure Complaint"
       },
       {
         "date": "8/27/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Civil Cover Sheet"
       },
       {
         "date": "8/27/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "8/27/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "8/27/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "8/27/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "8/27/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 - Complaint"
       },
       {
         "date": "8/27/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 2 - Complaint"
       },
       {
         "date": "8/27/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 3 - Complaint"
       },
       {
         "date": "8/27/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 4 - Complaint"
       },
       {
         "date": "8/27/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 5 - Complaint"
       },
       {
         "date": "8/27/2024",
-        "entry": "Available at Courthouse"
+        "entry": "All Money Receipts 3809907"
       }
     ],
     "judgment_amount": 27292.64
   },
   "PIMA-COURT-C20246509": {
-    "story": "Case: C20246509 | Sale: $33,500.00\nSAGUARO BLOOM MASTER COMMUNITY ASSOCIATION sued AMBER N PHILLIPS for HOA lien foreclosure.",
+    "story": "Case: C20246509 | Sale: $33,500.00\n\nSAGUARO BLOOM MASTER COMMUNITY ASSOCIATION sued AMBER N PHILLIPS, CHRISTOPHER J PHILLIPS for HOA lien foreclosure.\n\u2022 Sale (5/20/2025): Stipulation to Entry of Judgment and Decree of Foreclosure a\n\u2022 Certificate (3/28/2025): CERTIFICATE OF SERVICE\n\u2022 Certificate (3/28/2025): CERTIFICATE OF SERVICE\n\u2022 \u26a0\ufe0f NOTICE OF IMPENDING DISMISSAL (1/6/2025)\n\u2022 Complaint filed (10/30/2024)\n\u2022 Certificate (10/30/2024): FASTAR Certificate\n\u2022 Summons issued (10/30/2024)\n\u2022 Summons issued (10/30/2024)",
     "red_flags": [],
     "people": [
-      {
-        "name": "SAGUARO BLOOM MASTER COMMUNITY ASSOCIATION",
-        "role": "Plaintiff (HOA/Corp)",
-        "notes": ""
-      },
       {
         "name": "AMBER N PHILLIPS",
         "role": "Defendant (Former Owner)",
@@ -5358,270 +5434,289 @@ const INTEL_DATA = {
         "email": "",
         "notes": "Named in C20246509. Needs skip trace for current contact info.",
         "best_leads": "\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "SAGUARO BLOOM MASTER COMMUNITY ASSOCIATION",
+        "role": "Plaintiff (HOA)",
+        "notes": ""
       }
     ],
     "docket": [
       {
         "date": "5/22/2025",
-        "entry": "Available at Courthouse"
+        "entry": "JUDGMENT"
       },
       {
         "date": "5/20/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Stipulation to Entry of Judgment and Decree of Foreclosure and Order of Sale"
       },
       {
         "date": "5/20/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Covenant Not to Execute"
       },
       {
         "date": "3/28/2025",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "3/28/2025",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "2/3/2025",
-        "entry": "Available at Courthouse"
+        "entry": "ORDER"
       },
       {
         "date": "1/31/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Motion for Extension of Time to Serve"
       },
       {
         "date": "1/6/2025",
-        "entry": "Available"
+        "entry": "NOTICE OF IMPENDING DISMISSAL"
       },
       {
         "date": "10/30/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Complaint"
       },
       {
         "date": "10/30/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Notice of Lis Pendens"
       },
       {
         "date": "10/30/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Civil Cover Sheet"
       },
       {
         "date": "10/30/2024",
-        "entry": "Available at Courthouse"
+        "entry": "FASTAR Certificate"
       },
       {
         "date": "10/30/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "10/30/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "10/30/2024",
-        "entry": "Available at Courthouse"
+        "entry": "All Money Receipts 3845442"
       }
     ],
     "judgment_amount": null
   },
   "PIMA-COURT-C20250277": {
-    "story": "Case: C20250277 | Sale: $9,035.00\nNEW DAWN ENTERPRISES, L.L.C. ET AL. sued STEVEN MACHOLTZ for HOA lien foreclosure.",
+    "story": "Case: C20250277 | Sale: $9,035.00\n\nNEW DAWN ENTERPRISES, L.L.C. sued STEVEN MACHOLTZ, ANDREA KONOVE for HOA lien foreclosure.\n\u2022 \u26a0\ufe0f DISMISSAL CALENDAR NOTICE (8/15/2025)\n\u2022 \u26a0\ufe0f Notice of Voluntary Dismissal without Prejudice of Unison Ba (3/4/2025)\n\u2022 Complaint filed (3/4/2025)\n\u2022 Summons issued (1/17/2025)\n\u2022 Certificate (1/16/2025): CERTIFICATE OF SERVICE\n\u2022 Certificate (1/15/2025): CERTIFICATE OF SERVICE\n\u2022 Summons issued (1/13/2025)\n\u2022 Complaint filed (1/10/2025)\n\u2022 Certificate (1/10/2025): FASTAR Certificate\n\u2022 Summons issued (1/10/2025)\n\u2022 Summons issued (1/10/2025)\n\u2022 Summons issued (1/10/2025)\n\u2022 Summons issued (1/10/2025)\n\u2022 Summons issued (1/10/2025)\n\u2022 Summons issued (1/10/2025)\n\u2022 Summons issued (1/10/2025)\n\u2022 Summons issued (1/10/2025)\n\u2022 Summons issued (1/10/2025)\n\u2022 Summons issued (1/10/2025)",
     "red_flags": [],
     "people": [
       {
-        "name": "JOHN VALDATA",
-        "role": "Defendant (Former Owner)",
-        "address": "",
-        "phone": "",
-        "email": "",
-        "notes": "Named in C20250277. Needs skip trace for current contact info.",
-        "best_leads": "\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
-      },
-      {
         "name": "STEVEN MACHOLTZ",
         "role": "Defendant (Former Owner)",
-        "address": "",
+        "address": "NEW DAWN ENTERPRISES, L.L.C. ET AL. VS. STEVEN MACHOLTZ ET AL.",
         "phone": "",
         "email": "",
         "notes": "Named in C20250277. Needs skip trace for current contact info.",
-        "best_leads": "\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+        "best_leads": "\u2022 Last known property: NEW DAWN ENTERPRISES, L.L.C. ET AL. VS. STEVEN MACHOLTZ ET AL.\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
       },
       {
         "name": "ANDREA KONOVE",
         "role": "Defendant (Former Owner)",
-        "address": "",
+        "address": "NEW DAWN ENTERPRISES, L.L.C. ET AL. VS. STEVEN MACHOLTZ ET AL.",
         "phone": "",
         "email": "",
         "notes": "Named in C20250277. Needs skip trace for current contact info.",
-        "best_leads": "\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
-      },
-      {
-        "name": "SHEPHERD HILLS PARTNERS LLC",
-        "role": "Plaintiff (HOA/Corp)",
-        "notes": ""
+        "best_leads": "\u2022 Last known property: NEW DAWN ENTERPRISES, L.L.C. ET AL. VS. STEVEN MACHOLTZ ET AL.\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
       },
       {
         "name": "RSF ASSOCIATES, L.L.C.",
         "role": "Defendant (Former Owner)",
-        "address": "",
+        "address": "NEW DAWN ENTERPRISES, L.L.C. ET AL. VS. STEVEN MACHOLTZ ET AL.",
         "phone": "",
         "email": "",
         "notes": "Named in C20250277. Needs skip trace for current contact info.",
-        "best_leads": "\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
-      },
-      {
-        "name": "GROVE ASSOCIATES LLC",
-        "role": "Plaintiff (HOA/Corp)",
-        "notes": ""
+        "best_leads": "\u2022 Last known property: NEW DAWN ENTERPRISES, L.L.C. ET AL. VS. STEVEN MACHOLTZ ET AL.\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
       },
       {
         "name": "SANTA RITA PARTNERS, L.L.C.",
-        "role": "Plaintiff (HOA/Corp)",
-        "notes": ""
-      },
-      {
-        "name": "SANTA RITA SENIOR CARE LLC",
-        "role": "Plaintiff (HOA/Corp)",
-        "notes": ""
-      },
-      {
-        "name": "SANTA RITA SENIOR CARE I LLC",
-        "role": "Plaintiff (HOA/Corp)",
-        "notes": ""
-      },
-      {
-        "name": "UNISON BANK",
-        "role": "Plaintiff (HOA/Corp)",
-        "notes": ""
+        "role": "Defendant (Former Owner)",
+        "address": "NEW DAWN ENTERPRISES, L.L.C. ET AL. VS. STEVEN MACHOLTZ ET AL.",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20250277. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Last known property: NEW DAWN ENTERPRISES, L.L.C. ET AL. VS. STEVEN MACHOLTZ ET AL.\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
       },
       {
         "name": "TUCSON ELECTRIC POWER COMPANY",
-        "role": "Plaintiff (HOA/Corp)",
+        "role": "Defendant (Former Owner)",
+        "address": "NEW DAWN ENTERPRISES, L.L.C. ET AL. VS. STEVEN MACHOLTZ ET AL.",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20250277. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Last known property: NEW DAWN ENTERPRISES, L.L.C. ET AL. VS. STEVEN MACHOLTZ ET AL.\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "NEW DAWN ENTERPRISES, L.L.C.",
+        "role": "Plaintiff (HOA)",
         "notes": ""
       },
       {
-        "name": "ORANGE GROVE ASSOCIATES LLC",
-        "role": "Plaintiff (HOA/Corp)",
+        "name": "NEW DAWN ENTERPRISES, L.L.C.",
+        "role": "Plaintiff (HOA)",
         "notes": ""
+      },
+      {
+        "name": "JOHN VALDATA",
+        "role": "Plaintiff (HOA)",
+        "notes": ""
+      },
+      {
+        "name": "JOHN VALDATA",
+        "role": "Plaintiff (HOA)",
+        "notes": ""
+      },
+      {
+        "name": "SHEPHERD HILLS PARTNERS LLC",
+        "role": "Defendant (Lienholder)",
+        "notes": "Has a lien on the property. May have claim on surplus."
+      },
+      {
+        "name": "GROVE ASSOCIATES LLC",
+        "role": "Defendant (Lienholder)",
+        "notes": "Has a lien on the property. May have claim on surplus."
+      },
+      {
+        "name": "SANTA RITA SENIOR CARE LLC",
+        "role": "Defendant (Lienholder)",
+        "notes": "Has a lien on the property. May have claim on surplus."
+      },
+      {
+        "name": "SANTA RITA SENIOR CARE I LLC",
+        "role": "Defendant (Lienholder)",
+        "notes": "Has a lien on the property. May have claim on surplus."
+      },
+      {
+        "name": "UNISON BANK",
+        "role": "Defendant (Lienholder)",
+        "notes": "Has a lien on the property. May have claim on surplus."
+      },
+      {
+        "name": "ORANGE GROVE ASSOCIATES LLC",
+        "role": "Defendant (Lienholder)",
+        "notes": "Has a lien on the property. May have claim on surplus."
       }
     ],
     "docket": [
       {
         "date": "9/12/2025",
-        "entry": "Available at Courthouse"
+        "entry": "ORDER"
       },
       {
         "date": "8/29/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Stipulated Joint Scheduling Order"
       },
       {
         "date": "8/15/2025",
-        "entry": "Available"
+        "entry": "DISMISSAL CALENDAR NOTICE"
       },
       {
         "date": "7/11/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Defendants Reply in Support of Their Motion to Consolidate"
       },
       {
         "date": "3/4/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Notice of Voluntary Dismissal without Prejudice of Unison Bank & Tucson Electric Power Company Only"
       },
       {
         "date": "3/4/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Answer to Fraudulent Transfer Complaint"
       },
       {
         "date": "3/4/2025",
-        "entry": "Available at Courthouse"
+        "entry": "All Money Receipts 3910585"
       },
       {
         "date": "1/17/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Waiver of Service of Summons"
       },
       {
         "date": "1/16/2025",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "1/15/2025",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "1/13/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Praecipe"
       },
       {
         "date": "1/13/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "1/10/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Complaint"
       },
       {
         "date": "1/10/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Civil Cover Sheet"
       },
       {
         "date": "1/10/2025",
-        "entry": "Available at Courthouse"
+        "entry": "FASTAR Certificate"
       },
       {
         "date": "1/10/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "1/10/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "1/10/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "1/10/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "1/10/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "1/10/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "1/10/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "1/10/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "1/10/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "1/10/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "1/10/2025",
-        "entry": "Available at Courthouse"
+        "entry": "All Money Receipts 3887377"
       }
     ],
     "judgment_amount": null
   },
   "PIMA-COURT-C20247321": {
-    "story": "Case: C20247321 | Sale: Unknown\nORANGE GROVE MOBILE ESTATES ASSOCIATION sued THE JERRY M. POSSINGER LIVING TRUST DATED NOVEMBER 13, 2023 for HOA lien foreclosure.\nJudgment: $19,661.09",
+    "story": "Case: C20247321 | Sale: Unknown\n\nORANGE GROVE MOBILE ESTATES ASSOCIATION sued THE JERRY M. POSSINGER LIVING TRUST DATED NOVEMBER 13, 2023, JERRY M POSSINGER, TRUSTEE for HOA lien foreclosure.\n\u2022 Writ/Execution (9/24/2025): RETURN ON  PROPERTY EXECUTION\n\u2022 Default judgment (4/1/2025): CIVIL DEFAULT JUDGMENT\n\u2022 Default judgment (2/5/2025): Motion and Affidavit for Foreclosure Judgment by Default wit\n\u2022 Sale (2/5/2025): Notice of Lodging Order for Judgment and Decree of Foreclosu\n\u2022 Default entered (1/8/2025)\n\u2022 Default entered (1/8/2025)\n\u2022 Default entered (1/8/2025)\n\u2022 Certificate (12/16/2024): CERTIFICATE OF SERVICE\n\u2022 Complaint filed (12/5/2024)\n\u2022 Summons issued (12/5/2024)\n\u2022 Summons issued (12/5/2024)\n\u2022 Summons issued (12/5/2024)\n\u2022 Summons issued (12/5/2024)\n\u2022 Summons issued (12/5/2024)\n\u2022 Complaint filed (12/5/2024)\n\u2022 Complaint filed (12/5/2024)\n\u2022 Complaint filed (12/5/2024)\n\u2022 Complaint filed (12/5/2024)\n\nJudgment: $19,661.09",
     "red_flags": [],
     "people": [
-      {
-        "name": "ORANGE GROVE MOBILE ESTATES ASSOCIATION",
-        "role": "Plaintiff (HOA/Corp)",
-        "notes": ""
-      },
       {
         "name": "THE JERRY M. POSSINGER LIVING TRUST DATED NOVEMBER 13, 2023",
         "role": "Defendant (Former Owner)",
@@ -5639,133 +5734,133 @@ const INTEL_DATA = {
         "email": "",
         "notes": "Named in C20247321. Needs skip trace for current contact info.",
         "best_leads": "\u2022 Last known property: 4125 W DISTANT WASH CT (FCV: $640,360)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "ORANGE GROVE MOBILE ESTATES ASSOCIATION",
+        "role": "Plaintiff (HOA)",
+        "notes": ""
       }
     ],
     "docket": [
       {
         "date": "9/24/2025",
-        "entry": "Available at Courthouse"
+        "entry": "RETURN ON  PROPERTY EXECUTION"
       },
       {
         "date": "4/1/2025",
-        "entry": "Available"
+        "entry": "CIVIL DEFAULT JUDGMENT"
       },
       {
         "date": "4/1/2025",
-        "entry": "Available at Courthouse"
+        "entry": "JUDGMENT"
       },
       {
         "date": "2/13/2025",
-        "entry": "Available at Courthouse"
+        "entry": "NOTICE OF HEARING"
       },
       {
         "date": "2/13/2025",
-        "entry": "Available"
+        "entry": "IN CHAMBERS: NOTICE OF REFERRAL"
       },
       {
         "date": "2/5/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Motion and Affidavit for Foreclosure Judgment by Default with Hearing"
       },
       {
         "date": "2/5/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Affidavit in Support of Attorney''s Fees"
       },
       {
         "date": "2/5/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Statement of Costs and Notice of Taxation of Costs"
       },
       {
         "date": "2/5/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Notice of Lodging Order for Judgment and Decree of Foreclosure and Order of Sale"
       },
       {
         "date": "2/5/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Affidavit - Exhibit \"A\""
       },
       {
         "date": "2/5/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Affidavit - Exhibit \"B\""
       },
       {
         "date": "2/5/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Judgment - Exhibit 1"
       },
       {
         "date": "1/8/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Application for Default"
       },
       {
         "date": "1/8/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Affidavit of Default"
       },
       {
         "date": "1/8/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Notice of Application for Entry of Default"
       },
       {
         "date": "12/16/2024",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "12/5/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Complaint (Contract; Lien Foreclosure)"
       },
       {
         "date": "12/5/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Civil Cover Sheet"
       },
       {
         "date": "12/5/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "12/5/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "12/5/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "12/5/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "12/5/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "12/5/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Complaint - Exhibit 1"
       },
       {
         "date": "12/5/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Complaint - Exhibit 2"
       },
       {
         "date": "12/5/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Complaint - Exhibit 3"
       },
       {
         "date": "12/5/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Complaint - Exhibit 4"
       },
       {
         "date": "12/5/2024",
-        "entry": "Available at Courthouse"
+        "entry": "All Money Receipts 3867654"
       }
     ],
     "judgment_amount": 19661.09
   },
   "PIMA-COURT-C20245732": {
-    "story": "Case: C20245732 | Sale: Unknown\nARIZONA MADERA AT RITA RANCH ASSOCIATION sued ROBERT GENE HAMACHER JR for HOA lien foreclosure.",
+    "story": "Case: C20245732 | Sale: Unknown\n\nARIZONA MADERA AT RITA RANCH ASSOCIATION sued ROBERT GENE HAMACHER JR, BRITTANY HAMACHER for HOA lien foreclosure.\n\u2022 Writ/Execution (4/16/2025): RETURN ON PROPERTY EXECUTION\n\u2022 Default judgment (2/3/2025): CIVIL DEFAULT JUDGMENT\n\u2022 Default entered (12/18/2024)\n\u2022 Default entered (12/18/2024)\n\u2022 Default entered (12/18/2024)\n\u2022 Stipulation (12/9/2024): Amended Stipulation to Judgment as to Defendant Secretary of\n\u2022 Stipulation (12/9/2024): Stipulation to Judgment as to Defendant Secretary of Housing\n\u2022 Default entered (10/30/2024)\n\u2022 Default entered (10/30/2024)\n\u2022 Default entered (10/30/2024)\n\u2022 Default entered (10/30/2024)\n\u2022 Certificate (9/25/2024): Certificate of Compulsory Arbitration\n\u2022 Complaint filed (9/25/2024)\n\u2022 Certificate (9/25/2024): FASTAR Certificate\n\u2022 Summons issued (9/25/2024)\n\u2022 Summons issued (9/25/2024)\n\u2022 Summons issued (9/25/2024)\n\u2022 Summons issued (9/25/2024)\n\u2022 Summons issued (9/25/2024)",
     "red_flags": [],
     "people": [
-      {
-        "name": "ARIZONA MADERA AT RITA RANCH ASSOCIATION",
-        "role": "Plaintiff (HOA/Corp)",
-        "notes": ""
-      },
       {
         "name": "ROBERT GENE HAMACHER JR",
         "role": "Defendant (Former Owner)",
@@ -5794,229 +5889,234 @@ const INTEL_DATA = {
         "best_leads": "\u2022 Last known property: 626 S MARVIN AV (FCV: $281,758)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
       },
       {
-        "name": "LENDMARK FINANCIAL SERVICES, LLC",
-        "role": "Plaintiff (HOA/Corp)",
+        "name": "ARIZONA MADERA AT RITA RANCH ASSOCIATION",
+        "role": "Plaintiff (HOA)",
         "notes": ""
       },
       {
-        "name": "MIDLAND CREDIT MANAGEMENT, INC.",
-        "role": "Plaintiff (HOA/Corp)",
+        "name": "ARIZONA MADERA AT RITA RANCH ASSOCIATION",
+        "role": "Plaintiff (HOA)",
         "notes": ""
+      },
+      {
+        "name": "LENDMARK FINANCIAL SERVICES, LLC",
+        "role": "Defendant (Lienholder)",
+        "notes": "Has a lien on the property. May have claim on surplus."
+      },
+      {
+        "name": "MIDLAND CREDIT MANAGEMENT, INC.",
+        "role": "Defendant (Lienholder)",
+        "notes": "Has a lien on the property. May have claim on surplus."
       }
     ],
     "docket": [
       {
         "date": "4/16/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Satisfaction of Judgement"
       },
       {
         "date": "4/16/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Release of Lis Pendens"
       },
       {
         "date": "4/16/2025",
-        "entry": "Available at Courthouse"
+        "entry": "RETURN ON PROPERTY EXECUTION"
       },
       {
         "date": "2/6/2025",
-        "entry": "Available at Courthouse"
+        "entry": "PRAECIPE"
       },
       {
         "date": "2/3/2025",
-        "entry": "Available"
+        "entry": "CIVIL DEFAULT JUDGMENT"
       },
       {
         "date": "2/3/2025",
-        "entry": "Available at Courthouse"
+        "entry": "JUDGMENT"
       },
       {
         "date": "12/20/2024",
-        "entry": "Available at Courthouse"
+        "entry": "ORDER"
       },
       {
         "date": "12/18/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Motion to Set Default Hearing"
       },
       {
         "date": "12/18/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Motion to Appear Telephonically"
       },
       {
         "date": "12/18/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to Motion to Set Default Hearing"
       },
       {
         "date": "12/18/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1-2 to Motion to Set Default Hearing"
       },
       {
         "date": "12/18/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Statement of Costs"
       },
       {
         "date": "12/18/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Affidavit in Support of Attorney Fees"
       },
       {
         "date": "12/18/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to  Affidavit in Support of Attorney Fees"
       },
       {
         "date": "12/18/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 2 to  Affidavit in Support of Attorney Fees"
       },
       {
         "date": "12/18/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Motion and Affidavit for Foreclosure Judgment"
       },
       {
         "date": "12/18/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Affidavit in Support of Foreclosure"
       },
       {
         "date": "12/18/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to Affidavit in Support of Foreclosure"
       },
       {
         "date": "12/18/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 2 to Affidavit in Support of Foreclosure"
       },
       {
         "date": "12/18/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 3 to Affidavit in Support of Foreclosure"
       },
       {
         "date": "12/18/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 4 to Affidavit in Support of Foreclosure"
       },
       {
         "date": "12/16/2024",
-        "entry": "Available at Courthouse"
+        "entry": "ORDER"
       },
       {
         "date": "12/16/2024",
-        "entry": "Available at Courthouse"
+        "entry": "ORDER"
       },
       {
         "date": "12/9/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Amended Stipulation to Judgment as to Defendant Secretary of Housing and Urban Development"
       },
       {
         "date": "12/9/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Stipulation to Judgment as to Defendant Secretary of Housing and Urban Development only"
       },
       {
         "date": "11/18/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Declaration of Service by Mail"
       },
       {
         "date": "11/12/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Declaration of Service"
       },
       {
         "date": "10/30/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Notice of Intent to Seek Entry of Default"
       },
       {
         "date": "10/30/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Application for Default"
       },
       {
         "date": "10/30/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to Application for Default"
       },
       {
         "date": "10/30/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 2 to Application for Default"
       },
       {
         "date": "10/29/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Declaration of Service"
       },
       {
         "date": "10/29/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Declaration of Service"
       },
       {
         "date": "10/29/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Declaration of Service"
       },
       {
         "date": "10/29/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Declaration of Service"
       },
       {
         "date": "10/29/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Declaration of Service"
       },
       {
         "date": "10/28/2024",
-        "entry": "Available at Courthouse"
+        "entry": "IN CHAMBERS ORDER RE:  REQUEST FOR ADDITIONAL TIME"
       },
       {
         "date": "10/23/2024",
-        "entry": "Available at Courthouse"
+        "entry": "All Money Receipts #3841256"
       },
       {
         "date": "10/23/2024",
-        "entry": "Available at Courthouse"
+        "entry": "MOTION TO EXTEND TIME"
       },
       {
         "date": "9/25/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Certificate of Compulsory Arbitration"
       },
       {
         "date": "9/25/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Notice of Lis Pendens"
       },
       {
         "date": "9/25/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Complaint"
       },
       {
         "date": "9/25/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Civil Cover Sheet"
       },
       {
         "date": "9/25/2024",
-        "entry": "Available at Courthouse"
+        "entry": "FASTAR Certificate"
       },
       {
         "date": "9/25/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "9/25/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "9/25/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "9/25/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "9/25/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "9/25/2024",
-        "entry": "Available at Courthouse"
+        "entry": "All Money Receipts 3824499"
       }
     ],
     "judgment_amount": null
   },
   "PIMA-COURT-C20250864": {
-    "story": "Case: C20250864 | Sale: $57,100.00\nNORTHERN HEIGHTS HOMEOWNERS ASSOCIATION sued CHARLES L. BERTSCH for HOA lien foreclosure.\nJudgment: $7,735.96\nEstimated surplus: $49,364.04",
+    "story": "Case: C20250864 | Sale: $57,100.00\n\nNORTHERN HEIGHTS HOMEOWNERS ASSOCIATION sued CHARLES L. BERTSCH, KIMBERLEY M. NICOLINI for HOA lien foreclosure.\n\u2022 Writ/Execution (9/9/2025): RETURN ON PROPERTY EXECUTION\n\u2022 Default judgment (6/2/2025): CIVIL DEFAULT JUDGMENT\n\u2022 Default entered (5/12/2025)\n\u2022 Default entered (5/12/2025)\n\u2022 Default entered (5/12/2025)\n\u2022 Default entered (4/14/2025)\n\u2022 Default entered (4/14/2025)\n\u2022 Default entered (4/14/2025)\n\u2022 Default entered (4/14/2025)\n\u2022 Certificate (3/19/2025): CERTIFICATE OF SERVICE\n\u2022 Certificate (3/6/2025): CERTIFICATE OF SERVICE\n\u2022 Certificate (2/20/2025): CERTIFICATE OF SERVICE\n\u2022 Certificate (2/5/2025): Certificate of Compulsory Arbitration\n\u2022 Complaint filed (2/5/2025)\n\u2022 Certificate (2/5/2025): FASTAR Certificate\n\u2022 Summons issued (2/5/2025)\n\u2022 Summons issued (2/5/2025)\n\u2022 Summons issued (2/5/2025)\n\u2022 Summons issued (2/5/2025)\n\nJudgment: $7,735.96\nEstimated surplus: $49,364.04\nYour 30% fee: $14,809.21",
     "red_flags": [],
     "people": [
-      {
-        "name": "NORTHERN HEIGHTS HOMEOWNERS ASSOCIATION",
-        "role": "Plaintiff (HOA/Corp)",
-        "notes": ""
-      },
       {
         "name": "CHARLES L. BERTSCH",
         "role": "Defendant (Former Owner)",
@@ -6045,204 +6145,209 @@ const INTEL_DATA = {
         "best_leads": "\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
       },
       {
-        "name": "MV REALTY OF ARIZONA, LLC",
-        "role": "Plaintiff (HOA/Corp)",
+        "name": "NORTHERN HEIGHTS HOMEOWNERS ASSOCIATION",
+        "role": "Plaintiff (HOA)",
         "notes": ""
+      },
+      {
+        "name": "NORTHERN HEIGHTS HOMEOWNERS ASSOCIATION",
+        "role": "Plaintiff (HOA)",
+        "notes": ""
+      },
+      {
+        "name": "MV REALTY OF ARIZONA, LLC",
+        "role": "Defendant (Lienholder)",
+        "notes": "Has a lien on the property. May have claim on surplus."
       }
     ],
     "docket": [
       {
         "date": "11/12/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Satisfaction of Judgment"
       },
       {
         "date": "11/12/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Release of Lis Pendens"
       },
       {
         "date": "9/9/2025",
-        "entry": "Available at Courthouse"
+        "entry": "RETURN ON PROPERTY EXECUTION"
       },
       {
         "date": "6/6/2025",
-        "entry": "Available at Courthouse"
+        "entry": "PRAECIPE"
       },
       {
         "date": "6/2/2025",
-        "entry": "Available"
+        "entry": "CIVIL DEFAULT JUDGMENT"
       },
       {
         "date": "6/2/2025",
-        "entry": "Available at Courthouse"
+        "entry": "JUDGMENT"
       },
       {
         "date": "5/12/2025",
-        "entry": "Available at Courthouse"
+        "entry": "ORDER"
       },
       {
         "date": "5/12/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Motion to Set Default Hearing"
       },
       {
         "date": "5/12/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Motion to Appear Telephonically"
       },
       {
         "date": "5/12/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to Motion to Set Default Hearing"
       },
       {
         "date": "5/12/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1-2 to Motion to Set Default Hearing"
       },
       {
         "date": "5/12/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Statement of Costs"
       },
       {
         "date": "5/12/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Affidavit in Support of Attorney Fees"
       },
       {
         "date": "5/12/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to Affidavit in Support of Attorney Fees"
       },
       {
         "date": "5/12/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 2 to Affidavit in Support of Attorney Fees"
       },
       {
         "date": "5/12/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Motion and Affidavit for Foreclosure Judgment"
       },
       {
         "date": "5/12/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Affidavit in Support of Foreclosure"
       },
       {
         "date": "5/12/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to Affidavit in Support of Foreclosure"
       },
       {
         "date": "5/12/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 2 to Affidavit in Support of Foreclosure"
       },
       {
         "date": "5/12/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 3 to Affidavit in Support of Foreclosure"
       },
       {
         "date": "5/12/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 4 to Affidavit in Support of Foreclosure"
       },
       {
         "date": "4/14/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Notice of Intent to Seek Entry of Default"
       },
       {
         "date": "4/14/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Application for Default"
       },
       {
         "date": "4/14/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to Application for Default"
       },
       {
         "date": "4/14/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 2 to Application for Default"
       },
       {
         "date": "3/19/2025",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "3/11/2025",
-        "entry": "Available at Courthouse"
+        "entry": "ORDER"
       },
       {
         "date": "3/11/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Motion for Alternative Method of Service"
       },
       {
         "date": "3/11/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to Motion for Alternative Method of Service"
       },
       {
         "date": "3/11/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 2 to Motion for Alternative Method of Service"
       },
       {
         "date": "3/11/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 3 to Motion for Alternative Method of Service"
       },
       {
         "date": "3/11/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 4 to Motion for Alternative Method of Service"
       },
       {
         "date": "3/6/2025",
-        "entry": "Available at Courthouse"
+        "entry": "AFFIDAVIT OF ATTEMPTED SERVICE"
       },
       {
         "date": "3/6/2025",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "2/20/2025",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "2/5/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Certificate of Compulsory Arbitration"
       },
       {
         "date": "2/5/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Notice of Lis Pendens"
       },
       {
         "date": "2/5/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Complaint"
       },
       {
         "date": "2/5/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Civil Cover Sheet"
       },
       {
         "date": "2/5/2025",
-        "entry": "Available at Courthouse"
+        "entry": "FASTAR Certificate"
       },
       {
         "date": "2/5/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "2/5/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "2/5/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "2/5/2025",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "2/5/2025",
-        "entry": "Available at Courthouse"
+        "entry": "All Money Receipts 3900658"
       }
     ],
     "judgment_amount": 7735.96
   },
   "PIMA-COURT-C20233991": {
-    "story": "Case: C20233991 | Sale: $21,363.00\nSANTA RITA RANCH COMMUNITY ASSOCIATION sued KRYSTAL ZAIDA OLIVAS for HOA lien foreclosure.",
+    "story": "Case: C20233991 | Sale: $21,363.00\n\nSANTA RITA RANCH COMMUNITY ASSOCIATION sued KRYSTAL ZAIDA OLIVAS, JADA LYENTTE VIRGIL for HOA lien foreclosure.\n\u2022 Default judgment (6/18/2024): CIVIL DEFAULT JUDGMENT\n\u2022 Default entered (4/23/2024)\n\u2022 Default entered (4/23/2024)\n\u2022 Default entered (4/23/2024)\n\u2022 \u26a0\ufe0f DISMISSAL CALENDAR NOTICE (4/5/2024)\n\u2022 Default entered (3/19/2024)\n\u2022 Default entered (3/19/2024)\n\u2022 Default entered (3/19/2024)\n\u2022 Default entered (3/19/2024)\n\u2022 Default entered (3/19/2024)\n\u2022 Default entered (3/19/2024)\n\u2022 Default entered (3/19/2024)\n\u2022 Default entered (3/19/2024)\n\u2022 Default entered (3/19/2024)\n\u2022 Default entered (3/19/2024)\n\u2022 Certificate (2/23/2024): CERTIFICATE OF SERVICE\n\u2022 Certificate (2/16/2024): CERTIFICATE OF SERVICE\n\u2022 Certificate (2/16/2024): CERTIFICATE OF SERVICE\n\u2022 Certificate (1/25/2024): CERTIFICATE OF ATTEMPTED SERVICE\n\u2022 \u26a0\ufe0f CMS ORDER OF DISMISSAL (12/15/2023)\n\u2022 Certificate (11/28/2023): CERTIFICATE OF ATTEMPTED SERVICE\n\u2022 Certificate (11/21/2023): CERTIFICATE OF SERVICE\n\u2022 Certificate (11/17/2023): CERTIFICATE OF ATTEMPTED SERVICE\n\u2022 \u26a0\ufe0f NOTICE OF IMPENDING DISMISSAL (11/3/2023)\n\u2022 Certificate (9/27/2023): CERTIFICATE OF SERVICE\n\u2022 Certificate (9/22/2023): CERTIFICATE OF SERVICE\n\u2022 Certificate (9/19/2023): CERTIFICATE OF ATTEMPTED SERVICE\n\u2022 Certificate (8/30/2023): Certificate of Compulsory Arbitration\n\u2022 Complaint filed (8/30/2023)\n\u2022 Certificate (8/30/2023): FASTAR Certificate\n\u2022 Summons issued (8/30/2023)\n\u2022 Summons issued (8/30/2023)\n\u2022 Summons issued (8/30/2023)\n\u2022 Summons issued (8/30/2023)",
     "red_flags": [],
     "people": [
-      {
-        "name": "SANTA RITA RANCH COMMUNITY ASSOCIATION",
-        "role": "Plaintiff (HOA/Corp)",
-        "notes": ""
-      },
       {
         "name": "KRYSTAL ZAIDA OLIVAS",
         "role": "Defendant (Former Owner)",
@@ -6278,324 +6383,334 @@ const INTEL_DATA = {
         "email": "",
         "notes": "Named in C20233991. Needs skip trace for current contact info.",
         "best_leads": "\u2022 Last known property: 461 E CACTUS MOUNTAIN DR (FCV: $212,044)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "SANTA RITA RANCH COMMUNITY ASSOCIATION",
+        "role": "Plaintiff (HOA)",
+        "notes": ""
+      },
+      {
+        "name": "SANTA RITA RANCH COMMUNITY ASSOCIATION",
+        "role": "Plaintiff (HOA)",
+        "notes": ""
       }
     ],
     "docket": [
       {
         "date": "12/4/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Satisfaction of Judgment"
       },
       {
         "date": "12/4/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Release of Lis Pendens"
       },
       {
         "date": "9/20/2024",
-        "entry": "Available at Courthouse"
+        "entry": "AFFIDAVIT OF SERVICE"
       },
       {
         "date": "6/26/2024",
-        "entry": "Available at Courthouse"
+        "entry": "PRAECIPE"
       },
       {
         "date": "6/18/2024",
-        "entry": "Available"
+        "entry": "CIVIL DEFAULT JUDGMENT"
       },
       {
         "date": "6/17/2024",
-        "entry": "Available at Courthouse"
+        "entry": "JUDGMENT"
       },
       {
         "date": "5/31/2024",
-        "entry": "Available at Courthouse"
+        "entry": "ORDER"
       },
       {
         "date": "5/14/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Motion to Appear Telephonically"
       },
       {
         "date": "4/24/2024",
-        "entry": "Available at Courthouse"
+        "entry": "ORDER"
       },
       {
         "date": "4/23/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Motion and Affidavit for Foreclosure"
       },
       {
         "date": "4/23/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Affidavit in Support of Foreclosure"
       },
       {
         "date": "4/23/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Statement of Costs"
       },
       {
         "date": "4/23/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Affidavit in Support of Attorney Fees"
       },
       {
         "date": "4/23/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Motion to Set Default Hearing"
       },
       {
         "date": "4/23/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to Affidavit in Support of Foreclosure"
       },
       {
         "date": "4/23/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 2 to Affidavit in Support of Foreclosure"
       },
       {
         "date": "4/23/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 3 to Affidavit in Support of Foreclosure"
       },
       {
         "date": "4/23/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 4 to Affidavit in Support of Foreclosure"
       },
       {
         "date": "4/23/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to  Affidavit in Support of Attorney Fees"
       },
       {
         "date": "4/23/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 2 to  Affidavit in Support of Attorney Fees"
       },
       {
         "date": "4/23/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to Motion to Set Default Hearing"
       },
       {
         "date": "4/23/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1-2 to Motion to Set Default Hearing"
       },
       {
         "date": "4/5/2024",
-        "entry": "Available"
+        "entry": "DISMISSAL CALENDAR NOTICE"
       },
       {
         "date": "3/19/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Notice of Intent to Seek Entry of Default"
       },
       {
         "date": "3/19/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Application for Default"
       },
       {
         "date": "3/19/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to Application for Default"
       },
       {
         "date": "3/19/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1-2 to Application for Default"
       },
       {
         "date": "3/19/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1-3 to Application for Default"
       },
       {
         "date": "3/19/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1-4 to Application for Default"
       },
       {
         "date": "3/19/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1-5 to Application for Default"
       },
       {
         "date": "3/19/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1-6 to Application for Default"
       },
       {
         "date": "3/19/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 2 to Application for Default"
       },
       {
         "date": "3/19/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 2-2 to Application for Default"
       },
       {
         "date": "2/23/2024",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "2/22/2024",
-        "entry": "Available at Courthouse"
+        "entry": "IN CHAMBERS"
       },
       {
         "date": "2/16/2024",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "2/16/2024",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "1/30/2024",
-        "entry": "Available at Courthouse"
+        "entry": "ORDER"
       },
       {
         "date": "1/30/2024",
-        "entry": "Available at Courthouse"
+        "entry": "ORDER"
       },
       {
         "date": "1/30/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Motion for Alternative Method of Service"
       },
       {
         "date": "1/30/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit A to Motion for Alternative Method of Service"
       },
       {
         "date": "1/30/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit B to Motion for Alternative Method of Service"
       },
       {
         "date": "1/30/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit C to Motion for Alternative Method of Service"
       },
       {
         "date": "1/30/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit D to Motion for Alternative Method of Service"
       },
       {
         "date": "1/30/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit E to Motion for Alternative Method of Service"
       },
       {
         "date": "1/30/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit F to Motion for Alternative Method of Service"
       },
       {
         "date": "1/30/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Motion to Extend Time for Service"
       },
       {
         "date": "1/30/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to  Motion to Extend Time for Service"
       },
       {
         "date": "1/30/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 2 to  Motion to Extend Time for Service"
       },
       {
         "date": "1/30/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 3 to  Motion to Extend Time for Service"
       },
       {
         "date": "1/30/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 4 to  Motion to Extend Time for Service"
       },
       {
         "date": "1/30/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 5 to  Motion to Extend Time for Service"
       },
       {
         "date": "1/30/2024",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 6 to  Motion to Extend Time for Service"
       },
       {
         "date": "1/25/2024",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF ATTEMPTED SERVICE"
       },
       {
         "date": "12/19/2023",
-        "entry": "Available at Courthouse"
+        "entry": "ORDER"
       },
       {
         "date": "12/19/2023",
-        "entry": "Available at Courthouse"
+        "entry": "Motion to Extend Time for Service"
       },
       {
         "date": "12/19/2023",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 1 to Motion to Extend Time for Service"
       },
       {
         "date": "12/19/2023",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 2 to Motion to Extend Time for Service"
       },
       {
         "date": "12/19/2023",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 3 to Motion to Extend Time for Service"
       },
       {
         "date": "12/19/2023",
-        "entry": "Available at Courthouse"
+        "entry": "Exhibit 4 to Motion to Extend Time for Service"
       },
       {
         "date": "12/19/2023",
-        "entry": "Available at Courthouse"
+        "entry": "AFFIDAVIT OF ATTEMPTED SERVICE"
       },
       {
         "date": "12/15/2023",
-        "entry": "Available at Courthouse"
+        "entry": "CMS ORDER OF DISMISSAL"
       },
       {
         "date": "11/28/2023",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF ATTEMPTED SERVICE"
       },
       {
         "date": "11/21/2023",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "11/17/2023",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF ATTEMPTED SERVICE"
       },
       {
         "date": "11/3/2023",
-        "entry": "Available"
+        "entry": "NOTICE OF IMPENDING DISMISSAL"
       },
       {
         "date": "9/27/2023",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "9/22/2023",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF SERVICE"
       },
       {
         "date": "9/19/2023",
-        "entry": "Available at Courthouse"
+        "entry": "CERTIFICATE OF ATTEMPTED SERVICE"
       },
       {
         "date": "8/30/2023",
-        "entry": "Available at Courthouse"
+        "entry": "Certificate of Compulsory Arbitration"
       },
       {
         "date": "8/30/2023",
-        "entry": "Available at Courthouse"
+        "entry": "Notice of Lis Pendens"
       },
       {
         "date": "8/30/2023",
-        "entry": "Available at Courthouse"
+        "entry": "Complaint"
       },
       {
         "date": "8/30/2023",
-        "entry": "Available at Courthouse"
+        "entry": "Civil Cover Sheet"
       },
       {
         "date": "8/30/2023",
-        "entry": "Available at Courthouse"
+        "entry": "FASTAR Certificate"
       },
       {
         "date": "8/30/2023",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "8/30/2023",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "8/30/2023",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "8/30/2023",
-        "entry": "Available at Courthouse"
+        "entry": "Summons"
       },
       {
         "date": "8/30/2023",
-        "entry": "Available at Courthouse"
+        "entry": "All Money Receipts 3662578"
       }
     ],
     "judgment_amount": null
