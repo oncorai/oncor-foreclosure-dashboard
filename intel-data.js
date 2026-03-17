@@ -9,32 +9,292 @@ const INTEL_DATA = {
     "financial_notes": "BDB Capital is a known surplus buyer. They paid $90K at sheriff sale on Dec 4, 2024. Judgment was $15,282.72. Big spread = big surplus for former owner.",
     "docket": [
       {
-        "date": "2024-03-15",
-        "entry": "COMPLAINT FILED \u2014 Tucson Estates POA vs Smith, Juanita Mae & Kociembra, Janet"
+        "date": "1/21/2026",
+        "entry": "Available at Courthouse"
       },
       {
-        "date": "2024-06-20",
-        "entry": "DEFAULT JUDGMENT entered \u2014 $15,282.72 (HOA assessments + fees)"
+        "date": "12/12/2025",
+        "entry": "Available at Courthouse"
       },
       {
-        "date": "2024-08-12",
-        "entry": "WRIT OF SPECIAL EXECUTION issued to Pima County Sheriff"
+        "date": "12/4/2025",
+        "entry": "Available at Courthouse"
       },
       {
-        "date": "2024-10-01",
-        "entry": "NOTICE OF SHERIFF SALE \u2014 Property scheduled for sale"
+        "date": "8/29/2025",
+        "entry": "Available at Courthouse"
       },
       {
-        "date": "2024-12-04",
-        "entry": "SHERIFF SALE CONDUCTED \u2014 Sold to BDB Capital for $90,000.00"
+        "date": "7/23/2025",
+        "entry": "Available"
       },
       {
-        "date": "2025-01-07",
-        "entry": "SHERIFF'S DEED recorded at Pima Recorder (Rec# 20260070422)"
+        "date": "7/21/2025",
+        "entry": "Available at Courthouse"
       },
       {
-        "date": "2025-02-12",
-        "entry": "CERTIFICATE OF SALE recorded (Rec# 20253450321)"
+        "date": "6/17/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/11/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/11/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/11/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/11/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/11/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/11/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/11/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/11/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/11/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/17/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/17/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/17/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/20/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/25/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/11/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/11/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/17/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/17/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/9/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/9/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/9/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/9/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/7/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/30/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/30/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/30/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/30/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/4/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/24/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/24/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/16/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/16/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/15/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/3/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/18/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/17/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/17/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/17/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/9/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/5/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/5/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/4/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/4/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/4/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/4/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/15/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/14/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/14/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/14/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/14/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/27/2024",
+        "entry": "Available"
+      },
+      {
+        "date": "6/6/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/4/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/4/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/16/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/9/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/3/2024",
+        "entry": "Available"
+      },
+      {
+        "date": "3/5/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/1/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/1/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/29/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/29/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/29/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/29/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/29/2024",
+        "entry": "Available at Courthouse"
       }
     ],
     "people": [
@@ -75,7 +335,8 @@ const INTEL_DATA = {
         "date": "Original purchase",
         "value": "Unknown"
       }
-    ]
+    ],
+    "story": "Case: C20241215 | Sale: $90,000.00\nTucson Estates POA sued Juanita Mae Smith for HOA lien foreclosure.\nJudgment: $15,282.72\nEstimated surplus: $74,717.28"
   },
   "PIMA-COURT-C20235724": {
     "judgment_amount": null,
@@ -83,109 +344,760 @@ const INTEL_DATA = {
     "financial_notes": "Assessor shows sale at $412,458. Enormous value. If typical HOA judgment, surplus could be $397-407K. This would be the single biggest surplus recovery in our pipeline. PRIORITY CASE.",
     "docket": [
       {
-        "date": "2023-08-01",
-        "entry": "COMPLAINT FILED"
+        "date": "9/13/2024",
+        "entry": "Available at Courthouse"
       },
       {
-        "date": "2024-01-01",
-        "entry": "JUDGMENT entered (amount unknown)"
+        "date": "8/15/2024",
+        "entry": "Available at Courthouse"
       },
       {
-        "date": "2024-06-01",
-        "entry": "WRIT OF EXECUTION issued"
+        "date": "8/15/2024",
+        "entry": "Available at Courthouse"
       },
       {
-        "date": "2025-02-12",
-        "entry": "SHERIFF'S DEED recorded \u2014 new owners ABBEY SARAH LEANNE & ABBEY LAURA CHRISTINE"
+        "date": "6/4/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/19/2024",
+        "entry": "Available"
+      },
+      {
+        "date": "3/18/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/5/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/29/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/28/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/28/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/28/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/28/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/28/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/28/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/28/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/28/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/28/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/28/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/28/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/28/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/28/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/7/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/6/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/6/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/29/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/29/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/29/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/29/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/29/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/4/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/28/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/28/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/7/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/7/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/6/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/6/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/6/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/6/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/6/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/6/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/6/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/6/2023",
+        "entry": "Available at Courthouse"
       }
     ],
     "people": [
       {
-        "name": "SARAH LEANNE ABBEY",
-        "role": "Buyer at Sheriff Sale",
-        "notes": "Purchased property. Deed recorded 2/12/2026 (Rec# 20260360428)."
+        "name": "RANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC.",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
       },
       {
-        "name": "LAURA CHRISTINE ABBEY",
-        "role": "Buyer at Sheriff Sale (Co-Owner)",
-        "notes": "Co-purchaser at sheriff sale."
+        "name": "KYLE M. BERRY",
+        "role": "Defendant (Former Owner)",
+        "address": "5476 W TUMACACORI TR (FCV: $354,742)",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20235724. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Last known property: 5476 W TUMACACORI TR (FCV: $354,742)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "JARED SPEAR",
+        "role": "Defendant (Former Owner)",
+        "address": "5476 W TUMACACORI TR (FCV: $354,742)",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20235724. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Last known property: 5476 W TUMACACORI TR (FCV: $354,742)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "NORTHWEST SAHUARITA HOSPITAL, LLC",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      },
+      {
+        "name": "NORTHWEST SAHUARITA HOSPITAL, LLC",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      },
+      {
+        "name": "STATE OF ARIZONA",
+        "role": "Defendant (Former Owner)",
+        "address": "5476 W TUMACACORI TR (FCV: $354,742)",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20235724. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Last known property: 5476 W TUMACACORI TR (FCV: $354,742)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
       }
-    ]
+    ],
+    "story": "Case: C20235724 | Sale: $412,458\nRANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC. sued KYLE M. BERRY for HOA lien foreclosure."
   },
   "PIMA-COURT-C20230042": {
     "judgment_amount": 7741.52,
     "docket": [
       {
-        "date": "2023-01-05",
-        "entry": "COMPLAINT FILED \u2014 HOA vs Mires"
+        "date": "3/19/2024",
+        "entry": "Available at Courthouse"
       },
       {
-        "date": "2023-06-01",
-        "entry": "DEFAULT JUDGMENT \u2014 $7,741.52"
+        "date": "3/19/2024",
+        "entry": "Available at Courthouse"
       },
       {
-        "date": "2023-10-01",
-        "entry": "SHERIFF SALE \u2014 Sold for $10,896.00"
+        "date": "1/16/2024",
+        "entry": "Available at Courthouse"
       },
       {
-        "date": "2024-03-01",
-        "entry": "CERTIFICATE OF SALE recorded (Rec# 20250930410)"
+        "date": "9/25/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/7/2023",
+        "entry": "Available"
+      },
+      {
+        "date": "9/5/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/24/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/24/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/24/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/24/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/24/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/24/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/24/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/24/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/24/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/24/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/24/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/24/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/24/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/24/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/30/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/30/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/30/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/30/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/30/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/30/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/13/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/10/2023",
+        "entry": "Available"
+      },
+      {
+        "date": "2/28/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/28/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/28/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/28/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/28/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/28/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/3/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/3/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/23/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/5/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/5/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/5/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/5/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/5/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/5/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/5/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/5/2023",
+        "entry": "Available at Courthouse"
       }
     ],
     "people": [
       {
-        "name": "JUDITH MIRES",
+        "name": "RANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC.",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      },
+      {
+        "name": "JUDITH M. WERNER",
         "role": "Defendant (Former Owner)",
-        "notes": "Surplus ~$3,154. Small amount."
+        "address": "",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20230042. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "MARCUS L. WERNER",
+        "role": "Defendant (Former Owner)",
+        "address": "",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20230042. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
       }
-    ]
+    ],
+    "story": "Case: C20230042 | Sale: $10,896.00\nRANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC. sued JUDITH M. WERNER for HOA lien foreclosure.\nJudgment: $7,741.52\nEstimated surplus: $3,154.48"
   },
   "PIMA-COURT-C20242205": {
     "judgment_amount": 10115.51,
     "docket": [
       {
-        "date": "2024-06-01",
-        "entry": "COMPLAINT FILED \u2014 HOA lien foreclosure vs Mason"
+        "date": "8/19/2025",
+        "entry": "Available at Courthouse"
       },
       {
-        "date": "2024-10-01",
-        "entry": "DEFAULT JUDGMENT \u2014 $10,115.51"
+        "date": "8/19/2025",
+        "entry": "Available at Courthouse"
       },
       {
-        "date": "2025-02-01",
-        "entry": "SHERIFF SALE \u2014 Sold for $14,870.24"
+        "date": "8/19/2025",
+        "entry": "Available at Courthouse"
       },
       {
-        "date": "2025-08-01",
-        "entry": "CERTIFICATE OF SALE recorded (Rec# 20252330460)"
+        "date": "8/19/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/9/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/9/2025",
+        "entry": "Available"
+      },
+      {
+        "date": "10/29/2024",
+        "entry": "Available"
+      },
+      {
+        "date": "10/29/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/29/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/21/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/21/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/21/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/21/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/21/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/21/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/21/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/21/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/21/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/21/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/21/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/21/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/21/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/18/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/17/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/8/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/8/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/8/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/8/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/27/2024",
+        "entry": "Available"
+      },
+      {
+        "date": "5/21/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/21/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/21/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/21/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/15/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/15/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/12/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/12/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/12/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/12/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/12/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/12/2024",
+        "entry": "Available at Courthouse"
       }
     ],
     "people": [
       {
+        "name": "RANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC.",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      },
+      {
         "name": "LOUIE P MASON",
         "role": "Defendant (Former Owner)",
-        "notes": "Surplus ~$4,755. 2-year claim window from sale date."
+        "address": "",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20242205. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "SECRETARY OF HOUSING AND URBAN DEVELOPMENT",
+        "role": "Defendant (Former Owner)",
+        "address": "",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20242205. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
       }
-    ]
+    ],
+    "story": "Case: C20242205 | Sale: $14,870.24\nRANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC. sued LOUIE P MASON for HOA lien foreclosure.\nJudgment: $10,115.51\nEstimated surplus: $4,754.73"
   },
   "PIMA-COURT-C20241424": {
     "judgment_amount": 6223.27,
     "docket": [
       {
-        "date": "2024-04-01",
-        "entry": "COMPLAINT FILED \u2014 Rancho Sahuarita vs Lariviere"
+        "date": "1/7/2025",
+        "entry": "Available at Courthouse"
       },
       {
-        "date": "2024-08-01",
-        "entry": "DEFAULT JUDGMENT \u2014 $6,223.27"
+        "date": "1/7/2025",
+        "entry": "Available at Courthouse"
       },
       {
-        "date": "2024-12-01",
-        "entry": "SHERIFF SALE \u2014 Sold for $10,722.13"
+        "date": "11/15/2024",
+        "entry": "Available at Courthouse"
       },
       {
-        "date": "2025-02-01",
-        "entry": "CERTIFICATE OF SALE recorded (Rec# 20250640325)"
+        "date": "11/6/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/23/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/10/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/10/2024",
+        "entry": "Available"
+      },
+      {
+        "date": "6/28/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/24/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/24/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/24/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/24/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/24/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/24/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/24/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/24/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/24/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/24/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/24/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/24/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/24/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/13/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/13/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/13/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/13/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/12/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/12/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/12/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/11/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/11/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/11/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/11/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/11/2024",
+        "entry": "Available at Courthouse"
       }
     ],
     "people": [
@@ -198,7 +1110,8 @@ const INTEL_DATA = {
         "name": "AMANDA MENCHACA",
         "role": "Defendant (Co-Owner)"
       }
-    ]
+    ],
+    "story": "Case: C20241424 | Sale: $10,722.13\nRANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC. sued A LARIVIERE for HOA lien foreclosure.\nJudgment: $6,223.27\nEstimated surplus: $4,498.86"
   },
   "PIMA-COURT-C20246821": {
     "judgment_amount": 23645.97,
@@ -206,62 +1119,425 @@ const INTEL_DATA = {
     "financial_notes": "Property FCV $306K. Sold at sheriff sale for $92K. Judgment $23,646. Surplus ~$68,354. High FCV suggests property worth much more than sale price.",
     "docket": [
       {
-        "date": "2024-09-10",
-        "entry": "COMPLAINT FILED \u2014 HOA lien foreclosure"
+        "date": "12/12/2025",
+        "entry": "Available at Courthouse"
       },
       {
-        "date": "2024-12-15",
-        "entry": "DEFAULT JUDGMENT entered \u2014 $23,645.97"
+        "date": "12/11/2025",
+        "entry": "Available at Courthouse"
       },
       {
-        "date": "2025-03-01",
-        "entry": "WRIT OF SPECIAL EXECUTION issued"
+        "date": "11/6/2025",
+        "entry": "Available at Courthouse"
       },
       {
-        "date": "2025-06-15",
-        "entry": "SHERIFF SALE \u2014 Sold for $92,000"
+        "date": "8/4/2025",
+        "entry": "Available at Courthouse"
       },
       {
-        "date": "2025-12-30",
-        "entry": "CERTIFICATE OF SALE recorded (Rec# 20253160669)"
+        "date": "7/23/2025",
+        "entry": "Available"
+      },
+      {
+        "date": "7/21/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/5/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/7/2025",
+        "entry": "Available"
+      },
+      {
+        "date": "4/3/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/13/2025",
+        "entry": "Available"
+      },
+      {
+        "date": "2/20/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/11/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/5/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/5/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/5/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/5/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/5/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/5/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/4/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/24/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/17/2025",
+        "entry": "Available"
+      },
+      {
+        "date": "1/15/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/15/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/15/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/15/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/15/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/15/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/31/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/27/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/13/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/13/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/12/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/12/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/12/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/12/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/12/2024",
+        "entry": "Available at Courthouse"
       }
     ],
     "people": [
       {
-        "name": "EILEEN K HIGH",
+        "name": "CASA CLUB OWNERS ASSOCIATION, INC.",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      },
+      {
+        "name": "EILEEN K. HIGH",
         "role": "Defendant (Former Owner)",
-        "address": "",
-        "notes": "Also listed as EILEEN K HIGH TRUST. High-value property (FCV $306K) sold for $92K at sheriff sale. Estimated surplus: $68,354. 2-year claim window."
+        "address": "1810 E BLACKLIDGE DR (FCV: $71,372)",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20246821. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Last known property: 1810 E BLACKLIDGE DR (FCV: $71,372)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
       }
-    ]
+    ],
+    "story": "Case: C20246821 | Sale: $92,000\nCASA CLUB OWNERS ASSOCIATION, INC. sued EILEEN K. HIGH for HOA lien foreclosure.\nJudgment: $23,645.97\nEstimated surplus: $68,354.03"
   },
   "PIMA-COURT-C20233628": {
     "judgment_amount": 13870.43,
     "docket": [
       {
-        "date": "2023-05-01",
-        "entry": "COMPLAINT FILED \u2014 vs Veda Systems Inc"
+        "date": "9/3/2024",
+        "entry": "Available at Courthouse"
       },
       {
-        "date": "2023-10-01",
-        "entry": "DEFAULT JUDGMENT \u2014 $13,870.43"
+        "date": "5/3/2024",
+        "entry": "Available at Courthouse"
       },
       {
-        "date": "2024-02-01",
-        "entry": "SHERIFF SALE \u2014 Sold for $16,442.73"
+        "date": "4/25/2024",
+        "entry": "Available at Courthouse"
       },
       {
-        "date": "2024-07-01",
-        "entry": "CERTIFICATE OF SALE recorded (Rec# 20242280234)"
+        "date": "12/22/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/15/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/15/2023",
+        "entry": "Available"
+      },
+      {
+        "date": "12/8/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/30/2023",
+        "entry": "Available"
+      },
+      {
+        "date": "11/7/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/7/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/7/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/7/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/7/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/7/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/7/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/7/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/7/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/7/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/2/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/2/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/2/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/25/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/10/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/10/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/8/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/8/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/8/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/8/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/8/2023",
+        "entry": "Available at Courthouse"
       }
     ],
     "people": [
       {
+        "name": "THE MONACO CONDOMINIUM OWNERS' ASSOCIATION, INC.",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      },
+      {
         "name": "VEDA SYSTEMS INC",
-        "role": "Defendant",
-        "notes": "Corporate defendant. Surplus ~$2,572. May be harder to collect \u2014 need to find principals of Veda Systems."
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
       }
-    ]
+    ],
+    "story": "Case: C20233628 | Sale: $16,442.73\nTHE MONACO CONDOMINIUM OWNERS&#39; ASSOCIATION, INC. sued VEDA SYSTEMS INC for HOA lien foreclosure.\nJudgment: $13,870.43\nEstimated surplus: $2,572.30"
   },
   "PIMA-COURT-C20230665": {
     "judgment_amount": null,
@@ -270,29 +1546,197 @@ const INTEL_DATA = {
     "financial_notes": "Assessor shows sale at $270,000. Judgment amount unknown \u2014 not published in Daily Territorial. If typical HOA judgment ($5-15K), surplus could be $255-265K. Need to find judgment amount.",
     "docket": [
       {
-        "date": "2023-02-01",
-        "entry": "COMPLAINT FILED \u2014 HOA lien foreclosure"
+        "date": "2/2/2024",
+        "entry": "Available at Courthouse"
       },
       {
-        "date": "2023-06-01",
-        "entry": "DEFAULT JUDGMENT entered (amount unknown)"
+        "date": "2/2/2024",
+        "entry": "Available at Courthouse"
       },
       {
-        "date": "2023-09-01",
-        "entry": "WRIT OF EXECUTION issued"
+        "date": "12/14/2023",
+        "entry": "Available at Courthouse"
       },
       {
-        "date": "2024-01-15",
-        "entry": "SHERIFF SALE \u2014 Sold (assessor shows $270,000 sale)"
+        "date": "11/14/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/25/2023",
+        "entry": "Available"
+      },
+      {
+        "date": "10/20/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/21/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/31/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/31/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/31/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/31/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/31/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/31/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/31/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/31/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/31/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/18/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/18/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/17/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/13/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/13/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/13/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/24/2023",
+        "entry": "Available"
+      },
+      {
+        "date": "4/24/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/19/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/7/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/7/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/7/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/7/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/7/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/3/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/13/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/13/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/13/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/13/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/13/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/13/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/13/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/13/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/13/2023",
+        "entry": "Available at Courthouse"
       }
     ],
     "people": [
       {
-        "name": "FORMER OWNER",
+        "name": "STAR VALLEY MASTER HOMEOWNERS ASSOCIATION",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      },
+      {
+        "name": "AURELIO ORENDAIN",
         "role": "Defendant (Former Owner)",
-        "notes": "Need to identify from court records. Assessor shows ownership change. If judgment was typical $5-15K, this could be the LARGEST surplus in our pipeline."
+        "address": "9230 W GEORGE ST (FCV: $225,261)",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20230665. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Last known property: 9230 W GEORGE ST (FCV: $225,261)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "NIDIA SALAZAR",
+        "role": "Defendant (Former Owner)",
+        "address": "9230 W GEORGE ST (FCV: $225,261)",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20230665. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Last known property: 9230 W GEORGE ST (FCV: $225,261)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "ACTION IMMIGRATION BONDS & INSURANCE SERVICES, INC.",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
       }
-    ]
+    ],
+    "story": "Case: C20230665 | Sale: $270,000\nSTAR VALLEY MASTER HOMEOWNERS ASSOCIATION sued AURELIO ORENDAIN for HOA lien foreclosure."
   },
   "PIMA-COURT-C20247319": {
     "judgment_amount": 28666.74,
@@ -300,33 +1744,187 @@ const INTEL_DATA = {
     "financial_notes": "Continental Ranch vs Stephens estate. Sale $35,800 minus $28,667 judgment = $7,133 surplus. Small but confirmed.",
     "docket": [
       {
-        "date": "2024-10-20",
-        "entry": "COMPLAINT FILED \u2014 Continental Ranch Community Assoc vs Stephens"
+        "date": "3/9/2026",
+        "entry": "Available at Courthouse"
       },
       {
-        "date": "2025-01-15",
-        "entry": "DEFAULT JUDGMENT \u2014 $28,666.74"
+        "date": "2/11/2026",
+        "entry": "Available at Courthouse"
       },
       {
-        "date": "2025-04-01",
-        "entry": "WRIT OF EXECUTION issued"
+        "date": "2/10/2026",
+        "entry": "Available at Courthouse"
       },
       {
-        "date": "2025-08-20",
-        "entry": "SHERIFF SALE \u2014 Sold for $35,800"
+        "date": "10/30/2025",
+        "entry": "Available at Courthouse"
       },
       {
-        "date": "2026-01-07",
-        "entry": "CERTIFICATE OF SALE recorded (Rec# 20260360426)"
+        "date": "9/2/2025",
+        "entry": "Available"
+      },
+      {
+        "date": "9/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/8/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/7/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/7/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/7/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/7/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/7/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/7/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/7/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/15/2025",
+        "entry": "Available"
+      },
+      {
+        "date": "6/24/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/24/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/24/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/24/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/12/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/12/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/21/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/4/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/4/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/21/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/7/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/7/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/16/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/5/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/5/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/5/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/5/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/5/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/5/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/5/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/5/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/5/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/5/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/5/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/5/2024",
+        "entry": "Available at Courthouse"
       }
     ],
     "people": [
       {
-        "name": "KAREN L STEPHENS",
-        "role": "Defendant (Former Owner - Estate)",
-        "notes": "Estate/heirs case. Karen Stephens estate. Surplus ~$7,133. May need to find executor/heirs."
+        "name": "ORANGE GROVE MOBILE ESTATES ASSOCIATION",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      },
+      {
+        "name": "THE ESTATE OF KAREN L. STEPHENS",
+        "role": "Defendant (Former Owner)",
+        "address": "1920 E POLE STAR PL (FCV: $359,312)",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20247319. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Last known property: 1920 E POLE STAR PL (FCV: $359,312)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
       }
-    ]
+    ],
+    "story": "Case: C20247319 | Sale: $35,800.00\nORANGE GROVE MOBILE ESTATES ASSOCIATION sued THE ESTATE OF KAREN L. STEPHENS for HOA lien foreclosure.\nJudgment: $28,666.74\nEstimated surplus: $7,133.26"
   },
   "20250673939": {
     "judgment_amount": 7815,
@@ -1256,5 +2854,3750 @@ const INTEL_DATA = {
     "story": "Case: CV2024-024202 | Sale: $6,868.44\n\nMesa East Property Owners Association sued for HOA lien foreclosure.\n\u2022 Couldn't find them \u2014 court granted alternative service (12/11/2024)\n\u2022 Couldn't find them \u2014 court granted alternative service (11/27/2024)\n\u2022 Couldn't find them \u2014 court granted alternative service (11/20/2024)\n\n\u2500\u2500\u2500\n\nCourt History (9 other cases):\n\u2022 CV1997-091263 (1997): Civil Court Case Information - Case History\n\u2022 CV2000-010161 (2000): Civil Court Case Information - Case History\n\u2022 CV2000-010175 (2000): Civil Court Case Information - Case History\n\u2022 CV2000-093347 (2000): Civil Court Case Information - Case History [harassment/injunction]\n\u2022 CV2001-090050 (2001): Civil Court Case Information - Case History\n\u2022 CV2001-092278 (2001): Civil Court Case Information - Case History\n\u2022 CV2003-090617 (2003): Civil Court Case Information - Case History\n\u2022 CV2005-052076 (2005): Civil Court Case Information - Case History\n\u2022 CV2026-006225 (2026): Houseopoly L L C vs ",
     "red_flags": [],
     "financial_notes": "Sale price: $6,868.44. Judgment: Unknown \u2014 check court docket."
+  },
+  "PIMA-20260430104": {
+    "story": "Case: C20241706 | Sale: $7,853.71\nVistoso Community Association sued Nina Limmer for HOA lien foreclosure.\nJudgment: $6,864.89\nEstimated surplus: $988.82",
+    "red_flags": [],
+    "people": [
+      {
+        "name": "VISTOSO COMMUNITY ASSOCIATION",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      },
+      {
+        "name": "NINA LIMMER",
+        "role": "Defendant (Former Owner)",
+        "address": "13575 N BARLASSINA, ORO VALLEY, AZ",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20241706. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Last known property: 13575 N BARLASSINA, ORO VALLEY, AZ\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      }
+    ],
+    "docket": [
+      {
+        "date": "9/8/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/8/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/31/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/19/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/9/2024",
+        "entry": "Available"
+      },
+      {
+        "date": "9/4/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/28/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/20/2024",
+        "entry": "Available"
+      },
+      {
+        "date": "8/12/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/12/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/12/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/12/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/12/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/12/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/12/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/12/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/12/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/12/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/12/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/12/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/12/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/8/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/8/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/8/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/8/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/17/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/13/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/31/2024",
+        "entry": "Available"
+      },
+      {
+        "date": "5/16/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/18/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/16/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/16/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/26/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/26/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/22/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/22/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/22/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/22/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/22/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/22/2024",
+        "entry": "Available at Courthouse"
+      }
+    ],
+    "judgment_amount": 6864.89
+  },
+  "PIMA-COURT-C20256063": {
+    "story": "Case: C20256063 | Sale: Unknown\nRANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC. sued MALIK IDRISSOU for HOA lien foreclosure.",
+    "red_flags": [],
+    "people": [
+      {
+        "name": "RANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC.",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      },
+      {
+        "name": "MALIK IDRISSOU",
+        "role": "Defendant (Former Owner)",
+        "address": "503 E PLACITA CUESCO (FCV: $352,778)",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20256063. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Last known property: 503 E PLACITA CUESCO (FCV: $352,778)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      }
+    ],
+    "docket": [
+      {
+        "date": "2/12/2026",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/9/2026",
+        "entry": "Available"
+      },
+      {
+        "date": "2/9/2026",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/7/2026",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/6/2026",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/6/2026",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/6/2026",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/6/2026",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/6/2026",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/6/2026",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/6/2026",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/6/2026",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/6/2026",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/6/2026",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/6/2026",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/6/2026",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/6/2026",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/19/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/19/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/19/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/19/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/1/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/22/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/3/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/3/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/28/2025",
+        "entry": "Available at Courthouse"
+      }
+    ],
+    "judgment_amount": null
+  },
+  "PIMA-COURT-C20247334": {
+    "story": "Case: C20247334 | Sale: Unknown\nRANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC. sued CARLOS A. RAMIREZ for HOA lien foreclosure.\nJudgment: $16,396.71",
+    "red_flags": [],
+    "people": [
+      {
+        "name": "RANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC.",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      },
+      {
+        "name": "CARLOS A. RAMIREZ",
+        "role": "Defendant (Former Owner)",
+        "address": "84 E CALLE PRIMOROSA (FCV: $1,142,710)",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20247334. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Last known property: 84 E CALLE PRIMOROSA (FCV: $1,142,710)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "WELLS FARGO BANK, NA",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      }
+    ],
+    "docket": [
+      {
+        "date": "10/20/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/20/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/3/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/19/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/14/2025",
+        "entry": "Available"
+      },
+      {
+        "date": "5/13/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/1/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/31/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/31/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/31/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/31/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/31/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/31/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/31/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/31/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/31/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/31/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/31/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/31/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/31/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/19/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/13/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/24/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/24/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/24/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/24/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/30/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/17/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/8/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/7/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/7/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/7/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/7/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/23/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/8/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/8/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/5/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/5/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/5/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/5/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/5/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/5/2024",
+        "entry": "Available at Courthouse"
+      }
+    ],
+    "judgment_amount": 16396.71
+  },
+  "PIMA-COURT-C20253647": {
+    "story": "Case: C20253647 | Sale: $56,100.00\nRANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC. sued JOHN L. WOLETZ for HOA lien foreclosure.",
+    "red_flags": [],
+    "people": [
+      {
+        "name": "RANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC.",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      },
+      {
+        "name": "JOHN L. WOLETZ",
+        "role": "Defendant (Former Owner)",
+        "address": "14654 S CAMINO TIERRA ALEGRA (FCV: $296,849)",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20253647. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Last known property: 14654 S CAMINO TIERRA ALEGRA (FCV: $296,849)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "ANDREA R. WOLETZ",
+        "role": "Defendant (Former Owner)",
+        "address": "14654 S CAMINO TIERRA ALEGRA (FCV: $296,849)",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20253647. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Last known property: 14654 S CAMINO TIERRA ALEGRA (FCV: $296,849)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "USAA FEDERAL SAVINGS BANK",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      },
+      {
+        "name": "UNIFUND CCR, LLC",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      },
+      {
+        "name": "CAVALRY SPV I, LLC",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      }
+    ],
+    "docket": [
+      {
+        "date": "12/8/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/24/2025",
+        "entry": "Available"
+      },
+      {
+        "date": "11/24/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/31/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/30/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/30/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/30/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/30/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/30/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/30/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/30/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/30/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/30/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/30/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/30/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/30/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/30/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/30/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/22/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/22/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/22/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/22/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/26/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/26/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/20/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/13/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/13/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/13/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/13/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/13/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/13/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/13/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/13/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/13/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/13/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/13/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/13/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/13/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/13/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/4/2025",
+        "entry": "Available"
+      },
+      {
+        "date": "7/25/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/24/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/24/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/24/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/24/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/9/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/9/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/9/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/30/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/30/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/30/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/30/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/30/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/30/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/30/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/30/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/30/2025",
+        "entry": "Available at Courthouse"
+      }
+    ],
+    "judgment_amount": null
+  },
+  "PIMA-COURT-C20251110": {
+    "story": "Case: C20251110 | Sale: Unknown\nRANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC. sued MYRNA DIANNE ALVARADO for HOA lien foreclosure.\nJudgment: $20,492.05",
+    "red_flags": [],
+    "people": [
+      {
+        "name": "RANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC.",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      },
+      {
+        "name": "MYRNA DIANNE ALVARADO",
+        "role": "Defendant (Former Owner)",
+        "address": "14216 S AVENIDA ZUMBA (FCV: $230,740)",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20251110. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Last known property: 14216 S AVENIDA ZUMBA (FCV: $230,740)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "TOWN OF SAHUARITA WASTEWATER DEPARTMENT",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      }
+    ],
+    "docket": [
+      {
+        "date": "1/14/2026",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/14/2026",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/10/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/6/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/1/2025",
+        "entry": "Available"
+      },
+      {
+        "date": "7/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/18/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/15/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/15/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/15/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/15/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/26/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/14/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/5/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/18/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/18/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/16/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/16/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/16/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/16/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/16/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/16/2025",
+        "entry": "Available at Courthouse"
+      }
+    ],
+    "judgment_amount": 20492.05
+  },
+  "PIMA-COURT-C20256442": {
+    "story": "Case: C20256442 | Sale: Unknown\nRANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC., sued SIRENA L. MOORE for HOA lien foreclosure.",
+    "red_flags": [],
+    "people": [
+      {
+        "name": "RANCHO SAHUARITA VILLAGE PROGRAM ASSOCIATION, INC.,",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      },
+      {
+        "name": "SIRENA L. MOORE",
+        "role": "Defendant (Former Owner)",
+        "address": "546 W CALLE FRANJA VERDE (FCV: $239,544)",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20256442. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Last known property: 546 W CALLE FRANJA VERDE (FCV: $239,544)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "SECRETARY OF HOUSING AND URBAN DEVELOPMENT",
+        "role": "Defendant (Former Owner)",
+        "address": "546 W CALLE FRANJA VERDE (FCV: $239,544)",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20256442. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Last known property: 546 W CALLE FRANJA VERDE (FCV: $239,544)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      }
+    ],
+    "docket": [
+      {
+        "date": "2/18/2026",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/11/2026",
+        "entry": "Available"
+      },
+      {
+        "date": "2/10/2026",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/12/2026",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/6/2026",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/6/2026",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/6/2026",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/6/2026",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/6/2026",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/6/2026",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/6/2026",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/6/2026",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/6/2026",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/6/2026",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/6/2026",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/6/2026",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/30/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/17/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/26/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/26/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/26/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/26/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/23/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/16/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/13/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/7/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/18/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/18/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/15/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/15/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/15/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/15/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/15/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/15/2025",
+        "entry": "Available at Courthouse"
+      }
+    ],
+    "judgment_amount": null
+  },
+  "PIMA-COURT-C20255137": {
+    "story": "Case: C20255137 | Sale: Unknown\nDESERT STONE HOMEOWNERS ASSOCIATION sued TOMMY J. GALLARDO for HOA lien foreclosure.",
+    "red_flags": [],
+    "people": [
+      {
+        "name": "DESERT STONE HOMEOWNERS ASSOCIATION",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      },
+      {
+        "name": "TOMMY J. GALLARDO",
+        "role": "Defendant (Former Owner)",
+        "address": "7901 S SENTINAL STONE DR (FCV: $221,926)",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20255137. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Last known property: 7901 S SENTINAL STONE DR (FCV: $221,926)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "JULIE A. GALLARDO",
+        "role": "Defendant (Former Owner)",
+        "address": "7901 S SENTINAL STONE DR (FCV: $221,926)",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20255137. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Last known property: 7901 S SENTINAL STONE DR (FCV: $221,926)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      }
+    ],
+    "docket": [
+      {
+        "date": "2/11/2026",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/5/2026",
+        "entry": "Available"
+      },
+      {
+        "date": "2/3/2026",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/8/2026",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/4/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/22/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/22/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/22/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/22/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/20/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/31/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/31/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/30/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/30/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/30/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/30/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/30/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/30/2025",
+        "entry": "Available at Courthouse"
+      }
+    ],
+    "judgment_amount": null
+  },
+  "PIMA-COURT-C20250220": {
+    "story": "Case: C20250220 | Sale: Unknown\nGLADDEN FARMS COMMUNITY ASSOCIATION sued MEAGAN ALLEN for HOA lien foreclosure.",
+    "red_flags": [],
+    "people": [
+      {
+        "name": "GLADDEN FARMS COMMUNITY ASSOCIATION",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      },
+      {
+        "name": "MEAGAN ALLEN",
+        "role": "Defendant (Former Owner)",
+        "address": "10732 W CHESTNUT ST (FCV: $311,293)",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20250220. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Last known property: 10732 W CHESTNUT ST (FCV: $311,293)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      }
+    ],
+    "docket": [
+      {
+        "date": "6/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/22/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/22/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/7/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/7/2025",
+        "entry": "Available"
+      },
+      {
+        "date": "3/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/29/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/8/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/8/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/8/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/8/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/8/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/8/2025",
+        "entry": "Available at Courthouse"
+      }
+    ],
+    "judgment_amount": null
+  },
+  "PIMA-COURT-C20240586": {
+    "story": "Case: C20240586 | Sale: $318,000\nGLADDEN FARMS COMMUNITY ASSOCIATION sued ROBERT RUIZ for HOA lien foreclosure.",
+    "red_flags": [],
+    "people": [
+      {
+        "name": "GLADDEN FARMS COMMUNITY ASSOCIATION",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      },
+      {
+        "name": "ROBERT RUIZ",
+        "role": "Defendant (Former Owner)",
+        "address": "6947 S LUNDY DR (FCV: $262,181)",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20240586. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Last known property: 6947 S LUNDY DR (FCV: $262,181)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      }
+    ],
+    "docket": [
+      {
+        "date": "2/12/2026",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/26/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/21/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/16/2024",
+        "entry": "Available"
+      },
+      {
+        "date": "9/16/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/26/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/22/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/19/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/19/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/19/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/25/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/20/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/29/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/3/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/13/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/13/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/15/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/30/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/30/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/30/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/30/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/30/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/30/2024",
+        "entry": "Available at Courthouse"
+      }
+    ],
+    "judgment_amount": null
+  },
+  "PIMA-COURT-C20241050": {
+    "story": "Case: C20241050 | Sale: Unknown\nGLADDEN FARMS COMMUNITY ASSOCIATION sued ANTHONY GUIDA for HOA lien foreclosure.",
+    "red_flags": [],
+    "people": [
+      {
+        "name": "GLADDEN FARMS COMMUNITY ASSOCIATION",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      },
+      {
+        "name": "ANTHONY GUIDA",
+        "role": "Defendant (Former Owner)",
+        "address": "12441 N WILLOWVALE DR (FCV: $332,587)",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20241050. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Last known property: 12441 N WILLOWVALE DR (FCV: $332,587)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      }
+    ],
+    "docket": [
+      {
+        "date": "5/9/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/25/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/25/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/5/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/22/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/22/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/22/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/22/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/22/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/22/2024",
+        "entry": "Available at Courthouse"
+      }
+    ],
+    "judgment_amount": null
+  },
+  "PIMA-COURT-C20246663": {
+    "story": "Case: C20246663 | Sale: Unknown\nALTA VISTA PROPERTY ASSOCIATION INC. sued WILLPOWER PROPERTIES, LLC for HOA lien foreclosure.",
+    "red_flags": [],
+    "people": [
+      {
+        "name": "ALTA VISTA PROPERTY ASSOCIATION INC.",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      },
+      {
+        "name": "WILLPOWER PROPERTIES, LLC, AN ARIZONA LIMITED LIABILITY",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      }
+    ],
+    "docket": [
+      {
+        "date": "12/3/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/3/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/28/2025",
+        "entry": "Available"
+      },
+      {
+        "date": "4/25/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/23/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/27/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/27/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/27/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/27/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/27/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/27/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/27/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/27/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/27/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/21/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/21/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/6/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/6/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/31/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/5/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/6/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/6/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/5/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/5/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/5/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/5/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/5/2024",
+        "entry": "Available at Courthouse"
+      }
+    ],
+    "judgment_amount": null
+  },
+  "PIMA-COURT-C20246660": {
+    "story": "Case: C20246660 | Sale: Unknown\nSTAR VALLEY MASTER HOMEOWNERS ASSOCIATION sued ALEJ, RO LEON JR for HOA lien foreclosure.",
+    "red_flags": [],
+    "people": [
+      {
+        "name": "STAR VALLEY MASTER HOMEOWNERS ASSOCIATION",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      },
+      {
+        "name": "ALEJANDRO LEON JR",
+        "role": "Defendant (Former Owner)",
+        "address": "9655 N BROADMEDE ST (FCV: $275,488)",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20246660. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Last known property: 9655 N BROADMEDE ST (FCV: $275,488)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "JESSICA MATUS",
+        "role": "Defendant (Former Owner)",
+        "address": "9655 N BROADMEDE ST (FCV: $275,488)",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20246660. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Last known property: 9655 N BROADMEDE ST (FCV: $275,488)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "DISCOVER BANK",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      },
+      {
+        "name": "MIDLAND CREDIT MANAGEMENT, INC.",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      },
+      {
+        "name": "CAPITAL ONE, NATIONAL ASSOCIATION",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      }
+    ],
+    "docket": [
+      {
+        "date": "10/13/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/5/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/23/2025",
+        "entry": "Available"
+      },
+      {
+        "date": "6/24/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/17/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/3/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/3/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/14/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/14/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/14/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/14/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/4/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/4/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/3/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/3/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/3/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/3/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/3/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/3/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/3/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/20/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/20/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/20/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/20/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/6/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/6/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/5/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/5/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/5/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/5/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/5/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/5/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/5/2024",
+        "entry": "Available at Courthouse"
+      }
+    ],
+    "judgment_amount": null
+  },
+  "PIMA-COURT-C20250255": {
+    "story": "Case: C20250255 | Sale: Unknown\nSTAR VALLEY MASTER HOMEOWNERS ASSOCIATION sued GORETT VALENZUELA for HOA lien foreclosure.",
+    "red_flags": [],
+    "people": [
+      {
+        "name": "STAR VALLEY MASTER HOMEOWNERS ASSOCIATION",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      },
+      {
+        "name": "GORETT VALENZUELA",
+        "role": "Defendant (Former Owner)",
+        "address": "6767 W BRIGHTWATER WY (FCV: $247,580)",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20250255. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Last known property: 6767 W BRIGHTWATER WY (FCV: $247,580)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "SECRETARY OF HOUSING AND URBAN DEVELOPMENT",
+        "role": "Defendant (Former Owner)",
+        "address": "6767 W BRIGHTWATER WY (FCV: $247,580)",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20250255. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Last known property: 6767 W BRIGHTWATER WY (FCV: $247,580)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "LENDMARK FINANCIAL SERVICES, LLC",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      }
+    ],
+    "docket": [
+      {
+        "date": "10/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/13/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/5/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/29/2025",
+        "entry": "Available"
+      },
+      {
+        "date": "4/30/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/7/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/7/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/7/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/7/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/1/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/1/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/27/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/27/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/27/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/27/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/27/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/11/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/5/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/5/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/3/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/3/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/10/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/10/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/9/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/9/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/9/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/9/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/9/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/9/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/9/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/9/2025",
+        "entry": "Available at Courthouse"
+      }
+    ],
+    "judgment_amount": null
+  },
+  "PIMA-COURT-C20244148": {
+    "story": "Case: C20244148 | Sale: Unknown\nSTAR VALLEY MASTER HOMEOWNERS ASSOCIATION sued KARIAN A FIMBRES for HOA lien foreclosure.",
+    "red_flags": [],
+    "people": [
+      {
+        "name": "STAR VALLEY MASTER HOMEOWNERS ASSOCIATION",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      },
+      {
+        "name": "KARIAN A FIMBRES",
+        "role": "Defendant (Former Owner)",
+        "address": "",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20244148. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "SECRETARY OF HOUSING AND URBAN DEVELOPMENT (HUD)",
+        "role": "Defendant (Former Owner)",
+        "address": "",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20244148. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "NORTHWEST HOSPITAL, LLC",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      }
+    ],
+    "docket": [
+      {
+        "date": "11/26/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/25/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/25/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/21/2024",
+        "entry": "Available"
+      },
+      {
+        "date": "10/21/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/7/2024",
+        "entry": "Available"
+      },
+      {
+        "date": "9/25/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/25/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/18/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/18/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/18/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/19/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/16/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/15/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/15/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/2/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/2/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/29/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/29/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/24/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/24/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/24/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/24/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/24/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/17/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/16/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/16/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/16/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/16/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/16/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/16/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/16/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/16/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/16/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/16/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/16/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/16/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/16/2024",
+        "entry": "Available at Courthouse"
+      }
+    ],
+    "judgment_amount": null
+  },
+  "PIMA-COURT-C20245087": {
+    "story": "Case: C20245087 | Sale: Unknown\nORANGE GROVE MOBILE ESTATES ASSOCIATION sued REW JAMES HERREN for HOA lien foreclosure.\nJudgment: $27,292.64",
+    "red_flags": [],
+    "people": [
+      {
+        "name": "ORANGE GROVE MOBILE ESTATES ASSOCIATION",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      },
+      {
+        "name": "ANDREW JAMES HERREN",
+        "role": "Defendant (Former Owner)",
+        "address": "14135 S RENEGADE AV (FCV: $242,574)",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20245087. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Last known property: 14135 S RENEGADE AV (FCV: $242,574)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      }
+    ],
+    "docket": [
+      {
+        "date": "7/10/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "7/7/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/6/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/11/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/31/2025",
+        "entry": "Available"
+      },
+      {
+        "date": "1/27/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/23/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/19/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/19/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/19/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/19/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/19/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/19/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/19/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/29/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/29/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/29/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/29/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/12/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/27/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/27/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/27/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/27/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/27/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/27/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/27/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/27/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/27/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/27/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/27/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/27/2024",
+        "entry": "Available at Courthouse"
+      }
+    ],
+    "judgment_amount": 27292.64
+  },
+  "PIMA-COURT-C20246509": {
+    "story": "Case: C20246509 | Sale: $33,500.00\nSAGUARO BLOOM MASTER COMMUNITY ASSOCIATION sued AMBER N PHILLIPS for HOA lien foreclosure.",
+    "red_flags": [],
+    "people": [
+      {
+        "name": "SAGUARO BLOOM MASTER COMMUNITY ASSOCIATION",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      },
+      {
+        "name": "AMBER N PHILLIPS",
+        "role": "Defendant (Former Owner)",
+        "address": "",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20246509. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "CHRISTOPHER J PHILLIPS",
+        "role": "Defendant (Former Owner)",
+        "address": "",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20246509. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      }
+    ],
+    "docket": [
+      {
+        "date": "5/22/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/20/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/20/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/28/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/3/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/31/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/6/2025",
+        "entry": "Available"
+      },
+      {
+        "date": "10/30/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/30/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/30/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/30/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/30/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/30/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/30/2024",
+        "entry": "Available at Courthouse"
+      }
+    ],
+    "judgment_amount": null
+  },
+  "PIMA-COURT-C20250277": {
+    "story": "Case: C20250277 | Sale: $9,035.00\nNEW DAWN ENTERPRISES, L.L.C. ET AL. sued STEVEN MACHOLTZ for HOA lien foreclosure.",
+    "red_flags": [],
+    "people": [
+      {
+        "name": "JOHN VALDATA",
+        "role": "Defendant (Former Owner)",
+        "address": "",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20250277. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "STEVEN MACHOLTZ",
+        "role": "Defendant (Former Owner)",
+        "address": "",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20250277. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "ANDREA KONOVE",
+        "role": "Defendant (Former Owner)",
+        "address": "",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20250277. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "SHEPHERD HILLS PARTNERS LLC",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      },
+      {
+        "name": "RSF ASSOCIATES, L.L.C.",
+        "role": "Defendant (Former Owner)",
+        "address": "",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20250277. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "GROVE ASSOCIATES LLC",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      },
+      {
+        "name": "SANTA RITA PARTNERS, L.L.C.",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      },
+      {
+        "name": "SANTA RITA SENIOR CARE LLC",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      },
+      {
+        "name": "SANTA RITA SENIOR CARE I LLC",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      },
+      {
+        "name": "UNISON BANK",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      },
+      {
+        "name": "TUCSON ELECTRIC POWER COMPANY",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      },
+      {
+        "name": "ORANGE GROVE ASSOCIATES LLC",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      }
+    ],
+    "docket": [
+      {
+        "date": "9/12/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/29/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/15/2025",
+        "entry": "Available"
+      },
+      {
+        "date": "7/11/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/4/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/4/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/4/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/17/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/16/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/15/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/13/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/13/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/10/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/10/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/10/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/10/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/10/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/10/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/10/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/10/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/10/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/10/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/10/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/10/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/10/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/10/2025",
+        "entry": "Available at Courthouse"
+      }
+    ],
+    "judgment_amount": null
+  },
+  "PIMA-COURT-C20247321": {
+    "story": "Case: C20247321 | Sale: Unknown\nORANGE GROVE MOBILE ESTATES ASSOCIATION sued THE JERRY M. POSSINGER LIVING TRUST DATED NOVEMBER 13, 2023 for HOA lien foreclosure.\nJudgment: $19,661.09",
+    "red_flags": [],
+    "people": [
+      {
+        "name": "ORANGE GROVE MOBILE ESTATES ASSOCIATION",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      },
+      {
+        "name": "THE JERRY M. POSSINGER LIVING TRUST DATED NOVEMBER 13, 2023",
+        "role": "Defendant (Former Owner)",
+        "address": "4125 W DISTANT WASH CT (FCV: $640,360)",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20247321. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Last known property: 4125 W DISTANT WASH CT (FCV: $640,360)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "JERRY M POSSINGER, TRUSTEE",
+        "role": "Defendant (Former Owner)",
+        "address": "4125 W DISTANT WASH CT (FCV: $640,360)",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20247321. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Last known property: 4125 W DISTANT WASH CT (FCV: $640,360)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      }
+    ],
+    "docket": [
+      {
+        "date": "9/24/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/1/2025",
+        "entry": "Available"
+      },
+      {
+        "date": "4/1/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/13/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/13/2025",
+        "entry": "Available"
+      },
+      {
+        "date": "2/5/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/5/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/5/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/5/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/5/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/5/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/5/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/8/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/8/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/8/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/16/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/5/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/5/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/5/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/5/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/5/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/5/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/5/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/5/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/5/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/5/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/5/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/5/2024",
+        "entry": "Available at Courthouse"
+      }
+    ],
+    "judgment_amount": 19661.09
+  },
+  "PIMA-COURT-C20245732": {
+    "story": "Case: C20245732 | Sale: Unknown\nARIZONA MADERA AT RITA RANCH ASSOCIATION sued ROBERT GENE HAMACHER JR for HOA lien foreclosure.",
+    "red_flags": [],
+    "people": [
+      {
+        "name": "ARIZONA MADERA AT RITA RANCH ASSOCIATION",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      },
+      {
+        "name": "ROBERT GENE HAMACHER JR",
+        "role": "Defendant (Former Owner)",
+        "address": "626 S MARVIN AV (FCV: $281,758)",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20245732. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Last known property: 626 S MARVIN AV (FCV: $281,758)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "BRITTANY HAMACHER",
+        "role": "Defendant (Former Owner)",
+        "address": "626 S MARVIN AV (FCV: $281,758)",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20245732. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Last known property: 626 S MARVIN AV (FCV: $281,758)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "SECRETARY OF HOUSING AND URBAN DEVELOPMENT",
+        "role": "Defendant (Former Owner)",
+        "address": "626 S MARVIN AV (FCV: $281,758)",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20245732. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Last known property: 626 S MARVIN AV (FCV: $281,758)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "LENDMARK FINANCIAL SERVICES, LLC",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      },
+      {
+        "name": "MIDLAND CREDIT MANAGEMENT, INC.",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      }
+    ],
+    "docket": [
+      {
+        "date": "4/16/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/16/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/16/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/6/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/3/2025",
+        "entry": "Available"
+      },
+      {
+        "date": "2/3/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/20/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/18/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/18/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/18/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/18/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/18/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/18/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/18/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/18/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/18/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/18/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/18/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/18/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/18/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/18/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/16/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/16/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/9/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/9/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/18/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/12/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/30/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/30/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/30/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/30/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/29/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/29/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/29/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/29/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/29/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/28/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/23/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "10/23/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/25/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/25/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/25/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/25/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/25/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/25/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/25/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/25/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/25/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/25/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/25/2024",
+        "entry": "Available at Courthouse"
+      }
+    ],
+    "judgment_amount": null
+  },
+  "PIMA-COURT-C20250864": {
+    "story": "Case: C20250864 | Sale: $57,100.00\nNORTHERN HEIGHTS HOMEOWNERS ASSOCIATION sued CHARLES L. BERTSCH for HOA lien foreclosure.\nJudgment: $7,735.96\nEstimated surplus: $49,364.04",
+    "red_flags": [],
+    "people": [
+      {
+        "name": "NORTHERN HEIGHTS HOMEOWNERS ASSOCIATION",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      },
+      {
+        "name": "CHARLES L. BERTSCH",
+        "role": "Defendant (Former Owner)",
+        "address": "",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20250864. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "KIMBERLEY M. NICOLINI",
+        "role": "Defendant (Former Owner)",
+        "address": "",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20250864. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "TOWN OF ORO VALLEY",
+        "role": "Defendant (Former Owner)",
+        "address": "",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20250864. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "MV REALTY OF ARIZONA, LLC",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      }
+    ],
+    "docket": [
+      {
+        "date": "11/12/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/12/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/9/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/6/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/2/2025",
+        "entry": "Available"
+      },
+      {
+        "date": "6/2/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/12/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/12/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/12/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/12/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/12/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/12/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/12/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/12/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/12/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/12/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/12/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/12/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/12/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/12/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/12/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/14/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/14/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/14/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/14/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/19/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/11/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/11/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/11/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/11/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/11/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/11/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/6/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/6/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/20/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/5/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/5/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/5/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/5/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/5/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/5/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/5/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/5/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/5/2025",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/5/2025",
+        "entry": "Available at Courthouse"
+      }
+    ],
+    "judgment_amount": 7735.96
+  },
+  "PIMA-COURT-C20233991": {
+    "story": "Case: C20233991 | Sale: $21,363.00\nSANTA RITA RANCH COMMUNITY ASSOCIATION sued KRYSTAL ZAIDA OLIVAS for HOA lien foreclosure.",
+    "red_flags": [],
+    "people": [
+      {
+        "name": "SANTA RITA RANCH COMMUNITY ASSOCIATION",
+        "role": "Plaintiff (HOA/Corp)",
+        "notes": ""
+      },
+      {
+        "name": "KRYSTAL ZAIDA OLIVAS",
+        "role": "Defendant (Former Owner)",
+        "address": "461 E CACTUS MOUNTAIN DR (FCV: $212,044)",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20233991. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Last known property: 461 E CACTUS MOUNTAIN DR (FCV: $212,044)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "JADA LYENTTE VIRGIL",
+        "role": "Defendant (Former Owner)",
+        "address": "461 E CACTUS MOUNTAIN DR (FCV: $212,044)",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20233991. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Last known property: 461 E CACTUS MOUNTAIN DR (FCV: $212,044)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "INDUSTRIAL DEVELOPMENT AUTHORITY OF THE CITY OF TUCSON",
+        "role": "Defendant (Former Owner)",
+        "address": "461 E CACTUS MOUNTAIN DR (FCV: $212,044)",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20233991. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Last known property: 461 E CACTUS MOUNTAIN DR (FCV: $212,044)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      },
+      {
+        "name": "INDUSTRIAL DEVELOPMENT AUTHORITY OF THE COUNTY OF PIMA",
+        "role": "Defendant (Former Owner)",
+        "address": "461 E CACTUS MOUNTAIN DR (FCV: $212,044)",
+        "phone": "",
+        "email": "",
+        "notes": "Named in C20233991. Needs skip trace for current contact info.",
+        "best_leads": "\u2022 Last known property: 461 E CACTUS MOUNTAIN DR (FCV: $212,044)\n\u2022 Skip trace service (BatchSkipTracing ~$0.15)"
+      }
+    ],
+    "docket": [
+      {
+        "date": "12/4/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/4/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/20/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/26/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "6/18/2024",
+        "entry": "Available"
+      },
+      {
+        "date": "6/17/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/31/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "5/14/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/24/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/23/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/23/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/23/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/23/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/23/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/23/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/23/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/23/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/23/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/23/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/23/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/23/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/23/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "4/5/2024",
+        "entry": "Available"
+      },
+      {
+        "date": "3/19/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/19/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/19/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/19/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/19/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/19/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/19/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/19/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/19/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "3/19/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/23/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/22/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/16/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "2/16/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/30/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/30/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/30/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/30/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/30/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/30/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/30/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/30/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/30/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/30/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/30/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/30/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/30/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/30/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/30/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/30/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "1/25/2024",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/19/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/19/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/19/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/19/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/19/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/19/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/19/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "12/15/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/28/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/21/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/17/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "11/3/2023",
+        "entry": "Available"
+      },
+      {
+        "date": "9/27/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/22/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "9/19/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/30/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/30/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/30/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/30/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/30/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/30/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/30/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/30/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/30/2023",
+        "entry": "Available at Courthouse"
+      },
+      {
+        "date": "8/30/2023",
+        "entry": "Available at Courthouse"
+      }
+    ],
+    "judgment_amount": null
   }
 };
